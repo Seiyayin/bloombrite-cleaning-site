@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import TestimonialCard from '@/components/shared/TestimonialCard';
+import GoogleReviewsWidget from '@/components/shared/GoogleReviewsWidget';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
 import { ReviewSchema } from '@/lib/schema';
@@ -10,6 +11,9 @@ const Reviews = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Replace with your actual Google Place ID when you have it
+  const googlePlaceId = 'ChIJN1t_tDeuEmsRUsoyG83frY4'; // This is a sample Place ID, replace with yours
 
   return (
     <>
@@ -41,9 +45,45 @@ const Reviews = () => {
           </div>
         </section>
         
-        {/* Reviews List */}
+        {/* Google Reviews Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Google Reviews</h2>
+              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                See our latest Google reviews from real customers who have experienced our cleaning services.
+              </p>
+            </div>
+            
+            <div className="max-w-5xl mx-auto">
+              {/* Google Reviews Widget */}
+              <GoogleReviewsWidget placeId={googlePlaceId} />
+              
+              {/* Google Review Button */}
+              <div className="mt-8 text-center">
+                <a 
+                  href="https://www.google.com/maps?cid=123456789" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary-dark transition"
+                >
+                  <i className="fab fa-google text-xl mr-2"></i>
+                  <span>View All Google Reviews</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* BloomBrite Reviews List */}
         <section className="py-16 bg-neutral-50">
           <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">More Customer Testimonials</h2>
+              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                Here are some additional testimonials from our satisfied customers.
+              </p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {testimonials.map((testimonial) => (
                 <TestimonialCard key={testimonial.id} testimonial={testimonial} />

@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react';
 
 interface SchemaOrgProps {
-  children: ReactNode;
+  children: any;
 }
 
 const SchemaOrg: FC<SchemaOrgProps> = ({ children }) => {

@@ -67,22 +67,21 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex">
                 <i className="fas fa-map-marker-alt mt-1 mr-3 text-primary-light"></i>
-                <span className="text-neutral-300">123 Clean Street, Wixom, MI 48393</span>
+                <span className="text-neutral-300">2207 Evergreen St, Wixom, MI 48393</span>
               </li>
               <li className="flex">
                 <i className="fas fa-phone-alt mt-1 mr-3 text-primary-light"></i>
-                <a href="tel:1234567890" className="text-neutral-300 hover:text-white transition">(123) 456-7890</a>
+                <a href="tel:7344899908" className="text-neutral-300 hover:text-white transition">(734) 489-9908</a>
               </li>
               <li className="flex">
                 <i className="fas fa-envelope mt-1 mr-3 text-primary-light"></i>
-                <a href="mailto:info@bloombritecleaning.com" className="text-neutral-300 hover:text-white transition">info@bloombritecleaning.com</a>
+                <a href="mailto:sales@bloombritecleaning.com" className="text-neutral-300 hover:text-white transition">sales@bloombritecleaning.com</a>
               </li>
               <li className="flex">
                 <i className="fas fa-clock mt-1 mr-3 text-primary-light"></i>
                 <div className="text-neutral-300">
-                  <p>Monday-Friday: 8AM-6PM</p>
-                  <p>Saturday: 9AM-4PM</p>
-                  <p>Sunday: Closed</p>
+                  <p className="font-semibold">Available 24/7</p>
+                  <p>Call us anytime for your cleaning needs</p>
                 </div>
               </li>
             </ul>

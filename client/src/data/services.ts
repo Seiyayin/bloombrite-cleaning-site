@@ -1,0 +1,242 @@
+export const services = [
+  {
+    id: "standard-cleaning",
+    slug: "standard-cleaning",
+    title: "Standard Cleaning",
+    shortDescription: "Our most popular service includes dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
+    metaDescription: "Professional standard home cleaning services in Michigan. Includes dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
+    description: `
+      <p>Our Standard Cleaning service is designed to maintain a consistently clean and healthy home environment. This is our most popular service, perfect for regular maintenance cleaning to keep your home looking its best.</p>
+      
+      <p>Our professional cleaning team will thoroughly clean the main living areas of your home, with special attention to kitchens and bathrooms. The Standard Cleaning service includes all the essential cleaning tasks needed to maintain a clean home.</p>
+      
+      <p>This service is ideal for homes that are maintained regularly and don't require deep cleaning of neglected areas. Many of our clients choose this as a bi-weekly or monthly service to maintain cleanliness between deeper cleanings.</p>
+    `,
+    imageUrl: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    startingPrice: "$120",
+    included: [
+      "Dusting of all accessible surfaces",
+      "Vacuuming all floors, carpets, and rugs",
+      "Mopping of all hard floor surfaces",
+      "Cleaning and sanitizing bathrooms (toilets, sinks, tubs, showers)",
+      "Cleaning and sanitizing kitchen surfaces and sink",
+      "Wiping down of appliance exteriors",
+      "Emptying trash bins",
+      "Making beds (linens must be provided)",
+      "General tidying and straightening"
+    ],
+    additionalServices: [
+      "Interior window cleaning",
+      "Inside cabinet cleaning",
+      "Refrigerator interior cleaning",
+      "Oven interior cleaning",
+      "Baseboards and crown molding cleaning"
+    ]
+  },
+  {
+    id: "deep-cleaning",
+    slug: "deep-cleaning",
+    title: "Deep Cleaning",
+    shortDescription: "A thorough cleaning that reaches areas often missed, including baseboards, ceiling fans, and behind furniture.",
+    metaDescription: "Professional deep cleaning services for Michigan homes. Thorough cleaning of rarely-addressed areas including baseboards, ceiling fans, and behind furniture.",
+    description: `
+      <p>Our Deep Cleaning service is a comprehensive cleaning solution that addresses areas that are often overlooked during regular cleaning. This service is perfect for homes that haven't been professionally cleaned in a while, seasonal cleaning, or homes that need special attention.</p>
+      
+      <p>Deep Cleaning includes everything in our Standard Cleaning package plus a more intensive focus on hard-to-reach and rarely cleaned areas. Our team will move furniture (where safe and possible) to clean underneath, thoroughly scrub bathroom fixtures, and clean areas that collect dust and grime over time.</p>
+      
+      <p>This service takes longer than our Standard Cleaning but delivers exceptional results. Many clients choose this service for their first cleaning with us, then maintain with regular Standard Cleaning appointments.</p>
+    `,
+    imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    startingPrice: "$200",
+    included: [
+      "Everything included in Standard Cleaning",
+      "Cleaning under and behind movable furniture",
+      "Detailed cleaning of baseboards and crown molding",
+      "Cleaning ceiling fans and light fixtures",
+      "Detail cleaning of window sills and door frames",
+      "Cleaning inside cabinets (exteriors and interiors)",
+      "Detailed bathroom cleaning including grout and scale removal",
+      "Cleaning inside microwave and other small appliances",
+      "Detailed cleaning of all fixtures and faucets",
+      "Spot cleaning of walls and doors for fingerprints and marks"
+    ],
+    additionalServices: [
+      "Interior window cleaning",
+      "Refrigerator interior deep cleaning",
+      "Oven interior deep cleaning",
+      "Washing of blinds and curtains",
+      "Washing of interior walls"
+    ]
+  },
+  {
+    id: "recurring-cleaning",
+    slug: "recurring-cleaning",
+    title: "Recurring Cleaning",
+    shortDescription: "Regular scheduled cleaning services weekly, bi-weekly, or monthly to keep your home consistently clean.",
+    metaDescription: "Scheduled recurring cleaning services in Michigan with weekly, bi-weekly or monthly options. Keep your home consistently clean with trusted professionals.",
+    description: `
+      <p>Our Recurring Cleaning service provides the convenience of regular, scheduled cleanings to maintain your home's cleanliness without you having to remember to book each time. Choose from weekly, bi-weekly, or monthly schedules based on your needs and budget.</p>
+      
+      <p>With recurring service, you'll have the same cleaning team visit your home on a regular basis. They'll become familiar with your home and preferences, allowing for more efficient and personalized service over time. Recurring clients also receive priority scheduling and special rates.</p>
+      
+      <p>This service follows our Standard Cleaning protocol but can be customized based on your specific needs. You can also alternate between Standard and Deep Cleaning sessions if desired.</p>
+    `,
+    imageUrl: "https://images.unsplash.com/photo-1563453392212-326f5e854473?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    startingPrice: "$100",
+    included: [
+      "All services included in our Standard Cleaning",
+      "Consistent scheduling (weekly, bi-weekly, or monthly)",
+      "Same team assigned to your home for consistency",
+      "Priority scheduling",
+      "Discounted cleaning rates",
+      "Customizable cleaning checklist based on your priorities",
+      "Seasonal cleaning tasks rotation",
+      "Free re-cleaning if you're not satisfied"
+    ],
+    additionalServices: [
+      "Rotating deep cleaning tasks between visits",
+      "Interior window cleaning (scheduled quarterly)",
+      "Refrigerator interior cleaning (scheduled monthly)",
+      "Oven interior cleaning (scheduled quarterly)",
+      "Special event preparation or post-event cleanup"
+    ]
+  },
+  {
+    id: "move-in-out-cleaning",
+    slug: "move-in-out-cleaning",
+    title: "Move-In/Out Cleaning",
+    shortDescription: "Comprehensive cleaning for when you're moving in or out of a property, ensuring a fresh start.",
+    metaDescription: "Specialized move-in and move-out cleaning services for Michigan properties. Comprehensive cleaning to ensure a fresh start in your new home.",
+    description: `
+      <p>Our Move-In/Out Cleaning service is specially designed for the transition between homes. Whether you're a homeowner, renter, landlord, or property manager, this thorough cleaning service ensures the property is in pristine condition for the next occupants or for your arrival.</p>
+      
+      <p>This comprehensive cleaning package includes our Deep Cleaning service with additional focus on areas that may have been neglected or are particularly important during a move. We understand the importance of leaving a property clean to recover security deposits or preparing a home for new occupants.</p>
+      
+      <p>Our Move-In/Out Cleaning is among our most thorough services, addressing every accessible area of the property. Most properties should be empty or nearly empty of personal belongings for optimal results.</p>
+    `,
+    imageUrl: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    startingPrice: "$250",
+    included: [
+      "Everything included in our Deep Cleaning service",
+      "Intensive kitchen cleaning including inside all appliances",
+      "Detailed bathroom cleaning including scale removal",
+      "Complete interior window and track cleaning",
+      "Cleaning inside all cabinets, drawers, and closets",
+      "Thorough cleaning of all light fixtures and ceiling fans",
+      "Detailed baseboard, trim, and door cleaning",
+      "Thorough cleaning of all floors (vacuum, mop, scrub)",
+      "Removal of nails/tacks from walls (upon request)",
+      "Garage sweeping (if applicable)"
+    ],
+    additionalServices: [
+      "Carpet shampooing/steam cleaning",
+      "Wall washing",
+      "Exterior window cleaning",
+      "Patio/deck cleaning",
+      "Cleaning of storage areas or attics"
+    ]
+  },
+  {
+    id: "office-cleaning",
+    slug: "office-cleaning",
+    title: "Office Cleaning",
+    shortDescription: "Keep your workplace clean and professional with our specialized commercial cleaning services.",
+    metaDescription: "Professional office and commercial cleaning services in Michigan. Maintain a clean, healthy, and professional workplace environment.",
+    description: `
+      <p>Our Office Cleaning service is specifically tailored for commercial spaces and workplaces. We understand that a clean work environment not only creates a positive impression for clients but also contributes to employee health, productivity, and morale.</p>
+      
+      <p>Our professional cleaning team is trained to work efficiently in business settings, with minimal disruption to your operations. We can schedule cleanings after hours, before opening, or during weekends based on your preference.</p>
+      
+      <p>We customize our office cleaning services based on the size and needs of your business. From small professional offices to larger commercial spaces, we can create a cleaning plan that fits your requirements and budget.</p>
+    `,
+    imageUrl: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    startingPrice: "$150",
+    included: [
+      "Dusting and wiping of all surfaces and furniture",
+      "Cleaning and sanitizing of bathrooms",
+      "Cleaning of break rooms and kitchen areas",
+      "Vacuuming all carpeted areas",
+      "Mopping all hard floor surfaces",
+      "Emptying all trash bins and replacing liners",
+      "Cleaning entrance glass doors and reception areas",
+      "Dusting of blinds and window sills",
+      "Sanitizing high-touch surfaces (light switches, door knobs)",
+      "Cleaning and organizing reception and waiting areas"
+    ],
+    additionalServices: [
+      "Carpet shampooing/deep cleaning",
+      "Floor waxing and buffing",
+      "Interior window cleaning",
+      "Deep cleaning of upholstery and office chairs",
+      "Computer and electronics dusting and sanitizing"
+    ]
+  },
+  {
+    id: "airbnb-cleaning",
+    slug: "airbnb-cleaning",
+    title: "Airbnb Cleaning",
+    shortDescription: "Special turnover cleaning for vacation rentals, ensuring your guests arrive to a spotless space.",
+    metaDescription: "Specialized Airbnb and vacation rental cleaning services in Michigan. Fast, thorough turnover cleaning to ensure your guests have a perfect experience.",
+    description: `
+      <p>Our Airbnb Cleaning service is specifically designed for vacation rental properties, ensuring your guests arrive to an impeccably clean space every time. We understand the unique challenges of short-term rental turnovers and the importance of maintaining high cleanliness standards for positive reviews.</p>
+      
+      <p>This service includes a comprehensive cleaning of the entire property with special attention to areas that matter most to guests: spotless bathrooms, fresh linens, clean kitchen surfaces, and dust-free spaces. We'll help you maintain your property's appeal and your high ratings with consistent, thorough cleaning between guest stays.</p>
+      
+      <p>We offer flexible scheduling to accommodate same-day turnovers and can provide additional services such as restocking supplies, reporting maintenance issues, and other property management support tasks.</p>
+    `,
+    imageUrl: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    startingPrice: "$140",
+    included: [
+      "Complete cleaning and sanitizing of bathrooms",
+      "Changing of all linens (bed sheets, pillowcases, towels)",
+      "Making beds with fresh linens",
+      "Thorough kitchen cleaning including appliances",
+      "Vacuuming and mopping all floors",
+      "Dusting all surfaces and decor items",
+      "Emptying all trash bins",
+      "Spot cleaning of mirrors and glass surfaces",
+      "Sanitizing of high-touch areas (remotes, light switches, doorknobs)",
+      "Final inspection for guest-readiness"
+    ],
+    additionalServices: [
+      "Restocking guest supplies and amenities",
+      "Laundry service for linens and towels",
+      "Deep cleaning on a quarterly schedule",
+      "Outdoor area cleaning and maintenance",
+      "Property inspection and damage reporting"
+    ]
+  },
+  {
+    id: "oven-cleaning",
+    slug: "oven-cleaning",
+    title: "Oven Cleaning",
+    shortDescription: "Specialized deep cleaning service for ovens, removing grease, food residue, and burnt-on deposits.",
+    metaDescription: "Professional oven cleaning service in Michigan. We remove tough grease, food residue, and burnt-on deposits for a cleaner, more efficient oven.",
+    description: `
+      <p>Our Oven Cleaning service provides a specialized, thorough cleaning of your oven to remove built-up grease, food spills, and burnt-on residue that regular cleaning can't address. A clean oven not only looks better but also operates more efficiently, eliminates smoke and odors during cooking, and reduces fire hazards.</p>
+      
+      <p>Our trained technicians use professional-grade, eco-friendly products to break down and remove even the toughest baked-on grease and carbon deposits. We clean all components including racks, trays, glass door, interior walls, ceiling, and floor of the oven.</p>
+      
+      <p>This service can be booked as a standalone cleaning or added to any of our other cleaning services. Many clients choose to have their oven professionally cleaned once or twice a year to maintain optimal performance.</p>
+    `,
+    imageUrl: "https://images.unsplash.com/photo-1590794056224-7a26faf692ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    startingPrice: "$85",
+    included: [
+      "Complete cleaning of oven interior",
+      "Removal and cleaning of oven racks and trays",
+      "Cleaning of oven door interior and glass",
+      "Cleaning of control knobs and exterior front",
+      "Eco-friendly, fume-free cleaning products",
+      "Testing of oven functionality after cleaning",
+      "Cleaning of stovetop (if applicable)",
+      "Removal of all grease and burnt-on carbon deposits"
+    ],
+    additionalServices: [
+      "Range hood and filter cleaning",
+      "Full stovetop deep cleaning",
+      "Cleaning behind and under the oven",
+      "Microwave interior deep cleaning",
+      "Other kitchen appliance cleaning"
+    ]
+  }
+];

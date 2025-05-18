@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Hero from '@/components/home/Hero';
 import Features from '@/components/home/Features';
 import ServicesSection from '@/components/home/ServicesSection';
+import CommercialSection from '@/components/home/CommercialSection';
 import TeamSection from '@/components/home/TeamSection';
 import QuoteSection from '@/components/home/QuoteSection';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
@@ -31,6 +32,7 @@ const Home = () => {
         <Hero />
         <Features />
         <ServicesSection />
+        <CommercialSection />
         <TeamSection />
         <QuoteSection />
         <TestimonialsSection />

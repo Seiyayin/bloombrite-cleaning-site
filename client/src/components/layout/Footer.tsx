@@ -8,9 +8,12 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-6">
-              <Link href="/" className="flex items-center space-x-2">
-                <span className="text-white font-bold text-2xl">BloomBrite</span>
-                <span className="text-secondary-light font-medium">Cleaning</span>
+              <Link href="/" className="block">
+                <img 
+                  src="/src/assets/bloombrite logo.png" 
+                  alt="Bloombrite Cleaning" 
+                  className="h-12 w-auto"
+                />
               </Link>
             </div>
             <p className="text-neutral-300 mb-6">
@@ -89,7 +92,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-neutral-800 text-center text-neutral-400 text-sm">
-          <p className="mb-4">&copy; {new Date().getFullYear()} BloomBrite Cleaning. All rights reserved.</p>
+          <p className="mb-4">&copy; {new Date().getFullYear()} Bloombrite Cleaning. All rights reserved.</p>
           <div className="flex justify-center space-x-6">
             <Link href="/privacy-policy" className="hover:text-white transition">Privacy Policy</Link>
             <Link href="/terms-of-service" className="hover:text-white transition">Terms of Service</Link>

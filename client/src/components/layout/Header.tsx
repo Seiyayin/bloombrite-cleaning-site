@@ -17,9 +17,12 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-primary font-bold text-2xl">BloomBrite</span>
-          <span className="text-secondary font-medium">Cleaning</span>
+        <Link href="/" className="block">
+          <img 
+            src="/src/assets/bloombrite logo.png" 
+            alt="Bloombrite Cleaning" 
+            className="h-10 w-auto"
+          />
         </Link>
         
         {/* Desktop Navigation */}

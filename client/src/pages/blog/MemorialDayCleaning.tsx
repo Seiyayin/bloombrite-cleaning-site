@@ -14,7 +14,7 @@ const MemorialDayCleaning = () => {
   return (
     <>
       <SeoHead 
-        title="Memorial Day Cleaning Guide: Prepare Your Home for Summer Gatherings | BloomBrite Cleaning"
+        title="Memorial Day Cleaning Guide: Prepare Your Home for Summer Gatherings | Bloombrite Cleaning"
         description="Get your home ready for Memorial Day weekend parties with our comprehensive cleaning checklist. Professional tips for indoor and outdoor spaces to impress your guests."
         ogImage={livingRoomImage}
       />
@@ -37,7 +37,7 @@ const MemorialDayCleaning = () => {
             <div className="flex items-center text-sm text-neutral-500 mb-8">
               <span>Published on May 10, 2024</span>
               <span className="mx-2">•</span>
-              <span>By BloomBrite Cleaning Team</span>
+              <span>By Bloombrite Cleaning Team</span>
             </div>
             
             <div className="w-full rounded-lg overflow-hidden mb-10">

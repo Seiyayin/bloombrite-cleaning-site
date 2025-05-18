@@ -17,13 +17,14 @@ export const LocalBusinessSchema = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "BloomBrite Cleaning",
-    "image": "",
+    "name": "Bloombrite Cleaning",
+    "image": "https://www.bloombritecleaning.com/logo.png", 
     "url": "https://www.bloombritecleaning.com",
-    "telephone": "(123) 456-7890",
+    "telephone": "734-489-9908",
+    "email": "sales@bloombritecleaning.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "123 Clean Street",
+      "streetAddress": "2207 Evergreen St",
       "addressLocality": "Wixom",
       "addressRegion": "MI",
       "postalCode": "48393",
@@ -31,30 +32,38 @@ export const LocalBusinessSchema = () => {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 42.5267,
-      "longitude": -83.5302
+      "latitude": 42.554479,
+      "longitude": -83.540862
     },
+    "priceRange": "$$",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "18:00"
+        "opens": "09:00",
+        "closes": "17:00"
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Saturday",
         "opens": "09:00",
-        "closes": "16:00"
+        "closes": "13:00"
       }
     ],
+    "areaServed": {
+      "@type": "Place",
+      "name": "Metro Detroit, MI"
+    },
     "sameAs": [
       "https://www.facebook.com/bloombritecleaning",
-      "https://www.instagram.com/bloombritecleaning",
-      "https://twitter.com/bloombriteclean"
+      "https://www.google.com/maps?cid=ChIJ8dw6RE6mJIgRsdro9IDycLk"
     ],
-    "priceRange": "$$",
-    "description": "Professional cleaning services for homes and businesses in Michigan, including standard cleaning, deep cleaning, move-in/out cleaning, and more."
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "82"
+    },
+    "description": "Professional cleaning services for homes and businesses in Michigan, including residential cleaning, commercial cleaning, deep cleaning, move-in/out cleaning, and more."
   };
 
   return <SchemaOrg>{schema}</SchemaOrg>;

@@ -13,9 +13,14 @@ const Hero = () => {
             Transform your space with BloomBrite's expert cleaning services. Spotless results, guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/get-quote" className="px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-opacity-90 transition shadow-md text-center">
+            <a 
+              href="https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/new?source=social_media" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-opacity-90 transition shadow-md text-center"
+            >
               Get a Free Quote
-            </Link>
+            </a>
             <Link href="#services" className="px-8 py-4 border-2 border-primary text-primary font-bold rounded-md hover:bg-primary hover:bg-opacity-10 transition shadow-sm text-center">
               Our Services
             </Link>

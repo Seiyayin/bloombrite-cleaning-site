@@ -150,9 +150,14 @@ const CommercialSection = () => {
                   <p className="mb-6 text-neutral-600">
                     Get a customized quote for your business needs. We offer competitive rates and flexible contracts.
                   </p>
-                  <Link href="/get-quote" className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition">
+                  <a 
+                    href="https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/new?source=social_media" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition"
+                  >
                     Get a Free Quote
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

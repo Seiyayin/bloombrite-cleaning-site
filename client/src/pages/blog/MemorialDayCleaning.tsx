@@ -361,7 +361,7 @@ const MemorialDayCleaning = () => {
                   <div>
                     <h3 className="font-bold text-lg">Bloombrite Cleaning Team</h3>
                     <p className="text-neutral-600">
-                      The BloomBrite Cleaning team has over 10 years of professional cleaning experience across residential and commercial properties in Metro Detroit.
+                      The Bloombrite Cleaning team has over 10 years of professional cleaning experience across residential and commercial properties in Metro Detroit.
                     </p>
                   </div>
                 </div>

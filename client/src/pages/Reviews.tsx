@@ -14,8 +14,8 @@ const Reviews = () => {
 
   // Your Google API key and Place ID
   const googleApiKey = 'AIzaSyBJcszhgIhOQPMjadpJ3M8srAlgZNpjFmw';
-  // This is a placeholder - replace with your actual Google Place ID when available
-  const googlePlaceId = 'ChIJN1t_tDeuEmsRUsoyG83frY4';
+  // Your actual Google Place ID
+  const googlePlaceId = 'ChIJ8dw6RE6mJIgRsdro9IDycLk';
 
   return (
     <>

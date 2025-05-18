@@ -12,7 +12,7 @@ const Footer = () => {
                 <img 
                   src="/src/assets/bloombrite logo.png" 
                   alt="Bloombrite Cleaning" 
-                  className="h-12 w-auto"
+                  className="h-16 w-auto"
                 />
               </Link>
             </div>

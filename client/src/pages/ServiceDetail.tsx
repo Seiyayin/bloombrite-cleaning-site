@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link, useRoute } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
-import { ServiceSchema } from '@/lib/schema';
+import { ServiceSchema, DeepCleaningSchema, MoveInOutCleaningSchema } from '@/lib/schema';
 import { services } from '@/data/services';
 import { locations } from '@/data/locations';
 
@@ -38,14 +38,21 @@ const ServiceDetail = () => {
         description={service.metaDescription}
         ogImage={service.imageUrl}
       />
-      <ServiceSchema 
-        name={service.title}
-        description={service.metaDescription}
-        url={window.location.href}
-        image={service.imageUrl}
-        price={service.startingPrice}
-        areaServed={serviceAreas}
-      />
+      {/* Render specialized schema for deep cleaning */}
+      {slug === 'deep-cleaning' ? (
+        <DeepCleaningSchema />
+      ) : slug === 'move-in-out-cleaning' ? (
+        <MoveInOutCleaningSchema />
+      ) : (
+        <ServiceSchema 
+          name={service.title}
+          description={service.metaDescription}
+          url={window.location.href}
+          image={service.imageUrl}
+          price={service.startingPrice}
+          areaServed={serviceAreas}
+        />
+      )}
       
       <main>
         {/* Service Banner */}
@@ -118,8 +125,8 @@ const ServiceDetail = () => {
                   </Link>
                   <div className="mt-6 text-center">
                     <span className="text-sm text-neutral-600">or call us at</span>
-                    <a href="tel:1234567890" className="block mt-1 font-semibold text-primary hover:underline">
-                      (123) 456-7890
+                    <a href="tel:7344899908" className="block mt-1 font-semibold text-primary hover:underline">
+                      (734) 489-9908
                     </a>
                   </div>
                   

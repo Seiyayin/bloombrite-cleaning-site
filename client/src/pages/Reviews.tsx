@@ -12,8 +12,8 @@ const Reviews = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Replace with your actual Google Place ID when you have it
-  const googlePlaceId = 'ChIJN1t_tDeuEmsRUsoyG83frY4'; // This is a sample Place ID, replace with yours
+  // Your Google Place ID
+  const googlePlaceId = 'GOOGLE_API_KEY'; // Your Google Place ID
 
   return (
     <>

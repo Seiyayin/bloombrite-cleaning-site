@@ -15,6 +15,9 @@ import Reviews from "@/pages/Reviews";
 import Faq from "@/pages/Faq";
 import ThankYou from "@/pages/ThankYou";
 import Accessibility from "@/pages/Accessibility";
+import BlogOverview from "@/pages/blog/BlogOverview";
+import ApplianceCleaning from "@/pages/blog/ApplianceCleaning";
+import MemorialDayCleaning from "@/pages/blog/MemorialDayCleaning";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -32,6 +35,9 @@ function Router() {
       <Route path="/faq" component={Faq} />
       <Route path="/thank-you" component={ThankYou} />
       <Route path="/accessibility" component={Accessibility} />
+      <Route path="/blog" component={BlogOverview} />
+      <Route path="/blog/inside-appliance-cleaning" component={ApplianceCleaning} />
+      <Route path="/blog/memorial-day-cleaning" component={MemorialDayCleaning} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -81,8 +81,8 @@ const BlogOverview = () => {
   return (
     <>
       <SeoHead 
-        title="Cleaning Tips & Guides | BloomBrite Cleaning Blog"
-        description="Professional cleaning tips, guides, and advice for homeowners in Metro Detroit. Learn the secrets of keeping your home spotless from BloomBrite Cleaning experts."
+        title="Cleaning Tips & Guides | Bloombrite Cleaning Blog"
+        description="Professional cleaning tips, guides, and advice for homeowners in Metro Detroit. Learn the secrets of keeping your home spotless from Bloombrite Cleaning experts."
       />
       
       <main className="bg-white">
@@ -90,7 +90,7 @@ const BlogOverview = () => {
         <section className="pt-20 pb-16 bg-neutral-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">BloomBrite Cleaning Blog</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Bloombrite Cleaning Blog</h1>
               <p className="text-xl text-neutral-600 mb-10">
                 Professional cleaning tips, guides, and advice from our experts
               </p>

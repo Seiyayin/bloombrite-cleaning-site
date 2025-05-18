@@ -43,7 +43,7 @@ const MemorialDayCleaning = () => {
             <div className="w-full rounded-lg overflow-hidden mb-10">
               <img 
                 src={livingRoomImage} 
-                alt="Clean living room ready for Memorial Day" 
+                alt="Professionally cleaned living room ready for Memorial Day guests with spotless surfaces" 
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -60,7 +60,7 @@ const MemorialDayCleaning = () => {
                 </p>
                 
                 <p>
-                  At BloomBrite Cleaning, we understand the importance of creating a spotless environment for your Memorial Day celebrations. This comprehensive guide will help you tackle each area of your home — both inside and out — so you can focus on enjoying the holiday with your loved ones rather than stressing about cleaning.
+                  At Bloombrite Cleaning, we understand the importance of creating a spotless environment for your Memorial Day celebrations. This comprehensive guide will help you tackle each area of your home — both inside and out — so you can focus on enjoying the holiday with your loved ones rather than stressing about cleaning.
                 </p>
 
                 <div className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded">
@@ -304,7 +304,7 @@ const MemorialDayCleaning = () => {
                 </p>
                 
                 <p>
-                  From all of us at BloomBrite Cleaning, we wish you a happy and meaningful Memorial Day weekend!
+                  From all of us at Bloombrite Cleaning, we wish you a happy and meaningful Memorial Day weekend!
                 </p>
                 
                 <p className="text-primary font-medium">
@@ -359,7 +359,7 @@ const MemorialDayCleaning = () => {
                     BC
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg">BloomBrite Cleaning Team</h3>
+                    <h3 className="font-bold text-lg">Bloombrite Cleaning Team</h3>
                     <p className="text-neutral-600">
                       The BloomBrite Cleaning team has over 10 years of professional cleaning experience across residential and commercial properties in Metro Detroit.
                     </p>

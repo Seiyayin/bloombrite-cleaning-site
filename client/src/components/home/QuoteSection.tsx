@@ -62,11 +62,11 @@ const QuoteSection = () => {
                 <p className="font-semibold mb-3">For immediate assistance:</p>
                 <div className="flex items-center mb-3">
                   <i className="fas fa-phone text-primary mr-3"></i>
-                  <a href="tel:1234567890" className="hover:text-primary">(123) 456-7890</a>
+                  <a href="tel:7344899908" className="hover:text-primary">(734) 489-9908</a>
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-envelope text-primary mr-3"></i>
-                  <a href="mailto:info@bloombritecleaning.com" className="hover:text-primary">info@bloombritecleaning.com</a>
+                  <a href="mailto:sales@bloombritecleaning.com" className="hover:text-primary">sales@bloombritecleaning.com</a>
                 </div>
               </div>
             </div>

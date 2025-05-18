@@ -11,8 +11,8 @@ const GetQuote = () => {
   return (
     <>
       <SeoHead 
-        title="Get a Free Quote | BloomBrite Cleaning"
-        description="Request a free, personalized quote for your residential or commercial cleaning needs in Michigan. Fast, easy, and no-obligation estimates from BloomBrite Cleaning."
+        title="Get a Free Quote | Bloombrite Cleaning"
+        description="Request a free, personalized quote for your residential or commercial cleaning needs in Michigan. Fast, easy, and no-obligation estimates from Bloombrite Cleaning."
       />
       
       <main>
@@ -67,7 +67,55 @@ const GetQuote = () => {
                 </div>
               </div>
               
-              <div className="mt-12 bg-neutral-50 p-8 rounded-lg">
+              {/* Our Quote Process */}
+              <div className="mt-12 bg-primary/5 p-8 rounded-lg border-l-4 border-primary mb-12">
+                <h3 className="text-2xl font-semibold mb-6 text-center">Our Simple Quote Process</h3>
+                
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                  <div className="text-center">
+                    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full mb-4 font-bold">
+                      1
+                    </div>
+                    <h4 className="font-semibold mb-2">Submit Request</h4>
+                    <p className="text-neutral-600">
+                      Complete our simple quote form with details about your cleaning needs.
+                    </p>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full mb-4 font-bold">
+                      2
+                    </div>
+                    <h4 className="font-semibold mb-2">Receive Quote</h4>
+                    <p className="text-neutral-600">
+                      We'll send you a detailed quote within about 1 hour during business hours.
+                    </p>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full mb-4 font-bold">
+                      3
+                    </div>
+                    <h4 className="font-semibold mb-2">Approve Quote</h4>
+                    <p className="text-neutral-600">
+                      Review and approve your quote if it meets your needs and budget.
+                    </p>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary text-white rounded-full mb-4 font-bold">
+                      4
+                    </div>
+                    <h4 className="font-semibold mb-2">Confirmation</h4>
+                    <p className="text-neutral-600">
+                      Receive a confirmation text with your scheduled cleaning date and time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* FAQ Section */}
+              <div className="bg-neutral-50 p-8 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Frequently Asked Questions About Quotes</h3>
                 
                 <div className="space-y-6">

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import TestimonialCard from '@/components/shared/TestimonialCard';
-import GoogleReviewsWidget from '@/components/shared/GoogleReviewsWidget';
+import GoogleReviewsEmbed from '@/components/shared/GoogleReviewsEmbed';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
 import { ReviewSchema } from '@/lib/schema';
@@ -12,8 +12,10 @@ const Reviews = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Your Google Place ID
-  const googlePlaceId = 'GOOGLE_API_KEY'; // Your Google Place ID
+  // Your Google API key and Place ID
+  const googleApiKey = 'AIzaSyBJcszhgIhOQPMjadpJ3M8srAlgZNpjFmw';
+  // This is a placeholder - replace with your actual Google Place ID when available
+  const googlePlaceId = 'ChIJN1t_tDeuEmsRUsoyG83frY4';
 
   return (
     <>
@@ -56,21 +58,8 @@ const Reviews = () => {
             </div>
             
             <div className="max-w-5xl mx-auto">
-              {/* Google Reviews Widget */}
-              <GoogleReviewsWidget placeId={googlePlaceId} />
-              
-              {/* Google Review Button */}
-              <div className="mt-8 text-center">
-                <a 
-                  href="https://www.google.com/maps?cid=123456789" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary-dark transition"
-                >
-                  <i className="fab fa-google text-xl mr-2"></i>
-                  <span>View All Google Reviews</span>
-                </a>
-              </div>
+              {/* Google Reviews Embed */}
+              <GoogleReviewsEmbed placeId={googlePlaceId} apiKey={googleApiKey} />
             </div>
           </div>
         </section>
@@ -102,7 +91,7 @@ const Reviews = () => {
             
             <div className="flex flex-wrap justify-center gap-6">
               <a 
-                href="https://www.google.com/maps?cid=123456789" 
+                href={`https://search.google.com/local/writereview?placeid=${googlePlaceId}`}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-white border border-neutral-300 rounded-md hover:bg-neutral-50 transition"

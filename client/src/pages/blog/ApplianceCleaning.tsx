@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
 import kitchenImage from '@/assets/Kitchen deep cleaning.jpg';
+import { ApplianceCleaningSchema } from '@/lib/holidaySchema';
 
 const ApplianceCleaning = () => {
   // Scroll to top when the page loads
@@ -17,6 +18,7 @@ const ApplianceCleaning = () => {
         description="Learn professional techniques for deep cleaning inside appliances including refrigerators, ovens, dishwashers, and microwaves to extend their life and improve performance."
         ogImage={kitchenImage}
       />
+      <ApplianceCleaningSchema />
       
       <main className="bg-white">
         {/* Blog Header */}

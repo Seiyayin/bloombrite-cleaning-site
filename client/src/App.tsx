@@ -7,6 +7,8 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import ServicesOverview from "@/pages/ServicesOverview";
 import ServiceDetail from "@/pages/ServiceDetail";
+import PowerWashing from "@/pages/services/PowerWashing";
+import CarpetCleaning from "@/pages/services/CarpetCleaning";
 import LocationsOverview from "@/pages/LocationsOverview";
 import LocationDetail from "@/pages/LocationDetail";
 import Contact from "@/pages/Contact";
@@ -26,6 +28,8 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/services" component={ServicesOverview} />
+      <Route path="/services/power-washing" component={PowerWashing} />
+      <Route path="/services/carpet-cleaning" component={CarpetCleaning} />
       <Route path="/services/:slug" component={ServiceDetail} />
       <Route path="/locations" component={LocationsOverview} />
       <Route path="/locations/:slug" component={LocationDetail} />

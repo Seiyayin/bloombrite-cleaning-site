@@ -1,9 +1,4 @@
-import { useState } from 'react';
-import QuoteForm from './QuoteForm';
-
 const QuoteSection = () => {
-  const [showForm, setShowForm] = useState(false);
-  
   return (
     <section id="get-quote" className="py-20 bg-neutral-50">
       <div className="container mx-auto px-4">
@@ -48,59 +43,52 @@ const QuoteSection = () => {
                 </div>
               </div>
             </div>
-            <div className="md:w-1/2 p-8 md:p-12">
-              {!showForm ? (
-                <div className="flex flex-col h-full justify-center">
-                  <h3 className="text-2xl font-semibold mb-4">Ready to Get Started?</h3>
-                  <p className="text-neutral-600 mb-8">
-                    Fill out our easy form and receive a personalized quote within about 1 hour during business hours.
-                  </p>
-                  
-                  <button 
-                    onClick={() => setShowForm(true)}
-                    className="px-6 py-4 bg-primary text-white font-bold rounded-md hover:bg-opacity-90 transition shadow-md text-center"
-                  >
-                    Request a Quote Now
-                  </button>
-                  
-                  <div className="mt-8 pt-6 border-t border-neutral-200">
-                    <p className="font-semibold mb-3">For immediate assistance:</p>
-                    <div className="flex items-center mb-3">
-                      <i className="fas fa-phone text-primary mr-3"></i>
-                      <a href="tel:7344899908" className="hover:text-primary">(734) 489-9908</a>
-                    </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-envelope text-primary mr-3"></i>
-                      <a href="mailto:sales@bloombritecleaning.com" className="hover:text-primary">sales@bloombritecleaning.com</a>
-                    </div>
-                  </div>
-                  
-                  <div className="mt-6 text-center">
-                    <a 
-                      href="https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/new?source=social_media" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline"
-                    >
-                      Or use our Jobber client portal →
-                    </a>
-                  </div>
+            <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+              <h3 className="text-2xl font-semibold mb-4">Ready to Get Started?</h3>
+              
+              {/* Quote Process */}
+              <div className="mb-8 bg-neutral-50 p-5 rounded-md">
+                <h4 className="font-semibold mb-3 text-primary">Our Simple Quote Process:</h4>
+                <ol className="space-y-3">
+                  <li className="flex">
+                    <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary text-white flex items-center justify-center mr-3 mt-0.5 text-sm font-bold">1</div>
+                    <p><span className="font-medium">Submit Request</span> - Fill out our simple quote form</p>
+                  </li>
+                  <li className="flex">
+                    <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary text-white flex items-center justify-center mr-3 mt-0.5 text-sm font-bold">2</div>
+                    <p><span className="font-medium">Receive Quote</span> - Get your quote within about 1 hour</p>
+                  </li>
+                  <li className="flex">
+                    <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary text-white flex items-center justify-center mr-3 mt-0.5 text-sm font-bold">3</div>
+                    <p><span className="font-medium">Approve Quote</span> - Review and approve if it meets your needs</p>
+                  </li>
+                  <li className="flex">
+                    <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary text-white flex items-center justify-center mr-3 mt-0.5 text-sm font-bold">4</div>
+                    <p><span className="font-medium">Confirmation</span> - Receive a confirmation text with your scheduled cleaning date</p>
+                  </li>
+                </ol>
+              </div>
+              
+              <a 
+                href="https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/new?source=social_media" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-6 py-4 bg-primary text-white font-bold rounded-md hover:bg-opacity-90 transition shadow-md text-center"
+              >
+                Request Your Quote Now
+              </a>
+              
+              <div className="mt-8 pt-6 border-t border-neutral-200">
+                <p className="font-semibold mb-3">For immediate assistance:</p>
+                <div className="flex items-center mb-3">
+                  <i className="fas fa-phone text-primary mr-3"></i>
+                  <a href="tel:7344899908" className="hover:text-primary">(734) 489-9908</a>
                 </div>
-              ) : (
-                <div>
-                  <div className="flex justify-between items-center mb-6">
-                    <h3 className="text-2xl font-semibold">Request Your Quote</h3>
-                    <button 
-                      onClick={() => setShowForm(false)}
-                      className="text-neutral-500 hover:text-primary"
-                    >
-                      <i className="fas fa-arrow-left mr-2"></i>
-                      Back
-                    </button>
-                  </div>
-                  <QuoteForm />
+                <div className="flex items-center">
+                  <i className="fas fa-envelope text-primary mr-3"></i>
+                  <a href="mailto:sales@bloombritecleaning.com" className="hover:text-primary">sales@bloombritecleaning.com</a>
                 </div>
-              )}
+              </div>
             </div>
           </div>
         </div>

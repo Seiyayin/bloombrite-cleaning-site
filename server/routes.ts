@@ -27,23 +27,108 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.post('/api/quote', async (req, res) => {
     try {
-      const { name, email, phone, service, location, message } = req.body;
+      const { 
+        name, 
+        email, 
+        phone, 
+        service, 
+        address, 
+        city, 
+        zip, 
+        message, 
+        preferredDate, 
+        preferredTime 
+      } = req.body;
       
-      // Log the quote request (in a real app, you'd save to a database or send an email)
+      // Log the quote request
       console.log('Quote request submission:', {
         name,
         email,
         phone,
         service,
-        location,
+        address,
+        city,
+        zip,
         message,
+        preferredDate,
+        preferredTime,
         timestamp: new Date()
       });
       
-      res.status(200).json({ success: true, message: 'Quote request submitted successfully' });
+      // Here you would forward this data to Jobber API
+      // When you are ready to integrate with Jobber, you'll make an API call to their service
+      // For example:
+      /*
+      const jobberResponse = await fetch('https://api.getjobber.com/api/v2/clients', {
+        method: 'POST',
+        headers: {
+          'X-API-KEY': process.env.JOBBER_API_KEY,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          client: {
+            name: name,
+            email: email,
+            phone: phone,
+            address: {
+              street: address,
+              city: city,
+              postal_code: zip
+            }
+          }
+        })
+      });
+      */
+      
+      // For now, we'll just return success and wait for the Jobber webhook callback
+      res.status(200).json({ 
+        success: true, 
+        message: 'Quote request submitted successfully! You will receive your quote within about 1 hour during business hours.' 
+      });
     } catch (error) {
       console.error('Error processing quote request:', error);
       res.status(500).json({ success: false, message: 'Failed to process your request' });
+    }
+  });
+  
+  // Jobber Webhook Receiver
+  app.post('/api/jobber-webhook', (req, res) => {
+    try {
+      // Get the webhook payload from Jobber
+      const webhookData = req.body;
+      
+      console.log('Received Jobber webhook:', webhookData);
+      
+      // Process the webhook data based on the event type
+      // Common Jobber webhook events: quote.created, quote.approved, job.completed, etc.
+      const eventType = webhookData.event || webhookData.type;
+      
+      switch(eventType) {
+        case 'quote.created':
+          console.log('Quote created in Jobber:', webhookData.data);
+          // Here you could update your database or notify the client
+          break;
+          
+        case 'quote.approved':
+          console.log('Quote approved in Jobber:', webhookData.data);
+          // Maybe send a confirmation email or update your database
+          break;
+          
+        case 'job.scheduled':
+          console.log('Job scheduled in Jobber:', webhookData.data);
+          // Update your scheduling calendar or database
+          break;
+          
+        default:
+          console.log(`Unhandled webhook event type: ${eventType}`);
+      }
+      
+      // Always respond with 200 to acknowledge receipt
+      res.status(200).json({ success: true, message: 'Webhook received successfully' });
+    } catch (error) {
+      console.error('Error processing Jobber webhook:', error);
+      // Still return 200 to prevent Jobber from retrying
+      res.status(200).json({ success: false, message: 'Error processing webhook, but received' });
     }
   });
 

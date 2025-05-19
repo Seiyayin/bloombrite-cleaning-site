@@ -1,4 +1,9 @@
+import { useState } from 'react';
+import QuoteForm from './QuoteForm';
+
 const QuoteSection = () => {
+  const [showForm, setShowForm] = useState(false);
+  
   return (
     <section id="get-quote" className="py-20 bg-neutral-50">
       <div className="container mx-auto px-4">
@@ -20,7 +25,7 @@ const QuoteSection = () => {
                 </div>
                 <div className="flex items-start">
                   <i className="fas fa-check-circle mt-1 mr-3 text-accent"></i>
-                  <p>Quick response time</p>
+                  <p>Quick response within 1 hour</p>
                 </div>
                 <div className="flex items-start">
                   <i className="fas fa-check-circle mt-1 mr-3 text-accent"></i>
@@ -28,7 +33,7 @@ const QuoteSection = () => {
                 </div>
               </div>
               <div className="mt-8 bg-white/10 p-5 rounded-md">
-                <p className="font-semibold mb-3">Why choose BloomBrite Cleaning?</p>
+                <p className="font-semibold mb-3">Why choose Bloombrite Cleaning?</p>
                 <div className="flex items-start mb-2">
                   <i className="fas fa-star text-yellow-400 mt-1 mr-3"></i>
                   <p>Professional, insured cleaning team</p>
@@ -43,32 +48,59 @@ const QuoteSection = () => {
                 </div>
               </div>
             </div>
-            <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-              <h3 className="text-2xl font-semibold mb-4">Ready to Get Started?</h3>
-              <p className="text-neutral-600 mb-8">
-                Click the button below to fill out our quick form and receive a personalized quote for your cleaning needs through our secure client portal.
-              </p>
-              
-              <a 
-                href="https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/new?source=social_media" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="px-6 py-4 bg-primary text-white font-bold rounded-md hover:bg-opacity-90 transition shadow-md text-center"
-              >
-                Request a Quote
-              </a>
-              
-              <div className="mt-8 pt-6 border-t border-neutral-200">
-                <p className="font-semibold mb-3">For immediate assistance:</p>
-                <div className="flex items-center mb-3">
-                  <i className="fas fa-phone text-primary mr-3"></i>
-                  <a href="tel:7344899908" className="hover:text-primary">(734) 489-9908</a>
+            <div className="md:w-1/2 p-8 md:p-12">
+              {!showForm ? (
+                <div className="flex flex-col h-full justify-center">
+                  <h3 className="text-2xl font-semibold mb-4">Ready to Get Started?</h3>
+                  <p className="text-neutral-600 mb-8">
+                    Fill out our easy form and receive a personalized quote within about 1 hour during business hours.
+                  </p>
+                  
+                  <button 
+                    onClick={() => setShowForm(true)}
+                    className="px-6 py-4 bg-primary text-white font-bold rounded-md hover:bg-opacity-90 transition shadow-md text-center"
+                  >
+                    Request a Quote Now
+                  </button>
+                  
+                  <div className="mt-8 pt-6 border-t border-neutral-200">
+                    <p className="font-semibold mb-3">For immediate assistance:</p>
+                    <div className="flex items-center mb-3">
+                      <i className="fas fa-phone text-primary mr-3"></i>
+                      <a href="tel:7344899908" className="hover:text-primary">(734) 489-9908</a>
+                    </div>
+                    <div className="flex items-center">
+                      <i className="fas fa-envelope text-primary mr-3"></i>
+                      <a href="mailto:sales@bloombritecleaning.com" className="hover:text-primary">sales@bloombritecleaning.com</a>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-6 text-center">
+                    <a 
+                      href="https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/new?source=social_media" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      Or use our Jobber client portal →
+                    </a>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <i className="fas fa-envelope text-primary mr-3"></i>
-                  <a href="mailto:sales@bloombritecleaning.com" className="hover:text-primary">sales@bloombritecleaning.com</a>
+              ) : (
+                <div>
+                  <div className="flex justify-between items-center mb-6">
+                    <h3 className="text-2xl font-semibold">Request Your Quote</h3>
+                    <button 
+                      onClick={() => setShowForm(false)}
+                      className="text-neutral-500 hover:text-primary"
+                    >
+                      <i className="fas fa-arrow-left mr-2"></i>
+                      Back
+                    </button>
+                  </div>
+                  <QuoteForm />
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link, useRoute } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
-import { ServiceSchema, DeepCleaningSchema, MoveInOutCleaningSchema } from '@/lib/schema';
+import { ServiceSchema, DeepCleaningSchema, MoveInOutCleaningSchema, PowerWashingSchema, CarpetCleaningSchema } from '@/lib/schema';
 import { services } from '@/data/services';
 import { locations } from '@/data/locations';
 
@@ -38,11 +38,15 @@ const ServiceDetail = () => {
         description={service.metaDescription}
         ogImage={service.imageUrl}
       />
-      {/* Render specialized schema for deep cleaning */}
+      {/* Render specialized schema for services */}
       {slug === 'deep-cleaning' ? (
         <DeepCleaningSchema />
       ) : slug === 'move-in-out-cleaning' ? (
         <MoveInOutCleaningSchema />
+      ) : slug === 'power-washing' ? (
+        <PowerWashingSchema />
+      ) : slug === 'carpet-cleaning' ? (
+        <CarpetCleaningSchema />
       ) : (
         <ServiceSchema 
           name={service.title}

@@ -167,6 +167,143 @@ export const MoveInOutCleaningSchema = () => {
   return <SchemaOrg>{schema}</SchemaOrg>;
 };
 
+// Power Washing Service Schema
+export const PowerWashingSchema = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Power Washing",
+    "name": "Power Washing Services",
+    "url": "https://www.bloombritecleaning.com/services/power-washing",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Bloombrite Cleaning",
+      "telephone": "734-489-9908",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2207 Evergreen St",
+        "addressLocality": "Wixom",
+        "addressRegion": "MI",
+        "postalCode": "48393",
+        "addressCountry": "US"
+      }
+    },
+    "description": "Professional power washing services for home exteriors, driveways, decks, and patios in Michigan. We remove dirt, grime, mold, and mildew to restore your property's appearance.",
+    "offers": {
+      "@type": "Offer",
+      "price": "180",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2025-12-31"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Wixom, MI"
+      },
+      {
+        "@type": "City",
+        "name": "Novi, MI"
+      },
+      {
+        "@type": "City",
+        "name": "Livonia, MI"
+      }
+    ],
+    "serviceOutput": {
+      "@type": "Thing",
+      "name": "Clean exterior surfaces",
+      "description": "Beautifully cleaned and restored exterior surfaces free from dirt, mold, mildew, and stains."
+    },
+    "keywords": "power washing, pressure washing, exterior cleaning, driveway cleaning, deck cleaning, patio cleaning, house washing, Michigan"
+  };
+
+  return <SchemaOrg>{schema}</SchemaOrg>;
+};
+
+// Carpet Cleaning Service Schema
+export const CarpetCleaningSchema = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Carpet Cleaning",
+    "name": "Carpet Cleaning Services",
+    "url": "https://www.bloombritecleaning.com/services/carpet-cleaning",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Bloombrite Cleaning",
+      "telephone": "734-489-9908",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2207 Evergreen St",
+        "addressLocality": "Wixom",
+        "addressRegion": "MI",
+        "postalCode": "48393",
+        "addressCountry": "US"
+      }
+    },
+    "description": "Professional carpet cleaning services using hot water extraction technology to remove deep stains, allergens, and odors while extending the life of your carpets.",
+    "offers": {
+      "@type": "Offer",
+      "price": "150",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2025-12-31"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Wixom, MI"
+      },
+      {
+        "@type": "City",
+        "name": "Novi, MI"
+      },
+      {
+        "@type": "City",
+        "name": "Livonia, MI"
+      }
+    ],
+    "serviceOutput": {
+      "@type": "Thing",
+      "name": "Clean, fresh carpets",
+      "description": "Thoroughly cleaned carpets free from deep dirt, stains, allergens, and odors with extended lifespan."
+    },
+    "keywords": "carpet cleaning, steam cleaning, carpet stain removal, allergen removal, carpet odor removal, hot water extraction, Michigan",
+    "tool": {
+      "@type": "HowTo",
+      "name": "Carpet Cleaning Process",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Pre-inspection",
+          "text": "Identify problem areas and determine appropriate cleaning method"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pre-treatment",
+          "text": "Apply specialized solutions to break down dirt and stains"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Hot water extraction",
+          "text": "Deep clean with professional-grade equipment to remove dirt and cleaning solution"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Stain treatment",
+          "text": "Apply specialized treatments for stubborn stains"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Grooming",
+          "text": "Final grooming of carpet fibers to accelerate drying and enhance appearance"
+        }
+      ]
+    }
+  };
+
+  return <SchemaOrg>{schema}</SchemaOrg>;
+};
+
 export const ServiceSchema = ({ 
   name, 
   description, 

@@ -1,5 +1,72 @@
 export const services = [
   {
+    id: "power-washing",
+    slug: "power-washing",
+    title: "Power Washing",
+    shortDescription: "Professional power washing services to restore the appearance of your home's exterior surfaces.",
+    metaDescription: "Expert power washing services in Michigan for driveways, siding, decks, and patios. Restore your home's exterior with our professional pressure washing services.",
+    description: `
+      <p>Our Power Washing service delivers professional-grade cleaning for your home's exterior surfaces, effectively removing dirt, grime, mold, mildew, and stains that regular cleaning can't address. Power washing not only improves your property's appearance but also helps maintain its value and prevent damage.</p>
+      
+      <p>Our trained technicians use commercial-grade equipment with adjustable pressure settings tailored to each surface type, ensuring effective cleaning without damage. We use environmentally friendly cleaning solutions that break down stubborn dirt and contaminants while being safe for your landscaping and pets.</p>
+      
+      <p>Power washing is recommended as seasonal maintenance to keep your home's exterior looking its best. Many homeowners schedule this service annually in spring to remove winter buildup or before painting/staining projects.</p>
+    `,
+    imageUrl: "/src/assets/window washing.jpg",
+    startingPrice: "$180",
+    included: [
+      "Professional-grade power washing equipment",
+      "Environmentally friendly cleaning solutions",
+      "Adjustable pressure settings for different surfaces",
+      "Removal of dirt, grime, mold, and mildew",
+      "Pre-treatment of heavily soiled areas",
+      "Careful attention around windows, doors, and plants",
+      "Post-cleaning inspection with customer",
+      "Protection of fragile landscaping and fixtures"
+    ],
+    additionalServices: [
+      "Roof cleaning (low pressure system)",
+      "Fence cleaning and brightening",
+      "Rust and hard water stain removal",
+      "Gutter exterior cleaning",
+      "Paint preparation cleaning"
+    ]
+  },
+  {
+    id: "carpet-cleaning",
+    slug: "carpet-cleaning",
+    title: "Carpet Cleaning",
+    shortDescription: "Professional deep carpet cleaning to remove stains, odors, and allergens, extending the life of your carpet.",
+    metaDescription: "Professional carpet cleaning services in Michigan. We remove deep stains, allergens, and odors while extending the life of your carpets.",
+    description: `
+      <p>Our Carpet Cleaning service uses hot water extraction (steam cleaning) technology to deep clean carpets, removing embedded dirt, allergens, stains, and odors that regular vacuuming can't eliminate. This professional-grade cleaning not only improves the appearance of your carpets but also contributes to a healthier indoor environment.</p>
+      
+      <p>Our trained technicians follow a thorough process that includes pre-treatment of spots and heavily soiled areas, powerful extraction cleaning, and quick drying techniques. We use eco-friendly cleaning solutions that are effective yet safe for your family and pets.</p>
+      
+      <p>Professional carpet cleaning is recommended every 12-18 months to maintain carpet appearance and extend its lifespan. Many clients schedule this service seasonally or before special events to ensure their homes look their best.</p>
+    `,
+    imageUrl: "/src/assets/living room deep cleaning.jpg",
+    startingPrice: "$150",
+    included: [
+      "Pre-inspection and identification of problem areas",
+      "Moving of light furniture (couches, chairs, tables)",
+      "Pre-treatment of spots and heavily soiled areas",
+      "Hot water extraction (steam) cleaning",
+      "Eco-friendly, non-toxic cleaning solutions",
+      "Stain treatment for common spots",
+      "Deodorizing treatment",
+      "Quick-dry techniques",
+      "Final grooming of carpet fibers"
+    ],
+    additionalServices: [
+      "Carpet protector application",
+      "Pet odor treatments",
+      "Red stain removal",
+      "Area rug cleaning",
+      "Upholstery cleaning"
+    ]
+  },
+  {
     id: "standard-cleaning",
     slug: "standard-cleaning",
     title: "Standard Cleaning",

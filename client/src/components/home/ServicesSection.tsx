@@ -1,11 +1,6 @@
 import { Link } from 'wouter';
 import ServiceCard from '../shared/ServiceCard';
 import { services } from '@/data/services';
-import bathroomImage from '@/assets/bathroom tile brushing.jpg';
-import bathroomGlassImage from '@/assets/hard water bathroom glass.jpg';
-import kitchenImage from '@/assets/Kitchen deep cleaning.jpg';
-import tallWindowImage from '@/assets/tall window cleaning.jpg';
-import powerWashingImage from '@/assets/power washing.jpg';
 
 const ServicesSection = () => {
   // Display only the first 6 services on the homepage
@@ -52,12 +47,12 @@ const ServicesSection = () => {
             <div className="relative h-full">
               <div className="grid grid-cols-2 gap-1 h-full">
                 <img 
-                  src={bathroomImage} 
+                  src="/images/bathroom tile brushing.jpg" 
                   alt="Bathroom Tile Cleaning" 
                   className="w-full h-64 object-cover"
                 />
                 <img 
-                  src={bathroomGlassImage} 
+                  src="/images/hard water bathroom glass.jpg" 
                   alt="Shower Glass Cleaning" 
                   className="w-full h-64 object-cover"
                 />
@@ -74,7 +69,7 @@ const ServicesSection = () => {
           <div className="grid md:grid-cols-2 items-center">
             <div className="order-2 md:order-1 relative h-full">
               <img 
-                src={tallWindowImage} 
+                src="/images/tall window cleaning.jpg" 
                 alt="Window Cleaning Services" 
                 className="w-full h-full object-cover"
               />
@@ -138,7 +133,7 @@ const ServicesSection = () => {
             </div>
             <div className="relative h-full">
               <img 
-                src={powerWashingImage} 
+                src="/images/power washing.jpg" 
                 alt="Power Washing Services" 
                 className="w-full h-full object-cover"
               />
@@ -194,7 +189,7 @@ const ServicesSection = () => {
           <div className="grid md:grid-cols-2 items-center">
             <div className="order-2 md:order-1 relative h-full">
               <img 
-                src={kitchenImage} 
+                src="/images/Kitchen deep cleaning.jpg" 
                 alt="Kitchen Deep Cleaning" 
                 className="w-full h-full object-cover"
               />

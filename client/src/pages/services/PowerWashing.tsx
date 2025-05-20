@@ -3,7 +3,6 @@ import SeoHead from '@/components/shared/SeoHead';
 import { PowerWashingSchema } from '@/lib/schema';
 import CallToAction from '@/components/home/CallToAction';
 import { services } from '@/data/services';
-import powerWashingImage from '@/assets/power washing.jpg';
 
 const PowerWashingPage = () => {
   const service = services.find(s => s.id === "power-washing");
@@ -35,7 +34,7 @@ const PowerWashingPage = () => {
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img 
-                  src={powerWashingImage} 
+                  src="/images/power washing.jpg" 
                   alt="Power Washing Services" 
                   className="w-full h-full object-cover"
                 />

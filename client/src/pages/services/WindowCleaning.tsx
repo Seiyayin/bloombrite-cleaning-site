@@ -160,7 +160,7 @@ const WindowCleaning = () => {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src={windowTracksImage} 
+                  src="/images/tracks cleaning.jpg" 
                   alt="Window track cleaning" 
                   className="w-full h-60 object-cover rounded-md mb-6"
                 />

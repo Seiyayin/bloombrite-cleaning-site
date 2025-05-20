@@ -44,17 +44,12 @@ const ServicesSection = () => {
                 Learn More
               </Link>
             </div>
-            <div className="relative h-full">
-              <div className="grid grid-cols-1 h-full">
-                <img 
-                  src="/images/bathroom tile brushing.jpg" 
-                  alt="Bathroom Tile Cleaning" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 text-white text-sm">
-                <p>Our professional cleaners are trained in specialized bathroom cleaning techniques</p>
-              </div>
+            <div className="relative h-full overflow-hidden">
+              <img 
+                src="/images/bathroom-demo.png" 
+                alt="Bathroom Cleaning Services" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -62,9 +57,9 @@ const ServicesSection = () => {
         {/* Window Cleaning Feature */}
         <div className="mb-16 bg-white rounded-lg overflow-hidden shadow-lg">
           <div className="grid md:grid-cols-2 items-center">
-            <div className="order-2 md:order-1 relative h-full">
+            <div className="order-2 md:order-1 relative h-full overflow-hidden bg-neutral-100">
               <img 
-                src="/images/tall window cleaning.jpg" 
+                src="/images/Window cleaning.jpg" 
                 alt="Window Cleaning Services" 
                 className="w-full h-full object-cover"
               />
@@ -126,9 +121,9 @@ const ServicesSection = () => {
                 Learn More
               </Link>
             </div>
-            <div className="relative h-full">
+            <div className="relative h-full overflow-hidden bg-neutral-100">
               <img 
-                src="/images/power washing.jpg" 
+                src="/images/powerwashing.jpg" 
                 alt="Power Washing Services" 
                 className="w-full h-full object-cover"
               />

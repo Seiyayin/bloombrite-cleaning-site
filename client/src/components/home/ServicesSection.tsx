@@ -17,43 +17,6 @@ const ServicesSection = () => {
           </p>
         </div>
         
-        {/* Bathroom Deep Cleaning */}
-        <div className="mb-16 bg-white rounded-lg overflow-hidden shadow-lg">
-          <div className="grid md:grid-cols-2 items-center">
-            <div className="p-8">
-              <h3 className="text-2xl font-bold mb-4">Bathroom Deep Cleaning</h3>
-              <p className="text-neutral-600 mb-6">
-                Our bathroom deep cleaning service ensures every surface shines, from tiles to fixtures. 
-                We remove hard water stains, soap scum, and sanitize all surfaces for a fresh, clean bathroom.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">✓</span>
-                  <span>Tile & grout cleaning</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">✓</span>
-                  <span>Shower door treatment for hard water stains</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">✓</span>
-                  <span>Complete fixture cleaning & polishing</span>
-                </li>
-              </ul>
-              <Link href="/services/bathroom-cleaning" className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition">
-                Learn More
-              </Link>
-            </div>
-            
-            {/* Simple static version to match design */}
-            <div className="relative h-full bg-gray-200 flex items-center justify-center" style={{minHeight: "350px"}}>
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-800 to-transparent p-4">
-                <p className="text-white text-sm">Our professional cleaners are trained in specialized bathroom cleaning techniques</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
         {/* Window Cleaning Feature */}
         <div className="mb-16 bg-white rounded-lg overflow-hidden shadow-lg">
           <div className="grid md:grid-cols-2 items-center">

@@ -10,7 +10,7 @@ const Hero = () => {
             <span className="text-primary">Professional Cleaning</span> Services in Michigan
           </h1>
           <p className="text-xl mb-8 text-gray-600">
-            Transform your space with BloomBrite's expert cleaning services. Spotless results, guaranteed satisfaction.
+            Transform your space with Bloombrite's expert cleaning services. Spotless results, guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
@@ -44,7 +44,7 @@ const Hero = () => {
           <div className="relative rounded-lg overflow-hidden shadow-xl">
             <img 
               src={teamImage} 
-              alt="BloomBrite Cleaning Team" 
+              alt="Bloombrite Cleaning Team" 
               className="w-full h-auto object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white">

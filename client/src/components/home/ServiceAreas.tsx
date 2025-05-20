@@ -8,7 +8,7 @@ const ServiceAreas = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Service Areas</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-            BloomBrite Cleaning proudly serves these Michigan communities and surrounding areas.
+            Bloombrite Cleaning proudly serves these Michigan communities and surrounding areas.
           </p>
         </div>
         

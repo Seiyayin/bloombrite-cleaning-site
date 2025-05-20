@@ -18,7 +18,9 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="block">
-          <span className="text-2xl font-bold text-primary">Bloombrite Cleaning</span>
+          <span className="text-2xl font-bold">
+            <span className="text-primary">Bloombrite</span> <span className="text-accent">Cleaning</span>
+          </span>
         </Link>
         
         {/* Desktop Navigation */}

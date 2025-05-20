@@ -92,7 +92,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-neutral-800 text-center text-neutral-400 text-sm">
-          <p className="mb-4">&copy; {new Date().getFullYear()} Bloombrite Cleaning. All rights reserved.</p>
+          <p className="mb-4">&copy; {new Date().getFullYear()} <span className="text-primary">Bloombrite</span> <span className="text-accent">Cleaning</span>. All rights reserved.</p>
           <div className="flex justify-center space-x-6">
             <Link href="/privacy-policy" className="hover:text-white transition">Privacy Policy</Link>
             <Link href="/terms-of-service" className="hover:text-white transition">Terms of Service</Link>

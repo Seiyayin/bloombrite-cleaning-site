@@ -17,7 +17,7 @@ const ServicesSection = () => {
           </p>
         </div>
         
-        {/* Featured service with image */}
+        {/* Bathroom Deep Cleaning */}
         <div className="mb-16 bg-white rounded-lg overflow-hidden shadow-lg">
           <div className="grid md:grid-cols-2 items-center">
             <div className="p-8">
@@ -44,14 +44,11 @@ const ServicesSection = () => {
                 Learn More
               </Link>
             </div>
-            <div className="relative h-full overflow-hidden bg-neutral-100">
-              <img 
-                src="/bathroom-tile.jpg" 
-                alt="Bathroom Deep Cleaning" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 text-white text-sm">
-                <p>Our professional cleaners are trained in specialized bathroom cleaning techniques</p>
+            
+            {/* Simple static version to match design */}
+            <div className="relative h-full bg-gray-200 flex items-center justify-center" style={{minHeight: "350px"}}>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-800 to-transparent p-4">
+                <p className="text-white text-sm">Our professional cleaners are trained in specialized bathroom cleaning techniques</p>
               </div>
             </div>
           </div>

@@ -161,7 +161,7 @@ const ServicesSection = () => {
                 Learn More
               </Link>
             </div>
-            <div className="relative h-full">
+            <div className="relative h-full overflow-hidden bg-neutral-100">
               <img 
                 src="/images/living room deep cleaning.jpg" 
                 alt="Carpet Cleaning Services" 
@@ -177,7 +177,7 @@ const ServicesSection = () => {
         {/* Kitchen cleaning feature */}
         <div className="mb-16 bg-white rounded-lg overflow-hidden shadow-lg">
           <div className="grid md:grid-cols-2 items-center">
-            <div className="order-2 md:order-1 relative h-full">
+            <div className="order-2 md:order-1 relative h-full overflow-hidden bg-neutral-100">
               <img 
                 src="/images/Kitchen deep cleaning.jpg" 
                 alt="Kitchen Deep Cleaning" 

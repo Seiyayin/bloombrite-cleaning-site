@@ -220,6 +220,85 @@ export const PowerWashingSchema = () => {
   return <SchemaOrg>{schema}</SchemaOrg>;
 };
 
+// Window Cleaning Service Schema
+export const WindowCleaningSchema = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Window Cleaning",
+    "name": "Window Cleaning Services",
+    "url": "https://www.bloombritecleaning.com/services/window-cleaning",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Bloombrite Cleaning",
+      "telephone": "734-489-9908",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2207 Evergreen St",
+        "addressLocality": "Wixom",
+        "addressRegion": "MI",
+        "postalCode": "48393",
+        "addressCountry": "US"
+      }
+    },
+    "description": "Professional window cleaning services for interior and exterior windows, including tracks, frames, and screens. We deliver streak-free, crystal-clear results to enhance your home's appearance and natural light.",
+    "offers": {
+      "@type": "Offer",
+      "price": "160",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2025-12-31"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Wixom, MI"
+      },
+      {
+        "@type": "City",
+        "name": "Novi, MI"
+      },
+      {
+        "@type": "City",
+        "name": "Livonia, MI"
+      }
+    ],
+    "serviceOutput": {
+      "@type": "Thing",
+      "name": "Clean, streak-free windows",
+      "description": "Crystal-clear windows that enhance natural light and curb appeal, with clean tracks, frames, and screens."
+    },
+    "keywords": "window cleaning, window washing, streak-free windows, window track cleaning, screen cleaning, Michigan window cleaners",
+    "tool": {
+      "@type": "HowTo",
+      "name": "Window Cleaning Process",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Interior and exterior glass cleaning",
+          "text": "Professional cleaning of all window panes with streak-free results"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Track and sill cleaning",
+          "text": "Detailed cleaning of all window tracks and sills to remove dirt and debris"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Frame cleaning",
+          "text": "Thorough wiping and detailing of window frames"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Screen cleaning",
+          "text": "Removal and cleaning of all window screens"
+        }
+      ]
+    }
+  };
+
+  return <SchemaOrg>{schema}</SchemaOrg>;
+};
+
 // Carpet Cleaning Service Schema
 export const CarpetCleaningSchema = () => {
   const schema = {

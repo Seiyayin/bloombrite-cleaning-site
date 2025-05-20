@@ -1,5 +1,41 @@
 export const services = [
   {
+    id: "window-cleaning",
+    slug: "window-cleaning",
+    title: "Window Cleaning",
+    shortDescription: "Professional window cleaning services for interior and exterior windows, including tracks, frames and screens.",
+    metaDescription: "Professional window cleaning services in Michigan. We clean windows inside and out, including tracks, frames, and screens for a crystal-clear view.",
+    description: `
+      <p>Our comprehensive window cleaning service removes dirt, dust, water spots, and grime from your windows inside and out. We pay attention to every detail, cleaning not only the glass but also the frames, sills, and tracks for a complete cleaning experience.</p>
+      
+      <p>We use professional-grade equipment and eco-friendly cleaning solutions to ensure streak-free, crystal-clear results that let in maximum natural light and enhance your home's appearance.</p>
+      
+      <p>Regular professional window cleaning not only improves your home's appearance but also extends the life of your windows by preventing etching and damage from environmental contaminants.</p>
+    `,
+    imageUrl: "/src/assets/Window cleaning.jpg",
+    startingPrice: "$160",
+    included: [
+      "Interior and exterior window cleaning",
+      "Window track and sill cleaning",
+      "Window frame wiping and detailing",
+      "Streak-free, spot-free finish",
+      "Screen cleaning",
+      "Eco-friendly cleaning solutions",
+      "Removal of insect debris and cobwebs",
+      "Light fixture cleaning around entrances"
+    ],
+    additionalServices: [
+      "Hard water stain removal",
+      "Window seal inspections",
+      "High-reach window cleaning (over 2 stories)",
+      "Skylight cleaning",
+      "Storm window cleaning",
+      "Glass door cleaning",
+      "Mirror cleaning throughout the home",
+      "Window cleaning maintenance plans"
+    ]
+  },
+  {
     id: "power-washing",
     slug: "power-washing",
     title: "Power Washing",

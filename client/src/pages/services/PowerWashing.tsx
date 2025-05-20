@@ -34,7 +34,7 @@ const PowerWashingPage = () => {
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img 
-                  src={service.imageUrl} 
+                  src="/src/assets/power washing.jpg" 
                   alt="Power Washing Services" 
                   className="w-full h-full object-cover"
                 />

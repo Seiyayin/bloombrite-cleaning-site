@@ -2,6 +2,9 @@ import { useEffect } from 'react';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
 import { WindowCleaningSchema } from '@/lib/schema';
+import windowCleaningImage from '@/assets/Window cleaning.jpg';
+import windowTracksImage from '@/assets/tracks cleaning.jpg';
+import tallWindowImage from '@/assets/tall window cleaning.jpg';
 
 const WindowCleaning = () => {
   // Scroll to top when the page loads

@@ -55,7 +55,7 @@ const PowerWashingPage = () => {
                   landscaping and pets.
                 </p>
                 <div className="bg-primary/10 p-4 rounded-md mb-5">
-                  <h3 className="font-semibold mb-2">Starting at {service.startingPrice}</h3>
+                  <h3 className="font-semibold mb-2">Starting at $320</h3>
                   <p className="text-sm">
                     *Price varies based on property size and condition
                   </p>

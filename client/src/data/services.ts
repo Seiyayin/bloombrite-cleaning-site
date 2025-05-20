@@ -48,8 +48,8 @@ export const services = [
       
       <p>Power washing is recommended as seasonal maintenance to keep your home's exterior looking its best. Many homeowners schedule this service annually in spring to remove winter buildup or before painting/staining projects.</p>
     `,
-    imageUrl: "/src/assets/window washing.jpg",
-    startingPrice: "$180",
+    imageUrl: "/src/assets/power washing.jpg",
+    startingPrice: "$320",
     included: [
       "Professional-grade power washing equipment",
       "Environmentally friendly cleaning solutions",

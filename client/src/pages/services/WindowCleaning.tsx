@@ -31,7 +31,7 @@ const WindowCleaning = () => {
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img 
-                  src="/src/assets/tall window cleaning.jpg" 
+                  src={tallWindowImage} 
                   alt="Window Cleaning Services" 
                   className="w-full h-full object-cover"
                 />
@@ -149,7 +149,7 @@ const WindowCleaning = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/src/assets/Window cleaning.jpg" 
+                  src={windowCleaningImage} 
                   alt="Window cleaning in progress" 
                   className="w-full h-60 object-cover rounded-md mb-6"
                 />
@@ -163,7 +163,7 @@ const WindowCleaning = () => {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/src/assets/tracks cleaning.jpg" 
+                  src={windowTracksImage} 
                   alt="Window track cleaning" 
                   className="w-full h-60 object-cover rounded-md mb-6"
                 />

@@ -44,14 +44,14 @@ const ServicesSection = () => {
                 Learn More
               </Link>
             </div>
-            <div className="relative min-h-[320px] h-full" style={{
-              backgroundImage: `url('/tile.jpg')`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                <p className="text-sm">Our professional cleaners are trained in specialized bathroom cleaning techniques</p>
+            <div className="relative h-full overflow-hidden bg-neutral-100">
+              <img 
+                src="/bathroom-tile.jpg" 
+                alt="Bathroom Deep Cleaning" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 text-white text-sm">
+                <p>Our professional cleaners are trained in specialized bathroom cleaning techniques</p>
               </div>
             </div>
           </div>

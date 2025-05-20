@@ -173,7 +173,7 @@ const ServicesSection = () => {
             </div>
             <div className="relative h-full">
               <img 
-                src="/src/assets/living room deep cleaning.jpg" 
+                src="/images/living room deep cleaning.jpg" 
                 alt="Carpet Cleaning Services" 
                 className="w-full h-full object-cover"
               />

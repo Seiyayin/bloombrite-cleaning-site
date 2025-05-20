@@ -14,7 +14,7 @@ const WindowCleaning = () => {
       <SeoHead
         title="Window Cleaning Services | Bloombrite Cleaning"
         description="Professional window cleaning services in Michigan. We clean windows inside and out, including tracks, frames, and screens for a crystal-clear view."
-        ogImage="/src/assets/tall window cleaning.jpg"
+        ogImage="/images/tall window cleaning.jpg"
       />
 
       <div className="pt-24 pb-16 bg-neutral-50">
@@ -142,11 +142,54 @@ const WindowCleaning = () => {
           </div>
 
           <div className="max-w-5xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold text-center mb-10">Our Window Cleaning Gallery</h2>
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <img 
+                  src="/images/Window cleaning.jpg" 
+                  alt="Window cleaning in progress" 
+                  className="w-full h-52 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="font-bold text-lg">Professional Equipment</h3>
+                  <p className="text-sm text-neutral-600">
+                    Our team uses professional-grade tools for a streak-free finish
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <img 
+                  src="/images/tall window cleaning.jpg" 
+                  alt="Tall window cleaning" 
+                  className="w-full h-52 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="font-bold text-lg">Multi-Story Access</h3>
+                  <p className="text-sm text-neutral-600">
+                    We safely clean windows at any height for complete exterior cleaning
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <img 
+                  src="/images/tracks cleaning.jpg" 
+                  alt="Window track cleaning" 
+                  className="w-full h-52 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="font-bold text-lg">Detail Cleaning</h3>
+                  <p className="text-sm text-neutral-600">
+                    Thorough cleaning of tracks and frames for complete window maintenance
+                  </p>
+                </div>
+              </div>
+            </div>
+            
             <h2 className="text-3xl font-bold text-center mb-10">Our Window Cleaning Process</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/images/Window cleaning.jpg" 
+                  src="/images/window washing.jpg" 
                   alt="Window cleaning in progress" 
                   className="w-full h-60 object-cover rounded-md mb-6"
                 />

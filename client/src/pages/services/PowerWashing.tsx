@@ -100,6 +100,32 @@ const PowerWashingPage = () => {
 
           <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden mb-16">
             <div className="p-8 md:p-10">
+              <h2 className="text-2xl font-bold mb-6">Our Power Washing Gallery</h2>
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="overflow-hidden rounded-lg shadow-md">
+                  <img 
+                    src="/images/powerwashing.jpg" 
+                    alt="Power Washing Equipment" 
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4 bg-primary/5">
+                    <h3 className="font-bold">Professional Equipment</h3>
+                    <p className="text-sm">Our professional-grade equipment ensures thorough cleaning of all surfaces</p>
+                  </div>
+                </div>
+                <div className="overflow-hidden rounded-lg shadow-md">
+                  <img 
+                    src="/images/powerwashing2.jpg" 
+                    alt="Siding Power Washing" 
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4 bg-primary/5">
+                    <h3 className="font-bold">Siding Restoration</h3>
+                    <p className="text-sm">Remove years of dirt, mold and mildew from your home's exterior</p>
+                  </div>
+                </div>
+              </div>
+              
               <h2 className="text-2xl font-bold mb-6">Why Choose Our Power Washing Service</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="flex items-start">

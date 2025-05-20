@@ -177,11 +177,11 @@ const ServicesSection = () => {
           </div>
         </div>
         
-        {/* Other services grid */}
+        {/* Selected services grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-          {displayedServices.map((service) => (
-            <ServiceCard key={service.id} service={service} />
-          ))}
+          <ServiceCard service={services.find(s => s.id === "standard-cleaning")} />
+          <ServiceCard service={services.find(s => s.id === "deep-cleaning")} />
+          <ServiceCard service={services.find(s => s.id === "move-in-out-cleaning")} />
         </div>
         
         <div className="mt-10 text-center">

@@ -10,13 +10,13 @@ const sampleReviews = [
   {
     author_name: "Sarah Johnson",
     rating: 5,
-    text: "Absolutely amazing service! The team at BloomBrite Cleaning transformed my home. They were thorough, professional, and left everything spotless. Will definitely use them again!",
+    text: "Absolutely amazing service! The team at Bloombrite Cleaning transformed my home. They were thorough, professional, and left everything spotless. Will definitely use them again!",
     relative_time_description: "2 months ago"
   },
   {
     author_name: "Michael Thompson",
     rating: 5,
-    text: "I've tried several cleaning services in the area, but BloomBrite is by far the best. They pay attention to every detail and are always reliable. Highly recommend!",
+    text: "I've tried several cleaning services in the area, but Bloombrite is by far the best. They pay attention to every detail and are always reliable. Highly recommend!",
     relative_time_description: "1 month ago"
   },
   {

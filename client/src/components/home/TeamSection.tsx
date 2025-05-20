@@ -12,7 +12,7 @@ const TeamSection = () => {
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Our People</span>
           <h2 className="text-3xl font-bold mb-4 mt-2">Meet Our Team</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-            Our dedicated cleaning professionals are the heart of BloomBrite Cleaning. With thorough training and a passion for excellence, they transform spaces into spotless environments.
+            Our dedicated cleaning professionals are the heart of Bloombrite Cleaning. With thorough training and a passion for excellence, they transform spaces into spotless environments.
           </p>
         </div>
 
@@ -22,14 +22,14 @@ const TeamSection = () => {
               <div className="w-full md:w-1/2 overflow-hidden rounded-lg">
                 <img 
                   src={teamImage} 
-                  alt="BloomBrite Cleaning Team" 
+                  alt="Bloombrite Cleaning Team" 
                   className="w-full h-auto object-cover transform hover:scale-105 transition duration-500"
                 />
               </div>
               <div className="w-full md:w-1/2">
                 <h3 className="text-2xl font-bold mb-3 text-gray-800">Professional Team</h3>
                 <p className="text-neutral-600 mb-4">
-                  Our professional cleaning team brings expertise and dedication to every job. Each team member undergoes extensive training to ensure they deliver the BloomBrite standard of excellence.
+                  Our professional cleaning team brings expertise and dedication to every job. Each team member undergoes extensive training to ensure they deliver the Bloombrite standard of excellence.
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex items-start">
@@ -74,7 +74,7 @@ const TeamSection = () => {
               <div className="w-full md:w-1/2 overflow-hidden rounded-lg">
                 <img 
                   src={yaneImage} 
-                  alt="BloomBrite Cleaning Specialist" 
+                  alt="Bloombrite Cleaning Specialist" 
                   className="w-full h-auto object-cover transform hover:scale-105 transition duration-500"
                 />
               </div>

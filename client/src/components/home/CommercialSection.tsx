@@ -110,7 +110,7 @@ const CommercialSection = () => {
           <div className="p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div>
-                <h3 className="text-2xl font-bold mb-4">Why Choose BloomBrite for Commercial Cleaning?</h3>
+                <h3 className="text-2xl font-bold mb-4">Why Choose <span className="text-primary">Bloombrite</span> for Commercial Cleaning?</h3>
                 <p className="mb-6 text-neutral-300">
                   Our commercial cleaning services are designed with your business in mind. We understand the importance of maintaining a clean, professional environment for your employees and customers.
                 </p>

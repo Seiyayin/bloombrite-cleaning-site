@@ -405,7 +405,7 @@ export const ServiceSchema = ({
     "description": description,
     "provider": {
       "@type": "LocalBusiness",
-      "name": "BloomBrite Cleaning"
+      "name": "Bloombrite Cleaning"
     },
     "areaServed": areaServed.map(area => ({
       "@type": "City",
@@ -427,7 +427,7 @@ export const ReviewSchema = ({ reviews }: { reviews: any[] }) => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "BloomBrite Cleaning",
+    "name": "Bloombrite Cleaning",
     "review": reviews.map(review => ({
       "@type": "Review",
       "reviewRating": {

@@ -67,20 +67,50 @@ const ServicesSection = () => {
           </div>
         </div>
         
-        {/* Power Washing Feature */}
+        {/* Window Cleaning Feature */}
         <div className="mb-16 bg-white rounded-lg overflow-hidden shadow-lg">
           <div className="grid md:grid-cols-2 items-center">
             <div className="order-2 md:order-1 relative h-full">
               <img 
-                src="/src/assets/window washing.jpg" 
-                alt="Power Washing Services" 
+                src="/src/assets/tall window cleaning.jpg" 
+                alt="Window Cleaning Services" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 text-white text-sm">
-                <p>Restore your home's exterior with our professional power washing</p>
+                <p>Professional window cleaning for crystal-clear views</p>
               </div>
             </div>
             <div className="order-1 md:order-2 p-8">
+              <h3 className="text-2xl font-bold mb-4">Window Cleaning Services</h3>
+              <p className="text-neutral-600 mb-6">
+                Our comprehensive window cleaning service removes dirt, dust, water spots, and grime from your windows inside and out.
+                We ensure streak-free, crystal-clear results that enhance your home's appearance and natural light.
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">✓</span>
+                  <span>Interior and exterior window cleaning</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">✓</span>
+                  <span>Window track and sill cleaning</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">✓</span>
+                  <span>Screen cleaning and detailing</span>
+                </li>
+              </ul>
+              <Link href="/services/window-cleaning" className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition">
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </div>
+        
+        {/* Power Washing Feature */}
+        <div className="mb-16 bg-white rounded-lg overflow-hidden shadow-lg">
+          <div className="grid md:grid-cols-2 items-center">
+            <div className="p-8">
               <h3 className="text-2xl font-bold mb-4">Power Washing Services</h3>
               <p className="text-neutral-600 mb-6">
                 Our professional power washing service removes dirt, grime, mold, and mildew from your home's exterior surfaces. 
@@ -103,6 +133,16 @@ const ServicesSection = () => {
               <Link href="/services/power-washing" className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition">
                 Learn More
               </Link>
+            </div>
+            <div className="relative h-full">
+              <img 
+                src="/src/assets/power washing.jpg" 
+                alt="Power Washing Services" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 text-white text-sm">
+                <p>Restore your home's exterior with our professional power washing</p>
+              </div>
             </div>
           </div>
         </div>

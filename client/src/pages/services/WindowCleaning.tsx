@@ -206,4 +206,4 @@ const WindowCleaning = () => {
   );
 };
 
-export default WindowCleaningPage;
+export default WindowCleaning;

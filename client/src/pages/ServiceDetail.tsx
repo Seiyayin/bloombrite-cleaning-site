@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link, useRoute } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
-import { ServiceSchema, DeepCleaningSchema, MoveInOutCleaningSchema, PowerWashingSchema, CarpetCleaningSchema } from '@/lib/schema';
+import { ServiceSchema, DeepCleaningSchema, MoveInOutCleaningSchema, PowerWashingSchema, CarpetCleaningSchema, WindowCleaningSchema } from '@/lib/schema';
 import { services } from '@/data/services';
 import { locations } from '@/data/locations';
 
@@ -47,6 +47,8 @@ const ServiceDetail = () => {
         <PowerWashingSchema />
       ) : slug === 'carpet-cleaning' ? (
         <CarpetCleaningSchema />
+      ) : slug === 'window-cleaning' ? (
+        <WindowCleaningSchema />
       ) : (
         <ServiceSchema 
           name={service.title}

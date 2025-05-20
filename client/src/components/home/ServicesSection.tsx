@@ -45,16 +45,11 @@ const ServicesSection = () => {
               </Link>
             </div>
             <div className="relative h-full">
-              <div className="grid grid-cols-2 gap-1 h-full">
+              <div className="grid grid-cols-1 h-full">
                 <img 
                   src="/images/bathroom tile brushing.jpg" 
                   alt="Bathroom Tile Cleaning" 
-                  className="w-full h-64 object-cover"
-                />
-                <img 
-                  src="/images/hard water bathroom glass.jpg" 
-                  alt="Shower Glass Cleaning" 
-                  className="w-full h-64 object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 text-white text-sm">

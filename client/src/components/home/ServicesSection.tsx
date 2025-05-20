@@ -22,7 +22,7 @@ const ServicesSection = () => {
           <div className="grid md:grid-cols-2 items-center">
             <div className="order-2 md:order-1 relative h-full overflow-hidden bg-neutral-100">
               <img 
-                src="/images/Window cleaning.jpg" 
+                src="/Window cleaning.jpg" 
                 alt="Window Cleaning Services" 
                 className="w-full h-full object-cover"
               />
@@ -86,7 +86,7 @@ const ServicesSection = () => {
             </div>
             <div className="relative h-full overflow-hidden bg-neutral-100">
               <img 
-                src="/images/powerwashing.jpg" 
+                src="/powerwashing.jpg" 
                 alt="Power Washing Services" 
                 className="w-full h-full object-cover"
               />
@@ -142,7 +142,7 @@ const ServicesSection = () => {
           <div className="grid md:grid-cols-2 items-center">
             <div className="order-2 md:order-1 relative h-full overflow-hidden bg-neutral-100">
               <img 
-                src="/images/Kitchen deep cleaning.jpg" 
+                src="/Kitchen deep cleaning.jpg" 
                 alt="Kitchen Deep Cleaning" 
                 className="w-full h-full object-cover"
               />

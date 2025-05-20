@@ -2,9 +2,6 @@ import { useEffect } from 'react';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
 import { WindowCleaningSchema } from '@/lib/schema';
-import windowCleaningImage from '@/assets/Window cleaning.jpg';
-import windowTracksImage from '@/assets/tracks cleaning.jpg';
-import tallWindowImage from '@/assets/tall window cleaning.jpg';
 
 const WindowCleaning = () => {
   // Scroll to top when the page loads
@@ -31,7 +28,7 @@ const WindowCleaning = () => {
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img 
-                  src={tallWindowImage} 
+                  src="/images/tall window cleaning.jpg" 
                   alt="Window Cleaning Services" 
                   className="w-full h-full object-cover"
                 />
@@ -149,7 +146,7 @@ const WindowCleaning = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src={windowCleaningImage} 
+                  src="/images/Window cleaning.jpg" 
                   alt="Window cleaning in progress" 
                   className="w-full h-60 object-cover rounded-md mb-6"
                 />

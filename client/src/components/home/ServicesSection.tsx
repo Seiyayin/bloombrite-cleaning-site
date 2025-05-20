@@ -179,9 +179,12 @@ const ServicesSection = () => {
         
         {/* Selected services grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-          <ServiceCard service={services.find(s => s.id === "standard-cleaning")} />
-          <ServiceCard service={services.find(s => s.id === "deep-cleaning")} />
-          <ServiceCard service={services.find(s => s.id === "move-in-out-cleaning")} />
+          {services
+            .filter(service => ["standard-cleaning", "deep-cleaning", "move-in-out-cleaning"].includes(service.id))
+            .map(service => (
+              <ServiceCard key={service.id} service={service} />
+            ))
+          }
         </div>
         
         <div className="mt-10 text-center">

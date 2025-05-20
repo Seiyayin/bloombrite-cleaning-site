@@ -322,7 +322,7 @@ export const services = [
       
       <p>This service can be booked as a standalone cleaning or added to any of our other cleaning services. Many clients choose to have their oven professionally cleaned once or twice a year to maintain optimal performance.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1590794056224-7a26faf692ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    imageUrl: "/images/Kitchen deep cleaning.jpg",
     startingPrice: "$85",
     included: [
       "Complete cleaning of oven interior",

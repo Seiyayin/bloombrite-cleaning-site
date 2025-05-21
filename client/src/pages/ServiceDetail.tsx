@@ -34,8 +34,8 @@ const ServiceDetail = () => {
   return (
     <>
       <SeoHead 
-        title={`${service.title} | BloomBrite Cleaning Services`}
-        description={service.metaDescription}
+        title={`${service.title} in Michigan | Bloombrite Cleaning Services`}
+        description={`Professional ${service.title.toLowerCase()} in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. ${service.metaDescription} Starting at ${service.startingPrice}.`}
         ogImage={service.imageUrl}
       />
       {/* Render specialized schema for services */}

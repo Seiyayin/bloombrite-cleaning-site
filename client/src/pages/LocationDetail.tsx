@@ -34,8 +34,8 @@ const LocationDetail = () => {
   return (
     <>
       <SeoHead 
-        title={`Professional Cleaning Services in ${location.name} | BloomBrite Cleaning`}
-        description={`BloomBrite Cleaning provides top-quality residential and commercial cleaning services in ${location.name} and surrounding areas. Book your cleaning today!`}
+        title={`Best Cleaning Services in ${location.name} | Bloombrite Cleaning`}
+        description={`Bloombrite Cleaning offers professional residential & commercial cleaning in ${location.name}. Our local experts provide standard cleaning, deep cleaning, move-in/out cleaning, office cleaning with 100% satisfaction guaranteed. Serving ZIP codes ${location.zipCodes}.`}
         ogImage={location.imageUrl}
       />
       

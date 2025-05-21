@@ -14,8 +14,8 @@ const ServicesOverview = () => {
   return (
     <>
       <SeoHead 
-        title="Our Services | BloomBrite Cleaning"
-        description="Explore our full range of professional cleaning services including standard cleaning, deep cleaning, move-in/out cleaning, office cleaning, and more."
+        title="Professional Cleaning Services in Michigan | Bloombrite Cleaning"
+        description="Bloombrite Cleaning offers professional cleaning services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Expert standard cleaning, deep cleaning, move-in/out cleaning, office cleaning, and specialized services with guaranteed satisfaction."
       />
       
       <main>

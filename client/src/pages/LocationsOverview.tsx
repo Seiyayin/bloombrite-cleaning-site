@@ -13,8 +13,8 @@ const LocationsOverview = () => {
   return (
     <>
       <SeoHead 
-        title="Service Areas | BloomBrite Cleaning"
-        description="BloomBrite Cleaning serves Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, Walled Lake and surrounding areas in Michigan."
+        title="Service Areas in Michigan | Bloombrite Cleaning"
+        description="Bloombrite Cleaning provides professional cleaning services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Local experts for residential and commercial cleaning with customized plans for each Michigan community."
       />
       
       <main>

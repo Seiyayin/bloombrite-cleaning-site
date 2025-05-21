@@ -3,6 +3,15 @@ import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 
 const app = express();
+
+// 301 redirect middleware for non-www to www
+app.use((req, res, next) => {
+  if (req.headers.host === 'bloombritecleaning.com') {
+    return res.redirect(301, `https://www.bloombritecleaning.com${req.url}`);
+  }
+  next();
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 

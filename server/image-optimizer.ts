@@ -8,8 +8,10 @@ const imageCache: Record<string, Buffer> = {};
 
 /**
  * Middleware to optimize images on the fly
- * - Converts images to WebP format
- * - Applies proper sizing and optimization
+ * - Converts images to WebP format (next-gen format)
+ * - Properly sizes images based on device needs
+ * - Applies efficient encoding and compression
+ * - Resizes large images to appropriate dimensions
  * - Caches results for better performance
  */
 export const imageOptimizer = async (req: Request, res: Response, next: NextFunction) => {
@@ -65,9 +67,24 @@ export const imageOptimizer = async (req: Request, res: Response, next: NextFunc
       });
     }
     
-    // Convert to WebP format
+    // Resize image appropriately if no specific dimensions provided
+    if (!width && !height) {
+      // Default reasonable size limits for web
+      imageProcessor = imageProcessor.resize({
+        width: 1200,
+        height: 1200,
+        fit: 'inside',
+        withoutEnlargement: true
+      });
+    }
+    
+    // Convert to WebP format with optimized compression
     const optimizedImageBuffer = await imageProcessor
-      .webp({ quality: 80 })
+      .webp({ 
+        quality: 75,
+        effort: 6, // Higher compression effort
+        nearLossless: false
+      })
       .toBuffer();
     
     // Cache the optimized image

@@ -58,8 +58,8 @@ const Reviews = () => {
             </div>
             
             <div className="max-w-5xl mx-auto">
-              {/* Google Reviews Embed */}
-              <GoogleReviewsEmbed placeId={googlePlaceId} apiKey={googleApiKey} />
+              {/* Google Reviews Widget - Shows Real Reviews */}
+              <GoogleReviewsWidget placeId={googlePlaceId} />
             </div>
           </div>
         </section>

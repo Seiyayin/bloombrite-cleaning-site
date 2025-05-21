@@ -3,7 +3,6 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import ResourcePreloader from './components/shared/ResourcePreloader';
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import ServicesOverview from "@/pages/ServicesOverview";
@@ -49,8 +48,6 @@ function Router() {
     </Switch>
   );
 }
-
-import ResourcePreloader from './components/shared/ResourcePreloader';
 
 function App() {
   return (

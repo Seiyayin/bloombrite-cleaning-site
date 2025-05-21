@@ -12,7 +12,7 @@ export const services = [
       
       <p>Regular professional window cleaning not only improves your home's appearance but also extends the life of your windows by preventing etching and damage from environmental contaminants.</p>
     `,
-    imageUrl: "/src/assets/Window cleaning.jpg",
+    imageUrl: "/Window cleaning.jpg",
     startingPrice: "$160",
     included: [
       "Interior and exterior window cleaning",
@@ -48,7 +48,7 @@ export const services = [
       
       <p>Power washing is recommended as seasonal maintenance to keep your home's exterior looking its best. Many homeowners schedule this service annually in spring to remove winter buildup or before painting/staining projects.</p>
     `,
-    imageUrl: "/src/assets/power washing.jpg",
+    imageUrl: "/power washing.jpg",
     startingPrice: "$320",
     included: [
       "Professional-grade power washing equipment",
@@ -81,7 +81,7 @@ export const services = [
       
       <p>Professional carpet cleaning is recommended every 12-18 months to maintain carpet appearance and extend its lifespan. Many clients schedule this service seasonally or before special events to ensure their homes look their best.</p>
     `,
-    imageUrl: "/src/assets/living room deep cleaning.jpg",
+    imageUrl: "/living room deep cleaning.jpg",
     startingPrice: "$150",
     included: [
       "Pre-inspection and identification of problem areas",

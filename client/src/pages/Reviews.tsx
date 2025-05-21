@@ -12,8 +12,8 @@ const Reviews = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Your Google API key and Place ID
-  const googleApiKey = 'AIzaSyBJcszhgIhOQPMjadpJ3M8srAlgZNpjFmw';
+  // Your Google Place ID
+  // API key is now accessed via environment variables in the GoogleReviewsWidget component
   // Your actual Google Place ID
   const googlePlaceId = 'ChIJ8dw6RE6mJIgRsdro9IDycLk';
 

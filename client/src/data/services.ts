@@ -297,11 +297,15 @@ export const services = [
     shortDescription: "Special turnover cleaning for vacation rentals, ensuring your guests arrive to a spotless space.",
     metaDescription: "Specialized Airbnb and vacation rental cleaning services in Michigan. Fast, thorough turnover cleaning to ensure your guests have a perfect experience.",
     description: `
-      <p>Our Airbnb Cleaning service is specifically designed for vacation rental properties, ensuring your guests arrive to an impeccably clean space every time. We understand the unique challenges of short-term rental turnovers and the importance of maintaining high cleanliness standards for positive reviews.</p>
+      <h1 class="text-3xl font-bold mb-6">Efficient Airbnb Turnover Cleaning for Short-Term Rentals</h1>
       
-      <p>This service includes a comprehensive cleaning of the entire property with special attention to areas that matter most to guests: spotless bathrooms, fresh linens, clean kitchen surfaces, and dust-free spaces. We'll help you maintain your property's appeal and your high ratings with consistent, thorough cleaning between guest stays.</p>
+      <p>Ensure your guests walk into a sparkling clean space every time. Our Airbnb service includes bed-making, towel restocking, kitchen cleaning, and fast, reliable turnover cleans to keep your property 5-star ready.</p>
       
-      <p>We offer flexible scheduling to accommodate same-day turnovers and can provide additional services such as restocking supplies, reporting maintenance issues, and other property management support tasks.</p>
+      <p class="mt-4">Our Airbnb Cleaning service is specifically designed for vacation rental properties, ensuring your guests arrive to an impeccably clean space every time. We understand the unique challenges of short-term rental turnovers and the importance of maintaining high cleanliness standards for positive reviews.</p>
+      
+      <p class="mt-4">This service includes a comprehensive cleaning of the entire property with special attention to areas that matter most to guests: spotless bathrooms, fresh linens, clean kitchen surfaces, and dust-free spaces. We'll help you maintain your property's appeal and your high ratings with consistent, thorough cleaning between guest stays.</p>
+      
+      <p class="mt-4">We offer flexible scheduling to accommodate same-day turnovers and can provide additional services such as restocking supplies, reporting maintenance issues, and other property management support tasks.</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
     startingPrice: "$140",
@@ -332,11 +336,15 @@ export const services = [
     shortDescription: "Specialized deep cleaning service for ovens, removing grease, food residue, and burnt-on deposits.",
     metaDescription: "Professional oven cleaning service in Michigan. We remove tough grease, food residue, and burnt-on deposits for a cleaner, more efficient oven.",
     description: `
-      <p>Our Oven Cleaning service provides a specialized, thorough cleaning of your oven to remove built-up grease, food spills, and burnt-on residue that regular cleaning can't address. A clean oven not only looks better but also operates more efficiently, eliminates smoke and odors during cooking, and reduces fire hazards.</p>
+      <h1 class="text-3xl font-bold mb-6">Non-Toxic Oven Cleaning for a Like-New Shine</h1>
       
-      <p>Our trained technicians use professional-grade, eco-friendly products to break down and remove even the toughest baked-on grease and carbon deposits. We clean all components including racks, trays, glass door, interior walls, ceiling, and floor of the oven.</p>
+      <p>Say goodbye to baked-on grease. We deep clean your oven using non-toxic, food-safe products that restore shine and remove years of buildup. Add this to any deep clean or book as a standalone service.</p>
       
-      <p>This service can be booked as a standalone cleaning or added to any of our other cleaning services. Many clients choose to have their oven professionally cleaned once or twice a year to maintain optimal performance.</p>
+      <p class="mt-4">Our Oven Cleaning service provides a specialized, thorough cleaning of your oven to remove built-up grease, food spills, and burnt-on residue that regular cleaning can't address. A clean oven not only looks better but also operates more efficiently, eliminates smoke and odors during cooking, and reduces fire hazards.</p>
+      
+      <p class="mt-4">Our trained technicians use professional-grade, eco-friendly products to break down and remove even the toughest baked-on grease and carbon deposits. We clean all components including racks, trays, glass door, interior walls, ceiling, and floor of the oven.</p>
+      
+      <p class="mt-4">This service can be booked as a standalone cleaning or added to any of our other cleaning services. Many clients choose to have their oven professionally cleaned once or twice a year to maintain optimal performance.</p>
     `,
     imageUrl: "/Kitchen deep cleaning.jpg",
     startingPrice: "$85",
@@ -356,6 +364,43 @@ export const services = [
       "Cleaning behind and under the oven",
       "Microwave interior deep cleaning",
       "Other kitchen appliance cleaning"
+    ]
+  },
+  {
+    id: "fridge-cleaning",
+    slug: "fridge-cleaning",
+    title: "Inside Fridge Cleaning",
+    shortDescription: "Specialized cleaning service for refrigerator interiors, removing food residue, stains, and odors.",
+    metaDescription: "Professional refrigerator interior cleaning in Michigan. We remove food residue, stains, and odors for a hygienic kitchen environment.",
+    description: `
+      <h1 class="text-3xl font-bold mb-6">Fresh & Sanitized Refrigerator Cleaning</h1>
+      
+      <p>We remove food residue, stains, and odors from inside your fridge — safely and effectively. This add-on helps maintain a hygienic kitchen and extends the life of your appliance.</p>
+      
+      <p class="mt-4">Our specialized Refrigerator Cleaning service provides a thorough cleaning of your refrigerator's interior to eliminate food residue, spills, stains, and odors. A clean refrigerator not only looks better but also helps maintain food freshness and prevents cross-contamination.</p>
+      
+      <p class="mt-4">Our trained professionals use food-safe, eco-friendly cleaning products to sanitize all interior surfaces, including shelves, drawers, door panels, and seals. We'll remove all removable components for thorough cleaning and properly replace them.</p>
+      
+      <p class="mt-4">This service can be added to any of our regular cleaning packages or booked as a standalone service. Many clients choose to have their refrigerator professionally cleaned quarterly to maintain optimal hygiene and performance.</p>
+    `,
+    imageUrl: "/Kitchen deep cleaning.jpg",
+    startingPrice: "$75",
+    included: [
+      "Complete cleaning of refrigerator interior",
+      "Removal and cleaning of all shelves and drawers",
+      "Sanitizing of all interior surfaces",
+      "Cleaning of door gaskets and seals",
+      "Wiping down of exterior surfaces",
+      "Food-safe, eco-friendly cleaning products",
+      "Deodorizing treatment",
+      "Temperature check after cleaning"
+    ],
+    additionalServices: [
+      "Freezer interior cleaning",
+      "Organization of contents after cleaning",
+      "Cleaning behind and under refrigerator",
+      "Deep cleaning of produce drawers",
+      "Ice maker cleaning and sanitizing"
     ]
   }
 ];

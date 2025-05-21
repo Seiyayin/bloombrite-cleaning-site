@@ -9,6 +9,9 @@ const app = express();
 // Enable compression for all responses
 app.use(compression());
 
+// Use image optimizer middleware for image requests
+app.use(imageOptimizer);
+
 // 301 redirect middleware for non-www to www
 app.use((req, res, next) => {
   if (req.headers.host === 'bloombritecleaning.com') {

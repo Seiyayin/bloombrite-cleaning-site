@@ -97,7 +97,7 @@ const TeamSection = () => {
             width="1200"
             height="600"
             loading="eager"
-            fetchPriority="high"
+            // Remove fetchPriority as it's causing React warnings
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
             <div className="p-6 md:p-8 text-white max-w-2xl">

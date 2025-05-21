@@ -30,8 +30,8 @@ const Hero = () => {
               <span className="text-yellow-400 text-xl mr-2">★</span>
               <span className="font-medium">4.9/5 Rating</span>
             </div>
-            <div className="flex items-center">
-              <i className="fas fa-check-circle text-primary mr-2"></i>
+            <div className="flex items-center satisfaction-badge">
+              <i className="fas fa-check-circle text-primary mr-2 order-marker"></i>
               <span className="font-medium">100% Satisfaction</span>
             </div>
             <div className="flex items-center">

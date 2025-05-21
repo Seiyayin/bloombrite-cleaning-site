@@ -1,0 +1,38 @@
+/* Pre-defined styles to prevent layout shifts */
+
+/* Add fixed dimensions for common UI elements to prevent layout shifts */
+.satisfaction-badge {
+  min-height: 2rem;
+  min-width: 8rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Fixed dimensions for image containers */
+.img-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Order marker for pricing and features sections */
+.order-marker {
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+}
+
+/* Font preloading to prevent FOIT (Flash of Invisible Text) */
+body {
+  font-display: swap;
+}

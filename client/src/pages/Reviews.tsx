@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import TestimonialCard from '@/components/shared/TestimonialCard';
-import GoogleReviewsEmbed from '@/components/shared/GoogleReviewsEmbed';
+import GoogleReviewsWidget from '@/components/shared/GoogleReviewsWidget';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
 import { ReviewSchema } from '@/lib/schema';

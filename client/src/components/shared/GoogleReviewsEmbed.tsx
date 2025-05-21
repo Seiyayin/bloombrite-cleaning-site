@@ -70,7 +70,7 @@ const GoogleReviewsEmbed = ({ placeId }: GoogleReviewsEmbedProps) => {
       {/* Direct link to Google reviews */}
       <div className="mt-4 text-center">
         <a 
-          href={`https://search.google.com/local/reviews?placeid=${placeId}`}
+          href="https://g.co/kgs/3LWj5Wx"
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-md hover:opacity-90 transition"
@@ -84,7 +84,7 @@ const GoogleReviewsEmbed = ({ placeId }: GoogleReviewsEmbedProps) => {
         <h3 className="text-xl font-semibold mb-4">Share Your Experience</h3>
         <p className="mb-4">Your feedback helps others learn about our business. Thank you for taking the time to share your experience!</p>
         <a 
-          href={`https://search.google.com/local/writereview?placeid=${placeId}`}
+          href="https://g.co/kgs/3LWj5Wx"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-md hover:opacity-90 transition"

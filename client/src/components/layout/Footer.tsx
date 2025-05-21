@@ -70,7 +70,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex">
                 <i className="fas fa-map-marker-alt mt-1 mr-3 text-primary-light"></i>
-                <span className="text-neutral-300">2207 Evergreen St, Wixom, MI 48393</span>
+                <span className="text-neutral-300">Wixom, MI</span>
+              </li>
+              <li className="flex">
+                <i className="fab fa-google mt-1 mr-3 text-primary-light"></i>
+                <a href="https://g.co/kgs/3LWj5Wx" target="_blank" rel="noopener noreferrer" className="text-neutral-300 hover:text-white transition">Google Business Profile</a>
               </li>
               <li className="flex">
                 <i className="fas fa-phone-alt mt-1 mr-3 text-primary-light"></i>

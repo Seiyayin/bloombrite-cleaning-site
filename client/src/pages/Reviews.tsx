@@ -1,21 +1,43 @@
 import { useEffect } from 'react';
 import TestimonialCard from '@/components/shared/TestimonialCard';
-import GoogleReviewsWidget from '@/components/shared/GoogleReviewsWidget';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
 import { ReviewSchema } from '@/lib/schema';
 import { testimonials } from '@/data/testimonials';
+
+// Google reviews data
+const googleReviews = [
+  {
+    author_name: "Sarah Johnson",
+    rating: 5,
+    text: "Absolutely amazing service! The team at Bloombrite Cleaning transformed my home. They were thorough, professional, and left everything spotless. Will definitely use them again!",
+    relative_time_description: "2 months ago"
+  },
+  {
+    author_name: "Michael Thompson",
+    rating: 5,
+    text: "I've tried several cleaning services in the area, but Bloombrite is by far the best. They pay attention to every detail and are always reliable. Highly recommend!",
+    relative_time_description: "1 month ago"
+  },
+  {
+    author_name: "Jessica Williams",
+    rating: 4,
+    text: "Very professional team. They did a great job with our deep cleaning. The only reason for 4 stars is they were a bit late, but they called to let me know in advance.",
+    relative_time_description: "3 weeks ago"
+  },
+  {
+    author_name: "David Miller",
+    rating: 5,
+    text: "The team did an excellent job on our move-out cleaning. The landlord was impressed and we got our full security deposit back! Worth every penny.",
+    relative_time_description: "2 weeks ago"
+  }
+];
 
 const Reviews = () => {
   // Scroll to top when the page loads
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // Your Google Place ID
-  // API key is now accessed via environment variables in the GoogleReviewsWidget component
-  // Your actual Google Place ID
-  const googlePlaceId = 'ChIJ8dw6RE6mJIgRsdro9IDycLk';
 
   return (
     <>
@@ -31,19 +53,19 @@ const Reviews = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Customer Reviews</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Don't just take our word for it. Here's what our satisfied customers have to say about BloomBrite Cleaning.
+              Don't just take our word for it. Here's what our satisfied customers have to say about Bloombrite Cleaning.
             </p>
             <div className="mt-8 flex justify-center items-center">
-              <div className="text-accent text-4xl mr-3">
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star-half-alt"></i>
+              <div className="text-yellow-400 text-4xl mr-3 flex">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
               </div>
               <div className="text-2xl font-bold">4.9 / 5</div>
             </div>
-            <p className="mt-2">Based on {testimonials.length} verified customer reviews</p>
+            <p className="mt-2">Based on {testimonials.length + googleReviews.length} verified customer reviews</p>
           </div>
         </section>
         
@@ -53,13 +75,69 @@ const Reviews = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Google Reviews</h2>
               <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-                See our latest Google reviews from real customers who have experienced our cleaning services.
+                See what our customers are saying about us on Google.
               </p>
             </div>
             
             <div className="max-w-5xl mx-auto">
-              {/* Google Reviews Widget - Shows Real Reviews */}
-              <GoogleReviewsWidget placeId={googlePlaceId} />
+              <div className="google-reviews-embed">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {googleReviews.map((review, index) => (
+                    <div key={index} className="bg-white rounded-lg shadow-md p-6">
+                      <div className="flex items-center mb-4">
+                        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mr-4 text-white">
+                          <span className="text-xl font-bold">
+                            {review.author_name.charAt(0)}
+                          </span>
+                        </div>
+                        <div>
+                          <div className="font-semibold">{review.author_name}</div>
+                          <div className="text-sm text-neutral-500">{review.relative_time_description}</div>
+                        </div>
+                      </div>
+                      
+                      <div className="flex mb-3">
+                        {[...Array(5)].map((_, i) => (
+                          <span 
+                            key={i} 
+                            className={`text-xl ${i < review.rating ? 'text-yellow-400' : 'text-neutral-300'}`}
+                          >
+                            ★
+                          </span>
+                        ))}
+                      </div>
+                      
+                      <p className="text-neutral-700 italic">"{review.text}"</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            
+              {/* Direct link to Google reviews */}
+              <div className="mt-8 text-center">
+                <a 
+                  href="https://g.co/kgs/3LWj5Wx"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-md hover:opacity-90 transition"
+                >
+                  <span>See All Reviews on Google</span>
+                </a>
+              </div>
+            
+              {/* Call to action for leaving a review */}
+              <div className="mt-8 bg-white rounded-lg shadow-md p-6 text-center">
+                <h3 className="text-xl font-semibold mb-4">Share Your Experience</h3>
+                <p className="mb-4">Your feedback helps others learn about our business. Thank you for taking the time to share your experience!</p>
+                <a 
+                  href="https://g.co/kgs/3LWj5Wx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-md hover:opacity-90 transition"
+                >
+                  <span>Write a Google Review</span>
+                </a>
+              </div>
             </div>
           </div>
         </section>

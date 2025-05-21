@@ -20,8 +20,8 @@ const Reviews = () => {
   return (
     <>
       <SeoHead 
-        title="Customer Reviews | BloomBrite Cleaning"
-        description="See what our satisfied customers have to say about BloomBrite Cleaning's professional residential and commercial cleaning services in Michigan."
+        title="Customer Reviews | Bloombrite Cleaning Michigan"
+        description="Read 5-star reviews of Bloombrite Cleaning's services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Our customers love our reliable residential and commercial cleaning, deep cleaning, move-in/out cleaning, and window cleaning services."
       />
       <ReviewSchema reviews={testimonials} />
       

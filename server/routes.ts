@@ -185,7 +185,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     ];
     
     // Add service pages
-    services.forEach(service => {
+    services.forEach((service: { slug: string }) => {
       sitemap.push({
         url: `${baseUrl}/services/${service.slug}`,
         lastModified: new Date()
@@ -193,7 +193,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     });
     
     // Add location pages
-    locations.forEach(location => {
+    locations.forEach((location: { slug: string }) => {
       sitemap.push({
         url: `${baseUrl}/locations/${location.slug}`,
         lastModified: new Date()

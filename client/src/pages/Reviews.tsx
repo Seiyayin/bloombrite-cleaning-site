@@ -91,7 +91,7 @@ const Reviews = () => {
             
             <div className="flex flex-wrap justify-center gap-6">
               <a 
-                href={`https://search.google.com/local/writereview?placeid=${googlePlaceId}`}
+                href="https://g.co/kgs/3LWj5Wx"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-white border border-neutral-300 rounded-md hover:bg-neutral-50 transition"

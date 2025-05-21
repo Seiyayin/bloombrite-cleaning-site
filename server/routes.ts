@@ -3,6 +3,15 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Explicitly serve static sitemap.xml and robots.txt without interference
+  app.get('/sitemap.xml', (req, res) => {
+    res.sendFile('sitemap.xml', { root: './public' });
+  });
+  
+  app.get('/robots.txt', (req, res) => {
+    res.sendFile('robots.txt', { root: './public' });
+  });
+
   // API routes for contact form submission, quote requests, etc.
   app.post('/api/contact', async (req, res) => {
     try {

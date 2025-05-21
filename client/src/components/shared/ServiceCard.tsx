@@ -33,8 +33,8 @@ const ServiceCard = ({ service }: ServiceProps) => {
         </p>
         <div className="flex items-center justify-between">
           <span className="text-sm font-medium">Starting at {service.startingPrice}</span>
-          <Link href={`/services/${service.slug}`} className="text-primary font-medium hover:text-primary-dark flex items-center">
-            Learn More
+          <Link href={`/services/${service.slug}`} className="text-primary font-medium hover:text-primary-dark flex items-center" aria-label={`Learn more about ${service.title} service`}>
+            View {service.title} Details
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
             </svg>

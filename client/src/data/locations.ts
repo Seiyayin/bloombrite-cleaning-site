@@ -6,11 +6,15 @@ export const locations = [
     zipCodes: "48393",
     shortDescription: "Professional cleaning services for Wixom homes and businesses with personalized care and attention to detail.",
     description: `
-      <p>BloomBrite Cleaning is proud to provide top-quality cleaning services to the Wixom community. Our local cleaning teams are familiar with the specific needs of Wixom homes and businesses, from the charming houses near downtown to the newer developments throughout the city.</p>
+      <h1 class="text-3xl font-bold mb-6">Trusted House Cleaning Services in Wixom, MI</h1>
       
-      <p>Wixom residents choose BloomBrite Cleaning for our attention to detail, reliable service, and commitment to customer satisfaction. We understand the busy lifestyles of Wixom families and professionals and offer flexible scheduling to accommodate your needs.</p>
+      <p>Bloombrite Cleaning proudly serves Wixom with reliable, high-quality home and office cleaning. Whether you need weekly maintenance or a full deep clean, our eco-friendly methods and experienced team ensure your space stays fresh, sparkling, and stress-free.</p>
       
-      <p>Our services in Wixom include standard cleaning, deep cleaning, move-in/out cleaning, recurring cleaning, office cleaning, and specialized services like Airbnb and oven cleaning. Whatever your cleaning needs, our professional team is here to help maintain a clean, healthy environment for your family or business.</p>
+      <p class="mt-4">Our local cleaning teams are familiar with the specific needs of Wixom homes and businesses, from the charming houses near downtown to the newer developments throughout the city.</p>
+      
+      <p class="mt-4">Wixom residents choose Bloombrite Cleaning for our attention to detail, reliable service, and commitment to customer satisfaction. We understand the busy lifestyles of Wixom families and professionals and offer flexible scheduling to accommodate your needs.</p>
+      
+      <p class="mt-4">Our services in Wixom include standard cleaning, deep cleaning, move-in/out cleaning, recurring cleaning, office cleaning, and specialized services like Airbnb and oven cleaning. Whatever your cleaning needs, our professional team is here to help maintain a clean, healthy environment for your family or business.</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },
@@ -21,11 +25,15 @@ export const locations = [
     zipCodes: "48374, 48375, 48377",
     shortDescription: "Trusted cleaning services throughout Novi, delivering exceptional results for residential and commercial spaces.",
     description: `
-      <p>BloomBrite Cleaning delivers exceptional cleaning services throughout the Novi area. Our experienced cleaning professionals serve all Novi neighborhoods, from Main Street to Meadowbrook and everywhere in between.</p>
+      <h1 class="text-3xl font-bold mb-6">Novi's Favorite Cleaning Company for Homes & Offices</h1>
       
-      <p>Novi homeowners and businesses trust BloomBrite Cleaning for our consistent quality, attention to detail, and responsive customer service. We offer a full range of cleaning services to meet the diverse needs of the Novi community, whether you need a one-time deep cleaning or regular maintenance cleaning.</p>
+      <p>From luxury homes to busy offices, Bloombrite Cleaning is trusted across Novi for top-tier cleaning services. We customize every clean, offering deep cleans, maintenance routines, and flexible scheduling for peace of mind and sparkling results.</p>
       
-      <p>Our Novi clients appreciate our flexible scheduling options, eco-friendly cleaning products, and thoroughly vetted cleaning professionals. We take pride in helping Novi residents maintain clean, healthy living and working environments while giving them more time to enjoy all that the area has to offer.</p>
+      <p class="mt-4">Our experienced cleaning professionals serve all Novi neighborhoods, from Main Street to Meadowbrook and everywhere in between.</p>
+      
+      <p class="mt-4">Novi homeowners and businesses trust Bloombrite Cleaning for our consistent quality, attention to detail, and responsive customer service. We offer a full range of cleaning services to meet the diverse needs of the Novi community, whether you need a one-time deep cleaning or regular maintenance cleaning.</p>
+      
+      <p class="mt-4">Our Novi clients appreciate our flexible scheduling options, eco-friendly cleaning products, and thoroughly vetted cleaning professionals. We take pride in helping Novi residents maintain clean, healthy living and working environments while giving them more time to enjoy all that the area has to offer.</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1604014138233-43383d50a57f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },
@@ -36,11 +44,15 @@ export const locations = [
     zipCodes: "48150, 48152, 48154",
     shortDescription: "Comprehensive cleaning services for Livonia homes and businesses, tailored to your specific needs and schedule.",
     description: `
-      <p>BloomBrite Cleaning is pleased to extend our professional cleaning services to Livonia residents and businesses. Our local cleaning teams understand the unique character of Livonia neighborhoods and provide personalized service to match each client's specific needs.</p>
+      <h1 class="text-3xl font-bold mb-6">Professional Cleaning Services in Livonia, MI</h1>
       
-      <p>From historic homes to modern apartments and commercial spaces, we have experience cleaning properties of all types and sizes throughout Livonia. Our clients appreciate our thoroughness, reliability, and commitment to using safe, effective cleaning products and techniques.</p>
+      <p>Serving Livonia homes and offices, Bloombrite Cleaning specializes in routine cleaning, move-in/move-out deep cleans, and more. Our mission is to simplify your life with consistent, professional, and detail-focused cleaning services tailored to your needs.</p>
       
-      <p>Livonia families and business owners choose BloomBrite Cleaning for our competitive pricing, flexible scheduling options, and consistently excellent results. Whether you need a weekly cleaning service or a one-time deep clean, we're here to exceed your expectations and provide a cleaner, healthier environment.</p>
+      <p class="mt-4">Our local cleaning teams understand the unique character of Livonia neighborhoods and provide personalized service to match each client's specific needs.</p>
+      
+      <p class="mt-4">From historic homes to modern apartments and commercial spaces, we have experience cleaning properties of all types and sizes throughout Livonia. Our clients appreciate our thoroughness, reliability, and commitment to using safe, effective cleaning products and techniques.</p>
+      
+      <p class="mt-4">Livonia families and business owners choose Bloombrite Cleaning for our competitive pricing, flexible scheduling options, and consistently excellent results. Whether you need a weekly cleaning service or a one-time deep clean, we're here to exceed your expectations and provide a cleaner, healthier environment.</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1597958792579-bd3517df6399?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },

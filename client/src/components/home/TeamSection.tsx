@@ -24,6 +24,9 @@ const TeamSection = () => {
                   src={teamImage} 
                   alt="Bloombrite Cleaning Team" 
                   className="w-full h-auto object-cover transform hover:scale-105 transition duration-500"
+                  width="600"
+                  height="400"
+                  loading="eager"
                 />
               </div>
               <div className="w-full md:w-1/2">
@@ -76,6 +79,9 @@ const TeamSection = () => {
                   src={yaneImage} 
                   alt="Bloombrite Cleaning Specialist" 
                   className="w-full h-auto object-cover transform hover:scale-105 transition duration-500"
+                  width="600"
+                  height="400"
+                  loading="eager"
                 />
               </div>
             </div>
@@ -88,6 +94,10 @@ const TeamSection = () => {
             src={livingRoomImage} 
             alt="Living Room Deep Cleaning" 
             className="w-full h-auto object-cover"
+            width="1200"
+            height="600"
+            loading="eager"
+            fetchpriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
             <div className="p-6 md:p-8 text-white max-w-2xl">

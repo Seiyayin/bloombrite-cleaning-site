@@ -109,11 +109,15 @@ export const services = [
     shortDescription: "Our most popular service includes dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
     metaDescription: "Professional standard home cleaning services in Michigan. Includes dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
     description: `
-      <p>Our Standard Cleaning service is designed to maintain a consistently clean and healthy home environment. This is our most popular service, perfect for regular maintenance cleaning to keep your home looking its best.</p>
+      <h1 class="text-3xl font-bold mb-6">Consistent, Reliable Standard Cleaning Services</h1>
       
-      <p>Our professional cleaning team will thoroughly clean the main living areas of your home, with special attention to kitchens and bathrooms. The Standard Cleaning service includes all the essential cleaning tasks needed to maintain a clean home.</p>
+      <p>Perfect for weekly, bi-weekly, or monthly upkeep. Our standard cleaning includes dusting, vacuuming, wiping surfaces, bathrooms, kitchens, and more — everything needed to keep your home or office fresh and clean, every time.</p>
       
-      <p>This service is ideal for homes that are maintained regularly and don't require deep cleaning of neglected areas. Many of our clients choose this as a bi-weekly or monthly service to maintain cleanliness between deeper cleanings.</p>
+      <p class="mt-4">Our Standard Cleaning service is designed to maintain a consistently clean and healthy home environment. This is our most popular service, perfect for regular maintenance cleaning to keep your home looking its best.</p>
+      
+      <p class="mt-4">Our professional cleaning team will thoroughly clean the main living areas of your home, with special attention to kitchens and bathrooms. The Standard Cleaning service includes all the essential cleaning tasks needed to maintain a clean home.</p>
+      
+      <p class="mt-4">This service is ideal for homes that are maintained regularly and don't require deep cleaning of neglected areas. Many of our clients choose this as a bi-weekly or monthly service to maintain cleanliness between deeper cleanings.</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
     startingPrice: "$120",
@@ -143,11 +147,15 @@ export const services = [
     shortDescription: "A thorough cleaning that reaches areas often missed, including baseboards, ceiling fans, and behind furniture.",
     metaDescription: "Professional deep cleaning services for Michigan homes. Thorough cleaning of rarely-addressed areas including baseboards, ceiling fans, and behind furniture.",
     description: `
-      <p>Our Deep Cleaning service is a comprehensive cleaning solution that addresses areas that are often overlooked during regular cleaning. This service is perfect for homes that haven't been professionally cleaned in a while, seasonal cleaning, or homes that need special attention.</p>
+      <h1 class="text-3xl font-bold mb-6">Thorough & Detailed Deep Cleaning Services</h1>
       
-      <p>Deep Cleaning includes everything in our Standard Cleaning package plus a more intensive focus on hard-to-reach and rarely cleaned areas. Our team will move furniture (where safe and possible) to clean underneath, thoroughly scrub bathroom fixtures, and clean areas that collect dust and grime over time.</p>
+      <p>Need a full reset? Our deep cleaning goes beyond the basics, tackling baseboards, inside appliances, light fixtures, and hard-to-reach spots. Ideal for spring cleaning, events, or post-renovation refresh.</p>
       
-      <p>This service takes longer than our Standard Cleaning but delivers exceptional results. Many clients choose this service for their first cleaning with us, then maintain with regular Standard Cleaning appointments.</p>
+      <p class="mt-4">Our Deep Cleaning service is a comprehensive cleaning solution that addresses areas that are often overlooked during regular cleaning. This service is perfect for homes that haven't been professionally cleaned in a while, seasonal cleaning, or homes that need special attention.</p>
+      
+      <p class="mt-4">Deep Cleaning includes everything in our Standard Cleaning package plus a more intensive focus on hard-to-reach and rarely cleaned areas. Our team will move furniture (where safe and possible) to clean underneath, thoroughly scrub bathroom fixtures, and clean areas that collect dust and grime over time.</p>
+      
+      <p class="mt-4">This service takes longer than our Standard Cleaning but delivers exceptional results. Many clients choose this service for their first cleaning with us, then maintain with regular Standard Cleaning appointments.</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
     startingPrice: "$200",
@@ -211,11 +219,15 @@ export const services = [
     shortDescription: "Comprehensive cleaning for when you're moving in or out of a property, ensuring a fresh start.",
     metaDescription: "Specialized move-in and move-out cleaning services for Michigan properties. Comprehensive cleaning to ensure a fresh start in your new home.",
     description: `
-      <p>Our Move-In/Out Cleaning service is specially designed for the transition between homes. Whether you're a homeowner, renter, landlord, or property manager, this thorough cleaning service ensures the property is in pristine condition for the next occupants or for your arrival.</p>
+      <h1 class="text-3xl font-bold mb-6">Stress-Free Move-In and Move-Out Cleaning Services</h1>
       
-      <p>This comprehensive cleaning package includes our Deep Cleaning service with additional focus on areas that may have been neglected or are particularly important during a move. We understand the importance of leaving a property clean to recover security deposits or preparing a home for new occupants.</p>
+      <p>Moving can be overwhelming — we make it easier. Our move-in/out cleaning includes everything from walls to floors, inside cabinets, appliances, and more. Leave it spotless for new tenants or start fresh in your new home.</p>
       
-      <p>Our Move-In/Out Cleaning is among our most thorough services, addressing every accessible area of the property. Most properties should be empty or nearly empty of personal belongings for optimal results.</p>
+      <p class="mt-4">Our Move-In/Out Cleaning service is specially designed for the transition between homes. Whether you're a homeowner, renter, landlord, or property manager, this thorough cleaning service ensures the property is in pristine condition for the next occupants or for your arrival.</p>
+      
+      <p class="mt-4">This comprehensive cleaning package includes our Deep Cleaning service with additional focus on areas that may have been neglected or are particularly important during a move. We understand the importance of leaving a property clean to recover security deposits or preparing a home for new occupants.</p>
+      
+      <p class="mt-4">Our Move-In/Out Cleaning is among our most thorough services, addressing every accessible area of the property. Most properties should be empty or nearly empty of personal belongings for optimal results.</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
     startingPrice: "$250",
@@ -246,11 +258,15 @@ export const services = [
     shortDescription: "Keep your workplace clean and professional with our specialized commercial cleaning services.",
     metaDescription: "Professional office and commercial cleaning services in Michigan. Maintain a clean, healthy, and professional workplace environment.",
     description: `
-      <p>Our Office Cleaning service is specifically tailored for commercial spaces and workplaces. We understand that a clean work environment not only creates a positive impression for clients but also contributes to employee health, productivity, and morale.</p>
+      <h1 class="text-3xl font-bold mb-6">Professional Office Cleaning for Metro Detroit Businesses</h1>
       
-      <p>Our professional cleaning team is trained to work efficiently in business settings, with minimal disruption to your operations. We can schedule cleanings after hours, before opening, or during weekends based on your preference.</p>
+      <p>Keep your workspace fresh and productive with reliable office cleaning. We clean desks, bathrooms, kitchens, shared spaces, and more — with flexible after-hours scheduling and commercial-grade standards.</p>
       
-      <p>We customize our office cleaning services based on the size and needs of your business. From small professional offices to larger commercial spaces, we can create a cleaning plan that fits your requirements and budget.</p>
+      <p class="mt-4">Our Office Cleaning service is specifically tailored for commercial spaces and workplaces. We understand that a clean work environment not only creates a positive impression for clients but also contributes to employee health, productivity, and morale.</p>
+      
+      <p class="mt-4">Our professional cleaning team is trained to work efficiently in business settings, with minimal disruption to your operations. We can schedule cleanings after hours, before opening, or during weekends based on your preference.</p>
+      
+      <p class="mt-4">We customize our office cleaning services based on the size and needs of your business. From small professional offices to larger commercial spaces, we can create a cleaning plan that fits your requirements and budget.</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
     startingPrice: "$150",

@@ -15,10 +15,15 @@ const ServiceCard = ({ service }: ServiceProps) => {
   return (
     <div className="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
       <div className="h-60 bg-neutral-200 overflow-hidden">
+        {/* Using conditional rendering to handle possible image loading issues */}
         <img 
           src={service.imageUrl} 
           alt={`${service.title} service`} 
           className="w-full h-full object-cover transition-transform hover:scale-105"
+          onError={(e) => {
+            // Fallback to a different image if the original fails to load
+            e.currentTarget.src = "/Window cleaning.jpg";
+          }}
         />
       </div>
       <div className="p-6">

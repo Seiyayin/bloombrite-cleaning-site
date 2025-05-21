@@ -12,7 +12,7 @@ export const services = [
       
       <p>Regular professional window cleaning not only improves your home's appearance but also extends the life of your windows by preventing etching and damage from environmental contaminants.</p>
     `,
-    imageUrl: "/Window cleaning.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1581105884019-9aabb0983cb1?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     startingPrice: "$160",
     included: [
       "Interior and exterior window cleaning",
@@ -81,7 +81,7 @@ export const services = [
       
       <p>Professional carpet cleaning is recommended every 12-18 months to maintain carpet appearance and extend its lifespan. Many clients schedule this service seasonally or before special events to ensure their homes look their best.</p>
     `,
-    imageUrl: "/Window cleaning.jpg", /* Using window cleaning image since carpet image is not available */
+    imageUrl: "https://images.unsplash.com/photo-1556909114-44e3e9399e32?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     startingPrice: "$150",
     included: [
       "Pre-inspection and identification of problem areas",

@@ -4,8 +4,8 @@ import teamImage from '@/assets/team.jpg';
 const Hero = () => {
   return (
     <section className="relative bg-white text-dark overflow-hidden">
-      <div className="container mx-auto px-4 py-12 md:py-20 relative z-10 grid md:grid-cols-2 gap-8 items-center">
-        <div className="order-2 md:order-1">
+      <div className="container mx-auto px-4 py-12 md:py-20 relative z-10 grid md:grid-cols-2 gap-8 items-center" style={{ minHeight: '500px' }}>
+        <div className="md:col-span-1">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-gray-800">
             <span className="text-primary">Professional Cleaning</span> Services in Michigan
           </h1>
@@ -40,12 +40,15 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="order-1 md:order-2">
-          <div className="relative rounded-lg overflow-hidden shadow-xl">
+        <div className="md:col-span-1">
+          <div className="relative rounded-lg overflow-hidden shadow-xl" style={{ aspectRatio: '4/3' }}>
             <img 
               src={teamImage} 
               alt="Bloombrite Cleaning Team" 
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
+              width="800"
+              height="600"
+              loading="eager"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white">
               <p className="font-semibold">Meet our professional cleaning team</p>

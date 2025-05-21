@@ -81,11 +81,14 @@ const ServiceDetail = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row gap-12">
               <div className="lg:w-2/3">
-                <div className="mb-8 rounded-lg overflow-hidden shadow-md">
+                <div className="mb-8 rounded-lg overflow-hidden shadow-md" style={{ aspectRatio: '16/9' }}>
                   <img 
                     src={service.imageUrl} 
                     alt={service.title} 
-                    className="w-full h-auto"
+                    className="w-full h-full object-cover"
+                    width="1024"
+                    height="576"
+                    loading="eager"
                   />
                 </div>
                 

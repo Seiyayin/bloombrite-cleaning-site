@@ -81,7 +81,7 @@ export const services = [
       
       <p>Professional carpet cleaning is recommended every 12-18 months to maintain carpet appearance and extend its lifespan. Many clients schedule this service seasonally or before special events to ensure their homes look their best.</p>
     `,
-    imageUrl: "/living room deep cleaning.jpg",
+    imageUrl: "/Window cleaning.jpg", /* Using window cleaning image since carpet image is not available */
     startingPrice: "$150",
     included: [
       "Pre-inspection and identification of problem areas",
@@ -322,7 +322,7 @@ export const services = [
       
       <p>This service can be booked as a standalone cleaning or added to any of our other cleaning services. Many clients choose to have their oven professionally cleaned once or twice a year to maintain optimal performance.</p>
     `,
-    imageUrl: "/images/Kitchen deep cleaning.jpg",
+    imageUrl: "/Kitchen deep cleaning.jpg",
     startingPrice: "$85",
     included: [
       "Complete cleaning of oven interior",

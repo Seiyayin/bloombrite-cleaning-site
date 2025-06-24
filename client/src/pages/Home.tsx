@@ -10,6 +10,7 @@ import ServiceAreas from '@/components/home/ServiceAreas';
 import FaqSection from '@/components/home/FaqSection';
 import CallToAction from '@/components/home/CallToAction';
 import SeoHead from '@/components/shared/SeoHead';
+import HouseEntranceAnimation from '@/components/shared/HouseEntranceAnimation';
 import { LocalBusinessSchema } from '@/lib/schema';
 import teamImage from '@/assets/team.jpg';
 
@@ -31,6 +32,7 @@ const Home = () => {
       <main>
         <Hero />
         <Features />
+        <HouseEntranceAnimation />
         <ServicesSection />
         <CommercialSection />
         <TeamSection />

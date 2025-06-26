@@ -159,8 +159,8 @@ const Faq = () => {
               <Link href="/contact" className="px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-primary-dark transition shadow-md">
                 Contact Us
               </Link>
-              <a href="tel:1234567890" className="px-8 py-4 bg-white text-primary border border-primary font-bold rounded-md hover:bg-neutral-50 transition shadow-md">
-                Call (123) 456-7890
+              <a href="tel:7344899908" className="px-8 py-4 bg-white text-primary border border-primary font-bold rounded-md hover:bg-neutral-50 transition shadow-md">
+                Call (734) 489-9908
               </a>
             </div>
           </div>

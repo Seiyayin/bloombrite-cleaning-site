@@ -87,7 +87,7 @@ const Contact = () => {
                       <div className="ml-4">
                         <h3 className="font-semibold">Phone</h3>
                         <p className="text-neutral-600 mt-1">
-                          <a href="tel:1234567890" className="hover:text-primary">(123) 456-7890</a>
+                          <a href="tel:7344899908" className="hover:text-primary">(734) 489-9908</a>
                         </p>
                       </div>
                     </div>
@@ -183,7 +183,7 @@ const Contact = () => {
                             <FormItem>
                               <FormLabel>Phone Number</FormLabel>
                               <FormControl>
-                                <Input type="tel" placeholder="(123) 456-7890" {...field} />
+                                <Input type="tel" placeholder="(734) 489-9908" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>

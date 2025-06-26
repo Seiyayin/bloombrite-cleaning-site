@@ -28,7 +28,7 @@ const WindowCleaning = () => {
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img 
-                  src="/images/tall window cleaning.jpg" 
+                  src="/images/windows cleaning_1750986736495.jpg" 
                   alt="Window Cleaning Services" 
                   className="w-full h-full object-cover"
                 />
@@ -146,8 +146,8 @@ const WindowCleaning = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/images/Window cleaning.jpg" 
-                  alt="Window cleaning in progress" 
+                  src="/images/windows cleaning_1750986736495.jpg" 
+                  alt="Professional window cleaning in progress" 
                   className="w-full h-52 object-cover"
                 />
                 <div className="p-4">

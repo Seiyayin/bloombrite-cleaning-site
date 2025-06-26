@@ -14,7 +14,7 @@ const WindowCleaning = () => {
       <SeoHead
         title="Window Cleaning Services | Bloombrite Cleaning"
         description="Professional window cleaning services in Michigan. We clean windows inside and out, including tracks, frames, and screens for a crystal-clear view."
-        ogImage="/images/tall window cleaning.jpg"
+        ogImage="/images/windows cleaning_1750986736495.jpg"
       />
 
       <div className="pt-24 pb-16 bg-neutral-50">

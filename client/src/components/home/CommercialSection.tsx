@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
 import livingRoomImage from '@/assets/living room deep cleaning.jpg';
-import kitchenImage from '@/assets/Kitchen deep cleaning.jpg';
+import kitchenImage from '@/assets/kitchen-post-cleaned.jpg';
 
 const CommercialSection = () => {
   return (

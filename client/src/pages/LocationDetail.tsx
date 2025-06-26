@@ -49,7 +49,7 @@ const LocationDetail = () => {
               Professional, reliable cleaning services for homes and businesses in {location.name} and surrounding areas.
             </p>
             <div className="mt-8">
-              <Link href="/get-quote" className="inline-block px-8 py-4 bg-accent text-white font-bold rounded-md hover:bg-accent-dark transition shadow-md">
+              <Link href="/quote" className="inline-block px-8 py-4 bg-accent text-white font-bold rounded-md hover:bg-accent-dark transition shadow-md">
                 Get a Free Quote
               </Link>
             </div>

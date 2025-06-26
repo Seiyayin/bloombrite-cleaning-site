@@ -72,7 +72,7 @@ const Header = () => {
         </div>
         
         <div className="flex items-center space-x-4">
-          <Link href="/get-quote" className="hidden md:block px-6 py-2 bg-accent hover:bg-accent-dark text-white font-semibold rounded-md transition shadow-sm">
+          <Link href="/quote" className="hidden md:block px-6 py-2 bg-accent hover:bg-accent-dark text-white font-semibold rounded-md transition shadow-sm">
             Get a Quote
           </Link>
           <button 

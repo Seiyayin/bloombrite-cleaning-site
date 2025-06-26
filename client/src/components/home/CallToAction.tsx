@@ -9,7 +9,7 @@ const CallToAction = () => {
           Experience the Bloombrite difference today. Our professional cleaning team is ready to transform your home or office.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Link href="/get-quote" className="px-8 py-4 bg-accent text-white font-bold rounded-md hover:bg-accent-dark transition shadow-md">
+          <Link href="/quote" className="px-8 py-4 bg-accent text-white font-bold rounded-md hover:bg-accent-dark transition shadow-md">
             Get Your Free Quote
           </Link>
           <a href="tel:7344899908" className="px-8 py-4 bg-white text-primary font-bold rounded-md hover:bg-neutral-50 transition shadow-md">

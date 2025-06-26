@@ -58,9 +58,33 @@ const QuotePageSchema = () => (
 );
 
 const GetQuote = () => {
-  // Scroll to top when the page loads
+  // Scroll to top when the page loads and load Jobber form resources
   useEffect(() => {
     window.scrollTo(0, 0);
+    
+    // Load Jobber CSS
+    const cssLink = document.createElement('link');
+    cssLink.rel = 'stylesheet';
+    cssLink.href = 'https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css';
+    cssLink.media = 'screen';
+    document.head.appendChild(cssLink);
+    
+    // Load Jobber JavaScript
+    const script = document.createElement('script');
+    script.src = 'https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js';
+    script.setAttribute('clienthub_id', '954e0464-c2ca-4376-b2e2-3d401431c7bf');
+    script.setAttribute('form_url', 'https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/embedded_work_request_form');
+    document.body.appendChild(script);
+    
+    // Cleanup function
+    return () => {
+      if (cssLink && document.head.contains(cssLink)) {
+        document.head.removeChild(cssLink);
+      }
+      if (script && document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
   }, []);
 
   return (
@@ -83,7 +107,36 @@ const GetQuote = () => {
           </div>
         </section>
         
-        {/* Quote Form Section */}
+        {/* Embedded Jobber Form Section */}
+        <section className="py-16 bg-neutral-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <h2 className="text-2xl font-bold mb-6 text-center">Request Your Free Quote</h2>
+                
+                {/* Jobber Embedded Form */}
+                <div id="954e0464-c2ca-4376-b2e2-3d401431c7bf" className="min-h-[600px]"></div>
+                
+                {/* Alternative Option */}
+                <div className="mt-8 pt-6 border-t border-neutral-200 text-center">
+                  <p className="text-neutral-600 mb-4">
+                    Prefer to fill out the form in a new window?
+                  </p>
+                  <a 
+                    href="https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/new?source=social_media"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-3 bg-accent text-white font-semibold rounded-md hover:bg-accent-dark transition shadow-sm"
+                  >
+                    Open Quote Form in New Window
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Original Quote Form Section - Alternative */}
         <QuoteSection />
         
         {/* Additional Information */}

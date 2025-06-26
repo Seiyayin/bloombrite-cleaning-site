@@ -119,7 +119,7 @@ export const services = [
       
       <p class="mt-4">This service is ideal for homes that are maintained regularly and don't require deep cleaning of neglected areas. Many of our clients choose this as a bi-weekly or monthly service to maintain cleanliness between deeper cleanings.</p>
     `,
-    imageUrl: "/images/kitchen main_1750986708564.jpg",
+    imageUrl: "/images/kitchen-main.jpg",
     startingPrice: "$120",
     included: [
       "Dusting of all accessible surfaces",
@@ -157,7 +157,7 @@ export const services = [
       
       <p class="mt-4">This service takes longer than our Standard Cleaning but delivers exceptional results. Many clients choose this service for their first cleaning with us, then maintain with regular Standard Cleaning appointments.</p>
     `,
-    imageUrl: "/images/kitchen post_1750986714585.jpg",
+    imageUrl: "/images/kitchen-post.jpg",
     startingPrice: "$200",
     included: [
       "Everything included in Standard Cleaning",
@@ -307,7 +307,7 @@ export const services = [
       
       <p class="mt-4">We offer flexible scheduling to accommodate same-day turnovers and can provide additional services such as restocking supplies, reporting maintenance issues, and other property management support tasks.</p>
     `,
-    imageUrl: "/images/Bedroom_1750986726950.jpg",
+    imageUrl: "/images/bedroom-clean.jpg",
     startingPrice: "$140",
     included: [
       "Complete cleaning and sanitizing of bathrooms",

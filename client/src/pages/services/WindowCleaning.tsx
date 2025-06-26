@@ -14,7 +14,7 @@ const WindowCleaning = () => {
       <SeoHead
         title="Window Cleaning Services | Bloombrite Cleaning"
         description="Professional window cleaning services in Michigan. We clean windows inside and out, including tracks, frames, and screens for a crystal-clear view."
-        ogImage="/images/windows cleaning_1750986736495.jpg"
+        ogImage="/images/window-cleaning.jpg"
       />
 
       <div className="pt-24 pb-16 bg-neutral-50">
@@ -28,7 +28,7 @@ const WindowCleaning = () => {
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img 
-                  src="/images/windows cleaning_1750986736495.jpg" 
+                  src="/images/window-cleaning.jpg" 
                   alt="Window Cleaning Services" 
                   className="w-full h-full object-cover"
                 />
@@ -146,7 +146,7 @@ const WindowCleaning = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/images/windows cleaning_1750986736495.jpg" 
+                  src="/images/window-cleaning.jpg" 
                   alt="Professional window cleaning in progress" 
                   className="w-full h-52 object-cover"
                 />

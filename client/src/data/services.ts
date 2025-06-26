@@ -12,7 +12,7 @@ export const services = [
       
       <p>Regular professional window cleaning not only improves your home's appearance but also extends the life of your windows by preventing etching and damage from environmental contaminants.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1581105884019-9aabb0983cb1?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/images/window-cleaning.jpg",
     startingPrice: "$160",
     included: [
       "Interior and exterior window cleaning",
@@ -346,7 +346,7 @@ export const services = [
       
       <p class="mt-4">This service can be booked as a standalone cleaning or added to any of our other cleaning services. Many clients choose to have their oven professionally cleaned once or twice a year to maintain optimal performance.</p>
     `,
-    imageUrl: "/Kitchen deep cleaning.jpg",
+    imageUrl: "/images/kitchen-post.jpg",
     startingPrice: "$85",
     included: [
       "Complete cleaning of oven interior",
@@ -383,7 +383,7 @@ export const services = [
       
       <p class="mt-4">This service can be added to any of our regular cleaning packages or booked as a standalone service. Many clients choose to have their refrigerator professionally cleaned quarterly to maintain optimal hygiene and performance.</p>
     `,
-    imageUrl: "/Kitchen deep cleaning.jpg",
+    imageUrl: "/images/kitchen-main.jpg",
     startingPrice: "$75",
     included: [
       "Complete cleaning of refrigerator interior",

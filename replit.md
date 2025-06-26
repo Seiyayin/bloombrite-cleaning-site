@@ -88,6 +88,7 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- January 26, 2025: Added Bloombrite logo as website favicon for browser tab display
 - June 26, 2025. Initial setup
 
 ## User Preferences

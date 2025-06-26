@@ -117,7 +117,7 @@ const LocationDetail = () => {
                     Ready to experience the BloomBrite difference? Book your cleaning service in {location.name} today.
                   </p>
                   <Link 
-                    href="/get-quote" 
+                    href="/quote" 
                     className="block w-full py-3 px-4 bg-accent hover:bg-accent-dark text-white text-center font-semibold rounded-md transition"
                   >
                     Get a Free Quote

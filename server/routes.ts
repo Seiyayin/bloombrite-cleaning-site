@@ -180,7 +180,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       { url: `${baseUrl}/reviews`, lastModified: new Date() },
       { url: `${baseUrl}/faq`, lastModified: new Date() },
       { url: `${baseUrl}/contact`, lastModified: new Date() },
-      { url: `${baseUrl}/get-quote`, lastModified: new Date() },
+      { url: `${baseUrl}/quote`, lastModified: new Date() },
       { url: `${baseUrl}/accessibility`, lastModified: new Date() }
     ];
     

@@ -17,7 +17,7 @@ const pages = [
   '/locations',
   '/reviews',
   '/contact',
-  '/get-quote',
+  '/quote',
   '/faq',
   '/accessibility',
   // Service pages

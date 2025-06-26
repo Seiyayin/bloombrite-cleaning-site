@@ -2,6 +2,61 @@ import { useEffect } from 'react';
 import QuoteSection from '@/components/home/QuoteSection';
 import SeoHead from '@/components/shared/SeoHead';
 
+// Schema markup for quote page
+const QuotePageSchema = () => (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Get a Free Quote - Bloombrite Cleaning",
+        "description": "Request a free, personalized quote for residential or commercial cleaning services in Michigan",
+        "url": "https://bloombritecleaning.com/quote",
+        "mainEntity": {
+          "@type": "Service",
+          "name": "Free Cleaning Quote",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Bloombrite Cleaning",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Wixom",
+              "addressRegion": "MI",
+              "addressCountry": "US"
+            },
+            "telephone": "+1-734-489-9908",
+            "url": "https://bloombritecleaning.com"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free consultation and quote for cleaning services"
+          }
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bloombritecleaning.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Get Quote",
+              "item": "https://bloombritecleaning.com/quote"
+            }
+          ]
+        }
+      })
+    }}
+  />
+);
+
 const GetQuote = () => {
   // Scroll to top when the page loads
   useEffect(() => {
@@ -13,7 +68,9 @@ const GetQuote = () => {
       <SeoHead 
         title="Get a Free Quote | Bloombrite Cleaning"
         description="Request a free, personalized quote for your residential or commercial cleaning needs in Michigan. Fast, easy, and no-obligation estimates from Bloombrite Cleaning."
+        canonicalUrl="https://bloombritecleaning.com/quote"
       />
+      <QuotePageSchema />
       
       <main>
         {/* Quote Banner */}

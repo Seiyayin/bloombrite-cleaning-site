@@ -88,6 +88,8 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- June 26, 2025: Added "Ready to Get Started" section with quote process information to home page
+- June 26, 2025: Integrated Jobber embedded form into /quote page while preserving external link option
 - June 26, 2025: Fixed all phone numbers site-wide from placeholder (123) 456-7890 to correct business number (734) 489-9908
 - June 26, 2025: Fixed remaining image loading issues - updated oven cleaning and window cleaning services to use authentic Bloombrite photos
 - January 26, 2025: Replaced stock photos with authentic Bloombrite cleaning images throughout website

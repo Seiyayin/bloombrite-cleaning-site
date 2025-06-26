@@ -5,6 +5,7 @@ import ServicesSection from '@/components/home/ServicesSection';
 import CommercialSection from '@/components/home/CommercialSection';
 import TeamSection from '@/components/home/TeamSection';
 import QuoteSection from '@/components/home/QuoteSection';
+import QuoteInfoSection from '@/components/home/QuoteInfoSection';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
 import ServiceAreas from '@/components/home/ServiceAreas';
 import FaqSection from '@/components/home/FaqSection';
@@ -35,6 +36,7 @@ const Home = () => {
         <CommercialSection />
         <TeamSection />
         <QuoteSection />
+        <QuoteInfoSection />
         <TestimonialsSection />
         <ServiceAreas />
         <FaqSection />

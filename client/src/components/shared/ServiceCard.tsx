@@ -1,4 +1,5 @@
 import { Link } from 'wouter';
+import OptimizedImage from './OptimizedImage';
 
 interface ServiceProps {
   service: {
@@ -15,18 +16,13 @@ const ServiceCard = ({ service }: ServiceProps) => {
   return (
     <div className="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
       <div className="bg-neutral-200 overflow-hidden" style={{ aspectRatio: '16/9', height: '240px' }}>
-        {/* Using conditional rendering to handle possible image loading issues */}
-        <img 
-          src={service.imageUrl} 
-          alt={`${service.title} service`} 
+        <OptimizedImage
+          src={service.imageUrl}
+          alt={`${service.title} service`}
           className="w-full h-full object-cover transition-transform hover:scale-105"
-          width="640" 
-          height="360"
-          loading="lazy"
-          onError={(e) => {
-            // Fallback to a different image if the original fails to load
-            e.currentTarget.src = "/Window cleaning.jpg";
-          }}
+          width={640}
+          height={360}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <div className="p-6">

@@ -122,15 +122,15 @@ export const services = [
     imageUrl: "/images/kitchen-main.jpg",
     startingPrice: "$120",
     included: [
-      "Dusting of all accessible surfaces",
-      "Vacuuming all floors, carpets, and rugs",
-      "Mopping of all hard floor surfaces",
-      "Cleaning and sanitizing bathrooms (toilets, sinks, tubs, showers)",
-      "Cleaning and sanitizing kitchen surfaces and sink",
-      "Wiping down of appliance exteriors",
-      "Emptying trash bins",
-      "Making beds (linens must be provided)",
-      "General tidying and straightening"
+      "Dusting: General dusting of visible surfaces, furniture, and décor",
+      "Kitchen: Countertops, sink, microwave exterior, exterior of appliances",
+      "Bathrooms: Clean sinks, toilets, mirrors, bathtubs/showers",
+      "Floors: Vacuuming carpets and rugs, mopping hard floors",
+      "Windows: Spot clean interior glass and smudges",
+      "Bedrooms/Living Areas: Tidy up, make beds, surface dusting",
+      "Trash & Tidying: Empty trash cans, light organization",
+      "Walls/Doors: Spot clean as needed",
+      "Blinds & Baseboards: Light dusting if accessible"
     ],
     additionalServices: [
       "Interior window cleaning",
@@ -160,16 +160,16 @@ export const services = [
     imageUrl: "/images/kitchen-post.jpg",
     startingPrice: "$200",
     included: [
-      "Everything included in Standard Cleaning",
-      "Cleaning under and behind movable furniture",
-      "Detailed cleaning of baseboards and crown molding",
-      "Cleaning ceiling fans and light fixtures",
-      "Detail cleaning of window sills and door frames",
-      "Cleaning inside cabinets (exteriors and interiors)",
-      "Detailed bathroom cleaning including grout and scale removal",
-      "Cleaning inside microwave and other small appliances",
-      "Detailed cleaning of all fixtures and faucets",
-      "Spot cleaning of walls and doors for fingerprints and marks"
+      "Dusting: Includes vents, ceiling fans, light fixtures, baseboards, window sills, blinds, and behind/under furniture",
+      "Kitchen: Interior of oven, fridge, microwave; degreasing range hood; cabinet fronts and handles deep scrubbed",
+      "Bathrooms: Heavy soap scum and hard water removal, grout scrubbed, under/behind toilet area deep cleaned",
+      "Floors: Edging along baseboards, spot scrubbing, and hand-mopping corners; attention to buildup",
+      "Windows: Cleaning interior window glass, sills, frames, and tracks (exterior windows may be extra)",
+      "Bedrooms/Living Areas: Detailed dusting, vacuum under furniture, spot clean walls, baseboards, vents, doors, and door frames",
+      "Trash & Tidying: Full decluttering assistance, organization if requested (e.g., closets, drawers)",
+      "Walls/Doors: Hand wipe for scuff marks, fingerprints, and dirt buildup",
+      "Blinds & Baseboards: Full hand-wiped baseboards, louvered blinds thoroughly dusted and wiped",
+      "Behind Appliances/Furniture: Pulling out and cleaning behind large furniture and appliances (upon request and if safe to do so)"
     ],
     additionalServices: [
       "Interior window cleaning",

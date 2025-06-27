@@ -88,6 +88,9 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- June 27, 2025: Implemented comprehensive internal linking strategy for improved SEO - added contextual links throughout website connecting related services, locations, and key pages
+- June 27, 2025: Fixed accessibility issues - updated "Learn More" links with descriptive text and resolved hero image display
+- June 27, 2025: Optimized website performance - compressed large images, added preloading for critical resources, and eliminated render-blocking issues
 - June 26, 2025: Updated pricing - Standard Cleaning to $160, Deep Cleaning to $250 (including schema markup)
 - June 26, 2025: Updated Standard and Deep Cleaning service descriptions with detailed area-by-area breakdown
 - June 26, 2025: Added "Ready to Get Started" section with quote process information to home page

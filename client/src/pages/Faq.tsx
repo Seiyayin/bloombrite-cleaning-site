@@ -31,7 +31,7 @@ const Faq = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Frequently Asked Questions</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Find answers to our most commonly asked questions about our cleaning services.
+              Find answers to our most commonly asked questions about our <Link href="/services" className="text-white hover:text-accent underline">cleaning services</Link>, <Link href="/quote" className="text-white hover:text-accent underline">pricing</Link>, and <Link href="/locations" className="text-white hover:text-accent underline">service areas</Link> throughout Michigan.
             </p>
           </div>
         </section>

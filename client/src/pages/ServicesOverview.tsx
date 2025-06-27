@@ -24,7 +24,7 @@ const ServicesOverview = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Our Cleaning Services</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Professional cleaning services tailored to your needs. Explore our options below and find the perfect solution for your home or office.
+              Professional cleaning services tailored to your needs throughout <Link href="/locations" className="text-white hover:text-accent underline">Michigan</Link>. From <Link href="/services/standard-cleaning" className="text-white hover:text-accent underline">standard cleaning</Link> to <Link href="/services/deep-cleaning" className="text-white hover:text-accent underline">deep cleaning</Link>, explore our options below and find the perfect solution for your home or office.
             </p>
           </div>
         </section>

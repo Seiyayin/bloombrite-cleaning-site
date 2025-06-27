@@ -23,7 +23,7 @@ const LocationsOverview = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Our Service Areas</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              BloomBrite Cleaning proudly serves these Michigan communities and surrounding areas with our professional cleaning services.
+              BloomBrite Cleaning proudly serves these Michigan communities and surrounding areas with our professional <Link href="/services" className="text-white hover:text-accent underline">cleaning services</Link>. From <Link href="/services/standard-cleaning" className="text-white hover:text-accent underline">residential cleaning</Link> to <Link href="/services/office-cleaning" className="text-white hover:text-accent underline">commercial solutions</Link>, we're your local cleaning experts.
             </p>
           </div>
         </section>

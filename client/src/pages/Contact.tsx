@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import SeoHead from '@/components/shared/SeoHead';
-import { useLocation } from 'wouter';
+import { useLocation, Link } from 'wouter';
 
 const contactFormSchema = z.object({
   name: z.string().min(1, 'Full name is required'),
@@ -56,7 +56,7 @@ const Contact = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Have questions or ready to book a service? We're here to help you with all your cleaning needs.
+              Have questions about our <Link href="/services" className="text-white hover:text-accent underline">cleaning services</Link> or ready to book? We serve <Link href="/locations" className="text-white hover:text-accent underline">Michigan communities</Link> with professional residential and commercial cleaning. Get your <Link href="/quote" className="text-white hover:text-accent underline">free quote</Link> today.
             </p>
           </div>
         </section>

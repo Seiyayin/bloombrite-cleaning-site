@@ -51,7 +51,6 @@ const Hero = () => {
                 width="800"
                 height="600"
                 loading="eager"
-                fetchPriority="high"
               />
             </picture>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white">

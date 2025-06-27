@@ -21,27 +21,21 @@ const OptimizedImage = ({
 }: OptimizedImageProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
   
-  // Convert .jpg to .webp for optimized loading
-  const webpSrc = src.replace(/\.(jpg|jpeg)$/i, '.webp');
-  
   return (
-    <picture className={className}>
-      <source srcSet={webpSrc} type="image/webp" sizes={sizes} />
-      <img
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        loading={priority ? 'eager' : 'lazy'}
-        {...(priority && { fetchPriority: 'high' } as any)}
-        decoding="async"
-        onLoad={() => setIsLoaded(true)}
-        style={{
-          opacity: isLoaded ? 1 : 0,
-          transition: 'opacity 0.3s ease-in-out'
-        }}
-      />
-    </picture>
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      loading={priority ? 'eager' : 'lazy'}
+      decoding="async"
+      onLoad={() => setIsLoaded(true)}
+      className={className}
+      style={{
+        opacity: isLoaded ? 1 : 0,
+        transition: 'opacity 0.3s ease-in-out'
+      }}
+    />
   );
 };
 

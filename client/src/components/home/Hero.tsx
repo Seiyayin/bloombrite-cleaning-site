@@ -42,17 +42,14 @@ const Hero = () => {
         </div>
         <div className="md:col-span-1">
           <div className="relative rounded-lg overflow-hidden shadow-xl" style={{ aspectRatio: '4/3' }}>
-            <picture>
-              <source srcSet="/images/team-optimized.webp" type="image/webp" />
-              <img 
-                src={teamImage} 
-                alt="Bloombrite Cleaning Team" 
-                className="w-full h-full object-cover"
-                width="800"
-                height="600"
-                loading="eager"
-              />
-            </picture>
+            <img 
+              src="/images/team.jpg" 
+              alt="Bloombrite Cleaning Team" 
+              className="w-full h-full object-cover"
+              width="800"
+              height="600"
+              loading="eager"
+            />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white">
               <p className="font-semibold">Meet our professional cleaning team</p>
             </div>

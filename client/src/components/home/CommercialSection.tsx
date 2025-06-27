@@ -55,7 +55,7 @@ const CommercialSection = () => {
                 </li>
               </ul>
               <Link href="/services/office-cleaning" className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition">
-                Learn More
+                Learn More About Office Cleaning Services
               </Link>
             </div>
           </div>

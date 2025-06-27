@@ -43,7 +43,7 @@ const Hero = () => {
         <div className="md:col-span-1">
           <div className="relative rounded-lg overflow-hidden shadow-xl" style={{ aspectRatio: '4/3' }}>
             <picture>
-              <source srcSet="/images/team.webp" type="image/webp" />
+              <source srcSet="/images/team-optimized.webp" type="image/webp" />
               <img 
                 src={teamImage} 
                 alt="Bloombrite Cleaning Team" 

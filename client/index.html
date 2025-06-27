@@ -16,7 +16,7 @@
     </style>
     
     <!-- Preload critical resources -->
-    <link rel="preload" href="/images/team.webp" as="image" type="image/webp">
+    <link rel="preload" href="/images/team-optimized.webp" as="image" type="image/webp">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
     
     <!-- Font optimization -->
@@ -25,9 +25,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
     
-    <!-- Font Awesome with deferred loading -->
+    <!-- Font Awesome with subset loading -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Resource hints for external domains -->
+    <link rel="dns-prefetch" href="//clienthub.getjobber.com">
+    <link rel="dns-prefetch" href="//d3ey4dbjkt2f6s.cloudfront.net">
     <title>Bloombrite Cleaning | Professional Cleaning Services in Michigan</title>
     <meta name="description" content="Bloombrite Cleaning offers top-quality residential and commercial cleaning services in Wixom, Novi, Livonia and surrounding areas in Michigan.">
   </head>

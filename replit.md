@@ -88,6 +88,7 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- June 26, 2025: Updated pricing - Standard Cleaning to $160, Deep Cleaning to $250 (including schema markup)
 - June 26, 2025: Updated Standard and Deep Cleaning service descriptions with detailed area-by-area breakdown
 - June 26, 2025: Added "Ready to Get Started" section with quote process information to home page
 - June 26, 2025: Integrated Jobber embedded form into /quote page while preserving external link option

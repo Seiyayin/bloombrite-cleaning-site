@@ -85,7 +85,7 @@ export const DeepCleaningSchema = () => {
     "description": "Our thorough deep cleaning service addresses hard-to-reach areas and deeply embedded dirt. Perfect for spring cleaning, special occasions, or when your home needs a fresh start.",
     "offers": {
       "@type": "Offer",
-      "price": "299",
+      "price": "250",
       "priceCurrency": "USD",
       "priceValidUntil": "2025-12-31"
     },

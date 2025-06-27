@@ -120,7 +120,7 @@ export const services = [
       <p class="mt-4">This service is ideal for homes that are maintained regularly and don't require deep cleaning of neglected areas. Many of our clients choose this as a bi-weekly or monthly service to maintain cleanliness between deeper cleanings.</p>
     `,
     imageUrl: "/images/kitchen-main.jpg",
-    startingPrice: "$120",
+    startingPrice: "$160",
     included: [
       "Dusting: General dusting of visible surfaces, furniture, and décor",
       "Kitchen: Countertops, sink, microwave exterior, exterior of appliances",
@@ -158,7 +158,7 @@ export const services = [
       <p class="mt-4">This service takes longer than our Standard Cleaning but delivers exceptional results. Many clients choose this service for their first cleaning with us, then maintain with regular Standard Cleaning appointments.</p>
     `,
     imageUrl: "/images/kitchen-post.jpg",
-    startingPrice: "$200",
+    startingPrice: "$250",
     included: [
       "Dusting: Includes vents, ceiling fans, light fixtures, baseboards, window sills, blinds, and behind/under furniture",
       "Kitchen: Interior of oven, fridge, microwave; degreasing range hood; cabinet fronts and handles deep scrubbed",

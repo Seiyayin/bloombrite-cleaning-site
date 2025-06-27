@@ -18,7 +18,7 @@ const FaqSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-            Find answers to our most commonly asked questions about our cleaning services.
+            Find answers to our most commonly asked questions about our <Link href="/services" className="text-primary hover:underline">cleaning services</Link>, <Link href="/quote" className="text-primary hover:underline">pricing</Link>, and <Link href="/locations" className="text-primary hover:underline">service areas</Link>.
           </p>
         </div>
         

@@ -61,8 +61,11 @@ const LocationDetail = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row gap-12">
               <div className="lg:w-2/3">
-                <h2 className="text-2xl font-bold mb-6">Cleaning Services in {location.name}</h2>
-                <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: location.description }} />
+                <h2 className="text-2xl font-bold mb-6">Professional Cleaning Services in {location.name}</h2>
+                <div className="prose max-w-none mb-6" dangerouslySetInnerHTML={{ __html: location.description }} />
+                <p className="text-lg text-neutral-600 mb-6">
+                  Our <Link href="/services/standard-cleaning" className="text-primary hover:underline">residential cleaning services</Link> and <Link href="/services/office-cleaning" className="text-primary hover:underline">commercial cleaning solutions</Link> are designed to meet the unique needs of {location.name} residents and businesses. From <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep cleaning</Link> to <Link href="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, we provide comprehensive care for your property.
+                </p>
                 
                 <div className="my-12 bg-neutral-50 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-4">Areas We Serve in {location.name}</h3>

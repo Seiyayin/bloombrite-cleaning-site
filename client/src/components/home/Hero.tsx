@@ -10,7 +10,7 @@ const Hero = () => {
             <span className="text-primary">Professional Cleaning</span> Services in Michigan
           </h1>
           <p className="text-xl mb-8 text-gray-600">
-            Transform your space with Bloombrite's expert cleaning services. Spotless results, guaranteed satisfaction.
+            Transform your space with Bloombrite's expert <Link href="/services" className="text-primary hover:underline">cleaning services</Link>. From <Link href="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link> to <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep cleaning</Link>, we deliver spotless results with guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
@@ -21,8 +21,8 @@ const Hero = () => {
             >
               Get a Free Quote
             </a>
-            <Link href="#services" className="px-8 py-4 border-2 border-primary text-primary font-bold rounded-md hover:bg-primary hover:bg-opacity-10 transition shadow-sm text-center">
-              Our Services
+            <Link href="/services" className="px-8 py-4 border-2 border-primary text-primary font-bold rounded-md hover:bg-primary hover:bg-opacity-10 transition shadow-sm text-center">
+              View All Services
             </Link>
           </div>
           <div className="mt-8 flex items-center gap-6 flex-wrap">

@@ -124,7 +124,7 @@ const ServiceDetail = () => {
                 <div className="bg-neutral-50 p-6 rounded-lg shadow-md sticky top-24">
                   <h3 className="text-xl font-bold mb-4">Book This Service</h3>
                   <p className="mb-6">
-                    Ready to experience the BloomBrite difference? Book your {service.title.toLowerCase()} service today and enjoy a cleaner, healthier space.
+                    Ready to experience the BloomBrite difference? Book your {service.title.toLowerCase()} service today and enjoy a cleaner, healthier space. We also offer <Link href="/services" className="text-primary hover:underline">additional cleaning services</Link> throughout <Link href="/locations" className="text-primary hover:underline">Michigan</Link>.
                   </p>
                   <Link 
                     href="/quote" 

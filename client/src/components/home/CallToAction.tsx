@@ -6,7 +6,7 @@ const CallToAction = () => {
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-6">Ready for a Cleaner, Healthier Space?</h2>
         <p className="text-xl mb-8 max-w-3xl mx-auto">
-          Experience the Bloombrite difference today. Our professional cleaning team is ready to transform your home or office.
+          Experience the Bloombrite difference today. Our professional cleaning team is ready to transform your <Link href="/services/standard-cleaning" className="text-white hover:text-accent underline">home</Link> or <Link href="/services/office-cleaning" className="text-white hover:text-accent underline">office</Link> with our comprehensive <Link href="/services" className="text-white hover:text-accent underline">cleaning services</Link>.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link href="/quote" className="px-8 py-4 bg-accent text-white font-bold rounded-md hover:bg-accent-dark transition shadow-md">

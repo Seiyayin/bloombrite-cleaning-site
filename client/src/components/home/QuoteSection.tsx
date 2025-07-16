@@ -73,7 +73,7 @@ const QuoteSection = () => {
                 href="https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/new?source=social_media" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="px-6 py-4 bg-primary text-white font-bold rounded-md hover:bg-opacity-90 transition shadow-md text-center"
+                className="px-6 py-4 bg-primary text-white font-bold rounded-md hover:bg-opacity-90 active:bg-orange-700 transition shadow-md text-center"
               >
                 Request Your Quote Now
               </a>

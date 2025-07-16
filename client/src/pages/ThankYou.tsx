@@ -48,7 +48,7 @@ const ThankYou = () => {
             
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild>
-                <Link href="/" className="px-8 py-2 bg-primary text-white font-semibold rounded-md hover:bg-primary-dark transition shadow-sm">
+                <Link href="/" className="px-8 py-2 bg-primary text-white font-semibold rounded-md hover:bg-primary-dark active:bg-orange-700 transition shadow-sm">
                   Return to Home
                 </Link>
               </Button>

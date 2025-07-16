@@ -91,12 +91,12 @@ const QuoteInfoSection = () => {
 
           {/* Call to Action */}
           <div className="text-center">
-            <Link href="/quote" className="inline-block px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-primary-dark transition shadow-md mr-4">
+            <Link href="/quote" className="inline-block px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-primary-dark active:bg-orange-700 transition shadow-md mr-4">
               Get Your Free Quote
             </Link>
             <a 
               href="tel:9474654217" 
-              className="inline-block px-8 py-4 bg-white text-primary border border-primary font-bold rounded-md hover:bg-neutral-50 transition shadow-md"
+              className="inline-block px-8 py-4 bg-white text-primary border border-primary font-bold rounded-md hover:bg-neutral-50 active:bg-neutral-100 transition shadow-md"
             >
               Call (947) 465-4217
             </a>

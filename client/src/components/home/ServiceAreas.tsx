@@ -26,7 +26,7 @@ const ServiceAreas = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Link href="/locations" className="inline-block px-8 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary-dark transition shadow-sm">
+          <Link href="/locations" className="inline-block px-8 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary-dark active:bg-orange-700 transition shadow-sm">
             View All Service Areas
           </Link>
         </div>

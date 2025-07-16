@@ -122,16 +122,16 @@ const Contact = () => {
                   <div className="mt-8 pt-6 border-t border-neutral-200">
                     <h3 className="font-semibold mb-4">Follow Us</h3>
                     <div className="flex space-x-4">
-                      <a href="https://www.facebook.com/bloombritecleaning" className="bg-neutral-100 hover:bg-primary hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors" aria-label="Facebook">
+                      <a href="https://www.facebook.com/bloombritecleaning" className="bg-neutral-100 hover:bg-primary hover:text-white active:bg-orange-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors" aria-label="Facebook">
                         <i className="fab fa-facebook-f"></i>
                       </a>
-                      <a href="https://www.instagram.com/bloombritecleaning" className="bg-neutral-100 hover:bg-primary hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors" aria-label="Instagram">
+                      <a href="https://www.instagram.com/bloombritecleaning" className="bg-neutral-100 hover:bg-primary hover:text-white active:bg-orange-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors" aria-label="Instagram">
                         <i className="fab fa-instagram"></i>
                       </a>
-                      <a href="https://twitter.com/bloombriteclean" className="bg-neutral-100 hover:bg-primary hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors" aria-label="Twitter">
+                      <a href="https://twitter.com/bloombriteclean" className="bg-neutral-100 hover:bg-primary hover:text-white active:bg-orange-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors" aria-label="Twitter">
                         <i className="fab fa-twitter"></i>
                       </a>
-                      <a href="https://www.linkedin.com/company/bloombrite-cleaning" className="bg-neutral-100 hover:bg-primary hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors" aria-label="LinkedIn">
+                      <a href="https://www.linkedin.com/company/bloombrite-cleaning" className="bg-neutral-100 hover:bg-primary hover:text-white active:bg-orange-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors" aria-label="LinkedIn">
                         <i className="fab fa-linkedin-in"></i>
                       </a>
                     </div>
@@ -225,7 +225,7 @@ const Contact = () => {
                       
                       <Button 
                         type="submit" 
-                        className="px-8 py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-md transition"
+                        className="px-8 py-3 bg-primary hover:bg-primary-dark active:bg-orange-700 text-white font-semibold rounded-md transition"
                       >
                         Send Message
                       </Button>

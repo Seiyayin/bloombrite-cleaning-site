@@ -35,7 +35,7 @@ const ServiceDetail = () => {
     <>
       <SeoHead 
         title={`${service.title} in Michigan | Bloombrite Cleaning Services`}
-        description={`Professional ${service.title.toLowerCase()} in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, Walled Lake, West Bloomfield, and Northville. ${service.metaDescription} Starting at ${service.startingPrice}.`}
+        description={`Professional ${service.title.toLowerCase()} in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, Walled Lake, West Bloomfield, Northville, and Keego Harbor. ${service.metaDescription} Starting at ${service.startingPrice}.`}
         ogImage={service.imageUrl}
       />
       {/* Render specialized schema for services */}
@@ -133,8 +133,8 @@ const ServiceDetail = () => {
                   </Link>
                   <div className="mt-6 text-center">
                     <span className="text-sm text-neutral-600">or call us at</span>
-                    <a href="tel:7344899908" className="block mt-1 font-semibold text-primary hover:underline">
-                      (734) 489-9908
+                    <a href="tel:9474654217" className="block mt-1 font-semibold text-primary hover:underline">
+                      (947) 465-4217
                     </a>
                   </div>
                   

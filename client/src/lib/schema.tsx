@@ -27,7 +27,7 @@ export const LocalBusinessSchema = () => {
     ],
     "logo": "https://www.bloombritecleaning.com/bloombrite%20logo.png",
     "url": "https://www.bloombritecleaning.com",
-    "telephone": "734-489-9908",
+    "telephone": "947-465-4217",
     "email": "sales@bloombritecleaning.com",
     "description": "Professional residential and commercial cleaning services in Michigan. We provide standard cleaning, deep cleaning, move-in/out cleaning, office cleaning, power washing, window cleaning, and specialized cleaning services with guaranteed satisfaction.",
     "address": {
@@ -215,7 +215,7 @@ export const ServiceSchema = ({
     "provider": {
       "@type": ["LocalBusiness", "CleaningService"],
       "name": "Bloombrite Cleaning",
-      "telephone": "734-489-9908",
+      "telephone": "947-465-4217",
       "email": "sales@bloombritecleaning.com",
       "url": "https://www.bloombritecleaning.com",
       "logo": "https://www.bloombritecleaning.com/bloombrite%20logo.png",

@@ -88,6 +88,11 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- July 16, 2025: Updated phone number from (734) 489-9908 to (947) 465-4217 across all website files including schema markup, components, and pages
+- July 16, 2025: Added new city page for Keego Harbor with comprehensive SEO-optimized content and residential cleaning keywords
+- July 16, 2025: Enhanced existing location pages with expanded residential cleaning terminology and keyword variety
+- July 16, 2025: Updated Hero section, Services section, and Home page with additional residential cleaning keywords for better SEO
+- July 16, 2025: Continued optimization of ServiceDetail pages with enhanced residential cleaning content
 - June 27, 2025: Implemented comprehensive internal linking strategy for improved SEO - added contextual links throughout website connecting related services, locations, and key pages
 - June 27, 2025: Fixed accessibility issues - updated "Learn More" links with descriptive text and resolved hero image display
 - June 27, 2025: Optimized website performance - compressed large images, added preloading for critical resources, and eliminated render-blocking issues

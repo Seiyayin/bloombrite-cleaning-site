@@ -148,13 +148,24 @@ export const locations = [
     zipCodes: "48322, 48323, 48324",
     shortDescription: "Premium cleaning services for West Bloomfield homes and businesses with attention to luxury details and exceptional results.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Cleaning Services in West Bloomfield, MI</h1>
+      <h1 class="text-3xl font-bold mb-6">Premium Residential Cleaning Services in West Bloomfield, MI</h1>
       
-      <p>Bloombrite Cleaning Services provides premium cleaning services throughout West Bloomfield. Our experienced cleaning services professionals understand the unique needs of West Bloomfield's luxury homes and commercial properties, delivering exceptional cleaning services that exceed expectations.</p>
+      <p>Bloombrite Cleaning Services provides premium residential cleaning services throughout West Bloomfield. Our experienced house cleaning services professionals understand the unique needs of West Bloomfield's luxury homes and upscale residential properties, delivering exceptional residential cleaning services that exceed expectations.</p>
       
-      <p class="mt-4">West Bloomfield homeowners and businesses trust Bloombrite Cleaning Services for our meticulous attention to detail, flexible scheduling, and commitment to customer satisfaction. We specialize in providing high-end cleaning services that maintain the pristine appearance of luxury properties.</p>
+      <p class="mt-4">West Bloomfield homeowners trust Bloombrite Cleaning Services for our meticulous attention to detail, flexible scheduling, and commitment to customer satisfaction. We specialize in providing high-end residential cleaning services that maintain the pristine appearance of luxury homes while ensuring a healthy, comfortable living environment.</p>
       
-      <p class="mt-4">Our comprehensive cleaning services in West Bloomfield include <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">standard cleaning services</a>, <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>, <a href="/services/move-in-out-cleaning" class="text-orange-600 hover:text-orange-700">move-in/out cleaning services</a>, and specialized cleaning services for luxury homes and executive offices. Whether you need regular maintenance cleaning services or a one-time deep cleaning service, we're committed to providing the highest quality cleaning services. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our premium cleaning services today.</p>
+      <p class="mt-4">Our comprehensive residential cleaning services in West Bloomfield include <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">standard house cleaning services</a>, <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>, <a href="/services/move-in-out-cleaning" class="text-orange-600 hover:text-orange-700">move-in/out cleaning services</a>, and specialized residential cleaning services for luxury homes. Whether you need regular maintenance house cleaning services or a one-time deep cleaning service, we're committed to providing the highest quality residential cleaning services.</p>
+      
+      <h2 class="text-2xl font-bold mt-8 mb-4">Specialized Residential Cleaning Services for West Bloomfield Luxury Homes</h2>
+      <ul class="list-disc list-inside space-y-2 mt-4">
+        <li><strong>Luxury Home Cleaning:</strong> Our residential cleaning services are tailored for high-end properties with premium finishes and fixtures</li>
+        <li><strong>Custom House Cleaning Plans:</strong> We develop personalized residential cleaning services schedules based on your lifestyle and preferences</li>
+        <li><strong>Premium Cleaning Products:</strong> We use top-quality, eco-friendly cleaning products that are safe for luxury surfaces and family members</li>
+        <li><strong>Detailed Attention:</strong> Our house cleaning services include meticulous care for fine furnishings, artwork, and delicate surfaces</li>
+        <li><strong>Flexible Scheduling:</strong> Our residential cleaning services accommodate busy executive schedules and social events</li>
+      </ul>
+      
+      <p class="mt-6">Experience the difference professional residential cleaning services can make for your West Bloomfield home. Our house cleaning services are designed to maintain the elegance and comfort of your luxury property while giving you more time to enjoy the finer things in life. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our premium residential cleaning services today.</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },
@@ -174,5 +185,35 @@ export const locations = [
       <p class="mt-4">Our cleaning services in Northville include <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">standard cleaning services</a>, <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>, <a href="/services/move-in-out-cleaning" class="text-orange-600 hover:text-orange-700">move-in/out cleaning services</a>, recurring maintenance cleaning services, and specialized cleaning services for historic properties. Whatever your cleaning services needs, we're here to provide exceptional results and complete customer satisfaction. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our professional cleaning services today.</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
+  },
+  {
+    id: "keego-harbor",
+    slug: "keego-harbor",
+    name: "Keego Harbor, MI",
+    zipCodes: "48320",
+    shortDescription: "Professional residential cleaning services for Keego Harbor homes with personalized attention and eco-friendly practices.",
+    description: `
+      <h1 class="text-3xl font-bold mb-6">Residential Cleaning Services in Keego Harbor, MI</h1>
+      
+      <p>Bloombrite Cleaning Services is proud to provide comprehensive residential cleaning services to the beautiful lakefront community of Keego Harbor. Our professional cleaning services team understands the unique needs of waterfront properties and seasonal homes, delivering exceptional house cleaning services that maintain the pristine appearance of your lakefront investment.</p>
+      
+      <p class="mt-4">Keego Harbor homeowners trust our residential cleaning services for their attention to detail, reliability, and commitment to customer satisfaction. Our house cleaning services are designed to protect and enhance the value of your property while ensuring a healthy, clean living environment for you and your family.</p>
+      
+      <p class="mt-4">We specialize in residential cleaning services that include <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">standard house cleaning services</a>, <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>, <a href="/services/move-in-out-cleaning" class="text-orange-600 hover:text-orange-700">move-in/out cleaning services</a>, seasonal home cleaning, post-construction cleaning, and specialized residential cleaning services for lakefront properties. Our eco-friendly cleaning products are safe for your family and the surrounding lake environment.</p>
+      
+      <p class="mt-4">Whether you need regular weekly house cleaning services, bi-weekly residential cleaning services, or one-time deep cleaning services, our professional team delivers consistent, high-quality results. We understand that every home is unique, which is why we customize our residential cleaning services to meet your specific needs and preferences. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our professional residential cleaning services today.</p>
+      
+      <h2 class="text-2xl font-bold mt-8 mb-4">Why Choose Our Residential Cleaning Services in Keego Harbor?</h2>
+      <ul class="list-disc list-inside space-y-2 mt-4">
+        <li><strong>Lakefront Property Expertise:</strong> Our cleaning services team has extensive experience with waterfront homes and seasonal properties</li>
+        <li><strong>Eco-Friendly Residential Cleaning:</strong> We use environmentally safe cleaning products that protect local water systems</li>
+        <li><strong>Flexible Scheduling:</strong> Our residential cleaning services accommodate seasonal schedules and vacation home needs</li>
+        <li><strong>Bonded & Insured:</strong> All our house cleaning services professionals are fully bonded and insured for your peace of mind</li>
+        <li><strong>100% Satisfaction Guarantee:</strong> We stand behind our residential cleaning services with a complete satisfaction guarantee</li>
+      </ul>
+      
+      <p class="mt-6">Contact Bloombrite Cleaning Services today to experience the difference professional residential cleaning services can make for your Keego Harbor home. Our house cleaning services are designed to give you more time to enjoy the beautiful lake lifestyle while maintaining a spotless, healthy living environment.</p>
+    `,
+    imageUrl: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   }
 ];

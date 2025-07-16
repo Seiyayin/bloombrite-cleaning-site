@@ -24,7 +24,7 @@ export const MemorialDayCleaningSchema = () => {
     "provider": {
       "@type": "LocalBusiness",
       "name": "Bloombrite Cleaning",
-      "telephone": "734-489-9908",
+      "telephone": "947-465-4217",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "2207 Evergreen St",
@@ -88,7 +88,7 @@ export const HolidayCleaningSchema = () => {
     "provider": {
       "@type": "LocalBusiness",
       "name": "Bloombrite Cleaning",
-      "telephone": "734-489-9908",
+      "telephone": "947-465-4217",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "2207 Evergreen St",
@@ -142,7 +142,7 @@ export const ApplianceCleaningSchema = () => {
     "provider": {
       "@type": "LocalBusiness",
       "name": "Bloombrite Cleaning",
-      "telephone": "734-489-9908",
+      "telephone": "947-465-4217",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "2207 Evergreen St",

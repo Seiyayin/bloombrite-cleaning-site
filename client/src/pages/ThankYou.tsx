@@ -39,9 +39,9 @@ const ThankYou = () => {
                 We typically respond to all inquiries within 24 hours during business days. If you need immediate assistance, please don't hesitate to call us.
               </p>
               <div className="mt-4">
-                <a href="tel:7344899908" className="inline-flex items-center text-primary font-medium hover:underline">
+                <a href="tel:9474654217" className="inline-flex items-center text-primary font-medium hover:underline">
                   <i className="fas fa-phone-alt mr-2"></i>
-                  (734) 489-9908
+                  (947) 465-4217
                 </a>
               </div>
             </div>

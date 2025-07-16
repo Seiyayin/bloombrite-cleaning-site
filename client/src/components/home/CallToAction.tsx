@@ -12,8 +12,8 @@ const CallToAction = () => {
           <Link href="/quote" className="px-8 py-4 bg-accent text-white font-bold rounded-md hover:bg-accent-dark transition shadow-md">
             Get Your Free Quote
           </Link>
-          <a href="tel:7344899908" className="px-8 py-4 bg-white text-primary font-bold rounded-md hover:bg-neutral-50 transition shadow-md">
-            Call (734) 489-9908
+          <a href="tel:9474654217" className="px-8 py-4 bg-white text-primary font-bold rounded-md hover:bg-neutral-50 transition shadow-md">
+            Call (947) 465-4217
           </a>
         </div>
       </div>

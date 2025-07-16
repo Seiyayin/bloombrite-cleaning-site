@@ -128,8 +128,8 @@ const LocationDetail = () => {
                   </Link>
                   <div className="mt-6 text-center">
                     <span className="text-sm text-neutral-600">or call us at</span>
-                    <a href="tel:7344899908" className="block mt-1 font-semibold text-primary hover:underline">
-                      (734) 489-9908
+                    <a href="tel:9474654217" className="block mt-1 font-semibold text-primary hover:underline">
+                      (947) 465-4217
                     </a>
                   </div>
                   

@@ -44,7 +44,7 @@ const Accessibility = () => {
                 We welcome your feedback on the accessibility of BloomBrite Cleaning's website. Please contact us if you encounter accessibility barriers on our site:
               </p>
               <ul>
-                <li>Phone: (734) 489-9908</li>
+                <li>Phone: (947) 465-4217</li>
                 <li>Email: <a href="mailto:accessibility@bloombritecleaning.com">accessibility@bloombritecleaning.com</a></li>
                 <li>Address: 123 Clean Street, Wixom, MI 48393</li>
               </ul>

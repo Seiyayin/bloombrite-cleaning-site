@@ -43,6 +43,7 @@ function Router() {
       <Route path="/walled-lake" component={LocationDetail} />
       <Route path="/west-bloomfield" component={LocationDetail} />
       <Route path="/northville" component={LocationDetail} />
+      <Route path="/keego-harbor" component={LocationDetail} />
       <Route path="/contact" component={Contact} />
       <Route path="/quote" component={GetQuote} />
       <Route path="/reviews" component={Reviews} />

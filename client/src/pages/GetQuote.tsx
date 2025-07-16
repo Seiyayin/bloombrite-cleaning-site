@@ -25,7 +25,7 @@ const QuotePageSchema = () => (
               "addressRegion": "MI",
               "addressCountry": "US"
             },
-            "telephone": "+1-734-489-9908",
+            "telephone": "+1-947-465-4217",
             "url": "https://bloombritecleaning.com"
           },
           "offers": {

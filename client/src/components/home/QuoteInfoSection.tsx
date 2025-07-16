@@ -95,10 +95,10 @@ const QuoteInfoSection = () => {
               Get Your Free Quote
             </Link>
             <a 
-              href="tel:7344899908" 
+              href="tel:9474654217" 
               className="inline-block px-8 py-4 bg-white text-primary border border-primary font-bold rounded-md hover:bg-neutral-50 transition shadow-md"
             >
-              Call (734) 489-9908
+              Call (947) 465-4217
             </a>
           </div>
         </div>

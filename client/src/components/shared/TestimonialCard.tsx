@@ -30,7 +30,7 @@ const TestimonialCard = ({ testimonial }: TestimonialProps) => {
   };
   
   return (
-    <div className="bg-neutral-50 p-6 rounded-lg shadow-md">
+    <div className="bg-neutral-50 p-6 rounded-lg shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300">
       <div className="flex items-center mb-4">
         <div className="text-accent">
           {renderStars(testimonial.rating)}

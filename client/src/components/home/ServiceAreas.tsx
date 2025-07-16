@@ -17,7 +17,7 @@ const ServiceAreas = () => {
             <Link 
               key={location.id} 
               href={`/locations/${location.slug}`}
-              className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition text-center"
+              className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md hover:bg-orange-50 transition-all duration-300 text-center group"
             >
               <h3 className="font-semibold mb-2">{location.name}</h3>
               <p className="text-sm text-neutral-600">{location.zipCodes}</p>
@@ -26,7 +26,7 @@ const ServiceAreas = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Link href="/locations" className="inline-block px-8 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary-dark active:bg-orange-700 transition shadow-sm">
+          <Link href="/locations" className="inline-block px-8 py-3 bg-primary text-white font-semibold rounded-md hover:bg-orange-600 active:bg-orange-700 transition shadow-sm">
             View All Service Areas
           </Link>
         </div>

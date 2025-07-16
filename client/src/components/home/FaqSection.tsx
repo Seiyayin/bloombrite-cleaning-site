@@ -24,9 +24,9 @@ const FaqSection = () => {
         
         <div className="max-w-4xl mx-auto space-y-6">
           {displayedFaqs.map((faq, index) => (
-            <div key={index} className="border border-neutral-200 rounded-lg overflow-hidden">
+            <div key={index} className="border border-neutral-200 rounded-lg overflow-hidden hover:shadow-md hover:bg-orange-50 transition-all duration-300">
               <button 
-                className="w-full flex items-center justify-between bg-neutral-50 p-6 text-left font-semibold focus:outline-none"
+                className="w-full flex items-center justify-between bg-neutral-50 p-6 text-left font-semibold focus:outline-none hover:bg-orange-100 transition-colors"
                 onClick={() => toggleFaq(index)}
                 aria-expanded={activeIndex === index}
                 aria-controls={`faq-answer-${index}`}

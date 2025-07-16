@@ -30,7 +30,7 @@ const ServicesSection = () => {
         </div>
         
         <div className="mt-10 text-center">
-          <Link href="/services" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition shadow-md">
+          <Link href="/services" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-md hover:bg-orange-600 active:bg-orange-700 transition shadow-md">
             View All Services
           </Link>
         </div>

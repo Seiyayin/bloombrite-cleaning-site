@@ -36,7 +36,7 @@ const LocationsOverview = () => {
                 <Link 
                   key={location.id} 
                   href={`/locations/${location.slug}`}
-                  className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+                  className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:bg-orange-50 transition-all duration-300 group"
                 >
                   <div className="h-40 bg-neutral-200 overflow-hidden">
                     <img 
@@ -53,7 +53,7 @@ const LocationsOverview = () => {
                     </p>
                     <p className="text-neutral-600 mb-4">{location.shortDescription}</p>
                     <div className="flex justify-end">
-                      <span className="text-primary font-medium hover:text-primary-dark flex items-center">
+                      <span className="text-primary font-medium hover:text-orange-600 group-hover:text-orange-600 flex items-center transition-colors">
                         Learn More
                         <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>

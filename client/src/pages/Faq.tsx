@@ -156,10 +156,10 @@ const Faq = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link href="/contact" className="px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-primary-dark active:bg-orange-700 transition shadow-md">
+              <Link href="/contact" className="px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-orange-600 active:bg-orange-700 transition shadow-md">
                 Contact Us
               </Link>
-              <a href="tel:9474654217" className="px-8 py-4 bg-white text-primary border border-primary font-bold rounded-md hover:bg-neutral-50 active:bg-neutral-100 transition shadow-md">
+              <a href="tel:9474654217" className="px-8 py-4 bg-white text-primary border border-primary font-bold rounded-md hover:bg-orange-50 hover:text-orange-700 active:bg-neutral-100 transition shadow-md">
                 Call (947) 465-4217
               </a>
             </div>

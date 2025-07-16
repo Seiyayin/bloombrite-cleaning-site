@@ -126,7 +126,7 @@ const GetQuote = () => {
                     href="https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/new?source=social_media"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-6 py-3 bg-accent text-white font-semibold rounded-md hover:bg-accent-dark active:bg-orange-700 transition shadow-sm"
+                    className="inline-block px-6 py-3 bg-accent text-white font-semibold rounded-md hover:bg-orange-600 active:bg-orange-700 transition shadow-sm"
                   >
                     Open Quote Form in New Window
                   </a>

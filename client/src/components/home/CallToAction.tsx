@@ -9,10 +9,10 @@ const CallToAction = () => {
           Experience the Bloombrite difference today. Our professional cleaning team is ready to transform your <Link href="/services/standard-cleaning" className="text-white hover:text-accent underline">home</Link> or <Link href="/services/office-cleaning" className="text-white hover:text-accent underline">office</Link> with our comprehensive <Link href="/services" className="text-white hover:text-accent underline">cleaning services</Link>.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Link href="/quote" className="px-8 py-4 bg-accent text-white font-bold rounded-md hover:bg-accent-dark active:bg-orange-700 transition shadow-md">
+          <Link href="/quote" className="px-8 py-4 bg-accent text-white font-bold rounded-md hover:bg-orange-600 active:bg-orange-700 transition shadow-md">
             Get Your Free Quote
           </Link>
-          <a href="tel:9474654217" className="px-8 py-4 bg-white text-primary font-bold rounded-md hover:bg-neutral-50 active:bg-neutral-100 transition shadow-md">
+          <a href="tel:9474654217" className="px-8 py-4 bg-white text-primary font-bold rounded-md hover:bg-orange-50 hover:text-orange-700 active:bg-neutral-100 transition shadow-md">
             Call (947) 465-4217
           </a>
         </div>

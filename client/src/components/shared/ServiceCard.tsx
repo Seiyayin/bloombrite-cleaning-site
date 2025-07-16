@@ -14,7 +14,7 @@ interface ServiceProps {
 
 const ServiceCard = ({ service }: ServiceProps) => {
   return (
-    <div className="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+    <div className="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300 group">
       <div className="bg-neutral-200 overflow-hidden" style={{ aspectRatio: '16/9', height: '240px' }}>
         <OptimizedImage
           src={service.imageUrl}
@@ -32,7 +32,7 @@ const ServiceCard = ({ service }: ServiceProps) => {
         </p>
         <div className="flex items-center justify-between">
           <span className="text-sm font-medium">Starting at {service.startingPrice}</span>
-          <Link href={`/services/${service.slug}`} className="text-primary font-medium hover:text-primary-dark flex items-center" aria-label={`Learn more about ${service.title} service`}>
+          <Link href={`/services/${service.slug}`} className="text-primary font-medium hover:text-orange-600 group-hover:text-orange-600 flex items-center transition-colors" aria-label={`Learn more about ${service.title} service`}>
             View {service.title} Details
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>

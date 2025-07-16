@@ -196,7 +196,7 @@ export const services = [
       
       <p>This service follows our Standard Cleaning protocol but can be customized based on your specific needs. You can also alternate between Standard and Deep Cleaning sessions if desired.</p>
     `,
-    imageUrl: "/images/living room deep cleaning.jpg",
+    imageUrl: "/images/team.jpg",
     startingPrice: "$100",
     included: [
       "All services included in our Standard Cleaning",
@@ -233,7 +233,7 @@ export const services = [
       
       <p class="mt-4">Our Move-In/Out Cleaning is among our most thorough services, addressing every accessible area of the property. Most properties should be empty or nearly empty of personal belongings for optimal results.</p>
     `,
-    imageUrl: "/images/move in.jpg",
+    imageUrl: "/images/kitchen-post.jpg",
     startingPrice: "$250",
     included: [
       "Everything included in our Deep Cleaning service",
@@ -272,7 +272,7 @@ export const services = [
       
       <p class="mt-4">We customize our office cleaning services based on the size and needs of your business. From small professional offices to larger commercial spaces, we can create a cleaning plan that fits your requirements and budget.</p>
     `,
-    imageUrl: "/images/living room deep cleaning.jpg",
+    imageUrl: "/images/bedroom-clean.jpg",
     startingPrice: "$150",
     included: [
       "Dusting and wiping of all surfaces and furniture",

@@ -35,6 +35,14 @@ function Router() {
       <Route path="/services/:slug" component={ServiceDetail} />
       <Route path="/locations" component={LocationsOverview} />
       <Route path="/locations/:slug" component={LocationDetail} />
+      <Route path="/wixom" component={LocationDetail} />
+      <Route path="/novi" component={LocationDetail} />
+      <Route path="/livonia" component={LocationDetail} />
+      <Route path="/milford" component={LocationDetail} />
+      <Route path="/commerce" component={LocationDetail} />
+      <Route path="/walled-lake" component={LocationDetail} />
+      <Route path="/west-bloomfield" component={LocationDetail} />
+      <Route path="/northville" component={LocationDetail} />
       <Route path="/contact" component={Contact} />
       <Route path="/quote" component={GetQuote} />
       <Route path="/reviews" component={Reviews} />

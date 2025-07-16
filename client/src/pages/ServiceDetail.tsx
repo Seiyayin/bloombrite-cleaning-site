@@ -35,7 +35,7 @@ const ServiceDetail = () => {
     <>
       <SeoHead 
         title={`${service.title} in Michigan | Bloombrite Cleaning Services`}
-        description={`Professional ${service.title.toLowerCase()} in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. ${service.metaDescription} Starting at ${service.startingPrice}.`}
+        description={`Professional ${service.title.toLowerCase()} in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, Walled Lake, West Bloomfield, and Northville. ${service.metaDescription} Starting at ${service.startingPrice}.`}
         ogImage={service.imageUrl}
       />
       {/* Render specialized schema for services */}
@@ -51,12 +51,11 @@ const ServiceDetail = () => {
         <WindowCleaningSchema />
       ) : (
         <ServiceSchema 
-          name={service.title}
+          serviceName={service.title}
+          serviceType={service.title}
           description={service.metaDescription}
           url={window.location.href}
-          image={service.imageUrl}
-          price={service.startingPrice}
-          areaServed={serviceAreas}
+          price={service.startingPrice.replace('$', '')}
         />
       )}
       

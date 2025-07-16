@@ -23,8 +23,8 @@ const Home = () => {
   return (
     <>
       <SeoHead 
-        title="Bloombrite Cleaning | Professional Cleaning Services in Michigan"
-        description="Bloombrite Cleaning provides expert cleaning services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Residential & commercial cleaning, deep cleaning, move-in/out cleaning, window cleaning, and power washing with guaranteed satisfaction."
+        title="Bloombrite Cleaning Services | Professional House Cleaning in Michigan"
+        description="Bloombrite Cleaning Services provides expert house cleaning services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Residential & commercial cleaning services, deep cleaning services, move-in/out cleaning services, window cleaning services, and power washing services with guaranteed satisfaction."
         ogImage={teamImage} // Using your actual team image for social sharing
       />
       <LocalBusinessSchema />

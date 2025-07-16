@@ -1,23 +1,23 @@
 export const faqs = [
   {
     category: "services",
-    question: "How do I schedule a cleaning service?",
-    answer: "You can schedule a cleaning service through our website by filling out the quote form, calling our customer service number, or sending us an email. We'll confirm your appointment within 24 hours and send a reminder before your scheduled service."
+    question: "How do I schedule cleaning services?",
+    answer: "You can schedule cleaning services through our website by filling out the quote form, calling our customer service number, or sending us an email. We'll confirm your cleaning services appointment within 24 hours and send a reminder before your scheduled cleaning services."
   },
   {
     category: "services",
-    question: "What's included in your standard cleaning service?",
-    answer: "Our standard cleaning service includes dusting of all accessible surfaces, vacuuming carpets and floors, mopping of hard floors, cleaning and sanitizing bathrooms (toilets, showers, tubs, sinks), cleaning kitchen surfaces, sinks, appliance exteriors, and taking out trash. We also make beds and tidy up common areas."
+    question: "What's included in your standard cleaning services?",
+    answer: "Our standard cleaning services include dusting of all accessible surfaces, vacuuming carpets and floors, mopping of hard floors, cleaning and sanitizing bathrooms (toilets, showers, tubs, sinks), cleaning kitchen surfaces, sinks, appliance exteriors, and taking out trash. We also make beds and tidy up common areas as part of our comprehensive cleaning services."
   },
   {
     category: "services",
     question: "What's the difference between your standard and deep cleaning services?",
-    answer: "Our standard cleaning service covers regular maintenance cleaning of accessible areas, while deep cleaning is more comprehensive and includes areas that aren't cleaned during routine cleaning, such as inside cabinets, behind furniture, baseboards, ceiling fans, and other hard-to-reach areas. Deep cleaning takes longer and is more thorough."
+    answer: "Our standard cleaning services cover regular maintenance cleaning of accessible areas, while deep cleaning services are more comprehensive and include areas that aren't cleaned during routine cleaning services, such as inside cabinets, behind furniture, baseboards, ceiling fans, and other hard-to-reach areas. Deep cleaning services take longer and are more thorough than standard cleaning services."
   },
   {
     category: "services",
-    question: "How long does a typical cleaning service take?",
-    answer: "The duration depends on the size of your home, its condition, and the type of service. A standard cleaning of a 2-bedroom home typically takes 2-3 hours. Deep cleaning may take 4-6 hours. Move-in/out cleaning can take 5-8 hours. Our team will provide a more accurate estimate when scheduling your service."
+    question: "How long do your cleaning services typically take?",
+    answer: "The duration depends on the size of your home, its condition, and the type of cleaning services. A standard cleaning services for a 2-bedroom home typically takes 2-3 hours. Deep cleaning services may take 4-6 hours. Move-in/out cleaning services can take 5-8 hours. Our cleaning services team will provide a more accurate estimate when scheduling your cleaning services."
   },
   {
     category: "services",
@@ -26,8 +26,8 @@ export const faqs = [
   },
   {
     category: "booking",
-    question: "Do I need to be home during the cleaning service?",
-    answer: "No, you don't need to be home during the cleaning service. Many of our clients prefer to be away while we clean. We can arrange for a key exchange or lockbox access. All our cleaners are bonded and insured for your peace of mind."
+    question: "Do I need to be home during the cleaning services?",
+    answer: "No, you don't need to be home during the cleaning services. Many of our clients prefer to be away while we provide cleaning services. We can arrange for a key exchange or lockbox access. All our cleaning services professionals are bonded and insured for your peace of mind."
   },
   {
     category: "booking",
@@ -36,8 +36,8 @@ export const faqs = [
   },
   {
     category: "booking",
-    question: "Can I schedule a recurring cleaning service?",
-    answer: "Yes, we offer weekly, bi-weekly, and monthly recurring cleaning services. Regular clients receive priority scheduling, consistent cleaning teams, and often preferred pricing. You can adjust or cancel your recurring schedule with proper notice if your needs change."
+    question: "Can I schedule recurring cleaning services?",
+    answer: "Yes, we offer weekly, bi-weekly, and monthly recurring cleaning services. Regular cleaning services clients receive priority scheduling, consistent cleaning services teams, and often preferred pricing. You can adjust or cancel your recurring cleaning services schedule with proper notice if your needs change."
   },
   {
     category: "booking",
@@ -47,12 +47,12 @@ export const faqs = [
   {
     category: "pricing",
     question: "How do you determine pricing for cleaning services?",
-    answer: "Our pricing is based on several factors including the size of your home or office, the type of cleaning service required, specific cleaning requests, and the frequency of service. We provide upfront, transparent pricing with no hidden fees. Contact us for a personalized quote."
+    answer: "Our cleaning services pricing is based on several factors including the size of your home or office, the type of cleaning services required, specific cleaning requests, and the frequency of cleaning services. We provide upfront, transparent pricing with no hidden fees. Contact us for a personalized quote on our cleaning services."
   },
   {
     category: "pricing",
-    question: "Do you offer any discounts?",
-    answer: "Yes, we offer discounts for recurring service clients. The more frequently we clean, the more you save. We also occasionally run seasonal promotions and referral discounts. First-time clients may be eligible for an introductory offer."
+    question: "Do you offer any discounts on cleaning services?",
+    answer: "Yes, we offer discounts for recurring cleaning services clients. The more frequently we provide cleaning services, the more you save. We also occasionally run seasonal promotions and referral discounts for cleaning services. First-time cleaning services clients may be eligible for an introductory offer."
   },
   {
     category: "pricing",

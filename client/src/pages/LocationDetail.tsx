@@ -8,10 +8,11 @@ import { services } from '@/data/services';
 
 const LocationDetail = () => {
   const [, params] = useRoute('/locations/:slug');
-  const slug = params?.slug || '';
+  const [match] = useRoute('/:slug');
+  const slug = params?.slug || match?.params?.slug || '';
   
-  // Find the location by slug
-  const location = locations.find((l) => l.slug === slug);
+  // Find the location by slug, handling both /locations/:slug and /:slug routes
+  const location = locations.find((l) => l.slug === slug || l.slug === `${slug}`);
   
   // If location not found, redirect
   useEffect(() => {

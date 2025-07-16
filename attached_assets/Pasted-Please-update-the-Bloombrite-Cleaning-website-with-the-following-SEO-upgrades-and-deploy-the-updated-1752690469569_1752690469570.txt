@@ -1,0 +1,85 @@
+Please update the Bloombrite Cleaning website with the following SEO upgrades and deploy the updated version:
+
+🔷 1. Schema Markup (JSON-LD format)
+Add the following three schema types:
+
+a) Service Schema (on each service page)
+Use type Service with name, description, service type, area served, and provider (Bloombrite Cleaning).
+
+b) FAQ Schema (on pages with FAQs)
+Mark up all FAQs using FAQPage schema. Include at least 3 Q&A pairs per page.
+
+c) Review Schema (on the homepage or reviews section)
+Add Review or AggregateRating schema showing 5-star reviews from Google with reviewer name, rating, and text.
+
+🔷 2. Local City Pages (for SEO)
+Create new static pages for each service area. Use a clean, simple layout with this structure:
+
+URL format: /city-name (e.g., /wixom)
+
+Title tag: “House Cleaning in [City] | Bloombrite Cleaning”
+
+H1: “Cleaning Services in [City], MI”
+
+Meta Description: “[City] home cleaning done right. Get a free quote today from Bloombrite Cleaning – your trusted local pros.”
+
+300–700 words of SEO-friendly content including: services offered, benefits, why choose Bloombrite, service guarantee.
+
+At least 1 image with alt text: “Professional home cleaning in [City]”
+
+Link to quote form
+
+Cities to include:
+
+Wixom
+
+Novi
+
+South Lyon
+
+Commerce
+
+Walled Lake
+
+West Bloomfield
+
+Northville
+
+🔷 3. Optimize Existing Service Pages
+Add keyword-rich content (at least 400–600 words) for each:
+
+Standard Cleaning
+
+Deep Cleaning
+
+Move-In/Move-Out Cleaning
+
+Include a service breakdown, FAQs, and internal links to quote page.
+
+🔷 4. Add Meta Tags and H1s
+Ensure each page has a unique:
+
+Title tag (under 60 characters)
+
+Meta description (under 160 characters)
+
+One H1 tag with relevant keywords
+
+🔷 5. Internal Linking
+Link related pages together using anchor text:
+
+“Standard cleaning services” → /standard-cleaning
+
+“Move-out cleaning in Novi” → /novi
+
+“Get a free quote” → /quote
+
+🔷 6. Sitemap and SEO Setup
+
+Ensure sitemap.xml is present and auto-updates
+
+robots.txt should allow all pages
+
+Confirm canonical tags are set on each page
+
+Add alt text for all images

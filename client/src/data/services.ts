@@ -2,15 +2,17 @@ export const services = [
   {
     id: "window-cleaning",
     slug: "window-cleaning",
-    title: "Window Cleaning",
+    title: "Window Cleaning Services",
     shortDescription: "Professional window cleaning services for interior and exterior windows, including tracks, frames and screens.",
-    metaDescription: "Professional window cleaning services in Michigan. We clean windows inside and out, including tracks, frames, and screens for a crystal-clear view.",
+    metaDescription: "Professional window cleaning services in Michigan. We provide comprehensive window cleaning services inside and out, including tracks, frames, and screens for a crystal-clear view.",
     description: `
-      <p>Our comprehensive window cleaning service removes dirt, dust, water spots, and grime from your windows inside and out. We pay attention to every detail, cleaning not only the glass but also the frames, sills, and tracks for a complete cleaning experience.</p>
+      <p>Our comprehensive window cleaning services remove dirt, dust, water spots, and grime from your windows inside and out. We pay attention to every detail, cleaning not only the glass but also the frames, sills, and tracks for a complete cleaning services experience.</p>
       
-      <p>We use professional-grade equipment and eco-friendly cleaning solutions to ensure streak-free, crystal-clear results that let in maximum natural light and enhance your home's appearance.</p>
+      <p>We use professional-grade equipment and eco-friendly cleaning solutions to ensure streak-free, crystal-clear results that let in maximum natural light and enhance your home's appearance. Our window cleaning services are available as standalone services or as part of our comprehensive <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">standard cleaning services</a> and <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>.</p>
       
-      <p>Regular professional window cleaning not only improves your home's appearance but also extends the life of your windows by preventing etching and damage from environmental contaminants.</p>
+      <p>Regular professional window cleaning services not only improve your home's appearance but also extend the life of your windows by preventing etching and damage from environmental contaminants. Our skilled cleaning services professionals ensure your windows remain spotless and streak-free.</p>
+      
+      <p>Choose Bloombrite Cleaning Services for reliable, high-quality window cleaning services that deliver exceptional results every time. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our professional window cleaning services today.</p>
     `,
     imageUrl: "/images/window-cleaning.jpg",
     startingPrice: "$160",
@@ -38,15 +40,17 @@ export const services = [
   {
     id: "power-washing",
     slug: "power-washing",
-    title: "Power Washing",
+    title: "Power Washing Services",
     shortDescription: "Professional power washing services to restore the appearance of your home's exterior surfaces.",
     metaDescription: "Expert power washing services in Michigan for driveways, siding, decks, and patios. Restore your home's exterior with our professional pressure washing services.",
     description: `
-      <p>Our Power Washing service delivers professional-grade cleaning for your home's exterior surfaces, effectively removing dirt, grime, mold, mildew, and stains that regular cleaning can't address. Power washing not only improves your property's appearance but also helps maintain its value and prevent damage.</p>
+      <p>Our power washing services deliver professional-grade cleaning for your home's exterior surfaces, effectively removing dirt, grime, mold, mildew, and stains that regular cleaning services can't address. Power washing services not only improve your property's appearance but also help maintain its value and prevent damage.</p>
       
-      <p>Our trained technicians use commercial-grade equipment with adjustable pressure settings tailored to each surface type, ensuring effective cleaning without damage. We use environmentally friendly cleaning solutions that break down stubborn dirt and contaminants while being safe for your landscaping and pets.</p>
+      <p>Our trained cleaning services technicians use commercial-grade equipment with adjustable pressure settings tailored to each surface type, ensuring effective cleaning without damage. We use environmentally friendly cleaning solutions that break down stubborn dirt and contaminants while being safe for your landscaping and pets.</p>
       
-      <p>Power washing is recommended as seasonal maintenance to keep your home's exterior looking its best. Many homeowners schedule this service annually in spring to remove winter buildup or before painting/staining projects.</p>
+      <p>Power washing services are recommended as seasonal maintenance to keep your home's exterior looking its best. Many homeowners schedule our power washing services annually in spring to remove winter buildup or before painting/staining projects. Our power washing services can also be combined with our other cleaning services for comprehensive home maintenance.</p>
+      
+      <p>Trust Bloombrite Cleaning Services for professional power washing services that deliver outstanding results and protect your investment. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our power washing services today.</p>
     `,
     imageUrl: "/images/power washing.jpg",
     startingPrice: "$320",
@@ -71,8 +75,8 @@ export const services = [
   {
     id: "carpet-cleaning",
     slug: "carpet-cleaning",
-    title: "Carpet Cleaning",
-    shortDescription: "Professional deep carpet cleaning to remove stains, odors, and allergens, extending the life of your carpet.",
+    title: "Carpet Cleaning Services",
+    shortDescription: "Professional deep carpet cleaning services to remove stains, odors, and allergens, extending the life of your carpet.",
     metaDescription: "Professional carpet cleaning services in Michigan. We remove deep stains, allergens, and odors while extending the life of your carpets.",
     description: `
       <p>Our Carpet Cleaning service uses hot water extraction (steam cleaning) technology to deep clean carpets, removing embedded dirt, allergens, stains, and odors that regular vacuuming can't eliminate. This professional-grade cleaning not only improves the appearance of your carpets but also contributes to a healthier indoor environment.</p>
@@ -105,19 +109,19 @@ export const services = [
   {
     id: "standard-cleaning",
     slug: "standard-cleaning",
-    title: "Standard Cleaning",
-    shortDescription: "Our most popular service includes dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
-    metaDescription: "Professional standard home cleaning services in Michigan. Includes dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
+    title: "Standard Cleaning Services",
+    shortDescription: "Our most popular cleaning services include dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
+    metaDescription: "Professional standard home cleaning services in Michigan. Our comprehensive cleaning services include dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
     description: `
       <h1 class="text-3xl font-bold mb-6">Consistent, Reliable Standard Cleaning Services</h1>
       
-      <p>Perfect for weekly, bi-weekly, or monthly upkeep. Our standard cleaning includes dusting, vacuuming, wiping surfaces, bathrooms, kitchens, and more — everything needed to keep your home or office fresh and clean, every time.</p>
+      <p>Perfect for weekly, bi-weekly, or monthly upkeep. Our standard cleaning services include dusting, vacuuming, wiping surfaces, bathrooms, kitchens, and more — everything needed to keep your home or office fresh and clean, every time.</p>
       
-      <p class="mt-4">Our Standard Cleaning service is designed to maintain a consistently clean and healthy home environment. This is our most popular service, perfect for regular maintenance cleaning to keep your home looking its best.</p>
+      <p class="mt-4">Our Standard Cleaning Services are designed to maintain a consistently clean and healthy home environment. This is our most popular cleaning service, perfect for regular maintenance cleaning services to keep your home looking its best.</p>
       
-      <p class="mt-4">Our professional cleaning team will thoroughly clean the main living areas of your home, with special attention to kitchens and bathrooms. The Standard Cleaning service includes all the essential cleaning tasks needed to maintain a clean home.</p>
+      <p class="mt-4">Our professional cleaning services team will thoroughly clean the main living areas of your home, with special attention to kitchens and bathrooms. The Standard Cleaning Services include all the essential cleaning tasks needed to maintain a clean home.</p>
       
-      <p class="mt-4">This service is ideal for homes that are maintained regularly and don't require deep cleaning of neglected areas. Many of our clients choose this as a bi-weekly or monthly service to maintain cleanliness between deeper cleanings.</p>
+      <p class="mt-4">This cleaning service is ideal for homes that are maintained regularly and don't require <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a> of neglected areas. Many of our clients choose this as a bi-weekly or monthly cleaning service to maintain cleanliness between deeper cleaning services. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our standard cleaning services today.</p>
     `,
     imageUrl: "/images/kitchen-main.jpg",
     startingPrice: "$160",
@@ -143,19 +147,19 @@ export const services = [
   {
     id: "deep-cleaning",
     slug: "deep-cleaning",
-    title: "Deep Cleaning",
-    shortDescription: "A thorough cleaning that reaches areas often missed, including baseboards, ceiling fans, and behind furniture.",
-    metaDescription: "Professional deep cleaning services for Michigan homes. Thorough cleaning of rarely-addressed areas including baseboards, ceiling fans, and behind furniture.",
+    title: "Deep Cleaning Services",
+    shortDescription: "A thorough cleaning service that reaches areas often missed, including baseboards, ceiling fans, and behind furniture.",
+    metaDescription: "Professional deep cleaning services for Michigan homes. Thorough cleaning services of rarely-addressed areas including baseboards, ceiling fans, and behind furniture.",
     description: `
       <h1 class="text-3xl font-bold mb-6">Thorough & Detailed Deep Cleaning Services</h1>
       
-      <p>Need a full reset? Our deep cleaning goes beyond the basics, tackling baseboards, inside appliances, light fixtures, and hard-to-reach spots. Ideal for spring cleaning, events, or post-renovation refresh.</p>
+      <p>Need a full reset? Our deep cleaning services go beyond the basics, tackling baseboards, inside appliances, light fixtures, and hard-to-reach spots. Ideal for spring cleaning, events, or post-renovation refresh.</p>
       
-      <p class="mt-4">Our Deep Cleaning service is a comprehensive cleaning solution that addresses areas that are often overlooked during regular cleaning. This service is perfect for homes that haven't been professionally cleaned in a while, seasonal cleaning, or homes that need special attention.</p>
+      <p class="mt-4">Our Deep Cleaning Services are a comprehensive cleaning solution that addresses areas that are often overlooked during regular cleaning services. This cleaning service is perfect for homes that haven't been professionally cleaned in a while, seasonal cleaning services, or homes that need special attention.</p>
       
-      <p class="mt-4">Deep Cleaning includes everything in our Standard Cleaning package plus a more intensive focus on hard-to-reach and rarely cleaned areas. Our team will move furniture (where safe and possible) to clean underneath, thoroughly scrub bathroom fixtures, and clean areas that collect dust and grime over time.</p>
+      <p class="mt-4">Deep Cleaning Services include everything in our <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">Standard Cleaning Services</a> package plus a more intensive focus on hard-to-reach and rarely cleaned areas. Our cleaning services team will move furniture (where safe and possible) to clean underneath, thoroughly scrub bathroom fixtures, and clean areas that collect dust and grime over time.</p>
       
-      <p class="mt-4">This service takes longer than our Standard Cleaning but delivers exceptional results. Many clients choose this service for their first cleaning with us, then maintain with regular Standard Cleaning appointments.</p>
+      <p class="mt-4">This cleaning service takes longer than our <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">Standard Cleaning Services</a> but delivers exceptional results. Many clients choose this cleaning service for their first cleaning with us, then maintain with regular <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">Standard Cleaning Services</a> appointments. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our deep cleaning services today.</p>
     `,
     imageUrl: "/images/kitchen-post.jpg",
     startingPrice: "$250",
@@ -182,9 +186,9 @@ export const services = [
   {
     id: "recurring-cleaning",
     slug: "recurring-cleaning",
-    title: "Recurring Cleaning",
+    title: "Recurring Cleaning Services",
     shortDescription: "Regular scheduled cleaning services weekly, bi-weekly, or monthly to keep your home consistently clean.",
-    metaDescription: "Scheduled recurring cleaning services in Michigan with weekly, bi-weekly or monthly options. Keep your home consistently clean with trusted professionals.",
+    metaDescription: "Scheduled recurring cleaning services in Michigan with weekly, bi-weekly or monthly options. Keep your home consistently clean with trusted cleaning services professionals.",
     description: `
       <p>Our Recurring Cleaning service provides the convenience of regular, scheduled cleanings to maintain your home's cleanliness without you having to remember to book each time. Choose from weekly, bi-weekly, or monthly schedules based on your needs and budget.</p>
       
@@ -215,9 +219,9 @@ export const services = [
   {
     id: "move-in-out-cleaning",
     slug: "move-in-out-cleaning",
-    title: "Move-In/Out Cleaning",
-    shortDescription: "Comprehensive cleaning for when you're moving in or out of a property, ensuring a fresh start.",
-    metaDescription: "Specialized move-in and move-out cleaning services for Michigan properties. Comprehensive cleaning to ensure a fresh start in your new home.",
+    title: "Move-In/Out Cleaning Services",
+    shortDescription: "Comprehensive cleaning services for when you're moving in or out of a property, ensuring a fresh start.",
+    metaDescription: "Specialized move-in and move-out cleaning services for Michigan properties. Comprehensive cleaning services to ensure a fresh start in your new home.",
     description: `
       <h1 class="text-3xl font-bold mb-6">Stress-Free Move-In and Move-Out Cleaning Services</h1>
       

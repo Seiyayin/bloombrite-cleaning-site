@@ -14,7 +14,7 @@ export const services = [
       
       <p>Choose Bloombrite Cleaning Services for reliable, high-quality window cleaning services that deliver exceptional results every time. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our professional window cleaning services today.</p>
     `,
-    imageUrl: "/images/window-cleaning.jpg",
+    imageUrl: "/images/windows cleaning_1750986736495.jpg",
     startingPrice: "$160",
     included: [
       "Interior and exterior window cleaning",
@@ -52,7 +52,7 @@ export const services = [
       
       <p>Trust Bloombrite Cleaning Services for professional power washing services that deliver outstanding results and protect your investment. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our power washing services today.</p>
     `,
-    imageUrl: "/images/power washing.jpg",
+    imageUrl: "/images/powerwashing.jpg",
     startingPrice: "$320",
     included: [
       "Professional-grade power washing equipment",
@@ -85,7 +85,7 @@ export const services = [
       
       <p>Professional carpet cleaning is recommended every 12-18 months to maintain carpet appearance and extend its lifespan. Many clients schedule this service seasonally or before special events to ensure their homes look their best.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/images/living room cleaning_1750986719239.png",
     startingPrice: "$150",
     included: [
       "Pre-inspection and identification of problem areas",
@@ -123,7 +123,7 @@ export const services = [
       
       <p class="mt-4">This cleaning service is ideal for homes that are maintained regularly and don't require <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a> of neglected areas. Many of our clients choose this as a bi-weekly or monthly cleaning service to maintain cleanliness between deeper cleaning services. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our standard cleaning services today.</p>
     `,
-    imageUrl: "/images/kitchen-main.jpg",
+    imageUrl: "/images/kitchen main_1750986708564.jpg",
     startingPrice: "$160",
     included: [
       "Dusting: General dusting of visible surfaces, furniture, and décor",
@@ -161,7 +161,7 @@ export const services = [
       
       <p class="mt-4">This cleaning service takes longer than our <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">Standard Cleaning Services</a> but delivers exceptional results. Many clients choose this cleaning service for their first cleaning with us, then maintain with regular <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">Standard Cleaning Services</a> appointments. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our deep cleaning services today.</p>
     `,
-    imageUrl: "/images/kitchen-post.jpg",
+    imageUrl: "/images/kitchen post_1750986714585.jpg",
     startingPrice: "$250",
     included: [
       "Dusting: Includes vents, ceiling fans, light fixtures, baseboards, window sills, blinds, and behind/under furniture",
@@ -196,7 +196,7 @@ export const services = [
       
       <p>This service follows our Standard Cleaning protocol but can be customized based on your specific needs. You can also alternate between Standard and Deep Cleaning sessions if desired.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1563453392212-326f5e854473?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    imageUrl: "/images/living room deep cleaning.jpg",
     startingPrice: "$100",
     included: [
       "All services included in our Standard Cleaning",
@@ -233,7 +233,7 @@ export const services = [
       
       <p class="mt-4">Our Move-In/Out Cleaning is among our most thorough services, addressing every accessible area of the property. Most properties should be empty or nearly empty of personal belongings for optimal results.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    imageUrl: "/images/move in.jpg",
     startingPrice: "$250",
     included: [
       "Everything included in our Deep Cleaning service",
@@ -272,7 +272,7 @@ export const services = [
       
       <p class="mt-4">We customize our office cleaning services based on the size and needs of your business. From small professional offices to larger commercial spaces, we can create a cleaning plan that fits your requirements and budget.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    imageUrl: "/images/living room deep cleaning.jpg",
     startingPrice: "$150",
     included: [
       "Dusting and wiping of all surfaces and furniture",
@@ -311,7 +311,7 @@ export const services = [
       
       <p class="mt-4">We offer flexible scheduling to accommodate same-day turnovers and can provide additional services such as restocking supplies, reporting maintenance issues, and other property management support tasks.</p>
     `,
-    imageUrl: "/images/bedroom-clean.jpg",
+    imageUrl: "/images/Bedroom_1750986726950.jpg",
     startingPrice: "$140",
     included: [
       "Complete cleaning and sanitizing of bathrooms",
@@ -350,7 +350,7 @@ export const services = [
       
       <p class="mt-4">This service can be booked as a standalone cleaning or added to any of our other cleaning services. Many clients choose to have their oven professionally cleaned once or twice a year to maintain optimal performance.</p>
     `,
-    imageUrl: "/images/kitchen-post.jpg",
+    imageUrl: "/images/kitchen post_1750986714585.jpg",
     startingPrice: "$85",
     included: [
       "Complete cleaning of oven interior",
@@ -387,7 +387,7 @@ export const services = [
       
       <p class="mt-4">This service can be added to any of our regular cleaning packages or booked as a standalone service. Many clients choose to have their refrigerator professionally cleaned quarterly to maintain optimal hygiene and performance.</p>
     `,
-    imageUrl: "/images/kitchen-main.jpg",
+    imageUrl: "/images/kitchen main_1750986708564.jpg",
     startingPrice: "$75",
     included: [
       "Complete cleaning of refrigerator interior",

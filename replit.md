@@ -88,6 +88,7 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- July 16, 2025: Added missing West Bloomfield and Keego Harbor locations to navigation dropdown menus (both desktop and mobile)
 - July 16, 2025: Implemented comprehensive hover effects across all buttons and cards - orange hover colors (hover:bg-orange-600, hover:bg-orange-50, hover:bg-orange-500) for buttons, cards, and interactive elements to enhance user experience and visual feedback
 - July 16, 2025: Updated phone number from (734) 489-9908 to (947) 465-4217 across all website files including schema markup, components, and pages
 - July 16, 2025: Added new city page for Keego Harbor with comprehensive SEO-optimized content and residential cleaning keywords

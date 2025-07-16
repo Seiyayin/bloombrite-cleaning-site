@@ -62,6 +62,8 @@ const Header = () => {
                 <Link href="/locations/farmington-hills" className="block py-2 hover:text-primary transition">Farmington Hills, MI</Link>
                 <Link href="/locations/south-lyon" className="block py-2 hover:text-primary transition">South Lyon, MI</Link>
                 <Link href="/locations/walled-lake" className="block py-2 hover:text-primary transition">Walled Lake, MI</Link>
+                <Link href="/locations/west-bloomfield" className="block py-2 hover:text-primary transition">West Bloomfield, MI</Link>
+                <Link href="/locations/keego-harbor" className="block py-2 hover:text-primary transition">Keego Harbor, MI</Link>
               </div>
             </div>
           </div>

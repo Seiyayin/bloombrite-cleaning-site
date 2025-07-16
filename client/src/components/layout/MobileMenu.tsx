@@ -61,6 +61,8 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             <Link href="/locations/farmington-hills" className="block py-2" onClick={onClose}>Farmington Hills, MI</Link>
             <Link href="/locations/south-lyon" className="block py-2" onClick={onClose}>South Lyon, MI</Link>
             <Link href="/locations/walled-lake" className="block py-2" onClick={onClose}>Walled Lake, MI</Link>
+            <Link href="/locations/west-bloomfield" className="block py-2" onClick={onClose}>West Bloomfield, MI</Link>
+            <Link href="/locations/keego-harbor" className="block py-2" onClick={onClose}>Keego Harbor, MI</Link>
           </div>
         </div>
         <Link href="/blog" className="block py-2 font-medium" onClick={onClose}>Blog</Link>

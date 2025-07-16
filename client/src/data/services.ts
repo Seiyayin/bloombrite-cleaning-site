@@ -14,7 +14,7 @@ export const services = [
       
       <p>Choose Bloombrite Cleaning Services for reliable, high-quality window cleaning services that deliver exceptional results every time. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our professional window cleaning services today.</p>
     `,
-    imageUrl: "/images/window-cleaning.jpg",
+    imageUrl: "/images/window-cleaning-new.jpg",
     startingPrice: "$160",
     included: [
       "Interior and exterior window cleaning",
@@ -196,7 +196,7 @@ export const services = [
       
       <p>This service follows our Standard Cleaning protocol but can be customized based on your specific needs. You can also alternate between Standard and Deep Cleaning sessions if desired.</p>
     `,
-    imageUrl: "/images/team.jpg",
+    imageUrl: "/images/move-in-cleaning-2.jpg",
     startingPrice: "$100",
     included: [
       "All services included in our Standard Cleaning",
@@ -233,7 +233,7 @@ export const services = [
       
       <p class="mt-4">Our Move-In/Out Cleaning is among our most thorough services, addressing every accessible area of the property. Most properties should be empty or nearly empty of personal belongings for optimal results.</p>
     `,
-    imageUrl: "/images/kitchen-post.jpg",
+    imageUrl: "/images/move-in-cleaning.jpg",
     startingPrice: "$250",
     included: [
       "Everything included in our Deep Cleaning service",
@@ -350,7 +350,7 @@ export const services = [
       
       <p class="mt-4">This service can be booked as a standalone cleaning or added to any of our other cleaning services. Many clients choose to have their oven professionally cleaned once or twice a year to maintain optimal performance.</p>
     `,
-    imageUrl: "/images/kitchen-post.jpg",
+    imageUrl: "/images/stove-cleaning.jpg",
     startingPrice: "$85",
     included: [
       "Complete cleaning of oven interior",

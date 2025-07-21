@@ -3,11 +3,11 @@ import { Link } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
 // Import images
-const kitchenImage = "/src/assets/Kitchen deep cleaning.jpg";
-const livingRoomImage = "/src/assets/living room deep cleaning.jpg";
-const bathroomImage = "/src/assets/bathroom tile brushing.jpg";
-const windowImage = "/src/assets/window washing.jpg";
-const postConstructionImage = "/src/assets/post construction 2.jpg";
+const kitchenImage = "/images/Kitchen deep cleaning.jpg";
+const livingRoomImage = "/images/living room deep cleaning.jpg";
+const bathroomImage = "/images/bathroom-tile-brushing.jpg";
+const windowImage = "/images/window-washing.jpg";
+const postConstructionImage = "/images/post-construction-2.jpg";
 
 const BlogOverview = () => {
   // Scroll to top when the page loads
@@ -286,6 +286,73 @@ const BlogOverview = () => {
                   By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* City-Specific Content Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Local Cleaning Tips by City</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Get cleaning advice tailored to your specific Michigan community. Our local experts share city-specific tips and insights.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <Link href="/blog/cities/wixom" className="block bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors hover:shadow-lg">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i className="fas fa-map-marker-alt text-white"></i>
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">Wixom</h3>
+                  <p className="text-gray-600 text-sm">House cleaning tips for Wixom homeowners</p>
+                  <span className="text-primary font-medium text-sm mt-2 inline-block">View Tips →</span>
+                </div>
+              </Link>
+              
+              <Link href="/blog/cities/novi" className="block bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors hover:shadow-lg">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i className="fas fa-home text-white"></i>
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">Novi</h3>
+                  <p className="text-gray-600 text-sm">Suburban home cleaning guides</p>
+                  <span className="text-primary font-medium text-sm mt-2 inline-block">View Tips →</span>
+                </div>
+              </Link>
+              
+              <Link href="/blog/cities/west-bloomfield" className="block bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors hover:shadow-lg">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i className="fas fa-gem text-white"></i>
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">West Bloomfield</h3>
+                  <p className="text-gray-600 text-sm">Luxury home cleaning advice</p>
+                  <span className="text-primary font-medium text-sm mt-2 inline-block">View Tips →</span>
+                </div>
+              </Link>
+              
+              <Link href="/blog/cities/livonia" className="block bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors hover:shadow-lg">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i className="fas fa-users text-white"></i>
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">Livonia</h3>
+                  <p className="text-gray-600 text-sm">Family-focused cleaning tips</p>
+                  <span className="text-primary font-medium text-sm mt-2 inline-block">View Tips →</span>
+                </div>
+              </Link>
+            </div>
+
+            <div className="text-center">
+              <Link 
+                href="/blog/cities"
+                className="inline-block px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-orange-600 transition-colors"
+              >
+                View All City Guides
+              </Link>
             </div>
           </div>
         </section>

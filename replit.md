@@ -88,6 +88,10 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- January 21, 2025: Enhanced SEO with improved H1 tag targeting "House Cleaning Services in Wixom, Novi & West Bloomfield" for better local search rankings
+- January 21, 2025: Fixed blog section image display issues by correcting image paths from /src/assets/ to /images/ 
+- January 21, 2025: Created comprehensive city-specific blog pages for SEO - Wixom, Novi, West Bloomfield, and Livonia with local cleaning tips and guides
+- January 21, 2025: Added city blog index page and integrated local content sections into main blog for improved local SEO targeting
 - July 16, 2025: Updated services with new authentic Bloombrite photos - Window Cleaning (professional worker cleaning window), Move-In/Out Cleaning (clean hallway), Oven Cleaning (pristine kitchen with stove), and Recurring Cleaning (upstairs hallway)
 - July 16, 2025: Fixed missing power washing service image and updated multiple services to use authentic Bloombrite photos instead of stock images
 - July 16, 2025: Added missing West Bloomfield and Keego Harbor locations to navigation dropdown menus (both desktop and mobile)

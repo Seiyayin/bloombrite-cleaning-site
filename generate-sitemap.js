@@ -36,6 +36,15 @@ const pages = [
   '/locations/plymouth',
   '/locations/livonia',
   '/locations/canton',
+  // Blog pages
+  '/blog',
+  '/blog/cities',
+  '/blog/cities/wixom',
+  '/blog/cities/novi',
+  '/blog/cities/west-bloomfield',
+  '/blog/cities/livonia',
+  '/blog/inside-appliance-cleaning',
+  '/blog/memorial-day-cleaning',
 ];
 
 // Excluded pages

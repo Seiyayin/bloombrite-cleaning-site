@@ -21,6 +21,11 @@ import Accessibility from "@/pages/Accessibility";
 import BlogOverview from "@/pages/blog/BlogOverview";
 import ApplianceCleaning from "@/pages/blog/ApplianceCleaning";
 import MemorialDayCleaning from "@/pages/blog/MemorialDayCleaning";
+import CityBlogIndex from "@/pages/blog/cities/CityBlogIndex";
+import WixomBlog from "@/pages/blog/cities/WixomBlog";
+import NoviBlog from "@/pages/blog/cities/NoviBlog";
+import WestBloomfieldBlog from "@/pages/blog/cities/WestBloomfieldBlog";
+import LivoniaBlog from "@/pages/blog/cities/LivoniaBlog";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -51,6 +56,11 @@ function Router() {
       <Route path="/thank-you" component={ThankYou} />
       <Route path="/accessibility" component={Accessibility} />
       <Route path="/blog" component={BlogOverview} />
+      <Route path="/blog/cities" component={CityBlogIndex} />
+      <Route path="/blog/cities/wixom" component={WixomBlog} />
+      <Route path="/blog/cities/novi" component={NoviBlog} />
+      <Route path="/blog/cities/west-bloomfield" component={WestBloomfieldBlog} />
+      <Route path="/blog/cities/livonia" component={LivoniaBlog} />
       <Route path="/blog/inside-appliance-cleaning" component={ApplianceCleaning} />
       <Route path="/blog/memorial-day-cleaning" component={MemorialDayCleaning} />
       <Route component={NotFound} />

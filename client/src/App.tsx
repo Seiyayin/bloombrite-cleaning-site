@@ -26,6 +26,7 @@ import WixomBlog from "@/pages/blog/cities/WixomBlog";
 import NoviBlog from "@/pages/blog/cities/NoviBlog";
 import WestBloomfieldBlog from "@/pages/blog/cities/WestBloomfieldBlog";
 import LivoniaBlog from "@/pages/blog/cities/LivoniaBlog";
+import Careers from "@/pages/Careers";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -63,6 +64,7 @@ function Router() {
       <Route path="/blog/cities/livonia" component={LivoniaBlog} />
       <Route path="/blog/inside-appliance-cleaning" component={ApplianceCleaning} />
       <Route path="/blog/memorial-day-cleaning" component={MemorialDayCleaning} />
+      <Route path="/careers" component={Careers} />
       <Route component={NotFound} />
     </Switch>
   );

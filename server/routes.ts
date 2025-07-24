@@ -1,6 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
+import { submitEmployeeApplication } from "./routes/employeeApplication";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Explicitly serve static sitemap.xml and robots.txt without interference
@@ -213,6 +214,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       Sitemap: https://www.bloombritecleaning.com/sitemap.xml
     `);
   });
+
+  // Employee application route
+  app.post('/api/employee-application', submitEmployeeApplication);
 
   const httpServer = createServer(app);
 

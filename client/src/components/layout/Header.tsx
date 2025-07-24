@@ -70,6 +70,7 @@ const Header = () => {
           <Link href="/blog" className={`font-medium transition ${isActive('/blog')}`}>Blog</Link>
           <Link href="/reviews" className={`font-medium transition ${isActive('/reviews')}`}>Reviews</Link>
           <Link href="/faq" className={`font-medium transition ${isActive('/faq')}`}>FAQ</Link>
+          <Link href="/careers" className={`font-medium transition ${isActive('/careers')}`}>Careers</Link>
           <Link href="/contact" className={`font-medium transition ${isActive('/contact')}`}>Contact</Link>
         </div>
         

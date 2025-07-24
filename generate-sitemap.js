@@ -45,6 +45,8 @@ const pages = [
   '/blog/cities/livonia',
   '/blog/inside-appliance-cleaning',
   '/blog/memorial-day-cleaning',
+  // Career pages
+  '/careers',
 ];
 
 // Excluded pages

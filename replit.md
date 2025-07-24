@@ -88,6 +88,7 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- January 21, 2025: Added comprehensive employee application functionality with professional careers page, detailed application form, and SendGrid email integration for HR notifications
 - January 21, 2025: Enhanced SEO with improved H1 tag targeting "House Cleaning Services in Wixom, Novi & West Bloomfield" for better local search rankings
 - January 21, 2025: Fixed blog section image display issues by correcting image paths from /src/assets/ to /images/ 
 - January 21, 2025: Created comprehensive city-specific blog pages for SEO - Wixom, Novi, West Bloomfield, and Livonia with local cleaning tips and guides

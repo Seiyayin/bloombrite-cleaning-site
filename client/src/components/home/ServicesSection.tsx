@@ -11,9 +11,9 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Professional Services</span>
-          <h2 className="text-3xl font-bold mb-4 mt-2">Our Residential Cleaning Services</h2>
+          <h2 className="text-3xl font-bold mb-4 mt-2">Novi Area Residential Cleaning Services</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-            We offer a variety of specialized residential cleaning services to meet your home's needs, from <Link href="/services/standard-cleaning" className="text-primary hover:underline">regular house cleaning</Link> to <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep residential cleaning</Link>. Serving <Link href="/locations" className="text-primary hover:underline">Michigan communities</Link> with professional residential cleaning services.
+            We offer specialized residential cleaning services for Novi and surrounding communities, from <Link href="/services/standard-cleaning" className="text-primary hover:underline">regular house cleaning</Link> to <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep residential cleaning</Link>. Trusted by 500+ <Link href="/locations/novi" className="text-primary hover:underline">Novi area families</Link> with professional residential cleaning services and 100% satisfaction guarantee.
           </p>
         </div>
         

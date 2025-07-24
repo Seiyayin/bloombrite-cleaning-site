@@ -26,7 +26,9 @@ import WixomBlog from "@/pages/blog/cities/WixomBlog";
 import NoviBlog from "@/pages/blog/cities/NoviBlog";
 import WestBloomfieldBlog from "@/pages/blog/cities/WestBloomfieldBlog";
 import LivoniaBlog from "@/pages/blog/cities/LivoniaBlog";
+import NoviCleaningGuide from "@/pages/blog/NoviCleaningGuide";
 import Careers from "@/pages/Careers";
+import NoviDetailed from "@/pages/locations/NoviDetailed";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -40,9 +42,10 @@ function Router() {
       <Route path="/services/carpet-cleaning" component={CarpetCleaning} />
       <Route path="/services/:slug" component={ServiceDetail} />
       <Route path="/locations" component={LocationsOverview} />
+      <Route path="/locations/novi" component={NoviDetailed} />
+      <Route path="/novi" component={NoviDetailed} />
       <Route path="/locations/:slug" component={LocationDetail} />
       <Route path="/wixom" component={LocationDetail} />
-      <Route path="/novi" component={LocationDetail} />
       <Route path="/livonia" component={LocationDetail} />
       <Route path="/milford" component={LocationDetail} />
       <Route path="/commerce" component={LocationDetail} />
@@ -62,6 +65,7 @@ function Router() {
       <Route path="/blog/cities/novi" component={NoviBlog} />
       <Route path="/blog/cities/west-bloomfield" component={WestBloomfieldBlog} />
       <Route path="/blog/cities/livonia" component={LivoniaBlog} />
+      <Route path="/blog/novi-house-cleaning-guide" component={NoviCleaningGuide} />
       <Route path="/blog/inside-appliance-cleaning" component={ApplianceCleaning} />
       <Route path="/blog/memorial-day-cleaning" component={MemorialDayCleaning} />
       <Route path="/careers" component={Careers} />

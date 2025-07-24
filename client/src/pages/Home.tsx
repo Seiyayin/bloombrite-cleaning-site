@@ -10,6 +10,7 @@ import TestimonialsSection from '@/components/home/TestimonialsSection';
 import ServiceAreas from '@/components/home/ServiceAreas';
 import FaqSection from '@/components/home/FaqSection';
 import CallToAction from '@/components/home/CallToAction';
+import NoviSeoContent from '@/components/shared/NoviSeoContent';
 import SeoHead from '@/components/shared/SeoHead';
 import { LocalBusinessSchema } from '@/lib/schema';
 import teamImage from '@/assets/team.jpg';
@@ -23,8 +24,8 @@ const Home = () => {
   return (
     <>
       <SeoHead 
-        title="Bloombrite Cleaning Services | Professional House Cleaning in Michigan"
-        description="Bloombrite Cleaning Services provides expert residential cleaning services and house cleaning services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, Walled Lake, West Bloomfield, and Keego Harbor. Professional residential cleaning services, house cleaning services, deep cleaning services, move-in/out cleaning services, window cleaning services, and power washing services with guaranteed satisfaction."
+        title="#1 House Cleaning Services in Novi, Michigan | Bloombrite Cleaning"
+        description="Top-rated house cleaning services in Novi, Wixom, and West Bloomfield, Michigan. Professional residential cleaning, deep cleaning, move-in/out cleaning. Serving 500+ Novi area families with eco-friendly cleaning solutions and 100% satisfaction guarantee. Get your free quote today!"
         ogImage={teamImage} // Using your actual team image for social sharing
       />
       <LocalBusinessSchema />
@@ -38,6 +39,7 @@ const Home = () => {
         <QuoteSection />
         <QuoteInfoSection />
         <TestimonialsSection />
+        <NoviSeoContent />
         <ServiceAreas />
         <FaqSection />
         <CallToAction />

@@ -28,6 +28,15 @@ const BlogOverview = () => {
   // Blog posts list
   const blogPosts = [
     {
+      title: "Complete House Cleaning Guide for Novi, Michigan Homeowners",
+      excerpt: "Comprehensive guide to house cleaning for Novi residents. Professional tips, seasonal cleaning schedules, and local cleaning service recommendations.",
+      date: "January 21, 2025",
+      author: "BloomBrite Cleaning Team",
+      category: "Cleaning Tips",
+      slug: "novi-house-cleaning-guide",
+      image: kitchenImage
+    },
+    {
       title: "The Complete Guide to Inside Appliance Cleaning",
       excerpt: "Learn professional techniques for deep cleaning inside appliances including refrigerators, ovens, dishwashers, and microwaves to extend their life and improve performance.",
       date: "April 15, 2024",

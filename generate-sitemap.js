@@ -43,6 +43,7 @@ const pages = [
   '/blog/cities/novi',
   '/blog/cities/west-bloomfield',
   '/blog/cities/livonia',
+  '/blog/novi-house-cleaning-guide',
   '/blog/inside-appliance-cleaning',
   '/blog/memorial-day-cleaning',
   // Career pages

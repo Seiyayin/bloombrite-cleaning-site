@@ -6,9 +6,9 @@ const ServiceAreas = () => {
     <section className="py-20 bg-neutral-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Service Areas</h2>
+          <h2 className="text-3xl font-bold mb-4">Novi Area Service Communities</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-            Bloombrite Cleaning proudly serves these Michigan communities and surrounding areas.
+            Bloombrite Cleaning proudly serves Novi, Wixom, West Bloomfield, and surrounding Michigan communities with professional house cleaning services.
           </p>
         </div>
         

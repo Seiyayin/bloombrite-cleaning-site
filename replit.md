@@ -88,7 +88,7 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
-- January 21, 2025: Implemented comprehensive Novi-focused SEO improvements including dedicated detailed Novi location page, Novi house cleaning guide blog post, enhanced homepage with Novi-specific content, updated meta descriptions targeting Novi area searches, and improved internal linking strategy
+- January 21, 2025: Restructured SEO strategy with general Michigan coverage on main pages and location-specific content on individual pages - created dedicated detailed Novi location page, Novi house cleaning guide blog post, enhanced homepage with general Michigan coverage, and improved internal linking strategy
 - January 21, 2025: Added comprehensive employee application functionality with professional careers page, detailed application form, and SendGrid email integration for HR notifications
 - January 21, 2025: Enhanced SEO with improved H1 tag targeting "House Cleaning Services in Wixom, Novi & West Bloomfield" for better local search rankings
 - January 21, 2025: Fixed blog section image display issues by correcting image paths from /src/assets/ to /images/ 

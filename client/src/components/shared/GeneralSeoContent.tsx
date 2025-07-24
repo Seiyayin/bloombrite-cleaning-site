@@ -1,36 +1,36 @@
 import { Link } from 'wouter';
 
-const NoviSeoContent = () => {
+const GeneralSeoContent = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-              Why Choose Bloombrite for House Cleaning in Novi?
+              Why Choose Bloombrite for House Cleaning in Michigan?
             </h2>
             <p className="text-xl text-gray-600">
-              Trusted by hundreds of Novi families for reliable, professional residential cleaning services
+              Trusted by families across Michigan for reliable, professional residential cleaning services
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-semibold mb-4 text-primary">Local Novi Expertise</h3>
+              <h3 className="text-xl font-semibold mb-4 text-primary">Local Michigan Expertise</h3>
               <p className="text-gray-600 mb-4">
-                We understand Novi's suburban lifestyle and the unique cleaning needs of Michigan homes. Our team knows how to handle everything from winter salt damage to spring deep cleaning.
+                We understand Michigan's suburban lifestyle and the unique cleaning needs of local homes. Our team knows how to handle everything from winter salt damage to spring deep cleaning.
               </p>
               <ul className="text-gray-600 space-y-2">
-                <li>• Experience with Novi's four-season climate challenges</li>
+                <li>• Experience with Michigan's four-season climate challenges</li>
                 <li>• Familiar with local home styles and layouts</li>
-                <li>• Serving Novi neighborhoods for over 5 years</li>
+                <li>• Serving Michigan communities for over 5 years</li>
               </ul>
             </div>
             
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-semibold mb-4 text-primary">Novi Family-Focused Service</h3>
+              <h3 className="text-xl font-semibold mb-4 text-primary">Family-Focused Service</h3>
               <p className="text-gray-600 mb-4">
-                Our house cleaning services are designed around busy Novi families. We use eco-friendly products safe for children and pets, and offer flexible scheduling.
+                Our house cleaning services are designed around busy Michigan families. We use eco-friendly products safe for children and pets, and offer flexible scheduling.
               </p>
               <ul className="text-gray-600 space-y-2">
                 <li>• Non-toxic, family-safe cleaning products</li>
@@ -41,7 +41,7 @@ const NoviSeoContent = () => {
           </div>
           
           <div className="bg-orange-50 p-8 rounded-xl mb-12">
-            <h3 className="text-2xl font-semibold mb-4 text-primary">Comprehensive Novi House Cleaning Services</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-primary">Comprehensive Michigan House Cleaning Services</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold mb-2">Regular Cleaning Services</h4>
@@ -63,9 +63,9 @@ const NoviSeoContent = () => {
           </div>
           
           <div className="text-center">
-            <h3 className="text-2xl font-semibold mb-6">Ready to Experience Novi's Best House Cleaning Service?</h3>
+            <h3 className="text-2xl font-semibold mb-6">Ready to Experience Michigan's Best House Cleaning Service?</h3>
             <p className="text-lg text-gray-600 mb-8">
-              Join hundreds of satisfied Novi homeowners who trust Bloombrite for their residential cleaning needs.
+              Join hundreds of satisfied Michigan homeowners who trust Bloombrite for their residential cleaning needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
@@ -74,10 +74,10 @@ const NoviSeoContent = () => {
                 rel="noopener noreferrer" 
                 className="px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-orange-600 transition shadow-lg text-center"
               >
-                Get Free Novi Quote
+                Get Free Quote
               </a>
-              <Link href="/locations/novi" className="px-8 py-4 border-2 border-primary text-primary font-bold rounded-md hover:bg-orange-50 transition shadow-lg text-center">
-                Learn More About Novi Services
+              <Link href="/locations" className="px-8 py-4 border-2 border-primary text-primary font-bold rounded-md hover:bg-orange-50 transition shadow-lg text-center">
+                View All Service Areas
               </Link>
             </div>
           </div>
@@ -87,4 +87,4 @@ const NoviSeoContent = () => {
   );
 };
 
-export default NoviSeoContent;
+export default GeneralSeoContent;

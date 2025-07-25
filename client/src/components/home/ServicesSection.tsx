@@ -13,16 +13,16 @@ const ServicesSection = () => {
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Professional Services</span>
           <h2 className="text-3xl font-bold mb-4 mt-2">Our Residential Cleaning Services</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-            We offer specialized residential cleaning services throughout Metro Detroit communities, from <Link href="/services/standard-cleaning" className="text-primary hover:underline">regular house cleaning</Link> to <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep residential cleaning</Link>. Trusted by families in <Link href="/locations" className="text-primary hover:underline">Wixom, Novi, West Bloomfield, and surrounding areas</Link> with professional residential cleaning services and 100% satisfaction guarantee.
+            We offer specialized residential cleaning services throughout Metro Detroit communities, from <Link href="/services/standard-cleaning" className="text-primary hover:underline">regular house cleaning</Link> to <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep residential cleaning</Link>. We provide <Link href="/services/recurring-cleaning" className="text-primary hover:underline">weekly, biweekly, and monthly maintenance cleaning</Link> trusted by families in <Link href="/locations" className="text-primary hover:underline">Wixom, Novi, West Bloomfield, and surrounding areas</Link> with 100% satisfaction guarantee.
           </p>
         </div>
         
         
         
         {/* Selected services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {services
-            .filter(service => ["standard-cleaning", "deep-cleaning", "move-in-out-cleaning"].includes(service.id))
+            .filter(service => ["standard-cleaning", "deep-cleaning", "move-in-out-cleaning", "recurring-cleaning"].includes(service.id))
             .map(service => (
               <ServiceCard key={service.id} service={service} />
             ))

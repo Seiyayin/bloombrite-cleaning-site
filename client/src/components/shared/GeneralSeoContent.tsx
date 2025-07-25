@@ -46,17 +46,18 @@ const GeneralSeoContent = () => {
               <div>
                 <h4 className="font-semibold mb-2">Regular Cleaning Services</h4>
                 <ul className="text-gray-600 space-y-1">
-                  <li>• <Link href="/services/standard-cleaning" className="text-primary hover:underline">Standard house cleaning</Link></li>
-                  <li>• <Link href="/services/recurring-cleaning" className="text-primary hover:underline">Recurring cleaning services</Link></li>
-                  <li>• Weekly, bi-weekly, or monthly schedules</li>
+                  <li>• <Link href="/services/standard-cleaning" className="text-primary hover:underline">Standard residential cleaning</Link></li>
+                  <li>• <Link href="/services/recurring-cleaning" className="text-primary hover:underline">Weekly maintenance cleaning</Link></li>
+                  <li>• <Link href="/services/recurring-cleaning" className="text-primary hover:underline">Biweekly maintenance cleaning</Link></li>
+                  <li>• <Link href="/services/recurring-cleaning" className="text-primary hover:underline">Monthly maintenance cleaning</Link></li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Specialized Cleaning</h4>
                 <ul className="text-gray-600 space-y-1">
-                  <li>• <Link href="/services/deep-cleaning" className="text-primary hover:underline">Deep house cleaning</Link></li>
+                  <li>• <Link href="/services/deep-cleaning" className="text-primary hover:underline">Deep residential cleaning</Link></li>
                   <li>• <Link href="/services/move-in-out-cleaning" className="text-primary hover:underline">Move-in/out cleaning</Link></li>
-                  <li>• <Link href="/services/window-cleaning" className="text-primary hover:underline">Window cleaning services</Link></li>
+                  <li>• <Link href="/services/recurring-cleaning" className="text-primary hover:underline">Maintenance cleaning plans</Link></li>
                 </ul>
               </div>
             </div>

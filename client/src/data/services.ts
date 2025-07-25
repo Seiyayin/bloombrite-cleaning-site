@@ -186,34 +186,44 @@ export const services = [
   {
     id: "recurring-cleaning",
     slug: "recurring-cleaning",
-    title: "Recurring Cleaning Services",
-    shortDescription: "Regular scheduled cleaning services weekly, bi-weekly, or monthly to keep your home consistently clean.",
-    metaDescription: "Scheduled recurring cleaning services in Michigan with weekly, bi-weekly or monthly options. Keep your home consistently clean with trusted cleaning services professionals.",
+    title: "Maintenance Cleaning Services",
+    shortDescription: "Weekly, biweekly, or monthly maintenance cleaning services to keep your Metro Detroit home consistently spotless.",
+    metaDescription: "Professional maintenance cleaning services in Metro Detroit with weekly, biweekly, and monthly options. Regular residential cleaning schedules for busy families.",
     description: `
-      <p>Our Recurring Cleaning service provides the convenience of regular, scheduled cleanings to maintain your home's cleanliness without you having to remember to book each time. Choose from weekly, bi-weekly, or monthly schedules based on your needs and budget.</p>
+      <h1 class="text-3xl font-bold mb-6">Regular Maintenance Cleaning for Busy Metro Detroit Families</h1>
       
-      <p>With recurring service, you'll have the same cleaning team visit your home on a regular basis. They'll become familiar with your home and preferences, allowing for more efficient and personalized service over time. Recurring clients also receive priority scheduling and special rates.</p>
+      <p>Keep your home consistently clean with our reliable maintenance cleaning services. Choose from weekly, biweekly, or monthly schedules designed to fit your lifestyle and budget. Perfect for busy families who want to maintain a spotless home without the stress.</p>
       
-      <p>This service follows our Standard Cleaning protocol but can be customized based on your specific needs. You can also alternate between Standard and Deep Cleaning sessions if desired.</p>
+      <p class="mt-4">Our maintenance cleaning service provides the convenience of regular, scheduled cleanings so you never have to worry about booking appointments. The same professional cleaning team visits your home on your chosen schedule, becoming familiar with your home's needs and your personal preferences over time.</p>
+      
+      <p class="mt-4"><strong>Weekly Cleaning:</strong> Ideal for busy households, families with children or pets, or anyone who wants their home maintained at the highest standard at all times.</p>
+      
+      <p class="mt-4"><strong>Biweekly Cleaning:</strong> Our most popular option, perfect for most families seeking a balance between cleanliness and budget. Keeps your home consistently tidy.</p>
+      
+      <p class="mt-4"><strong>Monthly Cleaning:</strong> Great for smaller homes, single professionals, or as a supplement to your own cleaning routine. Focuses on areas you might miss.</p>
+      
+      <p class="mt-4">All maintenance clients receive priority scheduling, discounted rates, and the flexibility to adjust their cleaning schedule as needed.</p>
     `,
     imageUrl: "/images/move-in-cleaning-2.jpg",
-    startingPrice: "$100",
+    startingPrice: "$120",
     included: [
+      "Weekly, biweekly, or monthly scheduling options",
+      "Same dedicated cleaning team for consistency",
       "All services included in our Standard Cleaning",
-      "Consistent scheduling (weekly, bi-weekly, or monthly)",
-      "Same team assigned to your home for consistency",
-      "Priority scheduling",
-      "Discounted cleaning rates",
-      "Customizable cleaning checklist based on your priorities",
-      "Seasonal cleaning tasks rotation",
-      "Free re-cleaning if you're not satisfied"
+      "Priority scheduling and discounted rates",
+      "Customizable cleaning checklist",
+      "Free rescheduling when needed",
+      "Quality guarantee with free re-cleaning if not satisfied",
+      "Seasonal cleaning task rotation",
+      "Consistent communication with your assigned team",
+      "Flexible service adjustments based on your needs"
     ],
     additionalServices: [
-      "Rotating deep cleaning tasks between visits",
-      "Interior window cleaning (scheduled quarterly)",
-      "Refrigerator interior cleaning (scheduled monthly)",
-      "Oven interior cleaning (scheduled quarterly)",
-      "Special event preparation or post-event cleanup"
+      "Alternating deep cleaning sessions",
+      "Holiday or special event preparation",
+      "Post-party cleanup services",
+      "Seasonal home maintenance tasks",
+      "Additional rooms or areas as needed"
     ]
   },
   {

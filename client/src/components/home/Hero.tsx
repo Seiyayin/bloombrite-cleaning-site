@@ -10,7 +10,7 @@ const Hero = () => {
             <span className="text-primary">Professional House Cleaning Services</span> in Metro Detroit | Residential Cleaning Experts
           </h1>
           <p className="text-xl mb-8 text-gray-600">
-            Transform your home with Bloombrite's expert <Link href="/services" className="text-primary hover:underline">residential cleaning services</Link> throughout the Metro Detroit area. From <Link href="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link> to <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep house cleaning</Link>, we deliver spotless results with guaranteed satisfaction across all our service areas.
+            Transform your home with Bloombrite's expert <Link href="/services" className="text-primary hover:underline">residential cleaning services</Link> throughout the Metro Detroit area. From <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep house cleaning</Link> to <Link href="/services/recurring-cleaning" className="text-primary hover:underline">weekly maintenance cleaning</Link>, we deliver spotless results with guaranteed satisfaction across all our service areas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a 

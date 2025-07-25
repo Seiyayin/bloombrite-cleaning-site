@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Hero from '@/components/home/Hero';
 import Features from '@/components/home/Features';
 import ServicesSection from '@/components/home/ServicesSection';
+import MaintenanceSchedulingSection from '@/components/home/MaintenanceSchedulingSection';
 import CommercialSection from '@/components/home/CommercialSection';
 import TeamSection from '@/components/home/TeamSection';
 import QuoteSection from '@/components/home/QuoteSection';
@@ -25,7 +26,7 @@ const Home = () => {
     <>
       <SeoHead 
         title="Professional House Cleaning Services in Metro Detroit | Bloombrite Cleaning"
-        description="Professional house cleaning services in Wixom, Novi, West Bloomfield, Livonia, and surrounding Metro Detroit areas. Expert residential cleaning, deep cleaning, move-in/out cleaning, window cleaning, and commercial cleaning services with 100% satisfaction guarantee."
+        description="Professional house cleaning services in Wixom, Novi, West Bloomfield, Livonia, and surrounding Metro Detroit areas. Expert residential cleaning, deep cleaning, move-in/out cleaning, weekly, biweekly, and monthly maintenance cleaning services with 100% satisfaction guarantee."
         ogImage={teamImage} // Using your actual team image for social sharing
       />
       <LocalBusinessSchema />
@@ -34,6 +35,7 @@ const Home = () => {
         <Hero />
         <Features />
         <ServicesSection />
+        <MaintenanceSchedulingSection />
         <CommercialSection />
         <TeamSection />
         <QuoteSection />

@@ -167,7 +167,7 @@ const BitcoinPayments = () => {
                   <ul className="text-gray-600 space-y-2">
                     <li>• <Link href="/services/standard-cleaning" className="text-orange-500 hover:underline">Standard house cleaning</Link></li>
                     <li>• <Link href="/services/deep-cleaning" className="text-orange-500 hover:underline">Deep cleaning services</Link></li>
-                    <li>• <Link href="/services/recurring-cleaning" className="text-orange-500 hover:underline">Recurring cleaning</Link></li>
+                    <li>• <Link href="/services/recurring-cleaning" className="text-orange-500 hover:underline">Maintenance cleaning</Link></li>
                   </ul>
                 </div>
                 
@@ -175,17 +175,17 @@ const BitcoinPayments = () => {
                   <h3 className="text-xl font-semibold mb-3 text-gray-800">Specialized Services</h3>
                   <ul className="text-gray-600 space-y-2">
                     <li>• <Link href="/services/move-in-out-cleaning" className="text-orange-500 hover:underline">Move-in/out cleaning</Link></li>
-                    <li>• <Link href="/services/window-cleaning" className="text-orange-500 hover:underline">Window cleaning</Link></li>
-                    <li>• <Link href="/services/post-construction-cleaning" className="text-orange-500 hover:underline">Post-construction cleaning</Link></li>
+                    <li>• <Link href="/services/recurring-cleaning" className="text-orange-500 hover:underline">Weekly maintenance cleaning</Link></li>
+                    <li>• <Link href="/services/recurring-cleaning" className="text-orange-500 hover:underline">Biweekly maintenance cleaning</Link></li>
                   </ul>
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-xl hover:bg-orange-50 transition-colors">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Additional Services</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Maintenance Plans</h3>
                   <ul className="text-gray-600 space-y-2">
-                    <li>• <Link href="/services/power-washing" className="text-orange-500 hover:underline">Power washing</Link></li>
-                    <li>• <Link href="/services/gutter-cleaning" className="text-orange-500 hover:underline">Gutter cleaning</Link></li>
-                    <li>• <Link href="/services/commercial-cleaning" className="text-orange-500 hover:underline">Commercial cleaning</Link></li>
+                    <li>• <Link href="/services/recurring-cleaning" className="text-orange-500 hover:underline">Monthly maintenance cleaning</Link></li>
+                    <li>• <Link href="/services/office-cleaning" className="text-orange-500 hover:underline">Office cleaning</Link></li>
+                    <li>• <Link href="/services/airbnb-cleaning" className="text-orange-500 hover:underline">Airbnb cleaning</Link></li>
                   </ul>
                 </div>
               </div>

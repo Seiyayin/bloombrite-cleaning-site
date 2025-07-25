@@ -6,9 +6,9 @@ const ServiceAreas = () => {
     <section className="py-20 bg-neutral-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Michigan Service Areas</h2>
+          <h2 className="text-3xl font-bold mb-4">Metro Detroit Service Areas</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-            Bloombrite Cleaning proudly serves communities throughout Michigan with professional house cleaning services, residential cleaning, and commercial cleaning solutions.
+            Bloombrite Cleaning proudly serves communities throughout the Metro Detroit area with professional house cleaning services, residential cleaning, and commercial cleaning solutions.
           </p>
         </div>
         

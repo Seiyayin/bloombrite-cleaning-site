@@ -24,8 +24,8 @@ const Home = () => {
   return (
     <>
       <SeoHead 
-        title="Professional House Cleaning Services in Michigan | Bloombrite Cleaning"
-        description="Professional house cleaning services in Wixom, Novi, West Bloomfield, Livonia, and surrounding Michigan areas. Expert residential cleaning, deep cleaning, move-in/out cleaning, window cleaning, and commercial cleaning services with 100% satisfaction guarantee."
+        title="Professional House Cleaning Services in Metro Detroit | Bloombrite Cleaning"
+        description="Professional house cleaning services in Wixom, Novi, West Bloomfield, Livonia, and surrounding Metro Detroit areas. Expert residential cleaning, deep cleaning, move-in/out cleaning, window cleaning, and commercial cleaning services with 100% satisfaction guarantee."
         ogImage={teamImage} // Using your actual team image for social sharing
       />
       <LocalBusinessSchema />

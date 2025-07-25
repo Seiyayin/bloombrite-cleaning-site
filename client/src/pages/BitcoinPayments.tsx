@@ -63,8 +63,8 @@ const BitcoinPayments = () => {
   return (
     <>
       <SeoHead 
-        title="Pay with Bitcoin for House Cleaning Services in Michigan | Bloombrite Cleaning"
-        description="Pay for professional house cleaning services with Bitcoin in Michigan. Secure, fast, and private cryptocurrency payments accepted for residential cleaning, deep cleaning, window cleaning, and all cleaning services in Wixom, Novi, West Bloomfield, and surrounding areas."
+        title="Pay with Bitcoin for House Cleaning Services in Metro Detroit | Bloombrite Cleaning"
+        description="Pay for professional house cleaning services with Bitcoin in Metro Detroit. Secure, fast, and private cryptocurrency payments accepted for residential cleaning, deep cleaning, window cleaning, and all cleaning services in Wixom, Novi, West Bloomfield, and surrounding areas."
       />
       
       <main className="bg-white">
@@ -79,7 +79,7 @@ const BitcoinPayments = () => {
                 Pay with <span className="text-orange-500">Bitcoin</span> for Professional Cleaning Services
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                Bloombrite Cleaning now accepts Bitcoin payments for all our professional house cleaning services in Michigan. Enjoy secure, fast, and private cryptocurrency payments for your residential cleaning needs.
+                Bloombrite Cleaning now accepts Bitcoin payments for all our professional house cleaning services in Metro Detroit. Enjoy secure, fast, and private cryptocurrency payments for your residential cleaning needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
@@ -105,7 +105,7 @@ const BitcoinPayments = () => {
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Pay with Bitcoin?</h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Bitcoin payments offer numerous advantages for our Michigan house cleaning customers
+                  Bitcoin payments offer numerous advantages for our Metro Detroit house cleaning customers
                 </p>
               </div>
               
@@ -131,7 +131,7 @@ const BitcoinPayments = () => {
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">How Bitcoin Payments Work</h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Simple steps to pay for your Michigan house cleaning services with Bitcoin
+                  Simple steps to pay for your Metro Detroit house cleaning services with Bitcoin
                 </p>
               </div>
               
@@ -157,7 +157,7 @@ const BitcoinPayments = () => {
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">All Services Accept Bitcoin</h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Pay with Bitcoin for any of our professional cleaning services in Michigan
+                  Pay with Bitcoin for any of our professional cleaning services in Metro Detroit
                 </p>
               </div>
               
@@ -200,7 +200,7 @@ const BitcoinPayments = () => {
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Bitcoin Payments Accepted in All Service Areas</h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  We accept Bitcoin payments for house cleaning services throughout our Michigan service areas
+                  We accept Bitcoin payments for house cleaning services throughout our Metro Detroit service areas
                 </p>
               </div>
               
@@ -274,7 +274,7 @@ const BitcoinPayments = () => {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Pay with Bitcoin?</h2>
               <p className="text-xl mb-8 opacity-90">
-                Experience the future of payments with our professional Michigan house cleaning services
+                Experience the future of payments with our professional Metro Detroit house cleaning services
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 

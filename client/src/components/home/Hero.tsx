@@ -7,10 +7,10 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-12 md:py-20 relative z-10 grid md:grid-cols-2 gap-8 items-center" style={{ minHeight: '500px' }}>
         <div className="md:col-span-1">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-gray-800">
-            <span className="text-primary">Professional House Cleaning Services</span> in Michigan | Residential Cleaning Experts
+            <span className="text-primary">Professional House Cleaning Services</span> in Metro Detroit | Residential Cleaning Experts
           </h1>
           <p className="text-xl mb-8 text-gray-600">
-            Transform your home with Bloombrite's expert <Link href="/services" className="text-primary hover:underline">residential cleaning services</Link> throughout Michigan. From <Link href="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link> to <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep house cleaning</Link>, we deliver spotless results with guaranteed satisfaction across all our service areas.
+            Transform your home with Bloombrite's expert <Link href="/services" className="text-primary hover:underline">residential cleaning services</Link> throughout the Metro Detroit area. From <Link href="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link> to <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep house cleaning</Link>, we deliver spotless results with guaranteed satisfaction across all our service areas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a 

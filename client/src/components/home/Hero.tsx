@@ -25,7 +25,12 @@ const Hero = () => {
               View All Services
             </Link>
           </div>
-          <div className="mt-8 flex items-center gap-6 flex-wrap">
+          <div className="mt-6 flex items-center justify-start gap-2 text-sm text-gray-600 mb-4">
+            <span>💳 We accept all major payment methods</span>
+            <span className="text-orange-500">|</span>
+            <Link href="/bitcoin-payments" className="text-orange-500 hover:text-orange-600 font-medium">₿ Bitcoin payments accepted</Link>
+          </div>
+          <div className="mt-4 flex items-center gap-6 flex-wrap">
             <div className="flex items-center">
               <span className="text-yellow-400 text-xl mr-2">★</span>
               <span className="font-medium">4.9/5 Rating</span>

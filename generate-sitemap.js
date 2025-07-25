@@ -48,6 +48,8 @@ const pages = [
   '/blog/memorial-day-cleaning',
   // Career pages
   '/careers',
+  '/bitcoin-payments',
+  '/pay-with-bitcoin',
 ];
 
 // Excluded pages

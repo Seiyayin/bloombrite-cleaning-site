@@ -88,6 +88,7 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- January 21, 2025: Added comprehensive Bitcoin payment integration with dedicated Bitcoin payments page, SEO optimization for cryptocurrency payment keywords, Bitcoin logo integration, navigation menu updates (desktop and mobile), and payment processing information for all cleaning services across Michigan service areas
 - January 21, 2025: Restructured SEO strategy with general Michigan coverage on main pages and location-specific content on individual pages - created dedicated detailed Novi location page, Novi house cleaning guide blog post, enhanced homepage with general Michigan coverage, and improved internal linking strategy
 - January 21, 2025: Added comprehensive employee application functionality with professional careers page, detailed application form, and SendGrid email integration for HR notifications
 - January 21, 2025: Enhanced SEO with improved H1 tag targeting "House Cleaning Services in Wixom, Novi & West Bloomfield" for better local search rankings

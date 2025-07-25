@@ -28,6 +28,7 @@ import WestBloomfieldBlog from "@/pages/blog/cities/WestBloomfieldBlog";
 import LivoniaBlog from "@/pages/blog/cities/LivoniaBlog";
 import NoviCleaningGuide from "@/pages/blog/NoviCleaningGuide";
 import Careers from "@/pages/Careers";
+import BitcoinPayments from "@/pages/BitcoinPayments";
 import NoviDetailed from "@/pages/locations/NoviDetailed";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -69,6 +70,8 @@ function Router() {
       <Route path="/blog/inside-appliance-cleaning" component={ApplianceCleaning} />
       <Route path="/blog/memorial-day-cleaning" component={MemorialDayCleaning} />
       <Route path="/careers" component={Careers} />
+      <Route path="/bitcoin-payments" component={BitcoinPayments} />
+      <Route path="/pay-with-bitcoin" component={BitcoinPayments} />
       <Route component={NotFound} />
     </Switch>
   );

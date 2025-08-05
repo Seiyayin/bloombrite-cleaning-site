@@ -1,4 +1,5 @@
 import { Link } from 'wouter';
+import bbbBadge from '@/assets/bbb-accredited-business.png';
 
 const Footer = () => {
   return (
@@ -17,8 +18,26 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-neutral-300 mb-6">
-              Professional cleaning services that bring a fresh, clean shine to homes and businesses throughout Michigan.
+              Professional cleaning services that bring a fresh, clean shine to homes and businesses throughout Metro Detroit.
             </p>
+            
+            {/* BBB Accredited Business Badge */}
+            <div className="mb-6">
+              <a 
+                href="https://www.bbb.org/us/mi/bloombritecleaning" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block hover:opacity-80 transition-opacity"
+                aria-label="BBB Accredited Business - Click to verify BBB accreditation and to see a BBB report"
+              >
+                <img 
+                  src={bbbBadge} 
+                  alt="BBB Accredited Business - Bloombrite Cleaning" 
+                  className="h-16 w-auto"
+                />
+              </a>
+            </div>
+            
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/bloombritecleaning" className="text-white hover:text-primary-light transition" aria-label="Facebook">
                 <i className="fab fa-facebook-f"></i>

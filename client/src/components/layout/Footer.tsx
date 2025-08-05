@@ -24,7 +24,7 @@ const Footer = () => {
             {/* BBB Accredited Business Badge */}
             <div className="mb-6">
               <a 
-                href="https://www.bbb.org/us/mi/bloombritecleaning" 
+                href="https://www.bbb.org/us/mi/wixom/profile/cleaning-services/bloombrite-cleaning-home-services-0372-90064208" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block hover:opacity-80 transition-opacity"

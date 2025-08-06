@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { sendEmail } from '../utils/sendgrid';
 import { sendDiscordNotification, createEmployeeApplicationDiscordEmbed } from '../utils/discord';
+import { analyzeJobApplication } from '../utils/resumeParser';
 
 interface EmployeeApplicationData {
   firstName: string;
@@ -82,11 +83,18 @@ export const submitEmployeeApplication = async (req: Request, res: Response) => 
       <p><em>Application submitted on ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()}</em></p>
     `;
 
-    // Send Discord notification if webhook URL is configured
+    // Send Discord notification with AI analysis if webhook URL is configured
     if (process.env.DISCORD_WEBHOOK_URL) {
-      const discordEmbed = createEmployeeApplicationDiscordEmbed(applicationData);
+      // Get AI analysis of the application
+      const analysis = await analyzeJobApplication(applicationData);
+      
+      const discordEmbed = createEmployeeApplicationDiscordEmbed(applicationData, analysis);
+      const alertMessage = analysis 
+        ? `🎯 **New Job Application Alert!** ${analysis.recommendation === 'highly_recommended' ? '🌟 **HIGHLY RECOMMENDED CANDIDATE**' : analysis.recommendation === 'not_recommended' ? '⚠️ **REVIEW NEEDED**' : ''}`
+        : `🎯 **New Job Application Alert!**`;
+        
       await sendDiscordNotification(process.env.DISCORD_WEBHOOK_URL, {
-        content: `🎯 **New Job Application Alert!**`,
+        content: alertMessage,
         embeds: [discordEmbed]
       });
     }

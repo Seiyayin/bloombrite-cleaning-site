@@ -2,7 +2,6 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { submitEmployeeApplication } from "./routes/employeeApplication";
-import { parseResumeText } from "./routes/resumeParser";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Explicitly serve static sitemap.xml and robots.txt without interference
@@ -218,9 +217,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Employee application route
   app.post('/api/employee-application', submitEmployeeApplication);
-
-  // Resume parsing endpoint
-  app.post('/api/parse-resume', parseResumeText);
 
   const httpServer = createServer(app);
 

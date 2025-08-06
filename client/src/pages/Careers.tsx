@@ -10,8 +10,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Upload, Sparkles, FileText } from 'lucide-react';
 
 const employeeApplicationSchema = z.object({
   firstName: z.string().min(2, 'First name must be at least 2 characters'),
@@ -40,9 +38,6 @@ type EmployeeApplicationForm = z.infer<typeof employeeApplicationSchema>;
 
 const Careers = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isParsing, setIsParsing] = useState(false);
-  const [resumeText, setResumeText] = useState('');
-  const [showResumeParser, setShowResumeParser] = useState(false);
   const { toast } = useToast();
 
   useEffect(() => {
@@ -69,67 +64,7 @@ const Careers = () => {
     }
   });
 
-  const parseResume = async () => {
-    if (!resumeText.trim()) {
-      toast({
-        title: "Resume Required",
-        description: "Please paste your resume text first.",
-        variant: "destructive"
-      });
-      return;
-    }
 
-    setIsParsing(true);
-    try {
-      const response = await fetch('/api/parse-resume', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ resumeText })
-      });
-
-      const result = await response.json();
-      
-      if (result.success && result.data) {
-        // Auto-fill the form with parsed data
-        const parsedData = result.data;
-        form.setValue('firstName', parsedData.firstName);
-        form.setValue('lastName', parsedData.lastName);
-        form.setValue('email', parsedData.email);
-        form.setValue('phone', parsedData.phone);
-        form.setValue('address', parsedData.address);
-        form.setValue('city', parsedData.city);
-        form.setValue('state', parsedData.state);
-        form.setValue('zipCode', parsedData.zipCode);
-        form.setValue('experience', parsedData.experience);
-        form.setValue('previousCleaning', parsedData.previousCleaning);
-        form.setValue('whyJoin', parsedData.whyJoin);
-        form.setValue('additionalInfo', parsedData.additionalInfo);
-
-        setShowResumeParser(false);
-        
-        toast({
-          title: "Resume Parsed Successfully!",
-          description: "Your information has been automatically filled in. Please review and make any necessary adjustments.",
-        });
-      } else {
-        toast({
-          title: "Parsing Failed",
-          description: result.message || "Unable to parse resume. Please fill out the form manually.",
-          variant: "destructive"
-        });
-      }
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to parse resume. Please fill out the form manually.",
-        variant: "destructive"
-      });
-    } finally {
-      setIsParsing(false);
-    }
-  };
 
   const onSubmit = async (data: EmployeeApplicationForm) => {
     setIsSubmitting(true);
@@ -253,71 +188,6 @@ const Careers = () => {
               </div>
 
               <div className="bg-gray-50 rounded-xl p-8">
-                {/* AI Resume Parser Section */}
-                <Card className="mb-8 border-orange-200 bg-orange-50">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-lg">
-                      <Sparkles className="h-5 w-5 text-orange-500" />
-                      AI Resume Parser
-                    </CardTitle>
-                    <p className="text-sm text-gray-600">
-                      Save time! Paste your resume text and let our AI automatically fill out the form for you.
-                    </p>
-                  </CardHeader>
-                  <CardContent>
-                    {!showResumeParser ? (
-                      <Button
-                        type="button"
-                        onClick={() => setShowResumeParser(true)}
-                        className="w-full bg-orange-500 hover:bg-orange-600"
-                      >
-                        <FileText className="h-4 w-4 mr-2" />
-                        Use AI Resume Parser
-                      </Button>
-                    ) : (
-                      <div className="space-y-4">
-                        <Textarea
-                          placeholder="Paste your resume text here (copy from your PDF, Word doc, or LinkedIn profile)..."
-                          value={resumeText}
-                          onChange={(e) => setResumeText(e.target.value)}
-                          rows={8}
-                          className="w-full"
-                        />
-                        <div className="flex gap-2">
-                          <Button
-                            type="button"
-                            onClick={parseResume}
-                            disabled={isParsing || !resumeText.trim()}
-                            className="bg-orange-500 hover:bg-orange-600"
-                          >
-                            {isParsing ? (
-                              <>
-                                <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                                Parsing...
-                              </>
-                            ) : (
-                              <>
-                                <Sparkles className="h-4 w-4 mr-2" />
-                                Parse Resume
-                              </>
-                            )}
-                          </Button>
-                          <Button
-                            type="button"
-                            variant="outline"
-                            onClick={() => {
-                              setShowResumeParser(false);
-                              setResumeText('');
-                            }}
-                          >
-                            Cancel
-                          </Button>
-                        </div>
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     {/* Personal Information */}

@@ -5,59 +5,78 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY 
 });
 
-interface ParsedResumeData {
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-  address: string;
-  city: string;
-  state: string;
-  zipCode: string;
-  experience: 'none' | '1-2-years' | '3-5-years' | '5plus-years';
-  previousCleaning: string;
-  whyJoin: string;
-  additionalInfo: string;
+interface ApplicationAnalysis {
+  summary: string;
+  fitAssessment: string;
+  strengths: string[];
+  concerns: string[];
+  recommendation: 'highly_recommended' | 'recommended' | 'consider' | 'not_recommended';
+  confidenceLevel: string;
 }
 
-export const parseResume = async (resumeText: string): Promise<ParsedResumeData | null> => {
+export const analyzeJobApplication = async (applicationData: any): Promise<ApplicationAnalysis | null> => {
   if (!process.env.OPENAI_API_KEY) {
     console.error('OpenAI API key not configured');
     return null;
   }
 
   try {
+    const experienceLabels: Record<string, string> = {
+      'none': 'No professional experience',
+      '1-2-years': '1-2 years',
+      '3-5-years': '3-5 years',
+      '5plus-years': '5+ years'
+    };
+
+    const availabilityLabels: Record<string, string> = {
+      'full-time': 'Full-time (40+ hours/week)',
+      'part-time': 'Part-time (20-30 hours/week)',
+      'weekends': 'Weekends only',
+      'flexible': 'Flexible schedule'
+    };
+
     const prompt = `
-You are an AI resume parser for a cleaning company called Bloombrite Cleaning. Parse the following resume text and extract relevant information for a job application. 
+You are an HR specialist analyzing job applications for Bloombrite Cleaning, a professional residential cleaning company in Metro Detroit. Analyze this application and provide insights on whether this candidate would be a good fit.
+
+COMPANY CONTEXT:
+- Bloombrite Cleaning specializes in residential cleaning services
+- We serve Metro Detroit area (Wixom, Novi, West Bloomfield, etc.)
+- Services include deep cleaning, move-in/out cleaning, maintenance cleaning
+- We value reliability, attention to detail, and customer service
+- Transportation is required as cleaners travel between client homes
+
+APPLICATION DATA:
+Name: ${applicationData.firstName} ${applicationData.lastName}
+Location: ${applicationData.city}, ${applicationData.state} ${applicationData.zipCode}
+Experience Level: ${experienceLabels[applicationData.experience] || applicationData.experience}
+Availability: ${availabilityLabels[applicationData.availability] || applicationData.availability}
+Transportation: ${applicationData.transportation ? 'Has reliable transportation' : 'No reliable transportation'}
+Background Check: ${applicationData.backgroundCheck ? 'Can pass background check' : 'Cannot pass background check'}
+Previous Cleaning Experience: ${applicationData.previousCleaning || 'None provided'}
+Why They Want to Join: ${applicationData.whyJoin}
+Additional Info: ${applicationData.additionalInfo || 'None provided'}
+References: ${applicationData.references || 'None provided'}
 
 IMPORTANT: Return ONLY valid JSON with no additional text, comments, or formatting.
 
-Extract the following information and return it as JSON:
+Analyze and return JSON in this format:
 {
-  "firstName": "First name (string)",
-  "lastName": "Last name (string)", 
-  "email": "Email address (string)",
-  "phone": "Phone number (string)",
-  "address": "Street address (string)",
-  "city": "City (string)",
-  "state": "State abbreviation (string)",
-  "zipCode": "Zip code (string)",
-  "experience": "Choose one: 'none', '1-2-years', '3-5-years', '5plus-years' based on total work experience",
-  "previousCleaning": "Any cleaning, housekeeping, janitorial, or related experience mentioned (string, up to 500 chars)",
-  "whyJoin": "Generate a brief professional statement about why they'd want to join our cleaning team based on their background (string, 100-200 chars)",
-  "additionalInfo": "Any other relevant skills, certifications, or experience (string, up to 300 chars)"
+  "summary": "2-3 sentence overview of the candidate",
+  "fitAssessment": "Detailed assessment of how well they fit our cleaning company (3-4 sentences)",
+  "strengths": ["strength1", "strength2", "strength3"],
+  "concerns": ["concern1", "concern2"] (empty array if none),
+  "recommendation": "highly_recommended|recommended|consider|not_recommended",
+  "confidenceLevel": "High|Medium|Low confidence in this assessment"
 }
 
-Rules:
-- If any field cannot be determined, use empty string ""
-- For experience level, base it on total years of work experience mentioned
-- For previousCleaning, look for housekeeping, cleaning, janitorial, maintenance, hospitality experience
-- Keep whyJoin professional and relevant to cleaning services
-- Phone numbers should be cleaned to just digits and dashes/parentheses
-- State should be 2-letter abbreviation if possible
-
-Resume text:
-${resumeText}
+Consider these factors:
+- Location proximity to Metro Detroit service area
+- Cleaning/hospitality/service experience
+- Transportation availability (critical requirement)
+- Background check eligibility (critical requirement)  
+- Availability match with business needs
+- Motivation and attitude from their responses
+- Overall professionalism of application
 `;
 
     const response = await openai.chat.completions.create({
@@ -65,7 +84,7 @@ ${resumeText}
       messages: [
         {
           role: "system",
-          content: "You are a professional resume parser. Return only valid JSON with the exact structure requested. Do not include any explanations or additional text."
+          content: "You are an expert HR specialist for a cleaning company. Provide thorough, professional analysis. Return only valid JSON."
         },
         {
           role: "user",
@@ -73,61 +92,38 @@ ${resumeText}
         }
       ],
       response_format: { type: "json_object" },
-      temperature: 0.1, // Low temperature for consistent parsing
-      max_tokens: 1000
+      temperature: 0.3,
+      max_tokens: 1500
     });
 
-    const parsedData = JSON.parse(response.choices[0].message.content || '{}');
+    const analysis = JSON.parse(response.choices[0].message.content || '{}');
     
-    // Validate required fields and structure
-    const requiredFields = ['firstName', 'lastName', 'email', 'phone', 'address', 'city', 'state', 'zipCode', 'experience', 'previousCleaning', 'whyJoin', 'additionalInfo'];
-    const validExperienceLevels = ['none', '1-2-years', '3-5-years', '5plus-years'];
-    
-    // Check if all required fields exist
+    // Validate the response structure
+    const requiredFields = ['summary', 'fitAssessment', 'strengths', 'concerns', 'recommendation', 'confidenceLevel'];
     for (const field of requiredFields) {
-      if (!(field in parsedData)) {
-        console.error(`Missing field in parsed data: ${field}`);
+      if (!(field in analysis)) {
+        console.error(`Missing field in analysis: ${field}`);
         return null;
       }
     }
 
-    // Validate experience level
-    if (!validExperienceLevels.includes(parsedData.experience)) {
-      parsedData.experience = 'none'; // Default fallback
+    // Validate recommendation values
+    const validRecommendations = ['highly_recommended', 'recommended', 'consider', 'not_recommended'];
+    if (!validRecommendations.includes(analysis.recommendation)) {
+      analysis.recommendation = 'consider'; // Default fallback
     }
 
-    // Clean and validate the data
-    const cleanedData: ParsedResumeData = {
-      firstName: String(parsedData.firstName || '').trim(),
-      lastName: String(parsedData.lastName || '').trim(),
-      email: String(parsedData.email || '').trim().toLowerCase(),
-      phone: String(parsedData.phone || '').trim(),
-      address: String(parsedData.address || '').trim(),
-      city: String(parsedData.city || '').trim(),
-      state: String(parsedData.state || '').trim().toUpperCase(),
-      zipCode: String(parsedData.zipCode || '').trim(),
-      experience: parsedData.experience,
-      previousCleaning: String(parsedData.previousCleaning || '').trim().substring(0, 500),
-      whyJoin: String(parsedData.whyJoin || '').trim().substring(0, 500),
-      additionalInfo: String(parsedData.additionalInfo || '').trim().substring(0, 300)
+    return {
+      summary: String(analysis.summary || '').trim(),
+      fitAssessment: String(analysis.fitAssessment || '').trim(),
+      strengths: Array.isArray(analysis.strengths) ? analysis.strengths.map((s: any) => String(s).trim()) : [],
+      concerns: Array.isArray(analysis.concerns) ? analysis.concerns.map((c: any) => String(c).trim()) : [],
+      recommendation: analysis.recommendation,
+      confidenceLevel: String(analysis.confidenceLevel || 'Medium').trim()
     };
 
-    return cleanedData;
-
   } catch (error) {
-    console.error('Resume parsing error:', error);
+    console.error('Application analysis error:', error);
     return null;
-  }
-};
-
-export const extractTextFromPDF = async (pdfBuffer: Buffer): Promise<string> => {
-  // For now, we'll return a placeholder - in production you'd use a PDF parsing library
-  // like pdf-parse or pdf2pic + OCR
-  try {
-    // This is a simplified implementation - you'd want to use a proper PDF parser
-    return "PDF text extraction not yet implemented. Please copy and paste your resume content.";
-  } catch (error) {
-    console.error('PDF extraction error:', error);
-    return "";
   }
 };

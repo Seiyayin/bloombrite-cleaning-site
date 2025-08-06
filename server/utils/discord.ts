@@ -37,7 +37,7 @@ export const sendDiscordNotification = async (webhookUrl: string, payload: Disco
   }
 };
 
-export const createEmployeeApplicationDiscordEmbed = (applicationData: any): DiscordEmbed => {
+export const createEmployeeApplicationDiscordEmbed = (applicationData: any, analysis?: any): DiscordEmbed => {
   const experienceLabels: Record<string, string> = {
     'none': 'No professional experience',
     '1-2-years': '1-2 years',
@@ -123,13 +123,58 @@ export const createEmployeeApplicationDiscordEmbed = (applicationData: any): Dis
     });
   }
 
+  // Add AI analysis if available
+  if (analysis) {
+    const recommendationEmoji = {
+      'highly_recommended': '🟢',
+      'recommended': '🟡', 
+      'consider': '🟠',
+      'not_recommended': '🔴'
+    };
+
+    fields.push({
+      name: "🤖 AI Analysis Summary",
+      value: analysis.summary,
+      inline: false
+    });
+
+    fields.push({
+      name: "📊 Fit Assessment",
+      value: analysis.fitAssessment,
+      inline: false
+    });
+
+    if (analysis.strengths && analysis.strengths.length > 0) {
+      fields.push({
+        name: "✅ Strengths",
+        value: analysis.strengths.map((s: string) => `• ${s}`).join('\n'),
+        inline: true
+      });
+    }
+
+    if (analysis.concerns && analysis.concerns.length > 0) {
+      fields.push({
+        name: "⚠️ Concerns",
+        value: analysis.concerns.map((c: string) => `• ${c}`).join('\n'),
+        inline: true
+      });
+    }
+
+    fields.push({
+      name: "🎯 Recommendation",
+      value: `${recommendationEmoji[analysis.recommendation as keyof typeof recommendationEmoji] || '🟡'} **${analysis.recommendation.replace('_', ' ').toUpperCase()}**\n*Confidence: ${analysis.confidenceLevel}*`,
+      inline: false
+    });
+  }
+
   return {
     title: "🆕 New Job Application Received!",
     description: `New application from **${applicationData.firstName} ${applicationData.lastName}** for a cleaning position.`,
-    color: 0xFF6B35, // Orange color matching your brand
+    color: analysis && analysis.recommendation === 'highly_recommended' ? 0x00FF00 : 
+           analysis && analysis.recommendation === 'not_recommended' ? 0xFF0000 : 0xFF6B35,
     fields: fields,
     footer: {
-      text: "Bloombrite Cleaning HR System"
+      text: "Bloombrite Cleaning HR System with AI Analysis"
     },
     timestamp: new Date().toISOString()
   };

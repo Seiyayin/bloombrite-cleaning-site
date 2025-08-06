@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import { sendEmail } from '../utils/sendgrid';
+import { sendDiscordNotification, createEmployeeApplicationDiscordEmbed } from '../utils/discord';
 
 interface EmployeeApplicationData {
   firstName: string;
@@ -80,6 +81,15 @@ export const submitEmployeeApplication = async (req: Request, res: Response) => 
       <hr>
       <p><em>Application submitted on ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()}</em></p>
     `;
+
+    // Send Discord notification if webhook URL is configured
+    if (process.env.DISCORD_WEBHOOK_URL) {
+      const discordEmbed = createEmployeeApplicationDiscordEmbed(applicationData);
+      await sendDiscordNotification(process.env.DISCORD_WEBHOOK_URL, {
+        content: `🎯 **New Job Application Alert!**`,
+        embeds: [discordEmbed]
+      });
+    }
 
     // Send email to HR
     const emailSent = await sendEmail({

@@ -2,11 +2,11 @@ import { Link } from 'wouter';
 
 const GeneralSeoContent = () => {
   return (
-    <section className="py-3 bg-white">
+    <section className="py-1 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-3">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+          <div className="text-center mb-1">
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-gray-800">
               Why Choose Bloombrite for House Cleaning in Metro Detroit?
             </h2>
             <p className="text-xl text-gray-600">

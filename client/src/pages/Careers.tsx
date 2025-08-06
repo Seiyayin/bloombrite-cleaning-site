@@ -107,7 +107,7 @@ const Careers = () => {
       
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-primary to-orange-600 text-white py-4">
+        <section className="bg-gradient-to-r from-primary to-orange-600 text-white py-2">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -144,10 +144,10 @@ const Careers = () => {
         </section>
 
         {/* Job Benefits Section */}
-        <section className="py-3 bg-gray-50">
+        <section className="py-1 bg-gray-50">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-3">
-              <h2 className="text-3xl font-bold mb-4">Why Work With Bloombrite Cleaning?</h2>
+            <div className="text-center mb-1">
+              <h2 className="text-3xl font-bold mb-2">Why Work With Bloombrite Cleaning?</h2>
               <p className="text-xl text-gray-600">Discover the benefits of joining our cleaning team</p>
             </div>
             
@@ -177,10 +177,10 @@ const Careers = () => {
         </section>
 
         {/* Application Form */}
-        <section className="py-3 bg-white">
+        <section className="py-1 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-3">
+              <div className="text-center mb-1">
                 <h2 className="text-3xl font-bold mb-4">Apply to Join Our Team</h2>
                 <p className="text-xl text-gray-600">
                   Fill out the application below and we'll review your information within 24-48 hours.

@@ -5,11 +5,11 @@ import kitchenImage from '@/assets/kitchen-post-cleaned.jpg';
 
 const CommercialSection = () => {
   return (
-    <section className="py-3 bg-white">
+    <section className="py-1 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-3">
+        <div className="text-center mb-1">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Business Solutions</span>
-          <h2 className="text-3xl font-bold mb-4 mt-2">Commercial Cleaning Services</h2>
+          <h2 className="text-3xl font-bold mb-2 mt-1">Commercial Cleaning Services</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
             Create a clean, healthy work environment for your employees and clients with our professional commercial cleaning services.
           </p>

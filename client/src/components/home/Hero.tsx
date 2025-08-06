@@ -4,7 +4,7 @@ import teamImage from '@/assets/team.jpg';
 const Hero = () => {
   return (
     <section className="relative bg-white text-dark overflow-hidden">
-      <div className="container mx-auto px-4 py-4 md:py-6 relative z-10 grid md:grid-cols-2 gap-8 items-center" style={{ minHeight: '350px' }}>
+      <div className="container mx-auto px-4 py-2 md:py-3 relative z-10 grid md:grid-cols-2 gap-8 items-center" style={{ minHeight: '300px' }}>
         <div className="md:col-span-1">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-gray-800">
             <span className="text-primary">Professional House Cleaning Services</span> in Metro Detroit | Residential Cleaning Experts
@@ -63,7 +63,7 @@ const Hero = () => {
       </div>
       
       {/* Orange accent bar */}
-      <div className="h-3 bg-primary w-full"></div>
+      <div className="h-1 bg-primary w-full"></div>
     </section>
   );
 };

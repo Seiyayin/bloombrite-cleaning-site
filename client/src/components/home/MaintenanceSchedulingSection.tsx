@@ -26,12 +26,12 @@ const MaintenanceSchedulingSection = () => {
   ];
 
   return (
-    <section className="py-3 bg-orange-50">
+    <section className="py-1 bg-orange-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-3">
+          <div className="text-center mb-1">
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">Maintenance Plans</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 mt-2">Choose Your Cleaning Schedule</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 mt-1">Choose Your Cleaning Schedule</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Select the maintenance cleaning schedule that fits your lifestyle and budget. All plans include the same professional service with flexible scheduling options.
             </p>

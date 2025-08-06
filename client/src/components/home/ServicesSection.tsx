@@ -7,11 +7,11 @@ const ServicesSection = () => {
   const displayedServices = services.slice(0, 3);
   
   return (
-    <section id="services" className="py-3 bg-neutral-50">
+    <section id="services" className="py-1 bg-neutral-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-3">
+        <div className="text-center mb-1">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Professional Services</span>
-          <h2 className="text-3xl font-bold mb-4 mt-2">Our Residential Cleaning Services</h2>
+          <h2 className="text-3xl font-bold mb-2 mt-1">Our Residential Cleaning Services</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
             We offer specialized residential cleaning services throughout Metro Detroit communities, from <Link href="/services/standard-cleaning" className="text-primary hover:underline">regular house cleaning</Link> to <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep residential cleaning</Link>. We provide <Link href="/services/recurring-cleaning" className="text-primary hover:underline">weekly, biweekly, and monthly maintenance cleaning</Link> trusted by families in <Link href="/locations" className="text-primary hover:underline">Wixom, Novi, West Bloomfield, and surrounding areas</Link> with 100% satisfaction guarantee.
           </p>

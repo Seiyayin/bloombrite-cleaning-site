@@ -6,11 +6,11 @@ import livingRoomImage from '@/assets/living room deep cleaning.jpg';
 
 const TeamSection = () => {
   return (
-    <section className="py-3 bg-white">
+    <section className="py-1 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-3">
+        <div className="text-center mb-1">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Our People</span>
-          <h2 className="text-3xl font-bold mb-4 mt-2">Meet Our Team</h2>
+          <h2 className="text-3xl font-bold mb-2 mt-1">Meet Our Team</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
             Our dedicated cleaning professionals are the heart of Bloombrite Cleaning. With thorough training and a passion for excellence, they transform spaces into spotless environments.
           </p>

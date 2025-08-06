@@ -88,6 +88,7 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- January 21, 2025: Implemented AI-powered resume parser for job applications - applicants can paste resume text and AI automatically extracts and fills personal information, experience level, previous cleaning experience, and generates professional statements using GPT-4o
 - January 21, 2025: Added Discord webhook integration for job applications - notifications now sent to Discord server when new employee applications are submitted, featuring rich embeds with all applicant details, experience level, availability, and contact information
 - January 21, 2025: Refocused website on core residential cleaning services with weekly, biweekly, and monthly maintenance options while de-emphasizing window cleaning per user request
 - January 21, 2025: Updated geographic references from "Michigan" to "Metro Detroit" for more accurate service area representation, reflecting that service areas are specifically in the Metro Detroit region rather than the entire state of Michigan

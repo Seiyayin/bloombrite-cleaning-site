@@ -88,6 +88,7 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- January 21, 2025: Added Discord webhook integration for job applications - notifications now sent to Discord server when new employee applications are submitted, featuring rich embeds with all applicant details, experience level, availability, and contact information
 - January 21, 2025: Refocused website on core residential cleaning services with weekly, biweekly, and monthly maintenance options while de-emphasizing window cleaning per user request
 - January 21, 2025: Updated geographic references from "Michigan" to "Metro Detroit" for more accurate service area representation, reflecting that service areas are specifically in the Metro Detroit region rather than the entire state of Michigan
 - January 21, 2025: Added comprehensive Bitcoin payment integration with dedicated Bitcoin payments page, SEO optimization for cryptocurrency payment keywords, Bitcoin logo integration, navigation menu updates (desktop and mobile), and payment processing information for all cleaning services across Metro Detroit service areas

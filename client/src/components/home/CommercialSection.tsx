@@ -5,7 +5,7 @@ import kitchenImage from '@/assets/kitchen-post-cleaned.jpg';
 
 const CommercialSection = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-10 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Business Solutions</span>

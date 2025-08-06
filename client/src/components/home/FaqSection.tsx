@@ -13,9 +13,9 @@ const FaqSection = () => {
   const displayedFaqs = faqs.slice(0, 5);
   
   return (
-    <section id="faq" className="py-6 bg-white">
+    <section id="faq" className="py-3 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-6">
+        <div className="text-center mb-3">
           <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
             Find answers to our most commonly asked questions about our <Link href="/services" className="text-primary hover:underline">cleaning services</Link>, <Link href="/quote" className="text-primary hover:underline">pricing</Link>, and <Link href="/locations" className="text-primary hover:underline">service areas</Link>.

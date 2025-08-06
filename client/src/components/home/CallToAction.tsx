@@ -2,7 +2,7 @@ import { Link } from 'wouter';
 
 const CallToAction = () => {
   return (
-    <section className="py-6 bg-primary text-white">
+    <section className="py-3 bg-primary text-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-6">Ready for a Cleaner, Healthier Space?</h2>
         <p className="text-xl mb-8 max-w-3xl mx-auto">

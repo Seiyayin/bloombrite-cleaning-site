@@ -2,7 +2,7 @@ import { Link } from "wouter";
 
 const QuoteInfoSection = () => {
   return (
-    <section className="py-10 bg-white">
+    <section className="py-6 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Ready to Get Started?</h2>

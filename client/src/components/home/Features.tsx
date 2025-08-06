@@ -1,8 +1,8 @@
 const Features = () => {
   return (
-    <section className="py-10 bg-neutral-50">
+    <section className="py-6 bg-neutral-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Our Promise</span>
           <h2 className="text-3xl font-bold mb-4 mt-2">Why Choose <span className="text-primary">Bloombrite</span> <span className="text-accent">Cleaning</span>?</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">

@@ -7,9 +7,9 @@ const ServicesSection = () => {
   const displayedServices = services.slice(0, 3);
   
   return (
-    <section id="services" className="py-12 bg-neutral-50">
+    <section id="services" className="py-6 bg-neutral-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Professional Services</span>
           <h2 className="text-3xl font-bold mb-4 mt-2">Our Residential Cleaning Services</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">

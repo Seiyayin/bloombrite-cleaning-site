@@ -4,7 +4,7 @@ import teamImage from '@/assets/team.jpg';
 const Hero = () => {
   return (
     <section className="relative bg-white text-dark overflow-hidden">
-      <div className="container mx-auto px-4 py-12 md:py-20 relative z-10 grid md:grid-cols-2 gap-8 items-center" style={{ minHeight: '500px' }}>
+      <div className="container mx-auto px-4 py-8 md:py-12 relative z-10 grid md:grid-cols-2 gap-8 items-center" style={{ minHeight: '400px' }}>
         <div className="md:col-span-1">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-gray-800">
             <span className="text-primary">Professional House Cleaning Services</span> in Metro Detroit | Residential Cleaning Experts

@@ -3,9 +3,9 @@ import { locations } from '@/data/locations';
 
 const ServiceAreas = () => {
   return (
-    <section className="py-10 bg-neutral-50">
+    <section className="py-6 bg-neutral-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-6">
           <h2 className="text-3xl font-bold mb-4">Metro Detroit Service Areas</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
             Bloombrite Cleaning proudly serves communities throughout the Metro Detroit area with professional house cleaning services, residential cleaning, and commercial cleaning solutions.

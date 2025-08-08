@@ -33,7 +33,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             </svg>
           </button>
           <div className={`pl-4 space-y-2 ${showServicesDropdown ? 'block' : 'hidden'}`}>
-            <Link href="/services/standard-cleaning" className="block py-2" onClick={onClose}>Standard Cleaning</Link>
+            <Link href="/services/general-cleaning" className="block py-2" onClick={onClose}>General Cleaning</Link>
             <Link href="/services/deep-cleaning" className="block py-2" onClick={onClose}>Deep Cleaning</Link>
             <Link href="/services/recurring-cleaning" className="block py-2" onClick={onClose}>Recurring Cleaning</Link>
             <Link href="/services/move-in-out-cleaning" className="block py-2" onClick={onClose}>Move-In/Out Cleaning</Link>

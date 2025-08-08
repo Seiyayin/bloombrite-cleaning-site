@@ -74,7 +74,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Our Services</h3>
             <ul className="space-y-3">
-              <li><Link href="/services/standard-cleaning" className="text-neutral-300 hover:text-white transition">Standard Cleaning</Link></li>
+              <li><Link href="/services/general-cleaning" className="text-neutral-300 hover:text-white transition">General Cleaning</Link></li>
               <li><Link href="/services/deep-cleaning" className="text-neutral-300 hover:text-white transition">Deep Cleaning</Link></li>
               <li><Link href="/services/recurring-cleaning" className="text-neutral-300 hover:text-white transition">Recurring Cleaning</Link></li>
               <li><Link href="/services/move-in-out-cleaning" className="text-neutral-300 hover:text-white transition">Move-In/Out Cleaning</Link></li>

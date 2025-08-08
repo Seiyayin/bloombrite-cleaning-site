@@ -29,7 +29,7 @@ export const LocalBusinessSchema = () => {
     "url": "https://www.bloombritecleaning.com",
     "telephone": "947-465-4217",
     "email": "sales@bloombritecleaning.com",
-    "description": "Professional residential and commercial cleaning services in Michigan. We provide standard cleaning, deep cleaning, move-in/out cleaning, office cleaning, power washing, window cleaning, and specialized cleaning services with guaranteed satisfaction.",
+    "description": "Professional residential and commercial cleaning services in Metro Detroit. We provide general cleaning, deep cleaning, move-in/out cleaning, weekly cleaning service, biweekly cleaning service, monthly cleaning service, office cleaning, power washing, window cleaning, and specialized cleaning services with guaranteed satisfaction.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "2207 Evergreen St",
@@ -145,8 +145,8 @@ export const LocalBusinessSchema = () => {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Standard Cleaning",
-            "description": "Regular maintenance cleaning for homes"
+            "name": "General Cleaning",
+            "description": "Regular maintenance cleaning for homes including weekly, biweekly, and monthly options"
           },
           "price": "160",
           "priceCurrency": "USD"

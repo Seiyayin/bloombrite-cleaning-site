@@ -35,7 +35,7 @@ const Header = () => {
             </button>
             <div className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               <div className="py-2 px-4 space-y-2">
-                <Link href="/services/standard-cleaning" className="block py-2 hover:text-primary transition">Standard Cleaning</Link>
+                <Link href="/services/general-cleaning" className="block py-2 hover:text-primary transition">General Cleaning</Link>
                 <Link href="/services/deep-cleaning" className="block py-2 hover:text-primary transition">Deep Cleaning</Link>
                 <Link href="/services/recurring-cleaning" className="block py-2 hover:text-primary transition">Recurring Cleaning</Link>
                 <Link href="/services/move-in-out-cleaning" className="block py-2 hover:text-primary transition">Move-In/Out Cleaning</Link>

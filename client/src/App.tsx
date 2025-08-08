@@ -41,6 +41,8 @@ function Router() {
       <Route path="/services/window-cleaning" component={WindowCleaning} />
       <Route path="/services/power-washing" component={PowerWashing} />
       <Route path="/services/carpet-cleaning" component={CarpetCleaning} />
+      <Route path="/services/general-cleaning" component={ServiceDetail} />
+      <Route path="/services/standard-cleaning" component={ServiceDetail} />
       <Route path="/services/:slug" component={ServiceDetail} />
       <Route path="/locations" component={LocationsOverview} />
       <Route path="/locations/novi" component={NoviDetailed} />

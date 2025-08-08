@@ -35,9 +35,12 @@ const QuoteForm = () => {
   });
 
   const services = [
-    'Standard Cleaning',
+    'General Cleaning',
     'Deep Cleaning',
     'Move-In/Out Cleaning',
+    'Weekly Cleaning Service',
+    'Biweekly Cleaning Service', 
+    'Monthly Cleaning Service',
     'Recurring Cleaning',
     'Office Cleaning',
     'Post-Construction Cleaning',

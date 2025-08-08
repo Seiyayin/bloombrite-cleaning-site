@@ -6,18 +6,18 @@ export const faqs = [
   },
   {
     category: "services",
-    question: "What's included in your standard cleaning services?",
-    answer: "Our standard cleaning services include dusting of all accessible surfaces, vacuuming carpets and floors, mopping of hard floors, cleaning and sanitizing bathrooms (toilets, showers, tubs, sinks), cleaning kitchen surfaces, sinks, appliance exteriors, and taking out trash. We also make beds and tidy up common areas as part of our comprehensive cleaning services."
+    question: "What's included in your general cleaning services?",
+    answer: "Our general cleaning services (available as weekly cleaning service, biweekly cleaning service, or monthly cleaning service) include dusting of all accessible surfaces, vacuuming carpets and floors, mopping of hard floors, cleaning and sanitizing bathrooms (toilets, showers, tubs, sinks), cleaning kitchen surfaces, sinks, appliance exteriors, and taking out trash. We also make beds and tidy up common areas as part of our comprehensive cleaning services."
   },
   {
     category: "services",
-    question: "What's the difference between your standard and deep cleaning services?",
-    answer: "Our standard cleaning services cover regular maintenance cleaning of accessible areas, while deep cleaning services are more comprehensive and include areas that aren't cleaned during routine cleaning services, such as inside cabinets, behind furniture, baseboards, ceiling fans, and other hard-to-reach areas. Deep cleaning services take longer and are more thorough than standard cleaning services."
+    question: "What's the difference between your general and deep cleaning services?",
+    answer: "Our general cleaning services (weekly cleaning service, biweekly cleaning service, monthly cleaning service) cover regular maintenance cleaning of accessible areas, while deep cleaning services are more comprehensive and include areas that aren't cleaned during routine cleaning services, such as inside cabinets, behind furniture, baseboards, ceiling fans, and other hard-to-reach areas. Deep cleaning services take longer and are more thorough than general cleaning services."
   },
   {
     category: "services",
     question: "How long do your cleaning services typically take?",
-    answer: "The duration depends on the size of your home, its condition, and the type of cleaning services. A standard cleaning services for a 2-bedroom home typically takes 2-3 hours. Deep cleaning services may take 4-6 hours. Move-in/out cleaning services can take 5-8 hours. Our cleaning services team will provide a more accurate estimate when scheduling your cleaning services."
+    answer: "The duration depends on the size of your home, its condition, and the type of cleaning services. A general cleaning services (weekly cleaning service, biweekly cleaning service, or monthly cleaning service) for a 2-bedroom home typically takes 2-3 hours. Deep cleaning services may take 4-6 hours. Move-in/out cleaning services can take 5-8 hours. Our cleaning services team will provide a more accurate estimate when scheduling your cleaning services."
   },
   {
     category: "services",
@@ -37,7 +37,7 @@ export const faqs = [
   {
     category: "booking",
     question: "Can I schedule recurring cleaning services?",
-    answer: "Yes, we offer weekly, bi-weekly, and monthly recurring cleaning services. Regular cleaning services clients receive priority scheduling, consistent cleaning services teams, and often preferred pricing. You can adjust or cancel your recurring cleaning services schedule with proper notice if your needs change."
+    answer: "Yes, we offer weekly cleaning service, biweekly cleaning service, and monthly cleaning service as recurring options. Regular cleaning services clients receive priority scheduling, consistent cleaning services teams, and often preferred pricing. You can adjust or cancel your recurring cleaning services schedule with proper notice if your needs change."
   },
   {
     category: "booking",

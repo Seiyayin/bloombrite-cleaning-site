@@ -36,7 +36,7 @@ const LocationDetail = () => {
     <>
       <SeoHead 
         title={`Best Cleaning Services in ${location.name} | Bloombrite Cleaning`}
-        description={`Bloombrite Cleaning offers professional residential & commercial cleaning in ${location.name}. Our local experts provide standard cleaning, deep cleaning, move-in/out cleaning, office cleaning with 100% satisfaction guaranteed. Serving ZIP codes ${location.zipCodes}.`}
+        description={`Bloombrite Cleaning offers professional residential & commercial cleaning in ${location.name}. Our local experts provide general cleaning, weekly cleaning service, biweekly cleaning service, monthly cleaning service, deep cleaning, move-in/out cleaning, office cleaning with 100% satisfaction guaranteed. Serving ZIP codes ${location.zipCodes}.`}
         ogImage={location.imageUrl}
       />
       
@@ -65,7 +65,7 @@ const LocationDetail = () => {
                 <h2 className="text-2xl font-bold mb-6">Professional Cleaning Services in {location.name}</h2>
                 <div className="prose max-w-none mb-6" dangerouslySetInnerHTML={{ __html: location.description }} />
                 <p className="text-lg text-neutral-600 mb-6">
-                  Our <Link href="/services/standard-cleaning" className="text-primary hover:underline">residential cleaning services</Link> and <Link href="/services/office-cleaning" className="text-primary hover:underline">commercial cleaning solutions</Link> are designed to meet the unique needs of {location.name} residents and businesses. From <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep cleaning</Link> to <Link href="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, we provide comprehensive care for your property.
+                  Our <Link href="/services/general-cleaning" className="text-primary hover:underline">residential cleaning services</Link> and <Link href="/services/office-cleaning" className="text-primary hover:underline">commercial cleaning solutions</Link> are designed to meet the unique needs of {location.name} residents and businesses. We offer weekly cleaning service, biweekly cleaning service, and monthly cleaning service options. From <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep cleaning</Link> to <Link href="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, we provide comprehensive care for your property.
                 </p>
                 
                 <div className="my-12 bg-neutral-50 p-6 rounded-lg">

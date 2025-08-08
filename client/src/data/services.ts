@@ -8,7 +8,7 @@ export const services = [
     description: `
       <p>Our comprehensive window cleaning services remove dirt, dust, water spots, and grime from your windows inside and out. We pay attention to every detail, cleaning not only the glass but also the frames, sills, and tracks for a complete cleaning services experience.</p>
       
-      <p>We use professional-grade equipment and eco-friendly cleaning solutions to ensure streak-free, crystal-clear results that let in maximum natural light and enhance your home's appearance. Our window cleaning services are available as standalone services or as part of our comprehensive <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">standard cleaning services</a> and <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>.</p>
+      <p>We use professional-grade equipment and eco-friendly cleaning solutions to ensure streak-free, crystal-clear results that let in maximum natural light and enhance your home's appearance. Our window cleaning services are available as standalone services or as part of our comprehensive <a href="/services/general-cleaning" class="text-orange-600 hover:text-orange-700">standard cleaning services</a> and <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>.</p>
       
       <p>Regular professional window cleaning services not only improve your home's appearance but also extend the life of your windows by preventing etching and damage from environmental contaminants. Our skilled cleaning services professionals ensure your windows remain spotless and streak-free.</p>
       
@@ -107,21 +107,21 @@ export const services = [
     ]
   },
   {
-    id: "standard-cleaning",
-    slug: "standard-cleaning",
-    title: "Standard Cleaning Services",
-    shortDescription: "Our most popular cleaning services include dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
-    metaDescription: "Professional standard home cleaning services in Michigan. Our comprehensive cleaning services include dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
+    id: "general-cleaning",
+    slug: "general-cleaning",
+    title: "General Cleaning Services",
+    shortDescription: "Our most popular weekly, biweekly, and monthly cleaning services include dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
+    metaDescription: "Professional general home cleaning services in Metro Detroit. Our comprehensive weekly, biweekly, and monthly cleaning services include dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Consistent, Reliable Standard Cleaning Services</h1>
+      <h1 class="text-3xl font-bold mb-6">Consistent, Reliable General Cleaning Services</h1>
       
-      <p>Perfect for weekly, bi-weekly, or monthly upkeep. Our standard cleaning services include dusting, vacuuming, wiping surfaces, bathrooms, kitchens, and more — everything needed to keep your home or office fresh and clean, every time.</p>
+      <p>Perfect for weekly, biweekly, or monthly upkeep. Our general cleaning services include dusting, vacuuming, wiping surfaces, bathrooms, kitchens, and more — everything needed to keep your home or office fresh and clean, every time.</p>
       
-      <p class="mt-4">Our Standard Cleaning Services are designed to maintain a consistently clean and healthy home environment. This is our most popular cleaning service, perfect for regular maintenance cleaning services to keep your home looking its best.</p>
+      <p class="mt-4">Our General Cleaning Services are designed to maintain a consistently clean and healthy home environment. This is our most popular weekly cleaning service, biweekly cleaning service, and monthly cleaning service, perfect for regular maintenance cleaning services to keep your home looking its best.</p>
       
-      <p class="mt-4">Our professional cleaning services team will thoroughly clean the main living areas of your home, with special attention to kitchens and bathrooms. The Standard Cleaning Services include all the essential cleaning tasks needed to maintain a clean home.</p>
+      <p class="mt-4">Our professional cleaning services team will thoroughly clean the main living areas of your home, with special attention to kitchens and bathrooms. The General Cleaning Services include all the essential weekly cleaning service, biweekly cleaning service, and monthly cleaning service tasks needed to maintain a clean home.</p>
       
-      <p class="mt-4">This cleaning service is ideal for homes that are maintained regularly and don't require <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a> of neglected areas. Many of our clients choose this as a bi-weekly or monthly cleaning service to maintain cleanliness between deeper cleaning services. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our standard cleaning services today.</p>
+      <p class="mt-4">This cleaning service is ideal for homes that are maintained regularly and don't require <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a> of neglected areas. Many of our clients choose this as a weekly cleaning service, biweekly cleaning service, or monthly cleaning service to maintain cleanliness between deeper cleaning services. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our general cleaning services today.</p>
     `,
     imageUrl: "/images/kitchen-main.jpg",
     startingPrice: "$160",
@@ -157,9 +157,9 @@ export const services = [
       
       <p class="mt-4">Our Deep Cleaning Services are a comprehensive cleaning solution that addresses areas that are often overlooked during regular cleaning services. This cleaning service is perfect for homes that haven't been professionally cleaned in a while, seasonal cleaning services, or homes that need special attention.</p>
       
-      <p class="mt-4">Deep Cleaning Services include everything in our <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">Standard Cleaning Services</a> package plus a more intensive focus on hard-to-reach and rarely cleaned areas. Our cleaning services team will move furniture (where safe and possible) to clean underneath, thoroughly scrub bathroom fixtures, and clean areas that collect dust and grime over time.</p>
+      <p class="mt-4">Deep Cleaning Services include everything in our <a href="/services/general-cleaning" class="text-orange-600 hover:text-orange-700">General Cleaning Services</a> package plus a more intensive focus on hard-to-reach and rarely cleaned areas. Our cleaning services team will move furniture (where safe and possible) to clean underneath, thoroughly scrub bathroom fixtures, and clean areas that collect dust and grime over time.</p>
       
-      <p class="mt-4">This cleaning service takes longer than our <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">Standard Cleaning Services</a> but delivers exceptional results. Many clients choose this cleaning service for their first cleaning with us, then maintain with regular <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">Standard Cleaning Services</a> appointments. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our deep cleaning services today.</p>
+      <p class="mt-4">This cleaning service takes longer than our <a href="/services/general-cleaning" class="text-orange-600 hover:text-orange-700">General Cleaning Services</a> but delivers exceptional results. Many clients choose this cleaning service for their first cleaning with us, then maintain with regular <a href="/services/general-cleaning" class="text-orange-600 hover:text-orange-700">General Cleaning Services</a> appointments. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our deep cleaning services today.</p>
     `,
     imageUrl: "/images/kitchen-post.jpg",
     startingPrice: "$250",
@@ -209,7 +209,7 @@ export const services = [
     included: [
       "Weekly, biweekly, or monthly scheduling options",
       "Same dedicated cleaning team for consistency",
-      "All services included in our Standard Cleaning",
+      "All services included in our General Cleaning",
       "Priority scheduling and discounted rates",
       "Customizable cleaning checklist",
       "Free rescheduling when needed",

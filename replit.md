@@ -88,6 +88,9 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- January 21, 2025: Updated service terminology from "Standard Cleaning Services" to "General Cleaning Services" and enhanced SEO with weekly cleaning service, biweekly cleaning service, and monthly cleaning service terminology across all website pages, navigation menus, service descriptions, and schema markup for improved local search visibility
+- January 21, 2025: Completely eliminated all white space gaps throughout website by removing all section padding, header/footer padding, and margins for ultra-compact, seamless layout design
+- January 21, 2025: Fixed careers form issues - removed predetermined city/zip values, reduced character minimum requirement, and resolved error handling for better user experience
 - January 21, 2025: Implemented AI-powered application analysis for Discord notifications - when job applications are submitted, AI analyzes candidate fit, generates comprehensive summaries, identifies strengths/concerns, and provides hiring recommendations using GPT-4o
 - January 21, 2025: Added Discord webhook integration for job applications - notifications now sent to Discord server when new employee applications are submitted, featuring rich embeds with all applicant details, experience level, availability, and contact information
 - January 21, 2025: Refocused website on core residential cleaning services with weekly, biweekly, and monthly maintenance options while de-emphasizing window cleaning per user request

@@ -15,7 +15,7 @@ const ServicesOverview = () => {
     <>
       <SeoHead 
         title="Professional Cleaning Services in Michigan | Bloombrite Cleaning"
-        description="Bloombrite Cleaning offers professional cleaning services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Expert standard cleaning, deep cleaning, move-in/out cleaning, office cleaning, and specialized services with guaranteed satisfaction."
+        description="Bloombrite Cleaning offers professional cleaning services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Expert general cleaning, weekly cleaning service, biweekly cleaning service, monthly cleaning service, deep cleaning, move-in/out cleaning, office cleaning, and specialized services with guaranteed satisfaction."
       />
       
       <main>
@@ -24,7 +24,7 @@ const ServicesOverview = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Our Cleaning Services</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Professional cleaning services tailored to your needs throughout <Link href="/locations" className="text-white hover:text-accent underline">Michigan</Link>. From <Link href="/services/standard-cleaning" className="text-white hover:text-accent underline">standard cleaning</Link> to <Link href="/services/deep-cleaning" className="text-white hover:text-accent underline">deep cleaning</Link>, explore our options below and find the perfect solution for your home or office.
+              Professional cleaning services tailored to your needs throughout <Link href="/locations" className="text-white hover:text-accent underline">Metro Detroit</Link>. From <Link href="/services/general-cleaning" className="text-white hover:text-accent underline">general cleaning</Link> to <Link href="/services/deep-cleaning" className="text-white hover:text-accent underline">deep cleaning</Link>, plus weekly cleaning service, biweekly cleaning service, and monthly cleaning service options. Explore our services below and find the perfect solution for your home or office.
             </p>
           </div>
         </section>

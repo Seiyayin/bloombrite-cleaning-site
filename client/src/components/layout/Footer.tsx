@@ -3,7 +3,7 @@ import bbbBadge from '@/assets/bbb-accredited-business.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 text-white pt-2 pb-1">
+    <footer className="bg-neutral-900 text-white pt-0 pb-0">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
@@ -115,7 +115,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="pt-8 border-t border-neutral-800 text-center text-neutral-400 text-sm">
+        <div className="pt-0 border-t border-neutral-800 text-center text-neutral-400 text-sm">
           <p className="mb-4">&copy; {new Date().getFullYear()} <span className="text-primary">Bloombrite</span> <span className="text-accent">Cleaning</span>. All rights reserved.</p>
           <div className="flex justify-center space-x-6">
             <Link href="/privacy-policy" className="hover:text-white transition">Privacy Policy</Link>

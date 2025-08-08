@@ -30,7 +30,7 @@ const employeeApplicationSchema = z.object({
   transportation: z.boolean(),
   backgroundCheck: z.boolean(),
   references: z.string().optional(),
-  whyJoin: z.string().min(50, 'Please tell us more about why you want to join our team (at least 50 characters)'),
+  whyJoin: z.string().min(10, 'Please tell us why you want to join our team'),
   additionalInfo: z.string().optional()
 });
 
@@ -78,14 +78,20 @@ const Careers = () => {
         body: JSON.stringify(data),
       });
 
-      if (response.ok) {
+      const result = await response.json();
+      
+      if (response.ok && result.success) {
         toast({
           title: "Application Submitted Successfully!",
           description: "Thank you for your interest in joining our team. We'll review your application and get back to you soon.",
         });
         form.reset();
       } else {
-        throw new Error('Failed to submit application');
+        toast({
+          title: "Submission Failed",
+          description: result.message || "There was an error submitting your application. Please try again or contact us directly.",
+          variant: "destructive",
+        });
       }
     } catch (error) {
       toast({
@@ -107,7 +113,7 @@ const Careers = () => {
       
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-primary to-orange-600 text-white py-2">
+        <section className="bg-gradient-to-r from-primary to-orange-600 text-white py-0">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -144,10 +150,10 @@ const Careers = () => {
         </section>
 
         {/* Job Benefits Section */}
-        <section className="py-1 bg-gray-50">
+        <section className="py-0 bg-gray-50">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-1">
-              <h2 className="text-3xl font-bold mb-2">Why Work With Bloombrite Cleaning?</h2>
+            <div className="text-center mb-0">
+              <h2 className="text-3xl font-bold mb-0">Why Work With Bloombrite Cleaning?</h2>
               <p className="text-xl text-gray-600">Discover the benefits of joining our cleaning team</p>
             </div>
             
@@ -177,10 +183,10 @@ const Careers = () => {
         </section>
 
         {/* Application Form */}
-        <section className="py-1 bg-white">
+        <section className="py-0 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-1">
+              <div className="text-center mb-0">
                 <h2 className="text-3xl font-bold mb-4">Apply to Join Our Team</h2>
                 <p className="text-xl text-gray-600">
                   Fill out the application below and we'll review your information within 24-48 hours.
@@ -277,7 +283,7 @@ const Careers = () => {
                             <FormItem>
                               <FormLabel>City *</FormLabel>
                               <FormControl>
-                                <Input placeholder="Wixom" {...field} />
+                                <Input placeholder="Your city" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -303,7 +309,7 @@ const Careers = () => {
                             <FormItem>
                               <FormLabel>Zip Code *</FormLabel>
                               <FormControl>
-                                <Input placeholder="48393" {...field} />
+                                <Input placeholder="Your zip code" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>

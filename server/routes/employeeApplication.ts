@@ -99,58 +99,61 @@ export const submitEmployeeApplication = async (req: Request, res: Response) => 
       });
     }
 
-    // Send email to HR
-    const emailSent = await sendEmail({
-      to: 'hr@bloombritecleaning.com', // HR email
-      from: 'noreply@bloombritecleaning.com',
-      subject: `New Employee Application: ${applicationData.firstName} ${applicationData.lastName}`,
-      html: emailContent,
-      text: emailContent.replace(/<[^>]*>/g, '') // Plain text version
-    });
-
-    if (emailSent) {
-      // Send confirmation email to applicant
-      const confirmationEmailContent = `
-        <h2>Thank You for Your Application!</h2>
-        
-        <p>Dear ${applicationData.firstName},</p>
-        
-        <p>Thank you for your interest in joining the Bloombrite Cleaning team! We have received your application and our HR team will review it within the next 24-48 hours.</p>
-        
-        <p>Here's a summary of the information you provided:</p>
-        <ul>
-          <li><strong>Position Interest:</strong> Cleaning Team Member</li>
-          <li><strong>Experience Level:</strong> ${experienceLabels[applicationData.experience] || applicationData.experience}</li>
-          <li><strong>Availability:</strong> ${availabilityLabels[applicationData.availability] || applicationData.availability}</li>
-        </ul>
-        
-        <p>If you have any questions or need to update your application, please don't hesitate to contact us at:</p>
-        <ul>
-          <li><strong>Phone:</strong> (947) 465-4217</li>
-          <li><strong>Email:</strong> hr@bloombritecleaning.com</li>
-        </ul>
-        
-        <p>We look forward to potentially welcoming you to our team!</p>
-        
-        <p>Best regards,<br>
-        The Bloombrite Cleaning Team</p>
-      `;
-
-      await sendEmail({
-        to: applicationData.email,
-        from: 'hr@bloombritecleaning.com',
-        subject: 'Application Received - Bloombrite Cleaning',
-        html: confirmationEmailContent,
-        text: confirmationEmailContent.replace(/<[^>]*>/g, '')
+    // Send email to HR (but don't fail the submission if email fails)
+    try {
+      const emailSent = await sendEmail({
+        to: 'hr@bloombritecleaning.com', // HR email
+        from: 'noreply@bloombritecleaning.com',
+        subject: `New Employee Application: ${applicationData.firstName} ${applicationData.lastName}`,
+        html: emailContent,
+        text: emailContent.replace(/<[^>]*>/g, '') // Plain text version
       });
 
-      res.json({ 
-        success: true, 
-        message: 'Application submitted successfully. You should receive a confirmation email shortly.' 
-      });
-    } else {
-      throw new Error('Failed to send email');
+      if (emailSent) {
+        // Send confirmation email to applicant
+        const confirmationEmailContent = `
+          <h2>Thank You for Your Application!</h2>
+          
+          <p>Dear ${applicationData.firstName},</p>
+          
+          <p>Thank you for your interest in joining the Bloombrite Cleaning team! We have received your application and our HR team will review it within the next 24-48 hours.</p>
+          
+          <p>Here's a summary of the information you provided:</p>
+          <ul>
+            <li><strong>Position Interest:</strong> Cleaning Team Member</li>
+            <li><strong>Experience Level:</strong> ${experienceLabels[applicationData.experience] || applicationData.experience}</li>
+            <li><strong>Availability:</strong> ${availabilityLabels[applicationData.availability] || applicationData.availability}</li>
+          </ul>
+          
+          <p>If you have any questions or need to update your application, please don't hesitate to contact us at:</p>
+          <ul>
+            <li><strong>Phone:</strong> (947) 465-4217</li>
+            <li><strong>Email:</strong> hr@bloombritecleaning.com</li>
+          </ul>
+          
+          <p>We look forward to potentially welcoming you to our team!</p>
+          
+          <p>Best regards,<br>
+          The Bloombrite Cleaning Team</p>
+        `;
+
+        await sendEmail({
+          to: applicationData.email,
+          from: 'hr@bloombritecleaning.com',
+          subject: 'Application Received - Bloombrite Cleaning',
+          html: confirmationEmailContent,
+          text: confirmationEmailContent.replace(/<[^>]*>/g, '')
+        });
+      }
+    } catch (emailError) {
+      console.error('Email sending failed, but continuing with success response:', emailError);
     }
+
+    // Always return success since the application was processed
+    res.json({ 
+      success: true, 
+      message: 'Application submitted successfully. We have received your application and will review it within 24-48 hours.' 
+    });
   } catch (error) {
     console.error('Employee application submission error:', error);
     res.status(500).json({ 

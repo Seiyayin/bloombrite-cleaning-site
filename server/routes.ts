@@ -244,6 +244,104 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Test endpoint to debug Google Places API
+  app.get('/api/test-google-places', async (req, res) => {
+    try {
+      const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
+      
+      if (!GOOGLE_PLACES_API_KEY) {
+        return res.json({
+          success: false,
+          message: 'Google Places API key not configured',
+          hasApiKey: false
+        });
+      }
+
+      const results = [];
+
+      // Test 1: Search for a well-known business nearby to verify API key works
+      try {
+        const testResponse = await fetch(
+          `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=42.555663,-83.4414784&radius=5000&keyword=walmart&key=${GOOGLE_PLACES_API_KEY}`
+        );
+        const testData = await testResponse.json();
+        results.push({
+          test: 'nearby_walmart_test',
+          status: testData.status,
+          results_count: testData.results?.length || 0,
+          message: 'Testing if API key works with nearby Walmart search'
+        });
+      } catch (error) {
+        results.push({
+          test: 'nearby_walmart_test',
+          error: error instanceof Error ? error.message : String(error),
+          message: 'API key test failed'
+        });
+      }
+
+      // Test 2: Broad search for cleaning services in Wixom
+      try {
+        const cleaningResponse = await fetch(
+          `https://maps.googleapis.com/maps/api/place/textsearch/json?query=cleaning+services+Wixom+Michigan&key=${GOOGLE_PLACES_API_KEY}`
+        );
+        const cleaningData = await cleaningResponse.json();
+        results.push({
+          test: 'cleaning_services_wixom',
+          status: cleaningData.status,
+          results_count: cleaningData.results?.length || 0,
+          businesses: cleaningData.results?.slice(0, 5).map((p: any) => ({
+            name: p.name,
+            place_id: p.place_id?.substring(0, 20) + '...',
+            address: p.formatted_address
+          })) || []
+        });
+      } catch (error) {
+        results.push({
+          test: 'cleaning_services_wixom',
+          error: error instanceof Error ? error.message : String(error)
+        });
+      }
+
+      // Test 3: Search with your exact coordinates
+      try {
+        const exactResponse = await fetch(
+          `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=42.555663,-83.4414784&radius=100&key=${GOOGLE_PLACES_API_KEY}`
+        );
+        const exactData = await exactResponse.json();
+        results.push({
+          test: 'exact_coordinates_search',
+          status: exactData.status,
+          results_count: exactData.results?.length || 0,
+          businesses: exactData.results?.slice(0, 10).map((p: any) => ({
+            name: p.name,
+            place_id: p.place_id?.substring(0, 20) + '...',
+            types: p.types?.slice(0, 3)
+          })) || []
+        });
+      } catch (error) {
+        results.push({
+          test: 'exact_coordinates_search',
+          error: error instanceof Error ? error.message : String(error)
+        });
+      }
+
+      res.json({
+        success: true,
+        hasApiKey: true,
+        coordinates: { lat: 42.555663, lng: -83.4414784 },
+        tests: results
+      });
+
+    } catch (error) {
+      console.error('Error in Google Places test:', error);
+      res.status(500).json({ 
+        success: false, 
+        message: 'Test failed',
+        error: error instanceof Error ? error.message : String(error)
+      });
+    }
+  });
+
   // Endpoint to find place ID (for setup/debugging)
   app.get('/api/find-place-id', async (req, res) => {
     try {

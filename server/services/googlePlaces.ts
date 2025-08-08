@@ -27,14 +27,14 @@ if (!GOOGLE_PLACES_API_KEY) {
   console.warn('GOOGLE_PLACES_API_KEY environment variable not set');
 }
 
-// Bloombrite Cleaning Google Business Profile coordinates from their Google Maps URL
+// Bloombrite Cleaning actual business address coordinates
 const BLOOMBRITE_COORDINATES = {
-  lat: 42.555663,
-  lng: -83.4414784
+  lat: 42.5536557,
+  lng: -83.5425487
 };
 
-// We'll find the place ID dynamically using the coordinates and business name
-let BLOOMBRITE_PLACE_ID: string | null = null;
+// Bloombrite Cleaning place ID for 2207 Evergreen St, Wixom, MI 48393
+const BLOOMBRITE_PLACE_ID: string = 'ChIJ8dw6RE6mJIgRsdro9IDycLk';
 
 export async function fetchGoogleReviews(): Promise<{
   reviews: GooglePlacesReview[];
@@ -51,24 +51,9 @@ export async function fetchGoogleReviews(): Promise<{
   }
 
   try {
-    // Find the place ID if we don't have it yet
-    if (!BLOOMBRITE_PLACE_ID) {
-      console.log('Finding Bloombrite place ID...');
-      BLOOMBRITE_PLACE_ID = await findPlaceIdByCoordinates();
-      
-      if (!BLOOMBRITE_PLACE_ID) {
-        console.log('Could not find place ID, using demo reviews');
-        return {
-          reviews: createDemoReviews(),
-          rating: 4.9,
-          total_ratings: 127
-        };
-      }
-    }
-
-    console.log(`Fetching reviews for place ID: ${BLOOMBRITE_PLACE_ID}`);
+    console.log(`Fetching reviews for Bloombrite address: 2207 Evergreen St, Wixom, MI (${BLOOMBRITE_PLACE_ID})`);
     
-    // Fetch place details including reviews
+    // Fetch place details including reviews for the specific address
     const response = await fetch(
       `https://maps.googleapis.com/maps/api/place/details/json?place_id=${BLOOMBRITE_PLACE_ID}&fields=name,rating,user_ratings_total,reviews&key=${GOOGLE_PLACES_API_KEY}`
     );
@@ -147,30 +132,56 @@ export async function findPlaceIdByCoordinates(): Promise<string | null> {
   }
 
   try {
-    // Use nearby search with coordinates to find the business
-    const response = await fetch(
-      `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${BLOOMBRITE_COORDINATES.lat},${BLOOMBRITE_COORDINATES.lng}&radius=50&keyword=Bloombrite+Cleaning&type=laundry&key=${GOOGLE_PLACES_API_KEY}`
-    );
+    // Try multiple nearby search approaches
+    const searchAttempts = [
+      // Try with establishment type (broader)
+      `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${BLOOMBRITE_COORDINATES.lat},${BLOOMBRITE_COORDINATES.lng}&radius=100&keyword=Bloombrite&type=establishment&key=${GOOGLE_PLACES_API_KEY}`,
+      // Try with just coordinates and larger radius
+      `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${BLOOMBRITE_COORDINATES.lat},${BLOOMBRITE_COORDINATES.lng}&radius=500&keyword=cleaning&key=${GOOGLE_PLACES_API_KEY}`,
+      // Try without type restriction
+      `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${BLOOMBRITE_COORDINATES.lat},${BLOOMBRITE_COORDINATES.lng}&radius=200&keyword=Bloombrite+Cleaning&key=${GOOGLE_PLACES_API_KEY}`
+    ];
 
-    if (!response.ok) {
-      console.error(`Nearby search API request failed: ${response.status}`);
-      return null;
-    }
-
-    const data = await response.json();
-    
-    if (data.status === 'OK' && data.results && data.results.length > 0) {
-      // Find the closest match by name
-      const match = data.results.find((place: any) => 
-        place.name.toLowerCase().includes('bloombrite') || 
-        place.name.toLowerCase().includes('bloom brite')
-      );
+    for (const searchUrl of searchAttempts) {
+      console.log('Trying nearby search:', searchUrl.split('&key=')[0]);
       
-      if (match) {
-        console.log('Found Bloombrite place:', match.name, match.place_id);
-        return match.place_id;
+      const response = await fetch(searchUrl);
+
+      if (!response.ok) {
+        console.error(`Nearby search API request failed: ${response.status}`);
+        continue;
+      }
+
+      const data = await response.json();
+      console.log(`Nearby search status: ${data.status}, results: ${data.results?.length || 0}`);
+      
+      if (data.status === 'OK' && data.results && data.results.length > 0) {
+        console.log('Found places:', data.results.map((p: any) => ({ name: p.name, place_id: p.place_id.substring(0, 20) + '...' })));
+        
+        // Look for exact or close match
+        const exactMatch = data.results.find((place: any) => 
+          place.name.toLowerCase().includes('bloombrite') || 
+          place.name.toLowerCase().includes('bloom brite')
+        );
+        
+        if (exactMatch) {
+          console.log('Found Bloombrite exact match:', exactMatch.name, exactMatch.place_id);
+          return exactMatch.place_id;
+        }
+        
+        // Look for cleaning service
+        const cleaningMatch = data.results.find((place: any) => 
+          place.name.toLowerCase().includes('cleaning') ||
+          place.types?.includes('laundry') ||
+          place.types?.includes('establishment')
+        );
+        
+        if (cleaningMatch && data.results.length <= 3) {
+          console.log('Found potential cleaning service match:', cleaningMatch.name, cleaningMatch.place_id);
+          return cleaningMatch.place_id;
+        }
       } else {
-        console.log('Found places but no Bloombrite match:', data.results.map((p: any) => p.name));
+        console.log(`Nearby search failed: ${data.status} - ${data.error_message || 'No error message'}`);
       }
     }
 
@@ -190,13 +201,16 @@ export async function findPlaceIdByTextSearch(): Promise<string | null> {
     return null;
   }
 
-  // Try different search variations
+  // Try different search variations based on the Google Maps URL
   const searchQueries = [
-    'Bloombrite Cleaning Wixom Michigan',
-    'Bloombrite Cleaning 2207 Evergreen St Wixom MI',
-    'Bloom Brite Cleaning Wixom MI',
-    'cleaning service Wixom Michigan Bloombrite',
-    'house cleaning Wixom MI Bloombrite'
+    'Bloombrite Cleaning',
+    'BloomBrite Cleaning', 
+    'Bloombrite Cleaning Michigan',
+    'cleaning service 42.555663,-83.4414784',
+    'house cleaning Wixom',
+    'residential cleaning Wixom MI',
+    'Bloombrite',
+    'Bloom Brite'
   ];
 
   for (const queryText of searchQueries) {
@@ -213,11 +227,14 @@ export async function findPlaceIdByTextSearch(): Promise<string | null> {
       }
 
       const data = await response.json();
+      console.log(`Text search "${queryText}" status: ${data.status}, candidates: ${data.candidates?.length || 0}`);
       
       if (data.status === 'OK' && data.candidates && data.candidates.length > 0) {
         const candidate = data.candidates[0];
         console.log('Found place via text search:', candidate.name, candidate.place_id);
         return candidate.place_id;
+      } else if (data.status !== 'OK') {
+        console.log(`Text search error: ${data.status} - ${data.error_message || 'No error message'}`);
       }
     } catch (error) {
       console.error(`Error searching for "${queryText}":`, error);

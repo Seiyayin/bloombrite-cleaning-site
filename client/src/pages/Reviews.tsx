@@ -4,36 +4,12 @@ import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
 import { ReviewSchema } from '@/lib/schema';
 import { testimonials } from '@/data/testimonials';
+import { useGoogleReviews } from '@/hooks/useGoogleReviews';
 
-// Google reviews data
-const googleReviews = [
-  {
-    author_name: "Sarah Johnson",
-    rating: 5,
-    text: "Absolutely amazing service! The team at Bloombrite Cleaning transformed my home. They were thorough, professional, and left everything spotless. Will definitely use them again!",
-    relative_time_description: "2 months ago"
-  },
-  {
-    author_name: "Michael Thompson",
-    rating: 5,
-    text: "I've tried several cleaning services in the area, but Bloombrite is by far the best. They pay attention to every detail and are always reliable. Highly recommend!",
-    relative_time_description: "1 month ago"
-  },
-  {
-    author_name: "Jessica Williams",
-    rating: 4,
-    text: "Very professional team. They did a great job with our deep cleaning. The only reason for 4 stars is they were a bit late, but they called to let me know in advance.",
-    relative_time_description: "3 weeks ago"
-  },
-  {
-    author_name: "David Miller",
-    rating: 5,
-    text: "The team did an excellent job on our move-out cleaning. The landlord was impressed and we got our full security deposit back! Worth every penny.",
-    relative_time_description: "2 weeks ago"
-  }
-];
 
 const Reviews = () => {
+  const { reviews: googleReviews, rating, totalRatings, isLoading, error } = useGoogleReviews();
+  
   // Scroll to top when the page loads
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -63,9 +39,9 @@ const Reviews = () => {
                 <span>★</span>
                 <span>★</span>
               </div>
-              <div className="text-2xl font-bold">4.9 / 5</div>
+              <div className="text-2xl font-bold">{rating.toFixed(1)} / 5</div>
             </div>
-            <p className="mt-2">Based on {testimonials.length + googleReviews.length} verified customer reviews</p>
+            <p className="mt-2">Based on {totalRatings + testimonials.length} verified customer reviews</p>
           </div>
         </section>
         
@@ -80,38 +56,62 @@ const Reviews = () => {
             </div>
             
             <div className="max-w-5xl mx-auto">
-              <div className="google-reviews-embed">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {googleReviews.map((review, index) => (
-                    <div key={index} className="bg-white rounded-lg shadow-md p-6">
-                      <div className="flex items-center mb-4">
-                        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mr-4 text-white">
-                          <span className="text-xl font-bold">
-                            {review.author_name.charAt(0)}
-                          </span>
-                        </div>
-                        <div>
-                          <div className="font-semibold">{review.author_name}</div>
-                          <div className="text-sm text-neutral-500">{review.relative_time_description}</div>
-                        </div>
-                      </div>
-                      
-                      <div className="flex mb-3">
-                        {[...Array(5)].map((_, i) => (
-                          <span 
-                            key={i} 
-                            className={`text-xl ${i < review.rating ? 'text-yellow-400' : 'text-neutral-300'}`}
-                          >
-                            ★
-                          </span>
-                        ))}
-                      </div>
-                      
-                      <p className="text-neutral-700 italic">"{review.text}"</p>
-                    </div>
-                  ))}
+              {isLoading ? (
+                <div className="text-center py-8">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto"></div>
+                  <p className="mt-2 text-neutral-600">Loading reviews...</p>
                 </div>
-              </div>
+              ) : error ? (
+                <div className="text-center py-8">
+                  <p className="text-neutral-600">Unable to load Google reviews at this time.</p>
+                  <p className="text-sm text-neutral-500 mt-2">Please check our testimonials below.</p>
+                </div>
+              ) : (
+                <div className="google-reviews-embed">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {googleReviews.length > 0 ? googleReviews.map((review, index) => (
+                      <div key={index} className="bg-white rounded-lg shadow-md p-6">
+                        <div className="flex items-center mb-4">
+                          {review.profile_photo_url ? (
+                            <img 
+                              src={review.profile_photo_url} 
+                              alt={review.author_name}
+                              className="w-12 h-12 rounded-full mr-4"
+                            />
+                          ) : (
+                            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mr-4 text-white">
+                              <span className="text-xl font-bold">
+                                {review.author_name.charAt(0)}
+                              </span>
+                            </div>
+                          )}
+                          <div>
+                            <div className="font-semibold">{review.author_name}</div>
+                            <div className="text-sm text-neutral-500">{review.relative_time_description}</div>
+                          </div>
+                        </div>
+                        
+                        <div className="flex mb-3">
+                          {[...Array(5)].map((_, i) => (
+                            <span 
+                              key={i} 
+                              className={`text-xl ${i < review.rating ? 'text-yellow-400' : 'text-neutral-300'}`}
+                            >
+                              ★
+                            </span>
+                          ))}
+                        </div>
+                        
+                        <p className="text-neutral-700 italic">"{review.text}"</p>
+                      </div>
+                    )) : (
+                      <div className="col-span-2 text-center py-8">
+                        <p className="text-neutral-600">No Google reviews available at this time.</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
             
               {/* Direct link to Google reviews */}
               <div className="mt-8 text-center">

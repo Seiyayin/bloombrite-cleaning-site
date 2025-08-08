@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { submitEmployeeApplication } from "./routes/employeeApplication";
+import { fetchGoogleReviews, findPlaceId } from "./services/googlePlaces";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Explicitly serve static sitemap.xml and robots.txt without interference
@@ -217,6 +218,61 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Employee application route
   app.post('/api/employee-application', submitEmployeeApplication);
+
+  // Google Reviews API endpoints
+  app.get('/api/google-reviews', async (_req, res) => {
+    try {
+      const reviewsData = await fetchGoogleReviews();
+      
+      if (!reviewsData) {
+        return res.status(500).json({ 
+          success: false, 
+          message: 'Unable to fetch Google reviews' 
+        });
+      }
+      
+      res.json({
+        success: true,
+        data: reviewsData
+      });
+    } catch (error) {
+      console.error('Error fetching Google reviews:', error);
+      res.status(500).json({ 
+        success: false, 
+        message: 'Failed to fetch Google reviews' 
+      });
+    }
+  });
+
+  // Endpoint to find place ID (for setup/debugging)
+  app.get('/api/find-place-id', async (req, res) => {
+    try {
+      const businessName = 'Bloombrite Cleaning';
+      const address = '2207 Evergreen St, Wixom, MI 48393';
+      
+      const placeId = await findPlaceId(businessName, address);
+      
+      if (!placeId) {
+        return res.status(404).json({ 
+          success: false, 
+          message: 'Place ID not found' 
+        });
+      }
+      
+      res.json({
+        success: true,
+        placeId: placeId,
+        businessName: businessName,
+        address: address
+      });
+    } catch (error) {
+      console.error('Error finding place ID:', error);
+      res.status(500).json({ 
+        success: false, 
+        message: 'Failed to find place ID' 
+      });
+    }
+  });
 
   const httpServer = createServer(app);
 

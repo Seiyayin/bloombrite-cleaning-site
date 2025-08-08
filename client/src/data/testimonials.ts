@@ -2,7 +2,7 @@ export const testimonials = [
   {
     id: 1,
     rating: 5.0,
-    text: "BloomBrite's team did an amazing job with our deep cleaning. They were thorough, professional, and left our home spotless. Highly recommend their services!",
+    text: "BloomBrite's team did an amazing job with our residential deep cleaning service in Novi. They were thorough, professional, and left our house cleaning looking spotless. Highly recommend their house cleaning services to anyone in Metro Detroit!",
     author: {
       name: "Sarah Johnson",
       location: "Novi, MI",
@@ -12,7 +12,7 @@ export const testimonials = [
   {
     id: 2,
     rating: 5.0,
-    text: "We've been using BloomBrite's recurring cleaning service for over a year now. They're always on time, detail-oriented, and use eco-friendly products which is important to us.",
+    text: "We've been using BloomBrite's weekly cleaning service for our home in Livonia for over a year now. Their residential cleaning team is always on time, detail-oriented, and uses eco-friendly products which is important to us. Best house cleaning service in Metro Detroit!",
     author: {
       name: "Michael Chen",
       location: "Livonia, MI",
@@ -22,7 +22,7 @@ export const testimonials = [
   {
     id: 3,
     rating: 4.5,
-    text: "Had BloomBrite do a move-out cleaning for my apartment. They were fantastic! Got my full security deposit back thanks to their attention to detail.",
+    text: "Had BloomBrite do a move-in cleaning service for my apartment in Wixom. Their residential cleaning crew was fantastic! Got my full security deposit back thanks to their thorough house cleaning attention to detail.",
     author: {
       name: "Rebecca Taylor",
       location: "Wixom, MI",
@@ -32,7 +32,7 @@ export const testimonials = [
   {
     id: 4,
     rating: 5.0,
-    text: "I hired BloomBrite for a one-time deep clean before hosting a family gathering, and they exceeded my expectations. Every corner was spotless, and they even cleaned areas I hadn't thought of.",
+    text: "I hired BloomBrite for a one-time deep cleaning service before hosting a family gathering in Commerce Township, and they exceeded my expectations. Every corner was spotless with their professional house cleaning service, and they even cleaned areas I hadn't thought of.",
     author: {
       name: "James Wilson",
       location: "Commerce Township, MI",
@@ -42,7 +42,7 @@ export const testimonials = [
   {
     id: 5,
     rating: 5.0,
-    text: "As a busy professional, having BloomBrite come bi-weekly has been a game-changer. Their team is trustworthy, efficient, and consistent. Coming home to a clean house is the best feeling!",
+    text: "As a busy professional in Farmington Hills, having BloomBrite's biweekly cleaning service has been a game-changer. Their residential cleaning team is trustworthy, efficient, and consistent. Coming home to a professionally cleaned house is the best feeling!",
     author: {
       name: "Jennifer Lopez",
       location: "Farmington Hills, MI",
@@ -52,7 +52,7 @@ export const testimonials = [
   {
     id: 6,
     rating: 4.5,
-    text: "BloomBrite cleans our office weekly, and they've been excellent. Our workspace is always immaculate, and they work around our schedule with minimal disruption to our business operations.",
+    text: "BloomBrite provides weekly cleaning service for our office in Novi, and they've been excellent. Our workspace is always immaculate with their professional cleaning services, and they work around our schedule with minimal disruption to our business operations.",
     author: {
       name: "David Patel",
       location: "Novi, MI",
@@ -62,7 +62,7 @@ export const testimonials = [
   {
     id: 7,
     rating: 5.0,
-    text: "I've tried several cleaning services over the years, and BloomBrite is by far the best. Their attention to detail is impressive, and they're very accommodating of special requests.",
+    text: "I've tried several house cleaning services in Metro Detroit over the years, and BloomBrite's residential cleaning is by far the best. Their attention to detail with monthly cleaning service is impressive, and they're very accommodating of special requests.",
     author: {
       name: "Amanda Rodriguez",
       location: "Milford, MI",
@@ -72,7 +72,7 @@ export const testimonials = [
   {
     id: 8,
     rating: 5.0,
-    text: "We use BloomBrite for our Airbnb property in Walled Lake, and they've been fantastic. Quick turnaround times, thorough cleaning, and great communication. Our guests always comment on how clean the place is!",
+    text: "We use BloomBrite's house cleaning services for our Airbnb property in Walled Lake, and they've been fantastic. Quick turnaround times, thorough residential cleaning, and great communication. Our guests always comment on how clean the house is after their professional cleaning service!",
     author: {
       name: "Thomas Green",
       location: "Walled Lake, MI",
@@ -82,7 +82,7 @@ export const testimonials = [
   {
     id: 9,
     rating: 4.5,
-    text: "BloomBrite deep cleaned our home after a renovation, and the results were incredible. They removed all the construction dust and made everything shine. I'd definitely use them again.",
+    text: "BloomBrite provided post-construction deep cleaning service for our home in South Lyon after a renovation, and the results were incredible. They removed all the construction dust and made everything shine with their professional house cleaning service. I'd definitely use their residential cleaning again.",
     author: {
       name: "Michelle Kim",
       location: "South Lyon, MI",
@@ -92,7 +92,7 @@ export const testimonials = [
   {
     id: 10,
     rating: 5.0,
-    text: "I'm extremely pleased with the oven cleaning service from BloomBrite. My oven looks brand new, and they did it without any harsh chemical smells. Worth every penny!",
+    text: "I'm extremely pleased with the oven cleaning service from BloomBrite in Livonia. My oven looks brand new after their professional house cleaning service, and they did it without any harsh chemical smells. Best residential cleaning value in Metro Detroit!",
     author: {
       name: "Robert Johnson",
       location: "Livonia, MI",

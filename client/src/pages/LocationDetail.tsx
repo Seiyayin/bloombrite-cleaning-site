@@ -9,7 +9,7 @@ import { services } from '@/data/services';
 const LocationDetail = () => {
   const [, params] = useRoute('/locations/:slug');
   const [match] = useRoute('/:slug');
-  const slug = params?.slug || match?.params?.slug || '';
+  const slug = params?.slug || '';
   
   // Find the location by slug, handling both /locations/:slug and /:slug routes
   const location = locations.find((l) => l.slug === slug || l.slug === `${slug}`);
@@ -35,8 +35,8 @@ const LocationDetail = () => {
   return (
     <>
       <SeoHead 
-        title={`Best Cleaning Services in ${location.name} | Bloombrite Cleaning`}
-        description={`Bloombrite Cleaning offers professional residential & commercial cleaning in ${location.name}. Our local experts provide general cleaning, weekly cleaning service, biweekly cleaning service, monthly cleaning service, deep cleaning, move-in/out cleaning, office cleaning with 100% satisfaction guaranteed. Serving ZIP codes ${location.zipCodes}.`}
+        title={`Best Maid Services & Cleaning in ${location.name} | Bloombrite Cleaning`}
+        description={`Bloombrite Cleaning offers professional maid services, residential & commercial cleaning in ${location.name}. Searching for "maid services near me"? Our local experts provide maid services, general cleaning, weekly cleaning service, biweekly cleaning service, monthly cleaning service, deep cleaning, move-in/out cleaning, office cleaning with 100% satisfaction guaranteed. Serving ZIP codes ${location.zipCodes}.`}
         ogImage={location.imageUrl}
       />
       
@@ -45,9 +45,9 @@ const LocationDetail = () => {
         <section className="relative bg-primary text-white py-20">
           <div className="absolute inset-0 bg-black opacity-40" style={{ backgroundImage: `url(${location.imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
           <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-4xl font-bold mb-4">Cleaning Services in {location.name}</h1>
+            <h1 className="text-4xl font-bold mb-4">Professional Maid Services & Cleaning in {location.name}</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Professional, reliable cleaning services for homes and businesses in {location.name} and surrounding areas.
+              Professional, reliable maid services and cleaning solutions for homes and businesses in {location.name} and surrounding areas. Searching for "maid services near me" in {location.name}? We're your local cleaning experts.
             </p>
             <div className="mt-8">
               <Link href="/quote" className="inline-block px-8 py-4 bg-accent text-white font-bold rounded-md hover:bg-orange-600 active:bg-orange-700 transition shadow-md">
@@ -62,10 +62,10 @@ const LocationDetail = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row gap-12">
               <div className="lg:w-2/3">
-                <h2 className="text-2xl font-bold mb-6">Professional Cleaning Services in {location.name}</h2>
+                <h2 className="text-2xl font-bold mb-6">Professional Maid Services & Cleaning in {location.name}</h2>
                 <div className="prose max-w-none mb-6" dangerouslySetInnerHTML={{ __html: location.description }} />
                 <p className="text-lg text-neutral-600 mb-6">
-                  Our <Link href="/services/general-cleaning" className="text-primary hover:underline">residential cleaning services</Link> and <Link href="/services/office-cleaning" className="text-primary hover:underline">commercial cleaning solutions</Link> are designed to meet the unique needs of {location.name} residents and businesses. We offer weekly cleaning service, biweekly cleaning service, and monthly cleaning service options. From <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep cleaning</Link> to <Link href="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, we provide comprehensive care for your property.
+                  Our <Link href="/services/general-cleaning" className="text-primary hover:underline">maid services and residential cleaning</Link> and <Link href="/services/office-cleaning" className="text-primary hover:underline">commercial cleaning solutions</Link> are designed to meet the unique needs of {location.name} residents and businesses. We offer weekly cleaning service, biweekly cleaning service, and monthly cleaning service options with our professional maid services. From <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep cleaning</Link> to <Link href="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, we provide comprehensive maid services and care for your property.
                 </p>
                 
                 <div className="my-12 bg-neutral-50 p-6 rounded-lg">

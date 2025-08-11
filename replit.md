@@ -88,6 +88,7 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- August 11, 2025: Enhanced SEO strategy by adding "maid services" and "maid services near me" keywords throughout the website including homepage title/description, hero section, services sections, testimonials, location pages, and navigation menus (both desktop and mobile) to improve search rankings for maid services-related searches in Metro Detroit area
 - January 21, 2025: Updated service terminology from "Standard Cleaning Services" to "General Cleaning Services" and enhanced SEO with weekly cleaning service, biweekly cleaning service, and monthly cleaning service terminology across all website pages, navigation menus, service descriptions, and schema markup for improved local search visibility
 - January 21, 2025: Completely eliminated all white space gaps throughout website by removing all section padding, header/footer padding, and margins for ultra-compact, seamless layout design
 - January 21, 2025: Fixed careers form issues - removed predetermined city/zip values, reduced character minimum requirement, and resolved error handling for better user experience

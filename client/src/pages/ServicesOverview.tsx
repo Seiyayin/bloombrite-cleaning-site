@@ -14,17 +14,17 @@ const ServicesOverview = () => {
   return (
     <>
       <SeoHead 
-        title="Professional Cleaning Services in Michigan | Bloombrite Cleaning"
-        description="Bloombrite Cleaning offers professional cleaning services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Expert general cleaning, weekly cleaning service, biweekly cleaning service, monthly cleaning service, deep cleaning, move-in/out cleaning, office cleaning, and specialized services with guaranteed satisfaction."
+        title="Professional Maid Services & Cleaning in Metro Detroit | Bloombrite Cleaning"
+        description="Bloombrite Cleaning offers top-rated maid services and professional cleaning in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Expert maid services near me, general cleaning, weekly cleaning service, biweekly cleaning service, monthly cleaning service, deep cleaning, move-in/out cleaning, office cleaning, and specialized services with guaranteed satisfaction."
       />
       
       <main>
         {/* Services Banner */}
         <section className="bg-primary text-white py-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Our Cleaning Services</h1>
+            <h1 className="text-4xl font-bold mb-4">Our Professional Maid Services & Cleaning Solutions</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Professional cleaning services tailored to your needs throughout <Link href="/locations" className="text-white hover:text-accent underline">Metro Detroit</Link>. From <Link href="/services/general-cleaning" className="text-white hover:text-accent underline">general cleaning</Link> to <Link href="/services/deep-cleaning" className="text-white hover:text-accent underline">deep cleaning</Link>, plus weekly cleaning service, biweekly cleaning service, and monthly cleaning service options. Explore our services below and find the perfect solution for your home or office.
+              Professional maid services and cleaning solutions tailored to your needs throughout <Link href="/locations" className="text-white hover:text-accent underline">Metro Detroit</Link>. Searching for "maid services near me"? From <Link href="/services/general-cleaning" className="text-white hover:text-accent underline">general cleaning and maid services</Link> to <Link href="/services/deep-cleaning" className="text-white hover:text-accent underline">deep cleaning</Link>, plus weekly cleaning service, biweekly cleaning service, and monthly cleaning service options. Explore our maid services below and find the perfect solution for your home or office.
             </p>
           </div>
         </section>

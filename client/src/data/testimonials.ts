@@ -2,7 +2,7 @@ export const testimonials = [
   {
     id: 1,
     rating: 5.0,
-    text: "BloomBrite's team did an amazing job with our residential deep cleaning service in Novi. They were thorough, professional, and left our house cleaning looking spotless. Highly recommend their house cleaning services to anyone in Metro Detroit!",
+    text: "BloomBrite's team did an amazing job with our residential deep cleaning service in Novi. They were thorough, professional, and left our house cleaning looking spotless. Highly recommend their maid services and house cleaning to anyone searching for maid services near me in Metro Detroit!",
     author: {
       name: "Sarah Johnson",
       location: "Novi, MI",
@@ -12,7 +12,7 @@ export const testimonials = [
   {
     id: 2,
     rating: 5.0,
-    text: "We've been using BloomBrite's weekly cleaning service for our home in Livonia for over a year now. Their residential cleaning team is always on time, detail-oriented, and uses eco-friendly products which is important to us. Best house cleaning service in Metro Detroit!",
+    text: "We've been using BloomBrite's weekly cleaning service for our home in Livonia for over a year now. Their maid services team is always on time, detail-oriented, and uses eco-friendly products which is important to us. Best maid services and house cleaning in Metro Detroit!",
     author: {
       name: "Michael Chen",
       location: "Livonia, MI",
@@ -42,7 +42,7 @@ export const testimonials = [
   {
     id: 5,
     rating: 5.0,
-    text: "As a busy professional in Farmington Hills, having BloomBrite's biweekly cleaning service has been a game-changer. Their residential cleaning team is trustworthy, efficient, and consistent. Coming home to a professionally cleaned house is the best feeling!",
+    text: "As a busy professional in Farmington Hills, having BloomBrite's biweekly maid services has been a game-changer. Their residential cleaning team is trustworthy, efficient, and consistent. Coming home to a house cleaned by professional maid services is the best feeling!",
     author: {
       name: "Jennifer Lopez",
       location: "Farmington Hills, MI",

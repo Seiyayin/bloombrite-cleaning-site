@@ -11,9 +11,9 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-1">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Professional Services</span>
-          <h2 className="text-3xl font-bold mb-2 mt-1">Our Residential Cleaning Services</h2>
+          <h2 className="text-3xl font-bold mb-2 mt-1">Our Professional Maid Services & Residential Cleaning</h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-            We offer specialized residential cleaning services throughout Metro Detroit communities, from <Link href="/services/general-cleaning" className="text-primary hover:underline">regular house cleaning</Link> to <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep residential cleaning</Link>. We provide <Link href="/services/recurring-cleaning" className="text-primary hover:underline">weekly cleaning service, biweekly cleaning service, and monthly cleaning service</Link> trusted by families in <Link href="/locations" className="text-primary hover:underline">Wixom, Novi, West Bloomfield, and surrounding areas</Link> with 100% satisfaction guarantee.
+            We offer specialized maid services and residential cleaning throughout Metro Detroit communities, from <Link href="/services/general-cleaning" className="text-primary hover:underline">regular house cleaning and maid services</Link> to <Link href="/services/deep-cleaning" className="text-primary hover:underline">deep residential cleaning</Link>. Looking for "maid services near me"? We provide <Link href="/services/recurring-cleaning" className="text-primary hover:underline">weekly cleaning service, biweekly cleaning service, and monthly cleaning service</Link> with professional maid services trusted by families in <Link href="/locations" className="text-primary hover:underline">Wixom, Novi, West Bloomfield, and surrounding areas</Link> with 100% satisfaction guarantee.
           </p>
         </div>
         

@@ -97,8 +97,8 @@ const Footer = () => {
                 <a href="https://g.co/kgs/3LWj5Wx" target="_blank" rel="noopener noreferrer" className="text-neutral-300 hover:text-white transition">Google Business Profile</a>
               </li>
               <li className="flex">
-                <i className="fas fa-phone-alt mt-1 mr-3 text-primary-light"></i>
-                <a href="tel:9474654217" className="text-neutral-300 hover:text-white transition">(947) 465-4217</a>
+                <i className="fas fa-sms mt-1 mr-3 text-primary-light"></i>
+                <a href="sms:9474654217" className="text-neutral-300 hover:text-white transition">(947) 465-4217</a>
               </li>
               <li className="flex">
                 <i className="fas fa-envelope mt-1 mr-3 text-primary-light"></i>
@@ -108,7 +108,7 @@ const Footer = () => {
                 <i className="fas fa-clock mt-1 mr-3 text-primary-light"></i>
                 <div className="text-neutral-300">
                   <p className="font-semibold">Available 24/7</p>
-                  <p>Call us anytime for your cleaning needs</p>
+                  <p>Text us anytime for your cleaning needs</p>
                 </div>
               </li>
             </ul>

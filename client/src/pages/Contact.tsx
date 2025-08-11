@@ -82,12 +82,12 @@ const Contact = () => {
                     
                     <div className="flex items-start">
                       <div className="flex-shrink-0 bg-primary-light p-3 rounded-full text-primary">
-                        <i className="fas fa-phone-alt"></i>
+                        <i className="fas fa-sms"></i>
                       </div>
                       <div className="ml-4">
-                        <h3 className="font-semibold">Phone</h3>
+                        <h3 className="font-semibold">Text Us</h3>
                         <p className="text-neutral-600 mt-1">
-                          <a href="tel:9474654217" className="hover:text-primary">(947) 465-4217</a>
+                          <a href="sms:9474654217" className="hover:text-primary">(947) 465-4217</a>
                         </p>
                       </div>
                     </div>

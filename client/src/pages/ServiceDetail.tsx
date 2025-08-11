@@ -132,8 +132,8 @@ const ServiceDetail = () => {
                     Get a Free Quote
                   </Link>
                   <div className="mt-6 text-center">
-                    <span className="text-sm text-neutral-600">or call us at</span>
-                    <a href="tel:9474654217" className="block mt-1 font-semibold text-primary hover:underline">
+                    <span className="text-sm text-neutral-600">or text us at</span>
+                    <a href="sms:9474654217" className="block mt-1 font-semibold text-primary hover:underline">
                       (947) 465-4217
                     </a>
                   </div>

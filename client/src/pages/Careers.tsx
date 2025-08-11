@@ -528,8 +528,8 @@ const Careers = () => {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="text-center">
-                  <i className="fas fa-phone text-primary text-2xl mb-2"></i>
-                  <p className="font-semibold">Call Us</p>
+                  <i className="fas fa-sms text-primary text-2xl mb-2"></i>
+                  <p className="font-semibold">Text Us</p>
                   <p className="text-gray-600">(947) 465-4217</p>
                 </div>
                 <div className="text-center">

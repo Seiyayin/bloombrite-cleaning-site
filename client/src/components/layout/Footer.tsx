@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="mb-6">
               <Link href="/" className="block">
                 <img 
-                  src="/images/bloombrite-logo.png" 
+                  src="/images/bloombrite%20logo.png" 
                   alt="Bloombrite Cleaning" 
                   className="h-16 w-auto"
                 />

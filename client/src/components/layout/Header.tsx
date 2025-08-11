@@ -19,7 +19,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-0 flex items-center justify-between">
         <Link href="/" className="block">
           <img 
-            src="/images/bloombrite-logo.png" 
+            src="/images/bloombrite-logo.png?v=2" 
             alt="Bloombrite Cleaning" 
             className="h-12 w-auto"
           />

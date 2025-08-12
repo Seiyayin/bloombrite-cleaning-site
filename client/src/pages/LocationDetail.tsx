@@ -35,8 +35,8 @@ const LocationDetail = () => {
   return (
     <>
       <SeoHead 
-        title={`Best Maid Services & Cleaning in ${location.name} | Bloombrite Cleaning`}
-        description={`Bloombrite Cleaning offers professional maid services, residential & commercial cleaning in ${location.name}. Searching for "maid services near me"? Our local experts provide maid services, general cleaning, weekly cleaning service, biweekly cleaning service, monthly cleaning service, deep cleaning, move-in/out cleaning, office cleaning with 100% satisfaction guaranteed. Serving ZIP codes ${location.zipCodes}.`}
+        title={`${location.name.split(',')[0]} House Cleaning Services | Bloombrite Cleaning`}
+        description={`Bloombrite Cleaning offers top-rated home cleaning in ${location.name}. 100+ 5-star Google reviews. Book your free quote today!`}
         ogImage={location.imageUrl}
       />
       

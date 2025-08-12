@@ -1,0 +1,62 @@
+Update the website's primary company logo to the correct version for each location. 
+
+Then, create four new location landing pages for Wixom, Novi, Milford, and Commerce based on the following Wixom HTML template. Replace "Wixom" with the city name and update all text references accordingly. Ensure each page has an SEO-optimized title, meta description, and an H1 header using the format: "Professional House Cleaning in CITY, MI".
+
+Wixom template HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wixom House Cleaning Services | Bloombrite Cleaning</title>
+  <meta name="description" content="Bloombrite Cleaning offers top-rated home cleaning in Wixom, MI. 100+ 5-star Google reviews. Book your free quote today!">
+</head>
+<body>
+  <header>
+    <h1>Professional House Cleaning in Wixom, MI</h1>
+    <p>Trusted by over 100 local families ★★★★★</p>
+    <a href="/quote" class="cta-button">Get Your Free Quote</a>
+  </header>
+
+  <section>
+    <h2>Why Wixom Chooses Bloombrite Cleaning</h2>
+    <ul>
+      <li>Regular Maintenance Cleaning</li>
+      <li>Deep Cleaning & Move-In/Out Services</li>
+      <li>Pet-Friendly & Eco-Safe Products</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Customer Reviews</h2>
+    <p>We have over <strong>100 five-star Google reviews</strong> from happy clients in Wixom and surrounding areas.</p>
+  </section>
+
+  <footer>
+    <p>Serving Wixom, MI and nearby communities</p>
+  </footer>
+</body>
+</html>
+
+Add all new location pages to the site’s navigation if possible.
+
+Then, create a file named utm-links.txt in the root directory with the following UTM URLs:
+
+Wixom: https://bloombritecleaning.com/wixom?utm_source=google&utm_medium=organic&utm_campaign=gbp_wixom&utm_content=profile
+Novi: https://bloombritecleaning.com/novi?utm_source=google&utm_medium=organic&utm_campaign=gbp_novi&utm_content=profile
+Milford: https://bloombritecleaning.com/milford?utm_source=google&utm_medium=organic&utm_campaign=gbp_milford&utm_content=profile
+Commerce: https://bloombritecleaning.com/commerce?utm_source=google&utm_medium=organic&utm_campaign=gbp_commerce&utm_content=profile
+
+Example Post Links:
+Wixom Spring Cleaning Post:
+https://bloombritecleaning.com/wixom?utm_source=google&utm_medium=organic&utm_campaign=gbp_wixom&utm_content=post-springclean
+Novi Back-to-School Post:
+https://bloombritecleaning.com/novi?utm_source=google&utm_medium=organic&utm_campaign=gbp_novi&utm_content=post-backtoschool
+
+Example Service Links:
+Milford Deep Clean Service:
+https://bloombritecleaning.com/milford?utm_source=google&utm_medium=organic&utm_campaign=gbp_milford&utm_content=service-deepclean
+Commerce Standard Clean Service:
+https://bloombritecleaning.com/commerce?utm_source=google&utm_medium=organic&utm_campaign=gbp_commerce&utm_content=service-standardclean
+
+Do not change anything else on the website.

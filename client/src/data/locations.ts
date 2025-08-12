@@ -7,14 +7,19 @@ export const locations = [
     shortDescription: "Professional cleaning services for Wixom homes and businesses with personalized care and attention to detail.",
     description: `
       <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Wixom, MI</h1>
+      <p class="text-lg mb-6">Trusted by over 100 local families ★★★★★</p>
       
-      <p>Bloombrite Cleaning Services proudly serves Wixom with reliable, high-quality home and office cleaning services. Whether you need weekly maintenance cleaning services or a full deep cleaning service, our eco-friendly methods and experienced team ensure your space stays fresh, sparkling, and stress-free.</p>
+      <h2 class="text-2xl font-bold mb-4">Why Wixom Chooses Bloombrite Cleaning</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6">
+        <li>Regular Maintenance Cleaning</li>
+        <li>Deep Cleaning & Move-In/Out Services</li>
+        <li>Pet-Friendly & Eco-Safe Products</li>
+      </ul>
       
-      <p class="mt-4">Our local cleaning services teams are familiar with the specific needs of Wixom homes and businesses, from the charming houses near downtown to the newer developments throughout the city.</p>
+      <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
+      <p class="mb-6">We have over <strong>100 five-star Google reviews</strong> from happy clients in Wixom and surrounding areas.</p>
       
-      <p class="mt-4">Wixom residents choose Bloombrite Cleaning Services for our attention to detail, reliable cleaning services, and commitment to customer satisfaction. We understand the busy lifestyles of Wixom families and professionals and offer flexible scheduling to accommodate your cleaning services needs.</p>
-      
-      <p class="mt-4">Our cleaning services in Wixom include <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">standard cleaning services</a>, <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>, <a href="/services/move-in-out-cleaning" class="text-orange-600 hover:text-orange-700">move-in/out cleaning services</a>, recurring cleaning services, office cleaning services, and specialized cleaning services like Airbnb and oven cleaning services. Whatever your cleaning services needs, our professional team is here to help maintain a clean, healthy environment for your family or business.</p>
+      <p class="text-center">Serving Wixom, MI and nearby communities</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },
@@ -26,14 +31,19 @@ export const locations = [
     shortDescription: "Trusted cleaning services throughout Novi, delivering exceptional results for residential and commercial spaces.",
     description: `
       <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Novi, MI</h1>
+      <p class="text-lg mb-6">Trusted by over 100 local families ★★★★★</p>
       
-      <p>From luxury homes to busy offices, Bloombrite Cleaning Services is trusted across Novi for top-tier cleaning services. We customize every cleaning service, offering <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>, maintenance cleaning services, and flexible scheduling for peace of mind and sparkling results.</p>
+      <h2 class="text-2xl font-bold mb-4">Why Novi Chooses Bloombrite Cleaning</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6">
+        <li>Regular Maintenance Cleaning</li>
+        <li>Deep Cleaning & Move-In/Out Services</li>
+        <li>Pet-Friendly & Eco-Safe Products</li>
+      </ul>
       
-      <p class="mt-4">Our experienced cleaning services professionals serve all Novi neighborhoods, from Main Street to Meadowbrook and everywhere in between.</p>
+      <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
+      <p class="mb-6">We have over <strong>100 five-star Google reviews</strong> from happy clients in Novi and surrounding areas.</p>
       
-      <p class="mt-4">Novi homeowners and businesses trust Bloombrite Cleaning Services for our consistent quality, attention to detail, and responsive customer service. We offer a full range of cleaning services to meet the diverse needs of the Novi community, whether you need a one-time <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning service</a> or regular <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">maintenance cleaning services</a>.</p>
-      
-      <p class="mt-4">Our Novi cleaning services clients appreciate our flexible scheduling options, eco-friendly cleaning products, and thoroughly vetted cleaning professionals. We take pride in helping Novi residents maintain clean, healthy living and working environments while giving them more time to enjoy all that the area has to offer. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our cleaning services today.</p>
+      <p class="text-center">Serving Novi, MI and nearby communities</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1604014138233-43383d50a57f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },
@@ -64,12 +74,19 @@ export const locations = [
     shortDescription: "Quality cleaning services for Milford's homes and businesses with eco-friendly products and personalized care.",
     description: `
       <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Milford, MI</h1>
+      <p class="text-lg mb-6">Trusted by over 100 local families ★★★★★</p>
       
-      <p>Bloombrite Cleaning Services provides premium cleaning services throughout the Milford area. We love serving this charming community and take pride in helping Milford residents and business owners maintain beautiful, clean spaces through our professional cleaning services.</p>
+      <h2 class="text-2xl font-bold mb-4">Why Milford Chooses Bloombrite Cleaning</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6">
+        <li>Regular Maintenance Cleaning</li>
+        <li>Deep Cleaning & Move-In/Out Services</li>
+        <li>Pet-Friendly & Eco-Safe Products</li>
+      </ul>
       
-      <p class="mt-4">Our cleaning services professionals understand the unique character of Milford homes, from historic properties to contemporary residences. We tailor our cleaning services approach to the specific needs of each property while maintaining our high standards of thoroughness and attention to detail.</p>
+      <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
+      <p class="mb-6">We have over <strong>100 five-star Google reviews</strong> from happy clients in Milford and surrounding areas.</p>
       
-      <p class="mt-4">Milford clients choose Bloombrite Cleaning Services for our reliable cleaning services, flexible scheduling options, and commitment to customer satisfaction. We offer a complete range of cleaning services including <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">standard cleaning services</a>, <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>, and <a href="/services/move-in-out-cleaning" class="text-orange-600 hover:text-orange-700">move-in/out cleaning services</a> to meet all your household or business cleaning needs, allowing you more time to enjoy Milford's beautiful downtown, parks, and community events. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our cleaning services today.</p>
+      <p class="text-center">Serving Milford, MI and nearby communities</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },
@@ -81,12 +98,19 @@ export const locations = [
     shortDescription: "Reliable cleaning services for Commerce Township residences and businesses with attention to detail and excellent customer service.",
     description: `
       <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Commerce Township, MI</h1>
+      <p class="text-lg mb-6">Trusted by over 100 local families ★★★★★</p>
       
-      <p>Bloombrite Cleaning Services is proud to serve the Commerce Township community with our professional cleaning services. Our local cleaning services teams understand the diverse needs of Commerce Township properties, from lakefront homes to suburban residences and commercial spaces.</p>
+      <h2 class="text-2xl font-bold mb-4">Why Commerce Chooses Bloombrite Cleaning</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6">
+        <li>Regular Maintenance Cleaning</li>
+        <li>Deep Cleaning & Move-In/Out Services</li>
+        <li>Pet-Friendly & Eco-Safe Products</li>
+      </ul>
       
-      <p class="mt-4">Commerce Township residents appreciate our thorough cleaning services processes, attention to detail, and commitment to using safe, effective cleaning products. We offer flexible scheduling options to accommodate busy lifestyles and ensure your home or office receives the cleaning services care it deserves.</p>
+      <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
+      <p class="mb-6">We have over <strong>100 five-star Google reviews</strong> from happy clients in Commerce and surrounding areas.</p>
       
-      <p class="mt-4">Our cleaning services in Commerce Township include <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">standard cleaning services</a>, <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>, <a href="/services/move-in-out-cleaning" class="text-orange-600 hover:text-orange-700">move-in/out cleaning services</a>, recurring maintenance cleaning services, office cleaning services, and specialized cleaning services. Whatever your cleaning services needs, our professional team is here to deliver exceptional results and outstanding customer service. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our cleaning services today.</p>
+      <p class="text-center">Serving Commerce Township, MI and nearby communities</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },

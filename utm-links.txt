@@ -1,21 +1,19 @@
 # UTM Links for BloomBrite Cleaning Location Pages
 
-## Wixom, MI
-https://www.bloombritecleaning.com/wixom?utm_source=google&utm_medium=ads&utm_campaign=wixom_cleaning
-https://www.bloombritecleaning.com/wixom?utm_source=facebook&utm_medium=social&utm_campaign=wixom_cleaning
-https://www.bloombritecleaning.com/wixom?utm_source=local&utm_medium=referral&utm_campaign=wixom_cleaning
+## Profile Links
+Wixom: https://bloombritecleaning.com/wixom?utm_source=google&utm_medium=organic&utm_campaign=gbp_wixom&utm_content=profile
+Novi: https://bloombritecleaning.com/novi?utm_source=google&utm_medium=organic&utm_campaign=gbp_novi&utm_content=profile
+Milford: https://bloombritecleaning.com/milford?utm_source=google&utm_medium=organic&utm_campaign=gbp_milford&utm_content=profile
+Commerce: https://bloombritecleaning.com/commerce?utm_source=google&utm_medium=organic&utm_campaign=gbp_commerce&utm_content=profile
 
-## Novi, MI
-https://www.bloombritecleaning.com/novi?utm_source=google&utm_medium=ads&utm_campaign=novi_cleaning
-https://www.bloombritecleaning.com/novi?utm_source=facebook&utm_medium=social&utm_campaign=novi_cleaning
-https://www.bloombritecleaning.com/novi?utm_source=local&utm_medium=referral&utm_campaign=novi_cleaning
+## Example Post Links
+Wixom Spring Cleaning Post:
+https://bloombritecleaning.com/wixom?utm_source=google&utm_medium=organic&utm_campaign=gbp_wixom&utm_content=post-springclean
+Novi Back-to-School Post:
+https://bloombritecleaning.com/novi?utm_source=google&utm_medium=organic&utm_campaign=gbp_novi&utm_content=post-backtoschool
 
-## Milford, MI
-https://www.bloombritecleaning.com/milford?utm_source=google&utm_medium=ads&utm_campaign=milford_cleaning
-https://www.bloombritecleaning.com/milford?utm_source=facebook&utm_medium=social&utm_campaign=milford_cleaning
-https://www.bloombritecleaning.com/milford?utm_source=local&utm_medium=referral&utm_campaign=milford_cleaning
-
-## Commerce, MI
-https://www.bloombritecleaning.com/commerce-township?utm_source=google&utm_medium=ads&utm_campaign=commerce_cleaning
-https://www.bloombritecleaning.com/commerce-township?utm_source=facebook&utm_medium=social&utm_campaign=commerce_cleaning
-https://www.bloombritecleaning.com/commerce-township?utm_source=local&utm_medium=referral&utm_campaign=commerce_cleaning
+## Example Service Links
+Milford Deep Clean Service:
+https://bloombritecleaning.com/milford?utm_source=google&utm_medium=organic&utm_campaign=gbp_milford&utm_content=service-deepclean
+Commerce Standard Clean Service:
+https://bloombritecleaning.com/commerce?utm_source=google&utm_medium=organic&utm_campaign=gbp_commerce&utm_content=service-standardclean

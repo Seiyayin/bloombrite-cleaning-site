@@ -88,6 +88,8 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- August 12, 2025: Updated H1 headers for four location pages (Wixom, Novi, Milford, Commerce Township) to use SEO-optimized format "Professional House Cleaning in CITY, MI" for improved search rankings
+- August 12, 2025: Created utm-links.txt file in root directory with UTM tracking URLs for all four location pages supporting Google Ads, Facebook, and local referral campaigns
 - August 11, 2025: Changed customer communication preference from "call us" to "text us" throughout entire website - updated all phone contact references, links (from tel: to sms:), button text, and messaging to reflect text messaging preference while maintaining phone numbers for contact
 - August 11, 2025: Enhanced SEO strategy by adding "maid services" and "maid services near me" keywords throughout the website including homepage title/description, hero section, services sections, testimonials, location pages, and navigation menus (both desktop and mobile) to improve search rankings for maid services-related searches in Metro Detroit area
 - January 21, 2025: Updated service terminology from "Standard Cleaning Services" to "General Cleaning Services" and enhanced SEO with weekly cleaning service, biweekly cleaning service, and monthly cleaning service terminology across all website pages, navigation menus, service descriptions, and schema markup for improved local search visibility

@@ -6,7 +6,7 @@ export const locations = [
     zipCodes: "48393",
     shortDescription: "Professional cleaning services for Wixom homes and businesses with personalized care and attention to detail.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Cleaning Services in Wixom, MI</h1>
+      <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Wixom, MI</h1>
       
       <p>Bloombrite Cleaning Services proudly serves Wixom with reliable, high-quality home and office cleaning services. Whether you need weekly maintenance cleaning services or a full deep cleaning service, our eco-friendly methods and experienced team ensure your space stays fresh, sparkling, and stress-free.</p>
       
@@ -25,7 +25,7 @@ export const locations = [
     zipCodes: "48374, 48375, 48377",
     shortDescription: "Trusted cleaning services throughout Novi, delivering exceptional results for residential and commercial spaces.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Cleaning Services in Novi, MI</h1>
+      <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Novi, MI</h1>
       
       <p>From luxury homes to busy offices, Bloombrite Cleaning Services is trusted across Novi for top-tier cleaning services. We customize every cleaning service, offering <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>, maintenance cleaning services, and flexible scheduling for peace of mind and sparkling results.</p>
       
@@ -63,7 +63,7 @@ export const locations = [
     zipCodes: "48380, 48381",
     shortDescription: "Quality cleaning services for Milford's homes and businesses with eco-friendly products and personalized care.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Cleaning Services in Milford, MI</h1>
+      <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Milford, MI</h1>
       
       <p>Bloombrite Cleaning Services provides premium cleaning services throughout the Milford area. We love serving this charming community and take pride in helping Milford residents and business owners maintain beautiful, clean spaces through our professional cleaning services.</p>
       
@@ -80,7 +80,7 @@ export const locations = [
     zipCodes: "48382, 48390",
     shortDescription: "Reliable cleaning services for Commerce Township residences and businesses with attention to detail and excellent customer service.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Cleaning Services in Commerce Township, MI</h1>
+      <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Commerce Township, MI</h1>
       
       <p>Bloombrite Cleaning Services is proud to serve the Commerce Township community with our professional cleaning services. Our local cleaning services teams understand the diverse needs of Commerce Township properties, from lakefront homes to suburban residences and commercial spaces.</p>
       

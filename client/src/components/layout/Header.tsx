@@ -30,17 +30,18 @@ const Header = () => {
           <Link href="/" className={`font-medium transition ${isActive('/')}`}>Home</Link>
           <div className="relative group">
             <button className={`flex items-center font-medium transition ${isActive('/services')}`}>
-              Maid Services
+              Services
               <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               <div className="py-2 px-4 space-y-2">
-                <Link href="/services/general-cleaning" className="block py-2 hover:text-primary transition">General Cleaning & Maid Services</Link>
+                <Link href="/services/general-cleaning" className="block py-2 hover:text-primary transition">General Cleaning</Link>
                 <Link href="/services/deep-cleaning" className="block py-2 hover:text-primary transition">Deep Cleaning</Link>
-                <Link href="/services/recurring-cleaning" className="block py-2 hover:text-primary transition">Recurring Maid Services</Link>
+                <Link href="/services/recurring-cleaning" className="block py-2 hover:text-primary transition">Recurring Cleaning</Link>
                 <Link href="/services/move-in-out-cleaning" className="block py-2 hover:text-primary transition">Move-In/Out Cleaning</Link>
+                <Link href="/services/maid-services" className="block py-2 hover:text-primary transition">Maid Services</Link>
                 <Link href="/services/office-cleaning" className="block py-2 hover:text-primary transition">Office Cleaning</Link>
                 <Link href="/services/airbnb-cleaning" className="block py-2 hover:text-primary transition">Airbnb Cleaning</Link>
                 <Link href="/services/oven-cleaning" className="block py-2 hover:text-primary transition">Oven Cleaning</Link>

@@ -27,16 +27,17 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             className="flex items-center justify-between w-full py-2 font-medium"
             onClick={toggleServicesDropdown}
           >
-            Maid Services
+            Services
             <svg className={`w-4 h-4 transition-transform ${showServicesDropdown ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </button>
           <div className={`pl-4 space-y-2 ${showServicesDropdown ? 'block' : 'hidden'}`}>
-            <Link href="/services/general-cleaning" className="block py-2" onClick={onClose}>General Cleaning & Maid Services</Link>
+            <Link href="/services/general-cleaning" className="block py-2" onClick={onClose}>General Cleaning</Link>
             <Link href="/services/deep-cleaning" className="block py-2" onClick={onClose}>Deep Cleaning</Link>
-            <Link href="/services/recurring-cleaning" className="block py-2" onClick={onClose}>Recurring Maid Services</Link>
+            <Link href="/services/recurring-cleaning" className="block py-2" onClick={onClose}>Recurring Cleaning</Link>
             <Link href="/services/move-in-out-cleaning" className="block py-2" onClick={onClose}>Move-In/Out Cleaning</Link>
+            <Link href="/services/maid-services" className="block py-2" onClick={onClose}>Maid Services</Link>
             <Link href="/services/office-cleaning" className="block py-2" onClick={onClose}>Office Cleaning</Link>
             <Link href="/services/airbnb-cleaning" className="block py-2" onClick={onClose}>Airbnb Cleaning</Link>
             <Link href="/services/oven-cleaning" className="block py-2" onClick={onClose}>Oven Cleaning</Link>

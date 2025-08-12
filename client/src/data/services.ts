@@ -416,5 +416,42 @@ export const services = [
       "Deep cleaning of produce drawers",
       "Ice maker cleaning and sanitizing"
     ]
+  },
+  {
+    id: "maid-services",
+    slug: "maid-services",
+    title: "Maid Services",
+    shortDescription: "Professional maid services for homes that need personalized, comprehensive cleaning assistance.",
+    metaDescription: "Professional maid services in Metro Detroit. Personalized cleaning assistance with experienced maids for comprehensive home maintenance.",
+    description: `
+      <h1 class="text-3xl font-bold mb-6">Professional Maid Services for Your Home</h1>
+      
+      <p>When you need personalized, comprehensive home cleaning assistance, our professional maid services provide the dedicated attention your home deserves. Our experienced cleaning professionals work with attention to detail and care.</p>
+      
+      <p class="mt-4">Our maid services combine the thoroughness of professional cleaning with the personalized touch of dedicated service. Whether you need regular weekly assistance, occasional deep cleaning support, or help preparing for special occasions, our maids adapt to your specific needs and preferences.</p>
+      
+      <p class="mt-4">Each maid service visit includes comprehensive cleaning of all areas you specify, with flexibility to focus on particular rooms or tasks that matter most to you. We work efficiently while maintaining the quality standards you expect from professional cleaning services.</p>
+      
+      <p class="mt-4">Our maid services can complement any of our other cleaning offerings or serve as your primary home maintenance solution. <a href="/quote" class="text-orange-600 hover:text-orange-700">Contact us</a> to discuss how our maid services can work best for your home.</p>
+    `,
+    imageUrl: "/images/team.jpg",
+    startingPrice: "$160",
+    included: [
+      "Personalized cleaning plan development",
+      "Thorough cleaning of specified areas",
+      "Attention to detailed cleaning tasks",
+      "Flexible scheduling options",
+      "Professional cleaning supplies and equipment",
+      "Quality assurance and inspection",
+      "Customized service based on your preferences",
+      "Ongoing communication about your needs"
+    ],
+    additionalServices: [
+      "Weekly, biweekly, or monthly scheduling",
+      "Special occasion cleaning preparation",
+      "Seasonal deep cleaning additions",
+      "Organization and tidying assistance",
+      "Laundry and linens service"
+    ]
   }
 ];

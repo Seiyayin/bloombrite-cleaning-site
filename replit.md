@@ -88,6 +88,7 @@ This is a full-stack web application for BloomBrite Cleaning, a professional cle
 
 ## Changelog
 
+- August 12, 2025: Deprioritized "Maid Services" terminology throughout website while keeping it available as a service option - updated navigation menus from "Maid Services" to "Services", changed hero section and services section to focus on "Professional House Cleaning Services" and "Professional Residential Cleaning Services", added dedicated "Maid Services" as individual service offering, maintained SEO value while shifting primary focus to general cleaning services terminology
 - August 12, 2025: Updated four location pages (Wixom, Novi, Milford, Commerce Township) to match HTML template structure with consistent content format, star ratings, and simplified messaging
 - August 12, 2025: Updated SEO titles and meta descriptions for location pages to follow template format: "CITY House Cleaning Services | Bloombrite Cleaning" with "100+ 5-star Google reviews" messaging
 - August 12, 2025: Updated utm-links.txt file with correct Google Business Profile UTM tracking URLs including profile links, post examples, and service-specific links for all four locations

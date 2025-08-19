@@ -13,14 +13,14 @@ const MaintenanceSchedulingSection = () => {
       frequency: "Biweekly", 
       description: "Our most popular choice for most Metro Detroit families",
       benefits: ["Great balance of clean & budget", "Regular maintenance", "Flexible scheduling"],
-      price: "Starting at $140/visit",
+      price: "Starting at $160/visit",
       popular: true
     },
     {
       frequency: "Monthly",
       description: "Ideal for smaller homes or maintaining cleanliness",
       benefits: ["Budget-friendly option", "Deep cleaning focus", "Seasonal tasks"],
-      price: "Starting at $160/visit",
+      price: "Starting at $220/visit",
       popular: false
     }
   ];

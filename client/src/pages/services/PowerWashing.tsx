@@ -23,7 +23,7 @@ const PowerWashingPage = () => {
       />
       <PowerWashingSchema />
 
-      <div className="pt-24 pb-16 bg-neutral-50">
+      <div className="-mt-16 pt-28 pb-16 bg-neutral-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Power Washing Services</h1>
           <p className="text-xl text-center text-neutral-600 max-w-3xl mx-auto mb-12">

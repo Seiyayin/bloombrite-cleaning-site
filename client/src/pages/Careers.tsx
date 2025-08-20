@@ -113,7 +113,7 @@ const Careers = () => {
       
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-primary to-orange-600 text-white py-0">
+        <section className="bg-gradient-to-r from-primary to-orange-600 text-white -mt-16 pt-20 pb-16">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">

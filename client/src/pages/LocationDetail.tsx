@@ -42,7 +42,7 @@ const LocationDetail = () => {
       
       <main>
         {/* Location Banner */}
-        <section className="relative bg-primary text-white py-20">
+        <section className="relative bg-primary text-white -mt-16 pt-24 pb-20">
           <div className="absolute inset-0 bg-black opacity-40" style={{ backgroundImage: `url(${location.imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl font-bold mb-4">Professional Maid Services & Cleaning in {location.name}</h1>

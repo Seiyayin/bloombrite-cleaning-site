@@ -16,7 +16,7 @@ const ThankYou = () => {
         description="Thank you for contacting BloomBrite Cleaning. We appreciate your interest in our professional cleaning services in Michigan."
       />
       
-      <main className="py-20 bg-neutral-50">
+      <main className="-mt-16 pt-24 pb-20 bg-neutral-50">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-md text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-light text-primary rounded-full mb-6">

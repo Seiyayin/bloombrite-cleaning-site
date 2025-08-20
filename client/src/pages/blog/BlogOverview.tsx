@@ -96,7 +96,7 @@ const BlogOverview = () => {
       
       <main className="bg-white">
         {/* Blog Header */}
-        <section className="pt-20 pb-16 bg-neutral-50">
+        <section className="-mt-16 pt-24 pb-16 bg-neutral-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Bloombrite Cleaning Blog</h1>

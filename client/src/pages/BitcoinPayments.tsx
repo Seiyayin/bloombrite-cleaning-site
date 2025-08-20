@@ -69,7 +69,7 @@ const BitcoinPayments = () => {
       
       <main className="bg-white">
         {/* Hero Section */}
-        <section className="pt-20 pb-16 bg-gradient-to-br from-orange-50 to-orange-100">
+        <section className="-mt-16 pt-24 pb-16 bg-gradient-to-br from-orange-50 to-orange-100">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="flex justify-center mb-6">

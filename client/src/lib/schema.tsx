@@ -29,7 +29,7 @@ export const LocalBusinessSchema = () => {
     "url": "https://www.bloombritecleaning.com",
     "telephone": "947-465-4217",
     "email": "sales@bloombritecleaning.com",
-    "description": "Professional residential and commercial cleaning services in Metro Detroit. We provide general cleaning, deep cleaning, move-in/out cleaning, weekly cleaning service, biweekly cleaning service, monthly cleaning service, office cleaning, power washing, window cleaning, and specialized cleaning services with guaranteed satisfaction.",
+    "description": "Professional house cleaning services in Metro Detroit, Michigan. Bloombrite Cleaning offers general house cleaning, deep cleaning, move-in/out cleaning, recurring maid services (weekly, biweekly, monthly), office cleaning, and specialized residential cleaning with 97+ five-star reviews and guaranteed satisfaction.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "2207 Evergreen St",
@@ -46,7 +46,7 @@ export const LocalBusinessSchema = () => {
     "hasMap": "https://www.google.com/maps/place/Wixom,+MI+48393",
     "priceRange": "$150-$500",
     "currenciesAccepted": "USD",
-    "paymentAccepted": ["Cash", "Credit Card", "Check", "Online Payment"],
+    "paymentAccepted": ["Cash", "Credit Card", "Check", "Online Payment", "Bitcoin"],
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -107,6 +107,16 @@ export const LocalBusinessSchema = () => {
         "@type": "City",
         "name": "Walled Lake",
         "containedInPlace": { "@type": "State", "name": "Michigan" }
+      },
+      {
+        "@type": "City",
+        "name": "West Bloomfield",
+        "containedInPlace": { "@type": "State", "name": "Michigan" }
+      },
+      {
+        "@type": "City",
+        "name": "Keego Harbor",
+        "containedInPlace": { "@type": "State", "name": "Michigan" }
       }
     ],
     "serviceArea": {
@@ -121,7 +131,7 @@ export const LocalBusinessSchema = () => {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
-      "reviewCount": "127",
+      "reviewCount": "97",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -134,7 +144,8 @@ export const LocalBusinessSchema = () => {
           "ratingValue": "5",
           "bestRating": "5"
         },
-        "reviewBody": "BloomBrite consistently delivers exceptional cleaning services. Their attention to detail is amazing and they always leave my home spotless. Highly recommend!"
+        "reviewBody": "Bloombrite Cleaning is fantastic! They keep my home spotless with every visit. Professional, reliable, and worth every penny. Highly recommend!",
+        "datePublished": "2024-12-15"
       }
     ],
     "hasOfferCatalog": {
@@ -235,7 +246,7 @@ export const ServiceSchema = ({
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "127",
+        "reviewCount": "97",
         "bestRating": "5"
       }
     },
@@ -266,7 +277,9 @@ export const ServiceSchema = ({
       "Commerce Township, Michigan",
       "Farmington Hills, Michigan",
       "South Lyon, Michigan",
-      "Walled Lake, Michigan"
+      "Walled Lake, Michigan",
+      "West Bloomfield, Michigan",
+      "Keego Harbor, Michigan"
     ],
     "serviceOutput": {
       "@type": "Thing",

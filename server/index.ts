@@ -6,8 +6,17 @@ import { imageOptimizer } from "./image-optimizer";
 
 const app = express();
 
-// Enable compression for all responses
-app.use(compression());
+// Enhanced compression for better performance
+app.use(compression({
+  level: 6,
+  threshold: 1024,
+  filter: (req, res) => {
+    if (req.headers['x-no-compression']) {
+      return false;
+    }
+    return compression.filter(req, res);
+  }
+}));
 
 // Use image optimizer middleware for image requests
 app.use(imageOptimizer);

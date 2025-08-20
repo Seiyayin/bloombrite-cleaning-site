@@ -48,7 +48,7 @@ export const imageOptimizer = async (req: Request, res: Response, next: NextFunc
     // Check if image is already in cache
     if (imageCache[cacheKey]) {
       res.setHeader('Content-Type', 'image/webp');
-      res.setHeader('Cache-Control', 'public, max-age=31536000'); // Cache for 1 year
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable'); // Cache for 1 year with immutable
       return res.send(imageCache[cacheKey]);
     }
     
@@ -90,9 +90,11 @@ export const imageOptimizer = async (req: Request, res: Response, next: NextFunc
     // Cache the optimized image
     imageCache[cacheKey] = optimizedImageBuffer;
     
-    // Send the optimized image
+    // Send the optimized image with enhanced caching headers
     res.setHeader('Content-Type', 'image/webp');
-    res.setHeader('Cache-Control', 'public, max-age=31536000'); // Cache for 1 year
+    res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    res.setHeader('ETag', `"${cacheKey.replace(/[^a-zA-Z0-9]/g, '')}"`);
+    res.setHeader('Vary', 'Accept');
     return res.send(optimizedImageBuffer);
   } catch (error) {
     console.error('Error optimizing image:', error);

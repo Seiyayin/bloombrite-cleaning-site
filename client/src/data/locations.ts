@@ -4,22 +4,36 @@ export const locations = [
     slug: "wixom",
     name: "Wixom, MI",
     zipCodes: "48393",
-    shortDescription: "Professional cleaning services for Wixom homes and businesses with personalized care and attention to detail.",
+    shortDescription: "Professional house cleaning in Wixom, MI. Bloombrite Cleaning offers reliable maid services, deep cleaning & recurring cleanings. 97+ five-star reviews!",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Wixom, MI</h1>
-      <p class="text-lg mb-6">Trusted by over 100 local families ★★★★★</p>
-      
-      <h2 class="text-2xl font-bold mb-4">Why Wixom Chooses Bloombrite Cleaning</h2>
-      <ul class="list-disc list-inside space-y-2 mb-6">
-        <li>Regular Maintenance Cleaning</li>
-        <li>Deep Cleaning & Move-In/Out Services</li>
-        <li>Pet-Friendly & Eco-Safe Products</li>
+      <h2 class="text-2xl font-bold mb-4">Why Wixom Homeowners Choose Bloombrite</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>⭐ 97+ Five-Star Reviews</li>
+        <li>⭐ Locally Owned, Trusted in Oakland County</li>
+        <li>⭐ Flexible scheduling – we work around your lifestyle</li>
+        <li>⭐ Affordable + professional</li>
       </ul>
       
-      <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
-      <p class="mb-6">We have over <strong>100 five-star Google reviews</strong> from happy clients in Wixom and surrounding areas.</p>
+      <h2 class="text-2xl font-bold mb-4">Our Cleaning Services in Wixom</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>🧹 <strong>General House Cleaning</strong> – dusting, vacuuming, kitchen, bathrooms</li>
+        <li>🏠 <strong>Deep Cleaning</strong> – top-to-bottom scrubbing for busy homes</li>
+        <li>🚚 <strong>Move-In & Move-Out Cleaning</strong> – leave your old place spotless</li>
+        <li>🛏️ <strong>Recurring Maid Service</strong> – weekly, bi-weekly, or monthly</li>
+      </ul>
       
-      <p class="text-center">Serving Wixom, MI and nearby communities</p>
+      <h2 class="text-2xl font-bold mb-4">Serving the Wixom Community</h2>
+      <p class="mb-6 text-lg">From downtown Wixom to neighborhoods near Wixom Elementary, Bloombrite Cleaning is your trusted local cleaning company.</p>
+      
+      <h2 class="text-2xl font-bold mb-4">What Your Neighbors Say</h2>
+      <blockquote class="bg-gray-100 p-4 rounded-lg mb-6 italic text-lg">
+        "Bloombrite Cleaning is a lifesaver! My Wixom home has never looked better." – ★★★★★
+      </blockquote>
+      
+      <h2 class="text-2xl font-bold mb-4">Get a Free Wixom Quote Today</h2>
+      <p class="mb-6 text-lg">Ready for professional cleaning? <a href="sms:(947) 465-4217" class="text-orange-600 hover:text-orange-700 font-semibold">Text us at (947) 465-4217</a> or <a href="/quote" class="text-orange-600 hover:text-orange-700 font-semibold">get your free quote online</a>.</p>
+      
+      <p class="text-center text-lg font-semibold">👉 Proudly serving Wixom, MI!</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },
@@ -28,22 +42,37 @@ export const locations = [
     slug: "novi",
     name: "Novi, MI",
     zipCodes: "48374, 48375, 48377",
-    shortDescription: "Trusted cleaning services throughout Novi, delivering exceptional results for residential and commercial spaces.",
+    shortDescription: "Looking for reliable house cleaning in Novi, MI? Bloombrite Cleaning offers professional, affordable maid and deep cleaning services. 97+ five-star reviews!",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Novi, MI</h1>
-      <p class="text-lg mb-6">Trusted by over 100 local families ★★★★★</p>
-      
-      <h2 class="text-2xl font-bold mb-4">Why Novi Chooses Bloombrite Cleaning</h2>
-      <ul class="list-disc list-inside space-y-2 mb-6">
-        <li>Regular Maintenance Cleaning</li>
-        <li>Deep Cleaning & Move-In/Out Services</li>
-        <li>Pet-Friendly & Eco-Safe Products</li>
+      <h2 class="text-2xl font-bold mb-4">Why Novi Homeowners Choose Bloombrite</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>✅ Trusted by your neighbors – We already serve many Novi families</li>
+        <li>✅ Custom cleaning plans – From one-time deep cleans to recurring maintenance</li>
+        <li>✅ Local + reliable – Based nearby in Milford, we know Novi inside and out</li>
+        <li>✅ Peace of mind – Friendly, background-checked cleaning pros</li>
       </ul>
       
-      <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
-      <p class="mb-6">We have over <strong>100 five-star Google reviews</strong> from happy clients in Novi and surrounding areas.</p>
+      <h2 class="text-2xl font-bold mb-4">Our Cleaning Services in Novi</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>🧽 <strong>Deep Cleaning Services</strong> (perfect for moving in/out or post-renovation)</li>
+        <li>🏠 <strong>Recurring Cleaning</strong> (weekly, bi-weekly, or monthly options)</li>
+        <li>🛋️ <strong>Specialty Cleaning</strong> (kitchens, bathrooms, floors, dusting, more)</li>
+        <li>🏡 <strong>Move-In & Move-Out Cleaning</strong></li>
+      </ul>
       
-      <p class="text-center">Serving Novi, MI and nearby communities</p>
+      <h2 class="text-2xl font-bold mb-4">Serving All of Novi, MI</h2>
+      <p class="mb-6 text-lg">From Twelve Oaks Mall to Novi High School neighborhoods, and everywhere in between, Bloombrite Cleaning is here to help.</p>
+      
+      <h2 class="text-2xl font-bold mb-4">See Why Novi Trusts Us</h2>
+      <p class="mb-4 text-lg">With 97+ five-star reviews, Bloombrite is proud to be Novi's trusted cleaning service.</p>
+      <blockquote class="bg-gray-100 p-4 rounded-lg mb-6 italic text-lg">
+        "Bloombrite did an amazing job on my Novi condo! The team was fast, friendly, and thorough." – ★★★★★
+      </blockquote>
+      
+      <h2 class="text-2xl font-bold mb-4">Get a Free Quote Today</h2>
+      <p class="mb-6 text-lg">Ready for a cleaner home? <a href="sms:(947) 465-4217" class="text-orange-600 hover:text-orange-700 font-semibold">Text us at (947) 465-4217</a> or <a href="/quote" class="text-orange-600 hover:text-orange-700 font-semibold">request a free quote online</a>.</p>
+      
+      <p class="text-center text-lg font-semibold">👉 Serving Novi, MI and surrounding areas!</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1604014138233-43383d50a57f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },
@@ -52,17 +81,36 @@ export const locations = [
     slug: "livonia",
     name: "Livonia, MI",
     zipCodes: "48150, 48152, 48154",
-    shortDescription: "Comprehensive cleaning services for Livonia homes and businesses, tailored to your specific needs and schedule.",
+    shortDescription: "Professional house cleaning in Livonia, MI. Bloombrite Cleaning offers reliable maid services, deep cleaning & recurring cleanings. 97+ five-star reviews!",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Cleaning Services in Livonia, MI</h1>
+      <h2 class="text-2xl font-bold mb-4">Why Livonia Residents Choose Us</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>⭐ 97+ Five-Star Reviews</li>
+        <li>⭐ Locally Owned, Trusted in Wayne County</li>
+        <li>⭐ Flexible scheduling – we work around your lifestyle</li>
+        <li>⭐ Affordable + professional</li>
+      </ul>
       
-      <p>Serving Livonia homes and offices, Bloombrite Cleaning Services specializes in routine cleaning services, <a href="/services/move-in-out-cleaning" class="text-orange-600 hover:text-orange-700">move-in/move-out cleaning services</a>, and more. Our mission is to simplify your life with consistent, professional, and detail-focused cleaning services tailored to your needs.</p>
+      <h2 class="text-2xl font-bold mb-4">Our Cleaning Services in Livonia</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>🧹 <strong>General House Cleaning</strong> – dusting, vacuuming, kitchen, bathrooms</li>
+        <li>🏠 <strong>Deep Cleaning</strong> – top-to-bottom scrubbing for busy homes</li>
+        <li>🚚 <strong>Move-In & Move-Out Cleaning</strong> – leave your old place spotless</li>
+        <li>🛏️ <strong>Recurring Maid Service</strong> – weekly, bi-weekly, or monthly</li>
+      </ul>
       
-      <p class="mt-4">Our local cleaning services teams understand the unique character of Livonia neighborhoods and provide personalized cleaning services to match each client's specific needs.</p>
+      <h2 class="text-2xl font-bold mb-4">Serving the Livonia Community</h2>
+      <p class="mb-6 text-lg">From historic neighborhoods to modern subdivisions near Livonia Mall, Bloombrite Cleaning is your trusted local cleaning company.</p>
       
-      <p class="mt-4">From historic homes to modern apartments and commercial spaces, we have experience providing cleaning services for properties of all types and sizes throughout Livonia. Our cleaning services clients appreciate our thoroughness, reliability, and commitment to using safe, effective cleaning products and techniques.</p>
+      <h2 class="text-2xl font-bold mb-4">What Your Neighbors Say</h2>
+      <blockquote class="bg-gray-100 p-4 rounded-lg mb-6 italic text-lg">
+        "Bloombrite Cleaning is fantastic! My Livonia home looks amazing after every visit." – ★★★★★
+      </blockquote>
       
-      <p class="mt-4">Livonia families and business owners choose Bloombrite Cleaning Services for our competitive pricing, flexible scheduling options, and consistently excellent results. Whether you need a weekly cleaning service or a one-time <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning service</a>, we're here to exceed your expectations and provide a cleaner, healthier environment. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our professional cleaning services today.</p>
+      <h2 class="text-2xl font-bold mb-4">Get a Free Livonia Quote Today</h2>
+      <p class="mb-6 text-lg">Ready for professional cleaning? <a href="sms:(947) 465-4217" class="text-orange-600 hover:text-orange-700 font-semibold">Text us at (947) 465-4217</a> or <a href="/quote" class="text-orange-600 hover:text-orange-700 font-semibold">get your free quote online</a>.</p>
+      
+      <p class="text-center text-lg font-semibold">👉 Proudly serving Livonia, MI!</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1597958792579-bd3517df6399?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },
@@ -71,22 +119,37 @@ export const locations = [
     slug: "milford",
     name: "Milford, MI",
     zipCodes: "48380, 48381",
-    shortDescription: "Quality cleaning services for Milford's homes and businesses with eco-friendly products and personalized care.",
+    shortDescription: "Professional house cleaning in Milford, MI. Local Bloombrite Cleaning team offers deep cleaning, recurring maid service & move-out cleaning. 97+ five-star reviews!",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Milford, MI</h1>
-      <p class="text-lg mb-6">Trusted by over 100 local families ★★★★★</p>
-      
-      <h2 class="text-2xl font-bold mb-4">Why Milford Chooses Bloombrite Cleaning</h2>
-      <ul class="list-disc list-inside space-y-2 mb-6">
-        <li>Regular Maintenance Cleaning</li>
-        <li>Deep Cleaning & Move-In/Out Services</li>
-        <li>Pet-Friendly & Eco-Safe Products</li>
+      <h2 class="text-2xl font-bold mb-4">Why Milford Homeowners Choose Bloombrite</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>✅ Trusted by your neighbors – We're based right here in Milford</li>
+        <li>✅ Custom cleaning plans – From one-time deep cleans to recurring maintenance</li>
+        <li>✅ Local + reliable – We know Milford homes and families</li>
+        <li>✅ Peace of mind – Friendly, background-checked cleaning pros</li>
       </ul>
       
-      <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
-      <p class="mb-6">We have over <strong>100 five-star Google reviews</strong> from happy clients in Milford and surrounding areas.</p>
+      <h2 class="text-2xl font-bold mb-4">Our Cleaning Services in Milford</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>🧽 <strong>Deep Cleaning Services</strong> (perfect for seasonal cleaning or special events)</li>
+        <li>🏠 <strong>Recurring Cleaning</strong> (weekly, bi-weekly, or monthly options)</li>
+        <li>🛋️ <strong>Specialty Cleaning</strong> (kitchens, bathrooms, floors, dusting, more)</li>
+        <li>🏡 <strong>Move-In & Move-Out Cleaning</strong></li>
+      </ul>
       
-      <p class="text-center">Serving Milford, MI and nearby communities</p>
+      <h2 class="text-2xl font-bold mb-4">Serving All of Milford, MI</h2>
+      <p class="mb-6 text-lg">From downtown Milford to the neighborhoods around Kensington Metropark, Bloombrite Cleaning is here to help.</p>
+      
+      <h2 class="text-2xl font-bold mb-4">See Why Milford Trusts Us</h2>
+      <p class="mb-4 text-lg">With 97+ five-star reviews, Bloombrite is proud to be Milford's local cleaning service.</p>
+      <blockquote class="bg-gray-100 p-4 rounded-lg mb-6 italic text-lg">
+        "Bloombrite is amazing! They keep my Milford home spotless every week." – ★★★★★
+      </blockquote>
+      
+      <h2 class="text-2xl font-bold mb-4">Get a Free Quote Today</h2>
+      <p class="mb-6 text-lg">Ready for a cleaner home? <a href="sms:(947) 465-4217" class="text-orange-600 hover:text-orange-700 font-semibold">Text us at (947) 465-4217</a> or <a href="/quote" class="text-orange-600 hover:text-orange-700 font-semibold">request a free quote online</a>.</p>
+      
+      <p class="text-center text-lg font-semibold">👉 Proudly serving Milford, MI and surrounding areas!</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },
@@ -95,22 +158,37 @@ export const locations = [
     slug: "commerce-township",
     name: "Commerce Township, MI",
     zipCodes: "48382, 48390",
-    shortDescription: "Reliable cleaning services for Commerce Township residences and businesses with attention to detail and excellent customer service.",
+    shortDescription: "Looking for reliable house cleaning in Commerce Township, MI? Bloombrite Cleaning offers professional, affordable maid and deep cleaning services. 97+ five-star reviews!",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Professional House Cleaning in Commerce Township, MI</h1>
-      <p class="text-lg mb-6">Trusted by over 100 local families ★★★★★</p>
-      
-      <h2 class="text-2xl font-bold mb-4">Why Commerce Chooses Bloombrite Cleaning</h2>
-      <ul class="list-disc list-inside space-y-2 mb-6">
-        <li>Regular Maintenance Cleaning</li>
-        <li>Deep Cleaning & Move-In/Out Services</li>
-        <li>Pet-Friendly & Eco-Safe Products</li>
+      <h2 class="text-2xl font-bold mb-4">Why Commerce Township Homeowners Choose Bloombrite</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>✅ Trusted by your neighbors – We already serve many Commerce families</li>
+        <li>✅ Custom cleaning plans – From one-time deep cleans to recurring maintenance</li>
+        <li>✅ Local + reliable – Based nearby, we know Commerce Township inside and out</li>
+        <li>✅ Peace of mind – Friendly, background-checked cleaning pros</li>
       </ul>
       
-      <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
-      <p class="mb-6">We have over <strong>100 five-star Google reviews</strong> from happy clients in Commerce and surrounding areas.</p>
+      <h2 class="text-2xl font-bold mb-4">Our Cleaning Services in Commerce Township</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>🧽 <strong>Deep Cleaning Services</strong> (perfect for moving in/out or post-renovation)</li>
+        <li>🏠 <strong>Recurring Cleaning</strong> (weekly, bi-weekly, or monthly options)</li>
+        <li>🛋️ <strong>Specialty Cleaning</strong> (kitchens, bathrooms, floors, dusting, more)</li>
+        <li>🏡 <strong>Move-In & Move-Out Cleaning</strong></li>
+      </ul>
       
-      <p class="text-center">Serving Commerce Township, MI and nearby communities</p>
+      <h2 class="text-2xl font-bold mb-4">Serving All of Commerce Township, MI</h2>
+      <p class="mb-6 text-lg">From Walled Lake to Union Lake neighborhoods, and everywhere in between, Bloombrite Cleaning is here to help.</p>
+      
+      <h2 class="text-2xl font-bold mb-4">See Why Commerce Township Trusts Us</h2>
+      <p class="mb-4 text-lg">With 97+ five-star reviews, Bloombrite is proud to be Commerce Township's trusted cleaning service.</p>
+      <blockquote class="bg-gray-100 p-4 rounded-lg mb-6 italic text-lg">
+        "Bloombrite did an incredible job on my Commerce Township home! Professional and thorough." – ★★★★★
+      </blockquote>
+      
+      <h2 class="text-2xl font-bold mb-4">Get a Free Quote Today</h2>
+      <p class="mb-6 text-lg">Ready for a cleaner home? <a href="sms:(947) 465-4217" class="text-orange-600 hover:text-orange-700 font-semibold">Text us at (947) 465-4217</a> or <a href="/quote" class="text-orange-600 hover:text-orange-700 font-semibold">request a free quote online</a>.</p>
+      
+      <p class="text-center text-lg font-semibold">👉 Serving Commerce Township, MI and surrounding areas!</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },
@@ -119,15 +197,36 @@ export const locations = [
     slug: "farmington-hills",
     name: "Farmington Hills, MI",
     zipCodes: "48331, 48334, 48335",
-    shortDescription: "Exceptional cleaning services for Farmington Hills homes and businesses with customized cleaning plans and proven results.",
+    shortDescription: "Professional house cleaning in Farmington Hills, MI. Bloombrite Cleaning offers deep cleans, recurring maid service & move-out cleanings. 97+ five-star reviews.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Cleaning Services in Farmington Hills, MI</h1>
+      <h2 class="text-2xl font-bold mb-4">Why Farmington Hills Residents Choose Us</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>⭐ 97+ Five-Star Reviews</li>
+        <li>⭐ Locally Owned, Trusted in Oakland County</li>
+        <li>⭐ Flexible scheduling – we work around your lifestyle</li>
+        <li>⭐ Affordable + professional</li>
+      </ul>
       
-      <p>Bloombrite Cleaning Services delivers premium cleaning services throughout Farmington Hills. Our experienced cleaning services professionals are familiar with the diverse neighborhoods and property types in the area, providing customized cleaning services solutions for each client.</p>
+      <h2 class="text-2xl font-bold mb-4">Our Cleaning Services in Farmington Hills</h2>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+        <li>🧹 <strong>General House Cleaning</strong> – dusting, vacuuming, kitchen, bathrooms</li>
+        <li>🏠 <strong>Deep Cleaning</strong> – top-to-bottom scrubbing for busy homes</li>
+        <li>🚚 <strong>Move-In & Move-Out Cleaning</strong> – leave your old place spotless</li>
+        <li>🛏️ <strong>Recurring Maid Service</strong> – weekly, bi-weekly, or monthly</li>
+      </ul>
       
-      <p class="mt-4">Farmington Hills homeowners and businesses trust Bloombrite Cleaning Services for our consistent quality, responsive customer service, and flexible scheduling options. We use eco-friendly cleaning products when possible and follow effective cleaning services protocols to ensure exceptional results every time.</p>
+      <h2 class="text-2xl font-bold mb-4">Serving the Farmington Hills Community</h2>
+      <p class="mb-6 text-lg">From Heritage Park to neighborhoods near Farmington High School, Bloombrite Cleaning is your trusted local cleaning company.</p>
       
-      <p class="mt-4">Whether you need regular cleaning services maintenance or a special one-time cleaning service, our Farmington Hills cleaning services teams are ready to exceed your expectations. We offer comprehensive cleaning services including <a href="/services/standard-cleaning" class="text-orange-600 hover:text-orange-700">standard cleaning services</a>, <a href="/services/deep-cleaning" class="text-orange-600 hover:text-orange-700">deep cleaning services</a>, and <a href="/services/move-in-out-cleaning" class="text-orange-600 hover:text-orange-700">move-in/out cleaning services</a>. We take pride in helping our clients maintain clean, healthy environments while giving them more time to enjoy their personal and professional lives. <a href="/quote" class="text-orange-600 hover:text-orange-700">Get a free quote</a> for our cleaning services today.</p>
+      <h2 class="text-2xl font-bold mb-4">What Your Neighbors Say</h2>
+      <blockquote class="bg-gray-100 p-4 rounded-lg mb-6 italic text-lg">
+        "Bloombrite Cleaning is a lifesaver! My Farmington Hills home has never looked better." – ★★★★★
+      </blockquote>
+      
+      <h2 class="text-2xl font-bold mb-4">Get a Free Farmington Hills Quote Today</h2>
+      <p class="mb-6 text-lg">Ready for professional cleaning? <a href="sms:(947) 465-4217" class="text-orange-600 hover:text-orange-700 font-semibold">Text us at (947) 465-4217</a> or <a href="/quote" class="text-orange-600 hover:text-orange-700 font-semibold">get your free quote online</a>.</p>
+      
+      <p class="text-center text-lg font-semibold">👉 Proudly serving Farmington Hills, MI!</p>
     `,
     imageUrl: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
   },

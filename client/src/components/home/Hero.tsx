@@ -2,7 +2,7 @@ import { Link } from 'wouter';
 
 const Hero = () => {
   return (
-    <section className="relative text-white overflow-hidden">
+    <section className="relative text-white overflow-hidden -mt-16">
       {/* Beautiful Kitchen Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -11,7 +11,7 @@ const Hero = () => {
         }}
       ></div>
       
-      <div className="container mx-auto px-4 py-16 md:py-20 relative z-10">
+      <div className="container mx-auto px-4 pt-20 pb-16 md:pt-24 md:pb-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
             <span className="text-orange-400">Professional House Cleaning Services</span> in Metro Detroit

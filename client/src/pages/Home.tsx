@@ -13,7 +13,7 @@ import FaqSection from '@/components/home/FaqSection';
 import CallToAction from '@/components/home/CallToAction';
 import GeneralSeoContent from '@/components/shared/GeneralSeoContent';
 import SeoHead from '@/components/shared/SeoHead';
-import LazySection from '@/performance/LazySection';
+
 import { LocalBusinessSchema } from '@/lib/schema';
 import teamImage from '@/assets/team.jpg';
 

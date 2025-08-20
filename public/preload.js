@@ -64,33 +64,12 @@
     link.setAttribute('onload', `this.media='${media}'; this.onload=null;`);
   });
   
-  // Optimize image loading with Intersection Observer
-  if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          if (img.dataset.src) {
-            img.src = img.dataset.src;
-            img.removeAttribute('data-src');
-            observer.unobserve(img);
-          }
-        }
-      });
-    }, { rootMargin: '50px' });
-    
-    // Observer will be applied to images when DOM is ready
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('img[data-src]').forEach(img => imageObserver.observe(img));
-      });
-    }
-  }
-  
-  // Improve font loading performance
+  // Simple font loading optimization without complex observers
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(() => {
       document.documentElement.className += ' fonts-loaded';
+    }).catch(() => {
+      // Silently handle font loading errors
     });
   }
 })();

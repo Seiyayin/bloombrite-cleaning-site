@@ -17,16 +17,16 @@ const addPreloadHints = () => {
   
   const criticalImages = [
     {
+      webp: '/Kitchen Deep Cleaning_1755668325844.webp',
+      fallback: '/Kitchen Deep Cleaning_1755668325844.png'
+    },
+    {
       webp: '/Window cleaning.webp',
       fallback: '/Window cleaning.jpg'
     },
     {
       webp: '/powerwashing.webp', 
       fallback: '/powerwashing.jpg'
-    },
-    {
-      webp: '/living room deep cleaning.webp',
-      fallback: '/living room deep cleaning.jpg'
     }
   ];
   

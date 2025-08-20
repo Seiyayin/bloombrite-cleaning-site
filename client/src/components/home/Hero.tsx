@@ -1,13 +1,14 @@
 import { Link } from 'wouter';
+import heroImage from '@assets/Kitchen Deep Cleaning_1755668325844.png';
 
 const Hero = () => {
   return (
     <section className="relative text-white overflow-hidden -mt-16">
-      {/* Beautiful Kitchen Background */}
+      {/* Beautiful Kitchen Deep Cleaning Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('${heroImage}')`
         }}
       ></div>
       

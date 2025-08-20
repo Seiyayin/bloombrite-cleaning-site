@@ -3,10 +3,10 @@
 (function() {
   // Critical resource preloading
   const preloadLinks = [
-    // Hero section critical images (WebP preferred)
+    // Hero section critical images (WebP preferred) - prioritize kitchen hero image
+    { href: '/Kitchen Deep Cleaning_1755668325844.webp', as: 'image', type: 'image/webp', importance: 'high', fallback: '/Kitchen Deep Cleaning_1755668325844.png' },
     { href: '/Window cleaning.webp', as: 'image', type: 'image/webp', importance: 'high', fallback: '/Window cleaning.jpg' },
     { href: '/powerwashing.webp', as: 'image', type: 'image/webp', importance: 'high', fallback: '/powerwashing.jpg' },
-    { href: '/living room deep cleaning.webp', as: 'image', type: 'image/webp', importance: 'high', fallback: '/living room deep cleaning.jpg' },
     { href: '/team.webp', as: 'image', type: 'image/webp', importance: 'high', fallback: '/team.jpg' },
     
     // Critical fonts with font-display: swap

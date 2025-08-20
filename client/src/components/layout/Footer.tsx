@@ -6,6 +6,36 @@ const Footer = () => {
     <footer className="bg-neutral-900 text-white pt-0 pb-0">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
+            <ul className="space-y-4">
+              <li className="flex">
+                <i className="fas fa-map-marker-alt mt-1 mr-3 text-primary-light"></i>
+                <span className="text-neutral-300">Wixom, MI</span>
+              </li>
+              <li className="flex">
+                <i className="fab fa-google mt-1 mr-3 text-primary-light"></i>
+                <a href="https://g.co/kgs/3LWj5Wx" target="_blank" rel="noopener noreferrer" className="text-neutral-300 hover:text-white transition">Google Business Profile</a>
+              </li>
+              <li className="flex">
+                <i className="fas fa-sms mt-1 mr-3 text-primary-light"></i>
+                <a href="sms:9474654217" className="text-neutral-300 hover:text-white transition">(947) 465-4217</a>
+              </li>
+              <li className="flex">
+                <i className="fas fa-envelope mt-1 mr-3 text-primary-light"></i>
+                <a href="mailto:sales@bloombritecleaning.com" className="text-neutral-300 hover:text-white transition">sales@bloombritecleaning.com</a>
+              </li>
+              <li className="flex">
+                <i className="fas fa-clock mt-1 mr-3 text-primary-light"></i>
+                <div className="text-neutral-300">
+                  <p className="font-semibold">Available 24/7</p>
+                  <p>Text us anytime for your cleaning needs</p>
+                </div>
+              </li>
+            </ul>
+          </div>
           {/* Company Info */}
           <div>
             <div className="mb-6">
@@ -84,34 +114,41 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Contact Info */}
+          {/* Locations */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
-            <ul className="space-y-4">
-              <li className="flex">
-                <i className="fas fa-map-marker-alt mt-1 mr-3 text-primary-light"></i>
-                <span className="text-neutral-300">Wixom, MI</span>
-              </li>
-              <li className="flex">
-                <i className="fab fa-google mt-1 mr-3 text-primary-light"></i>
-                <a href="https://g.co/kgs/3LWj5Wx" target="_blank" rel="noopener noreferrer" className="text-neutral-300 hover:text-white transition">Google Business Profile</a>
-              </li>
-              <li className="flex">
-                <i className="fas fa-sms mt-1 mr-3 text-primary-light"></i>
-                <a href="sms:9474654217" className="text-neutral-300 hover:text-white transition">(947) 465-4217</a>
-              </li>
-              <li className="flex">
-                <i className="fas fa-envelope mt-1 mr-3 text-primary-light"></i>
-                <a href="mailto:sales@bloombritecleaning.com" className="text-neutral-300 hover:text-white transition">sales@bloombritecleaning.com</a>
-              </li>
-              <li className="flex">
-                <i className="fas fa-clock mt-1 mr-3 text-primary-light"></i>
-                <div className="text-neutral-300">
-                  <p className="font-semibold">Available 24/7</p>
-                  <p>Text us anytime for your cleaning needs</p>
-                </div>
-              </li>
-            </ul>
+            <h3 className="text-lg font-semibold mb-6">Locations</h3>
+            <div className="grid grid-cols-2 gap-y-3 gap-x-4">
+              <div>
+                <Link href="/locations/wixom" className="text-neutral-300 hover:text-white transition block">Wixom Cleaning Services</Link>
+              </div>
+              <div>
+                <Link href="/locations/novi" className="text-neutral-300 hover:text-white transition block">Novi Cleaning Services</Link>
+              </div>
+              <div>
+                <Link href="/locations/farmington-hills" className="text-neutral-300 hover:text-white transition block">Farmington Hills Cleaning Services</Link>
+              </div>
+              <div>
+                <Link href="/locations/livonia" className="text-neutral-300 hover:text-white transition block">Livonia Cleaning Services</Link>
+              </div>
+              <div>
+                <Link href="/locations/milford" className="text-neutral-300 hover:text-white transition block">Milford Cleaning Services</Link>
+              </div>
+              <div>
+                <Link href="/locations/commerce-township" className="text-neutral-300 hover:text-white transition block">Commerce Township Cleaning Services</Link>
+              </div>
+              <div>
+                <Link href="/locations/south-lyon" className="text-neutral-300 hover:text-white transition block">South Lyon Cleaning Services</Link>
+              </div>
+              <div>
+                <Link href="/locations/walled-lake" className="text-neutral-300 hover:text-white transition block">Walled Lake Cleaning Services</Link>
+              </div>
+              <div>
+                <Link href="/locations/west-bloomfield" className="text-neutral-300 hover:text-white transition block">West Bloomfield Cleaning Services</Link>
+              </div>
+              <div>
+                <Link href="/locations/keego-harbor" className="text-neutral-300 hover:text-white transition block">Keego Harbor Cleaning Services</Link>
+              </div>
+            </div>
           </div>
         </div>
         

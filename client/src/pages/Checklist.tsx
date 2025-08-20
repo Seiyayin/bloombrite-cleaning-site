@@ -15,15 +15,16 @@ const Checklist = () => {
       "Wipe down all light switches and door handles",
       "Empty all trash bins and replace liners",
       "Vacuum all carpets and area rugs",
-      "Sweep and mop all hard surface floors",
+      "Vacuum and mop all hard surface floors",
       "Make beds and tidy up rooms",
       "Organize and put items in their proper places"
     ],
     kitchen: [
       "Clean and sanitize all countertops",
       "Wipe down exterior of all appliances",
+      "Clean microwave inside and out",
       "Clean stovetop and range surface",
-      "Wipe cabinet doors and handles",
+      "Spot wipe cabinet faces and handles",
       "Clean and shine sink and faucet",
       "Take out trash and recycling",
       "General kitchen organization and tidying"
@@ -34,8 +35,7 @@ const Checklist = () => {
       "Clean shower/tub and remove soap scum",
       "Wipe and polish mirrors",
       "Mop bathroom floors thoroughly",
-      "Empty trash and replace liners",
-      "Replace towels and organize toiletries"
+      "Empty trash and replace liners"
     ],
     livingAreas: [
       "Dust all furniture and surfaces",

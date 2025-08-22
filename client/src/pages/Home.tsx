@@ -11,6 +11,7 @@ import TestimonialsSection from '@/components/home/TestimonialsSection';
 import ServiceAreas from '@/components/home/ServiceAreas';
 import FaqSection from '@/components/home/FaqSection';
 import CallToAction from '@/components/home/CallToAction';
+import NearMeSection from '@/components/home/NearMeSection';
 import GeneralSeoContent from '@/components/shared/GeneralSeoContent';
 import SeoHead from '@/components/shared/SeoHead';
 
@@ -44,6 +45,7 @@ const Home = () => {
         <TestimonialsSection />
         <GeneralSeoContent />
         <ServiceAreas />
+        <NearMeSection />
         <FaqSection />
         <CallToAction />
       </main>

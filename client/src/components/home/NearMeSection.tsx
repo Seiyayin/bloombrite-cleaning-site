@@ -43,10 +43,8 @@ const NearMeSection = () => {
           </div>
 
           <div className="text-center">
-            <Link href="/quote">
-              <a className="inline-flex items-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition-colors duration-200 text-lg">
-                Get Your Free Quote Now
-              </a>
+            <Link href="/quote" className="inline-flex items-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition-colors duration-200 text-lg">
+              Get Your Free Quote Now
             </Link>
           </div>
         </div>

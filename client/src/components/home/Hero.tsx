@@ -4,21 +4,22 @@ import heroImage from '@assets/Kitchen Deep Cleaning_1755668325844.png';
 const Hero = () => {
   return (
     <section className="relative text-white overflow-hidden -mt-16">
-      {/* Beautiful Kitchen Deep Cleaning Background */}
+      {/* Optimized Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('${heroImage}')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('${heroImage}')`,
+          willChange: 'transform'
         }}
       ></div>
       
       <div className="container mx-auto px-4 pt-20 pb-16 md:pt-24 md:pb-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            <span className="text-orange-400">Professional House Cleaning Services</span> in Metro Detroit
+            <span className="text-orange-400">Professional House Cleaning</span> in Metro Detroit
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-100">
-            Transform your home with Bloombrite's expert <Link href="/services" className="text-orange-400 hover:text-orange-300 underline">residential cleaning services</Link> throughout the Metro Detroit area. From <Link href="/services/deep-cleaning" className="text-orange-400 hover:text-orange-300 underline">deep house cleaning</Link> to <Link href="/services/recurring-cleaning" className="text-orange-400 hover:text-orange-300 underline">weekly maintenance cleaning</Link>, our professional cleaning services deliver spotless results with guaranteed satisfaction.
+            Expert residential cleaning services with guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a 
@@ -33,24 +34,9 @@ const Hero = () => {
               View All Services
             </Link>
           </div>
-          <div className="flex items-center justify-center gap-2 text-sm text-gray-200 mb-6">
-            <span>💳 We accept all major payment methods</span>
-            <span className="text-orange-400">|</span>
-            <Link href="/bitcoin-payments" className="text-orange-400 hover:text-orange-300 font-medium">₿ Bitcoin payments accepted</Link>
-          </div>
-          <div className="flex items-center justify-center gap-8 flex-wrap">
-            <div className="flex items-center">
-              <span className="text-yellow-400 text-xl mr-2">★</span>
-              <span className="font-medium">4.9/5 Rating</span>
-            </div>
-            <div className="flex items-center satisfaction-badge">
-              <i className="fas fa-check-circle text-orange-400 mr-2"></i>
-              <span className="font-medium">100% Satisfaction</span>
-            </div>
-            <div className="flex items-center">
-              <i className="fas fa-calendar-check text-orange-400 mr-2"></i>
-              <span className="font-medium">Easy Online Booking</span>
-            </div>
+          <div className="flex items-center justify-center">
+            <span className="text-yellow-400 text-xl mr-2">★</span>
+            <span className="font-medium text-gray-200">4.9/5 Rating • 100% Satisfaction</span>
           </div>
         </div>
       </div>

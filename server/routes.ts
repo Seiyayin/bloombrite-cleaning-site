@@ -7,10 +7,18 @@ import { fetchGoogleReviews, findPlaceId } from "./services/googlePlaces";
 export async function registerRoutes(app: Express): Promise<Server> {
   // Explicitly serve static sitemap.xml and robots.txt without interference
   app.get('/sitemap.xml', (req, res) => {
+    res.set({
+      'Content-Type': 'application/xml',
+      'Cache-Control': 'public, max-age=3600' // Cache for 1 hour
+    });
     res.sendFile('sitemap.xml', { root: './public' });
   });
   
   app.get('/robots.txt', (req, res) => {
+    res.set({
+      'Content-Type': 'text/plain',
+      'Cache-Control': 'public, max-age=3600' // Cache for 1 hour
+    });
     res.sendFile('robots.txt', { root: './public' });
   });
 

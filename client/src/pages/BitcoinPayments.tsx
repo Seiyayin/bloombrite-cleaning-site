@@ -73,7 +73,7 @@ const BitcoinPayments = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="flex justify-center mb-6">
-                <img src={bitcoinLogo} alt="Bitcoin Logo" className="w-16 h-16" />
+                <img src={bitcoinLogo} alt="Bitcoin Logo" className="w-16 h-16" loading="lazy" decoding="async" width="64" height="64" />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
                 Pay with <span className="text-orange-500">Bitcoin</span> for Professional Cleaning Services

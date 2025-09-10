@@ -19,7 +19,7 @@ const Hero = () => {
             <span className="text-orange-400 drop-shadow-md">Professional House Cleaning & Commercial Cleaning</span> in Novi, Wixom, Milford & South Lyon
           </h1>
           <h2 className="text-xl md:text-2xl mb-8 text-gray-100 drop-shadow-md font-medium">
-            Expert residential and commercial cleaning services in Novi, Milford, Wixom, and South Lyon with guaranteed satisfaction.
+            Expert residential and commercial cleaning services in Novi, Milford, Wixom, South Lyon, Bloomfield Hills, Livonia, Farmington Hills and throughout Oakland County with guaranteed satisfaction.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a 

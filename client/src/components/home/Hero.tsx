@@ -5,7 +5,7 @@ const heroImage = '/images/Kitchen deep cleaning.webp';
 const Hero = () => {
   return (
     <section className="relative text-white overflow-hidden -mt-16">
-      {/* Optimized Background with preload hint */}
+      {/* Optimized Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -13,9 +13,6 @@ const Hero = () => {
           willChange: 'transform'
         }}
       ></div>
-      
-      {/* Preload the critical hero image */}
-      <link rel="preload" as="image" href={heroImage} />
       
       <div className="container mx-auto px-4 pt-20 pb-16 md:pt-24 md:pb-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">

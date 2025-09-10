@@ -33,6 +33,7 @@ import Checklist from "@/pages/Checklist";
 import NoviDetailed from "@/pages/locations/NoviDetailed";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FloatingTextChat from "@/components/shared/FloatingTextChat";
 
 function Router() {
   return (
@@ -92,6 +93,7 @@ function App() {
           </div>
           <Footer />
         </div>
+        <FloatingTextChat />
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>

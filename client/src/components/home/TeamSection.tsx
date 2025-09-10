@@ -88,29 +88,6 @@ const TeamSection = () => {
           </div>
         </div>
 
-        {/* Living spaces showcase */}
-        <div className="mt-12 relative rounded-lg overflow-hidden shadow-lg">
-          <img 
-            src={livingRoomImage} 
-            alt="Living Room Deep Cleaning" 
-            className="w-full h-auto object-cover"
-            width="1200"
-            height="600"
-            loading="eager"
-            // Remove fetchPriority as it's causing React warnings
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
-            <div className="p-6 md:p-8 text-white max-w-2xl">
-              <h3 className="text-2xl md:text-3xl font-bold mb-3">Transforming Living Spaces</h3>
-              <p className="text-lg mb-4">
-                We specialize in bringing new life to every type of space, from luxury homes to commercial properties.
-              </p>
-              <Link href="/services" className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition">
-                Explore Our Services
-              </Link>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

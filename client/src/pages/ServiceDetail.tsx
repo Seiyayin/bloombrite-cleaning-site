@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link, useRoute } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
+import ServiceChecklist from '@/components/services/ServiceChecklist';
 import { ServiceSchema, DeepCleaningSchema, MoveInOutCleaningSchema, PowerWashingSchema, CarpetCleaningSchema, WindowCleaningSchema } from '@/lib/schema';
 import { services } from '@/data/services';
 import { locations } from '@/data/locations';
@@ -103,6 +104,14 @@ const ServiceDetail = () => {
                     </li>
                   ))}
                 </ul>
+                
+                {/* Add checklist for relevant services */}
+                {(slug === 'general-cleaning' || slug === 'standard-cleaning' || slug === 'recurring-cleaning') && (
+                  <ServiceChecklist serviceType="standard" />
+                )}
+                {slug === 'deep-cleaning' && (
+                  <ServiceChecklist serviceType="deep" />
+                )}
                 
                 {service.additionalServices && service.additionalServices.length > 0 && (
                   <>

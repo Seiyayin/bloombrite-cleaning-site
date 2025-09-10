@@ -16,10 +16,10 @@ const Hero = () => {
       <div className="container mx-auto px-4 pt-20 pb-16 md:pt-24 md:pb-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            <span className="text-orange-400">Professional House Cleaning</span> in Metro Detroit
+            <span className="text-orange-400">Professional House Cleaning & Commercial Cleaning</span> in Novi, Wixom, Milford & South Lyon
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-100">
-            Expert residential cleaning services with guaranteed satisfaction.
+            Expert residential and commercial cleaning services in Novi, Milford, Wixom, and South Lyon with guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a 

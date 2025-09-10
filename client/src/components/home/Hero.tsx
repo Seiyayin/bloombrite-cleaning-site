@@ -1,27 +1,26 @@
 import { Link } from 'wouter';
-// Use optimized WebP image for better performance
-const heroImage = '/images/Kitchen deep cleaning.webp';
+import heroImage from '@assets/generated_images/Beautiful_modern_kitchen_interior_08df50e4.png';
 
 const Hero = () => {
   return (
     <section className="relative text-white overflow-hidden -mt-16">
-      {/* Optimized Background */}
+      {/* Beautiful Kitchen Background with Enhanced Text Readability */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('${heroImage}')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('${heroImage}')`,
           willChange: 'transform'
         }}
       ></div>
       
       <div className="container mx-auto px-4 pt-20 pb-16 md:pt-24 md:pb-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            <span className="text-orange-400">Professional House Cleaning & Commercial Cleaning</span> in Novi, Wixom, Milford & South Lyon
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-lg">
+            <span className="text-orange-400 drop-shadow-md">Professional House Cleaning & Commercial Cleaning</span> in Novi, Wixom, Milford & South Lyon
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-100">
+          <h2 className="text-xl md:text-2xl mb-8 text-gray-100 drop-shadow-md font-medium">
             Expert residential and commercial cleaning services in Novi, Milford, Wixom, and South Lyon with guaranteed satisfaction.
-          </p>
+          </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a 
               href="https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/new?source=social_media" 

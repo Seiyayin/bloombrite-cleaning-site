@@ -66,7 +66,6 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             <Link href="/locations/keego-harbor" className="block py-2" onClick={onClose}>Keego Harbor, MI</Link>
           </div>
         </div>
-        <Link href="/checklist" className="block py-2 font-medium" onClick={onClose}>Checklist</Link>
         <Link href="/blog" className="block py-2 font-medium" onClick={onClose}>Blog</Link>
         <Link href="/reviews" className="block py-2 font-medium" onClick={onClose}>Reviews</Link>
         <Link href="/faq" className="block py-2 font-medium" onClick={onClose}>FAQ</Link>

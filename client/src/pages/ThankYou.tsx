@@ -36,11 +36,11 @@ const ThankYou = () => {
             <div className="bg-neutral-50 p-6 rounded-lg mb-8">
               <h2 className="text-xl font-semibold mb-4">What's Next?</h2>
               <p className="text-neutral-600">
-                We typically respond to all inquiries within 24 hours during business days. If you need immediate assistance, please don't hesitate to call us.
+                We typically respond to all inquiries within 24 hours during business days. If you need immediate assistance, please don't hesitate to text us.
               </p>
               <div className="mt-4">
-                <a href="tel:9474654217" className="inline-flex items-center text-primary font-medium hover:underline">
-                  <i className="fas fa-phone-alt mr-2"></i>
+                <a href="sms:9474654217" className="inline-flex items-center text-primary font-medium hover:underline">
+                  <i className="fas fa-comment-alt mr-2"></i>
                   (947) 465-4217
                 </a>
               </div>

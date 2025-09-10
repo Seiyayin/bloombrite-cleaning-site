@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import Hero from '@/components/home/Hero';
-import Features from '@/components/home/Features';
 import ServicesSection from '@/components/home/ServicesSection';
 import MaintenanceSchedulingSection from '@/components/home/MaintenanceSchedulingSection';
 import CommercialSection from '@/components/home/CommercialSection';
@@ -35,7 +34,6 @@ const Home = () => {
       
       <main>
         <Hero />
-        <Features />
         <ServicesSection />
         <MaintenanceSchedulingSection />
         <CommercialSection />

@@ -81,8 +81,8 @@ const QuoteSection = () => {
               <div className="mt-8 pt-6 border-t border-neutral-200">
                 <p className="font-semibold mb-3">For immediate assistance:</p>
                 <div className="flex items-center mb-3">
-                  <i className="fas fa-phone text-primary mr-3"></i>
-                  <a href="tel:9474654217" className="hover:text-primary">(947) 465-4217</a>
+                  <i className="fas fa-comment text-primary mr-3"></i>
+                  <a href="sms:9474654217" className="hover:text-primary">(947) 465-4217</a>
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-envelope text-primary mr-3"></i>

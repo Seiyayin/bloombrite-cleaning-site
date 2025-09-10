@@ -100,7 +100,6 @@ const ServiceChecklist = ({ serviceType }: ServiceChecklistProps) => {
     </div>
   );
 
-  const tasks = serviceType === 'standard' ? standardTasks : deepCleaningTasks;
   const title = serviceType === 'standard' ? 'Standard Cleaning Checklist' : 'Deep Cleaning Checklist';
   const subtitle = serviceType === 'standard' 
     ? 'Our regular cleaning service includes these essential tasks' 
@@ -116,22 +115,22 @@ const ServiceChecklist = ({ serviceType }: ServiceChecklistProps) => {
           <>
             <TaskSection 
               title="General Tasks" 
-              tasks={tasks.general}
+              tasks={standardTasks.general}
               icon={<FileText className="w-5 h-5" />}
             />
             <TaskSection 
               title="Kitchen Cleaning" 
-              tasks={tasks.kitchen}
+              tasks={standardTasks.kitchen}
               icon={<FileText className="w-5 h-5" />}
             />
             <TaskSection 
               title="Bathroom Cleaning" 
-              tasks={tasks.bathrooms}
+              tasks={standardTasks.bathrooms}
               icon={<FileText className="w-5 h-5" />}
             />
             <TaskSection 
               title="Living Areas" 
-              tasks={tasks.livingAreas}
+              tasks={standardTasks.livingAreas}
               icon={<FileText className="w-5 h-5" />}
             />
           </>
@@ -139,22 +138,22 @@ const ServiceChecklist = ({ serviceType }: ServiceChecklistProps) => {
           <>
             <TaskSection 
               title="Whole House Deep Tasks" 
-              tasks={tasks.wholeHouse}
+              tasks={deepCleaningTasks.wholeHouse}
               icon={<Star className="w-5 h-5" />}
             />
             <TaskSection 
               title="Kitchen Deep Cleaning" 
-              tasks={tasks.kitchen}
+              tasks={deepCleaningTasks.kitchen}
               icon={<Star className="w-5 h-5" />}
             />
             <TaskSection 
               title="Bathroom Deep Cleaning" 
-              tasks={tasks.bathrooms}
+              tasks={deepCleaningTasks.bathrooms}
               icon={<Star className="w-5 h-5" />}
             />
             <TaskSection 
               title="Bedroom & Living Areas" 
-              tasks={tasks.bedrooms}
+              tasks={deepCleaningTasks.bedrooms}
               icon={<Star className="w-5 h-5" />}
             />
           </>

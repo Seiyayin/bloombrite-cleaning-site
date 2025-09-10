@@ -11,11 +11,11 @@ const NearMeSection = () => {
           
           <div className="prose prose-lg max-w-none mb-8 text-gray-700">
             <p className="mb-4">
-              When you search for "cleaning near me" in Metro Detroit, Bloombrite Cleaning is your trusted local choice. We understand that finding reliable <strong>house cleaning near Novi</strong>, <strong>move-out cleaners near Wixom</strong>, or a dependable <strong>cleaning company near Commerce, MI</strong> can be challenging. That's why homeowners throughout the Metro Detroit area turn to our professional team for all their residential cleaning needs.
+              When you search for "cleaning near me" in Metro Detroit, Bloombrite Cleaning is your trusted local choice. We understand that finding reliable <strong>house cleaning near Novi</strong>, <strong>move-out cleaners near Wixom</strong>, <strong>commercial cleaning services near Milford</strong>, or a dependable <strong>cleaning company near South Lyon, MI</strong> can be challenging. That's why homeowners and businesses throughout the Metro Detroit area turn to our professional team for all their residential and commercial cleaning needs.
             </p>
             
             <p className="mb-6">
-              Whether you're looking for regular maintenance cleaning, deep cleaning services, or specialized move-in/move-out cleaning, our experienced team serves your neighborhood with the same commitment to excellence that has earned us over 97 five-star reviews. From West Bloomfield to Livonia, Farmington Hills to Keego Harbor, we're the cleaning service near you that delivers exceptional results every time.
+              Whether you're looking for regular maintenance cleaning, deep cleaning services, or specialized commercial cleaning services, our experienced team serves Novi, Wixom, Milford, South Lyon, and surrounding neighborhoods with the same commitment to excellence that has earned us over 97 five-star reviews. From West Bloomfield to Livonia, Commerce Township to Farmington Hills, we're the cleaning service near you that delivers exceptional results every time.
             </p>
           </div>
 

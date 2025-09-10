@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bloombritecleaning.com/sitemap.xml
+Sitemap: https://562dc00a-97ed-470e-8703-5791a244b72d-00-1mqu85ukrlcuw.riker.replit.dev/sitemap.xml

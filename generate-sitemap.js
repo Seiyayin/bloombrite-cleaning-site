@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Base URL of the website
-const SITE_URL = 'https://bloombritecleaning.com';
+const SITE_URL = process.env.REPLIT_DEV_DOMAIN ? `https://${process.env.REPLIT_DEV_DOMAIN}` : 'https://www.bloombritecleaning.com';
 
 // List of all pages (both static and dynamic)
 const pages = [
@@ -26,16 +26,23 @@ const pages = [
   '/services/carpet-cleaning',
   '/services/deep-cleaning',
   '/services/move-in-out-cleaning',
-  '/services/standard-cleaning',
+  '/services/general-cleaning',
+  '/services/recurring-cleaning',
+  '/services/maid-services',
+  '/services/office-cleaning',
+  '/services/airbnb-cleaning',
+  '/services/oven-cleaning',
   // Location pages
   '/locations/wixom',
   '/locations/novi',
-  '/locations/farmington-hills',
-  '/locations/west-bloomfield',
-  '/locations/northville',
-  '/locations/plymouth',
   '/locations/livonia',
-  '/locations/canton',
+  '/locations/milford',
+  '/locations/commerce-township',
+  '/locations/farmington-hills',
+  '/locations/south-lyon',
+  '/locations/walled-lake',
+  '/locations/west-bloomfield',
+  '/locations/keego-harbor',
   // Blog pages
   '/blog',
   '/blog/cities',
@@ -56,6 +63,8 @@ const pages = [
 const excludedPages = [
   '/404',
   '/thank-you',
+  '/checklist', // Remove checklist from sitemap
+  '/get-quote'  // Remove old quote URL
 ];
 
 // Generate sitemap XML

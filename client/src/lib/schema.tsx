@@ -19,7 +19,7 @@ export const LocalBusinessSchema = () => {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "CleaningService"],
     "name": "Bloombrite Cleaning",
-    "alternateName": "BloomBrite Cleaning Services",
+    "alternateName": ["BloomBrite Cleaning Services", "Bloombrite Maid Services", "Professional House Cleaning Wixom", "Maid Services Novi", "House Cleaning Milford"],
     "image": [
       "https://www.bloombritecleaning.com/images/team.jpg",
       "https://www.bloombritecleaning.com/images/kitchen-main.jpg",
@@ -29,7 +29,7 @@ export const LocalBusinessSchema = () => {
     "url": "https://www.bloombritecleaning.com",
     "telephone": "947-465-4217",
     "email": "sales@bloombritecleaning.com",
-    "description": "Professional house cleaning services in Metro Detroit, Michigan. Bloombrite Cleaning offers general house cleaning, deep cleaning, move-in/out cleaning, recurring maid services (weekly, biweekly, monthly), office cleaning, and specialized residential cleaning with 97+ five-star reviews and guaranteed satisfaction.",
+    "description": "Professional house cleaning services and maid services in Metro Detroit, Michigan. Bloombrite Cleaning offers professional cleaning, general house cleaning, deep cleaning, move-in/out cleaning, recurring maid services (weekly, biweekly, monthly), office cleaning, and specialized residential cleaning in Wixom, Novi, Milford, Commerce Township, Farmington Hills, Livonia, South Lyon, West Bloomfield, and Keego Harbor with 97+ five-star reviews and guaranteed satisfaction.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "2207 Evergreen St",
@@ -150,14 +150,14 @@ export const LocalBusinessSchema = () => {
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Cleaning Services",
+      "name": "Professional Cleaning Services & Maid Services",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "General Cleaning",
-            "description": "Regular maintenance cleaning for homes including weekly, biweekly, and monthly options"
+            "name": "Professional House Cleaning",
+            "description": "Regular maintenance house cleaning and maid services for homes in Wixom, Novi, Milford including weekly, biweekly, and monthly professional cleaning options"
           },
           "price": "160",
           "priceCurrency": "USD"
@@ -166,8 +166,8 @@ export const LocalBusinessSchema = () => {
           "@type": "Offer", 
           "itemOffered": {
             "@type": "Service",
-            "name": "Deep Cleaning",
-            "description": "Comprehensive deep cleaning service"
+            "name": "Deep Cleaning Services",
+            "description": "Comprehensive deep cleaning and professional maid services for homes in Commerce Township, Farmington Hills, Livonia"
           },
           "price": "250",
           "priceCurrency": "USD"
@@ -176,8 +176,18 @@ export const LocalBusinessSchema = () => {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service", 
+            "name": "Maid Services",
+            "description": "Professional maid services and house cleaning for Wixom, Novi, Milford, Commerce Township areas with weekly, biweekly, and monthly options"
+          },
+          "price": "160",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service", 
             "name": "Power Washing",
-            "description": "Exterior surface power washing"
+            "description": "Professional exterior power washing services"
           },
           "price": "320",
           "priceCurrency": "USD"
@@ -268,18 +278,18 @@ export const ServiceSchema = ({
         "valueAddedTaxIncluded": false
       }
     },
-    "category": "Cleaning Services",
+    "category": ["Cleaning Services", "Maid Services", "Professional House Cleaning", "Residential Cleaning"],
     "areaServed": [
-      "Wixom, Michigan",
-      "Novi, Michigan", 
-      "Livonia, Michigan",
-      "Milford, Michigan",
-      "Commerce Township, Michigan",
-      "Farmington Hills, Michigan",
-      "South Lyon, Michigan",
-      "Walled Lake, Michigan",
-      "West Bloomfield, Michigan",
-      "Keego Harbor, Michigan"
+      "Wixom, Michigan - House Cleaning & Maid Services",
+      "Novi, Michigan - Professional Cleaning Services", 
+      "Livonia, Michigan - Maid Services & House Cleaning",
+      "Milford, Michigan - Professional House Cleaning",
+      "Commerce Township, Michigan - Cleaning & Maid Services",
+      "Farmington Hills, Michigan - House Cleaning Services",
+      "South Lyon, Michigan - Professional Maid Services",
+      "Walled Lake, Michigan - House Cleaning & Professional Cleaning",
+      "West Bloomfield, Michigan - Maid Services & House Cleaning",
+      "Keego Harbor, Michigan - Professional Cleaning Services"
     ],
     "serviceOutput": {
       "@type": "Thing",
@@ -334,9 +344,9 @@ export const ServiceSchema = ({
 // Deep Cleaning Service Schema
 export const DeepCleaningSchema = () => {
   return ServiceSchema({
-    serviceName: "Deep Cleaning Services",
+    serviceName: "Deep Cleaning Services & Professional Maid Services",
     serviceType: "Deep Cleaning",
-    description: "Comprehensive deep cleaning service that addresses hard-to-reach areas and deeply embedded dirt. Perfect for spring cleaning, special occasions, or when your home needs a fresh start.",
+    description: "Comprehensive deep cleaning service and professional maid services that addresses hard-to-reach areas and deeply embedded dirt. Professional house cleaning for Wixom, Novi, Milford, and Commerce Township. Perfect for spring cleaning, special occasions, or when your home needs a fresh start.",
     price: "250",
     url: "https://www.bloombritecleaning.com/services/deep-cleaning",
     duration: "PT4H",
@@ -353,9 +363,9 @@ export const DeepCleaningSchema = () => {
 // Move-In/Out Cleaning Service Schema
 export const MoveInOutCleaningSchema = () => {
   return ServiceSchema({
-    serviceName: "Move-In/Out Cleaning Services",
+    serviceName: "Move-In/Out Cleaning Services & Professional Maid Services",
     serviceType: "Move-In/Out Cleaning",
-    description: "Comprehensive cleaning for when you're moving in or out of a property, ensuring a fresh start or security deposit return.",
+    description: "Comprehensive move-in/out cleaning and professional maid services for properties in Wixom, Novi, Milford, and Commerce Township. Professional house cleaning for when you're moving in or out of a property, ensuring a fresh start or security deposit return.",
     price: "250",
     url: "https://www.bloombritecleaning.com/services/move-in-out-cleaning",
     duration: "PT5H",
@@ -391,9 +401,9 @@ export const PowerWashingSchema = () => {
 // Window Cleaning Service Schema
 export const WindowCleaningSchema = () => {
   return ServiceSchema({
-    serviceName: "Window Cleaning Services",
+    serviceName: "Professional Window Cleaning Services",
     serviceType: "Window Cleaning",
-    description: "Professional interior and exterior window cleaning services to let more light into your home and improve curb appeal.",
+    description: "Professional interior and exterior window cleaning services for homes in Farmington Hills, Livonia, South Lyon, and West Bloomfield. Professional house cleaning to let more light into your home and improve curb appeal.",
     price: "220",
     url: "https://www.bloombritecleaning.com/services/window-cleaning",
     duration: "PT2H",
@@ -410,9 +420,9 @@ export const WindowCleaningSchema = () => {
 // Carpet Cleaning Service Schema
 export const CarpetCleaningSchema = () => {
   return ServiceSchema({
-    serviceName: "Carpet Cleaning Services",
+    serviceName: "Professional Carpet Cleaning Services",
     serviceType: "Carpet Cleaning", 
-    description: "Professional deep carpet cleaning to remove stains, odors, and allergens, extending the life of your carpet.",
+    description: "Professional deep carpet cleaning and maid services for homes in Walled Lake, Keego Harbor, and surrounding areas. Professional house cleaning to remove stains, odors, and allergens, extending the life of your carpet.",
     price: "200",
     url: "https://www.bloombritecleaning.com/services/carpet-cleaning",
     duration: "PT3H",
@@ -490,6 +500,25 @@ export const BreadcrumbSchema = ({ items }: { items: Array<{ name: string; url: 
   };
 
   return <SchemaOrg>{schema}</SchemaOrg>;
+};
+
+// Maid Services Schema for Enhanced Local SEO
+export const MaidServicesSchema = () => {
+  return ServiceSchema({
+    serviceName: "Professional Maid Services",
+    serviceType: "Maid Services",
+    description: "Professional maid services and house cleaning in Wixom, Novi, Milford, Commerce Township, Farmington Hills, Livonia, South Lyon, West Bloomfield, Walled Lake, and Keego Harbor. Expert residential cleaning with weekly, biweekly, and monthly professional maid services for busy homeowners.",
+    price: "160",
+    url: "https://www.bloombritecleaning.com/services/maid-services",
+    duration: "PT3H",
+    features: [
+      "Professional maid services for all rooms",
+      "House cleaning in Wixom and Novi areas", 
+      "Weekly, biweekly, and monthly cleaning schedules",
+      "Professional cleaning staff background checked",
+      "Customized house cleaning plans for each home"
+    ]
+  });
 };
 
 // Website Schema for Site-wide SEO

@@ -43,7 +43,7 @@ const Hero = () => {
           <div className="flex items-center justify-center gap-4">
             <span className="text-gray-300 text-sm mr-2">Follow us:</span>
             <a
-              href="https://www.google.com/localservices/prolist?g2lbs=ADZRdkuX7lVqHZ8zXmQqnJsb8wvp9RJZyM6ov-DW4uYUTT2xSY7Gb1oL4K7ZSAKJg2l9N6UxN1Q&hl=en-US&gl=US&cs=1&ssta=1&q=bloombrite%20cleaning&oq=bloombrite%20cleaning&slp=MgBIAVIPcmVzdGF1cmFudCBuZWFyIG1l&src=2&sa=X&ved=2ahUKEwjKpJvGhrj_AhVEkokEHTNcDDwQjGp6BQgMEAE&spp=Cg0vZy8xMWZ3eTU1ZzF2OkoICAAQABABGAEiEGJsb29tYnJpdGUgY2xlYW5pbmcqDkJsb29tYnJpdGUgQ2xlYW5pbmc%3D&slps=UhIJqwzc7l9mG40R8WwHFk3yYwMiEGJsb29tYnJpdGUgY2xlYW5pbmc%3D"
+              href="https://share.google/ljLXM2kTuLhatz3r1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-yellow-400 transition-colors duration-200"

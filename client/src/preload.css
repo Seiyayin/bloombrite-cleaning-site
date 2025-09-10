@@ -36,3 +36,21 @@
 body {
   font-display: swap;
 }
+
+/* Optimize for First Contentful Paint */
+.hero-background {
+  background-image: url('/images/Kitchen deep cleaning.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  content-visibility: auto;
+}
+
+/* Prevent render blocking by using CSS containment */
+.service-card {
+  contain: layout style paint;
+}
+
+.location-card {
+  contain: layout style paint;
+}

@@ -46,6 +46,10 @@ const TestimonialCard = ({ testimonial }: TestimonialProps) => {
             src={testimonial.author.avatarUrl} 
             alt={testimonial.author.name} 
             className="w-full h-full object-cover"
+            loading="lazy"
+            decoding="async"
+            width="48"
+            height="48"
           />
         </div>
         <div>

@@ -222,6 +222,7 @@ const BlogOverview = () => {
                       <Link 
                         href={`/blog/${post.slug}`} 
                         className="inline-flex items-center text-primary text-sm font-medium hover:underline"
+                        aria-label={`Read full article: ${post.title}`}
                       >
                         Read Full Article
                         <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

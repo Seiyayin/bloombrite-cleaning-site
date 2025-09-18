@@ -89,6 +89,7 @@ const LivoniaBlog = () => {
                       <Link 
                         href={`/blog/cities/livonia/${post.slug}`}
                         className="text-primary font-medium hover:text-primary-dark transition-colors"
+                        aria-label={`Read full article: ${post.title}`}
                       >
                         Read Full Article →
                       </Link>

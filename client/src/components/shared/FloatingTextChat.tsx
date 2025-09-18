@@ -5,7 +5,7 @@ const FloatingTextChat = () => {
 
   const handleTextClick = () => {
     // Open SMS app with pre-filled business number
-    window.location.href = 'sms:9474654217?body=Hi! I\'d like to learn more about your cleaning services.';
+    window.location.href = 'sms:9474654217?body=Hi! I would like to get a quote for cleaning services for my home.';
   };
 
   return (

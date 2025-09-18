@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import MobileMenu from './MobileMenu';
+import OptimizedImage from '@/components/shared/OptimizedImage';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,10 +19,13 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white">
       <nav className="container mx-auto px-4 py-0 flex items-center justify-between">
         <Link href="/" className="block">
-          <img 
-            src="/images/bloombrite-logo.png?v=2" 
-            alt="Bloombrite Cleaning" 
+          <OptimizedImage 
+            src="/images/bloombrite-logo.png" 
+            alt="Bloombrite Cleaning - Professional House Cleaning Services" 
             className="h-12 w-auto"
+            width={300}
+            height={150}
+            priority={true}
           />
         </Link>
         

@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import bbbBadge from '@/assets/bbb-accredited-business.png';
+import OptimizedImage from '@/components/shared/OptimizedImage';
 
 const Footer = () => {
   return (
@@ -40,10 +40,12 @@ const Footer = () => {
           <div>
             <div className="mb-6">
               <Link href="/" className="block">
-                <img 
-                  src="/images/bloombrite-logo.png?v=2" 
-                  alt="Bloombrite Cleaning" 
+                <OptimizedImage 
+                  src="/images/bloombrite-logo.png" 
+                  alt="Bloombrite Cleaning - Professional House Cleaning Services" 
                   className="h-16 w-auto"
+                  width={300}
+                  height={150}
                 />
               </Link>
             </div>
@@ -60,10 +62,12 @@ const Footer = () => {
                 className="inline-block hover:opacity-80 transition-opacity"
                 aria-label="BBB Accredited Business - Click to verify BBB accreditation and to see a BBB report"
               >
-                <img 
-                  src={bbbBadge} 
+                <OptimizedImage 
+                  src="/images/bbb-accredited-business.png" 
                   alt="BBB Accredited Business - Bloombrite Cleaning" 
                   className="h-16 w-auto"
+                  width={150}
+                  height={100}
                 />
               </a>
             </div>

@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
 import { CheckCircle, Shield, Clock, Zap } from 'lucide-react';
 import bitcoinLogo from '@/assets/bitcoin-logo.svg';
+import OptimizedImage from '@/components/shared/OptimizedImage';
 
 const BitcoinPayments = () => {
   useEffect(() => {
@@ -73,7 +74,7 @@ const BitcoinPayments = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="flex justify-center mb-6">
-                <img src={bitcoinLogo} alt="Bitcoin Logo" className="w-16 h-16" loading="lazy" decoding="async" width="64" height="64" />
+                <OptimizedImage src={bitcoinLogo} alt="Bitcoin cryptocurrency logo for secure payment processing" className="w-16 h-16" width={64} height={64} />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
                 Pay with <span className="text-orange-500">Bitcoin</span> for Professional Cleaning Services

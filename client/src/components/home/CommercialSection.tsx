@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'wouter';
-import livingRoomImage from '@/assets/living room deep cleaning.jpg';
-import kitchenImage from '@/assets/kitchen-post-cleaned.jpg';
+import OptimizedImage from '@/components/shared/OptimizedImage';
 
 const CommercialSection = () => {
   return (
@@ -19,10 +18,12 @@ const CommercialSection = () => {
           {/* Office Cleaning */}
           <div className="bg-neutral-50 rounded-lg overflow-hidden shadow-lg">
             <div className="relative h-80">
-              <img 
-                src={livingRoomImage} 
-                alt="Office Cleaning Services" 
+              <OptimizedImage 
+                src="/images/living room deep cleaning.jpg" 
+                alt="Professional office cleaning services showing a spotless living room with modern furniture" 
                 className="w-full h-full object-cover"
+                width={1000}
+                height={750}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
                 <div className="p-6 text-white">
@@ -63,10 +64,12 @@ const CommercialSection = () => {
           {/* Commercial Spaces */}
           <div className="bg-neutral-50 rounded-lg overflow-hidden shadow-lg">
             <div className="relative h-80">
-              <img 
-                src={kitchenImage} 
-                alt="Commercial Space Cleaning" 
+              <OptimizedImage 
+                src="/images/kitchen-post.jpg" 
+                alt="Commercial kitchen cleaning services showing a pristine professional kitchen" 
                 className="w-full h-full object-cover"
+                width={800}
+                height={600}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
                 <div className="p-6 text-white">

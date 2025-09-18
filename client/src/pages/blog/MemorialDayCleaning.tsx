@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
-import livingRoomImage from '@/assets/living room deep cleaning.jpg';
+import OptimizedImage from '@/components/shared/OptimizedImage';
 import { MemorialDayCleaningSchema } from '@/lib/holidaySchema';
 
 const MemorialDayCleaning = () => {
@@ -16,7 +16,7 @@ const MemorialDayCleaning = () => {
       <SeoHead 
         title="Memorial Day Cleaning Guide: Prepare Your Home for Summer Gatherings | Bloombrite Cleaning"
         description="Get your home ready for Memorial Day weekend parties with our comprehensive cleaning checklist. Professional tips for indoor and outdoor spaces to impress your guests."
-        ogImage={livingRoomImage}
+        ogImage="/images/living room deep cleaning.jpg"
       />
       <MemorialDayCleaningSchema />
       
@@ -41,10 +41,12 @@ const MemorialDayCleaning = () => {
             </div>
             
             <div className="w-full rounded-lg overflow-hidden mb-10">
-              <img 
-                src={livingRoomImage} 
+              <OptimizedImage 
+                src="/images/living room deep cleaning.jpg" 
                 alt="Professionally cleaned living room ready for Memorial Day guests with spotless surfaces" 
                 className="w-full h-auto object-cover"
+                width={1000}
+                height={750}
               />
             </div>
           </div>

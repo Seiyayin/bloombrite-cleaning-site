@@ -10,6 +10,12 @@ const FloatingTextChat = () => {
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
+      {/* Message above chat button */}
+      <div className="absolute bottom-full right-0 mb-3 px-3 py-2 bg-white text-gray-800 text-sm rounded-lg shadow-lg border whitespace-nowrap">
+        Text us now to get help right away
+        <div className="absolute top-full right-4 border-l-4 border-r-4 border-t-4 border-transparent border-t-white"></div>
+      </div>
+      
       <button
         onClick={handleTextClick}
         onMouseEnter={() => setIsHovered(true)}

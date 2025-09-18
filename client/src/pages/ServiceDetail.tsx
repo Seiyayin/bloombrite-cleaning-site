@@ -186,7 +186,7 @@ const ServiceDetail = () => {
                       href={`/services/${relatedService.slug}`} 
                       className="text-primary font-medium hover:text-primary-dark flex items-center"
                     >
-                      Learn More About {relatedService.title}
+                      View {relatedService.title} Service Details
                       <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                       </svg>

@@ -150,7 +150,7 @@ const Checklist = () => {
                     href="/services/general-cleaning" 
                     className="inline-block mt-4 px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition"
                   >
-                    Learn More
+                    View Standard Cleaning Service
                   </Link>
                 </div>
 
@@ -169,7 +169,7 @@ const Checklist = () => {
                     href="/services/deep-cleaning" 
                     className="inline-block mt-4 px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition"
                   >
-                    Learn More
+                    View Deep Cleaning Service
                   </Link>
                 </div>
               </div>

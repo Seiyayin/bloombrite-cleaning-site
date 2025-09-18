@@ -90,7 +90,7 @@ const TestimonialsSection = () => {
         
         <div className="mt-12 text-center">
           <Link href="/reviews" className="inline-block px-8 py-3 bg-white text-primary border border-primary font-semibold rounded-md hover:bg-neutral-50 transition">
-            Read More Reviews
+            View All Customer Reviews
           </Link>
         </div>
       </div>

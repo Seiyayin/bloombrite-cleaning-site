@@ -90,7 +90,7 @@ const WestBloomfieldBlog = () => {
                         href={`/blog/cities/west-bloomfield/${post.slug}`}
                         className="text-primary font-medium hover:text-primary-dark transition-colors"
                       >
-                        Read More →
+                        Read Full Article →
                       </Link>
                     </div>
                   </div>
@@ -138,7 +138,7 @@ const WestBloomfieldBlog = () => {
                 href="/locations/west-bloomfield"
                 className="inline-block px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-orange-600 transition-colors"
               >
-                Learn More About Our West Bloomfield Services
+                View West Bloomfield Cleaning Services
               </Link>
             </div>
           </div>

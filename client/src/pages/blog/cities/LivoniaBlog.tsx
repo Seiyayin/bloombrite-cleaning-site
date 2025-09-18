@@ -90,7 +90,7 @@ const LivoniaBlog = () => {
                         href={`/blog/cities/livonia/${post.slug}`}
                         className="text-primary font-medium hover:text-primary-dark transition-colors"
                       >
-                        Read More →
+                        Read Full Article →
                       </Link>
                     </div>
                   </div>
@@ -138,7 +138,7 @@ const LivoniaBlog = () => {
                 href="/locations/livonia"
                 className="inline-block px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-orange-600 transition-colors"
               >
-                Learn More About Our Livonia Services
+                View Livonia Cleaning Services
               </Link>
             </div>
           </div>

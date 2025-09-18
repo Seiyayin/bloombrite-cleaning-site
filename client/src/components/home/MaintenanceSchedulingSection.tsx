@@ -92,7 +92,7 @@ const MaintenanceSchedulingSection = () => {
               href="/services/recurring-cleaning" 
               className="inline-block px-8 py-4 bg-white text-primary border-2 border-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors"
             >
-              Learn More About Maintenance Cleaning
+              View Recurring Cleaning Services
             </Link>
           </div>
         </div>

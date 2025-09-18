@@ -92,7 +92,7 @@ const WixomBlog = () => {
                         href={`/blog/cities/wixom/${post.slug}`}
                         className="text-primary font-medium hover:text-primary-dark transition-colors"
                       >
-                        Read More →
+                        Read Full Article →
                       </Link>
                     </div>
                   </div>
@@ -141,7 +141,7 @@ const WixomBlog = () => {
                 href="/locations/wixom"
                 className="inline-block px-8 py-4 bg-primary text-white font-bold rounded-md hover:bg-orange-600 transition-colors"
               >
-                Learn More About Our Wixom Services
+                View Wixom Cleaning Services
               </Link>
             </div>
           </div>

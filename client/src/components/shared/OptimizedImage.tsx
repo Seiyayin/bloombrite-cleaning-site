@@ -66,8 +66,12 @@ const OptimizedImage = ({
     .map(variant => `${encodeURI(variant.url)} ${variant.width}w`)
     .join(', ');
   
-  // Get the best fallback URL (largest available)
-  const fallbackSrc = encodeURI(imageInfo.fallback[imageInfo.fallback.length - 1]?.url || src);
+  // Get the best fallback URL (largest width available)
+  const fallbackSrc = encodeURI(
+    imageInfo.fallback.reduce((max, current) => 
+      current.width > max.width ? current : max
+    )?.url || src
+  );
   
   // Get fallback image type
   const fallbackType = imageInfo.fallback[0]?.format === 'png' ? 'image/png' : 'image/jpeg';

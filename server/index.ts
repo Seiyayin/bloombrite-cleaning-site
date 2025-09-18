@@ -3,6 +3,7 @@ import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 import compression from "compression";
 import { imageOptimizer } from "./image-optimizer";
+import path from "path";
 
 const app = express();
 
@@ -14,6 +15,20 @@ app.use(compression({
     if (req.headers['x-no-compression']) return false;
     return compression.filter(req, res);
   }
+}));
+
+// Serve static images directly from public/images with proper content types
+const publicDir = path.resolve(process.cwd(), 'public');
+app.use('/images', express.static(path.join(publicDir, 'images'), {
+  fallthrough: false,
+  immutable: true,
+  maxAge: '1y',
+  setHeaders: (res, filePath) => {
+    const ext = path.extname(filePath).toLowerCase();
+    if (ext === '.webp') res.type('image/webp');
+    else if (ext === '.jpg' || ext === '.jpeg') res.type('image/jpeg');
+    else if (ext === '.png') res.type('image/png');
+  },
 }));
 
 // Use image optimizer middleware for image requests

@@ -11,6 +11,17 @@ const Header = () => {
     return location === path ? 'text-primary' : 'hover:text-primary';
   };
 
+  const getNavLinkClasses = (path: string) => {
+    const isHomePage = location === '/';
+    const isCurrentPage = location === path || (path === '/services' && location.startsWith('/services')) || (path === '/locations' && location.startsWith('/locations'));
+    
+    if (isHomePage) {
+      return `font-medium transition text-white hover:text-yellow-400 ${isCurrentPage ? 'text-yellow-400' : ''}`;
+    } else {
+      return `font-medium transition text-gray-800 hover:text-primary ${isCurrentPage ? 'text-primary' : ''}`;
+    }
+  };
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -18,7 +29,7 @@ const Header = () => {
   return (
     <header className={`sticky top-0 z-50 ${location === '/' ? 'bg-transparent' : 'bg-white'}`}>
       <div className="container mx-auto px-4 py-3">
-        <nav className="bg-white/95 backdrop-blur rounded-full shadow-lg border border-neutral-200 px-4 md:px-6 py-2 md:py-3 flex items-center justify-between">
+        <nav className="flex items-center justify-between">
         <Link href="/" className="block">
           <OptimizedImage 
             src="/images/bloombrite-logo.png" 
@@ -32,9 +43,9 @@ const Header = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6 flex-1 justify-center">
-          <Link href="/" className={`font-medium transition ${isActive('/')}`}>Home</Link>
+          <Link href="/" className={getNavLinkClasses('/')}>Home</Link>
           <div className="relative group">
-            <button className={`flex items-center font-medium transition ${isActive('/services')}`}>
+            <button className={`flex items-center ${getNavLinkClasses('/services')}`}>
               Services
               <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -54,7 +65,7 @@ const Header = () => {
             </div>
           </div>
           <div className="relative group">
-            <button className={`flex items-center font-medium transition ${isActive('/locations')}`}>
+            <button className={`flex items-center ${getNavLinkClasses('/locations')}`}>
               Locations
               <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -75,16 +86,16 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <Link href="/blog" className={`font-medium transition ${isActive('/blog')}`}>Blog</Link>
-          <Link href="/reviews" className={`font-medium transition ${isActive('/reviews')}`}>Reviews</Link>
-          <Link href="/faq" className={`font-medium transition ${isActive('/faq')}`}>FAQ</Link>
-          <Link href="/careers" className={`font-medium transition ${isActive('/careers')}`}>Careers</Link>
-          <Link href="/bitcoin-payments" className={`font-medium transition ${isActive('/bitcoin-payments')} text-orange-500 hover:text-orange-600`}>₿ Pay with Bitcoin</Link>
-          <Link href="/contact" className={`font-medium transition ${isActive('/contact')}`}>Contact</Link>
+          <Link href="/blog" className={getNavLinkClasses('/blog')}>Blog</Link>
+          <Link href="/reviews" className={getNavLinkClasses('/reviews')}>Reviews</Link>
+          <Link href="/faq" className={getNavLinkClasses('/faq')}>FAQ</Link>
+          <Link href="/careers" className={getNavLinkClasses('/careers')}>Careers</Link>
+          <Link href="/bitcoin-payments" className={`font-medium transition ${location === '/' ? 'text-yellow-400 hover:text-yellow-300' : 'text-orange-500 hover:text-orange-600'} ${location === '/bitcoin-payments' ? 'text-orange-600' : ''}`}>₿ Pay with Bitcoin</Link>
+          <Link href="/contact" className={getNavLinkClasses('/contact')}>Contact</Link>
         </div>
         
         <div className="flex items-center space-x-3">
-          <a href="tel:9474654217" className="hidden md:block px-4 py-2 border border-gray-300 hover:border-primary hover:text-primary text-gray-700 font-medium rounded-full transition" data-testid="call-now-button" aria-label="Call us now">
+          <a href="tel:9474654217" className={`hidden md:block px-4 py-2 border font-medium rounded-full transition ${location === '/' ? 'border-white hover:border-yellow-400 hover:text-yellow-400 text-white' : 'border-gray-300 hover:border-primary hover:text-primary text-gray-700'}`} data-testid="call-now-button" aria-label="Call us now">
             CALL NOW
           </a>
           <Link href="/quote" className="hidden md:block px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full transition shadow-sm" data-testid="get-quote-button">

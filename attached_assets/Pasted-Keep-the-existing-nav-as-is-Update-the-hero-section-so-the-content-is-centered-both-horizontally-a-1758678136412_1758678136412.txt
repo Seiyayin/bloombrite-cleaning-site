@@ -1,0 +1,67 @@
+Keep the existing nav as-is.
+
+Update the hero section so the content is centered both horizontally and vertically with text centered.
+
+Replace any items-start, justify-start, text-left, md:text-left, grid two-column classes, or left-aligned containers with centered layout.
+
+Use a single column with flex (or grid) and center utilities.
+
+Ensure the hero image still covers the background.
+
+Tailwind changes (concept):
+
+Parent hero container: relative min-h-[80vh] bg-cover bg-center
+
+Content wrapper: relative z-10 max-w-5xl mx-auto px-6 min-h-[80vh] flex flex-col items-center justify-center text-center gap-6
+
+Remove any md:grid-cols-2, justify-start, items-start, text-left.
+
+Drop-in example (React/Tailwind):
+
+<section className="relative min-h-[80vh]">
+  {/* Background image */}
+  <div className="absolute inset-0">
+    <Image src="/images/hero.jpg" alt="Kitchen" fill priority className="object-cover" />
+    <div className="absolute inset-0 bg-black/40" />
+  </div>
+
+  {/* Centered content */}
+  <div className="relative z-10 max-w-5xl mx-auto px-6 min-h-[80vh] flex flex-col items-center justify-center text-center gap-6">
+    <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white/90 backdrop-blur">
+      ★ MOST TRUSTED IN METRO DETROIT
+    </span>
+
+    <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-white">
+      Trusted Cleaning Experts<br />for the Metro Detroit Area.
+    </h1>
+
+    <p className="text-base md:text-xl text-white/85 max-w-3xl">
+      Fast, friendly, affordable. Licensed & insured. Same-day service available.
+    </p>
+
+    <div className="flex flex-wrap items-center justify-center gap-4">
+      <Link href="#quote" className="rounded-full px-6 py-3 font-semibold bg-yellow-400 text-black">
+        GET A QUOTE NOW
+      </Link>
+      <a href="tel:19474654217" className="rounded-full px-6 py-3 font-semibold border border-white/50 text-white">
+        (947) 465-4217
+      </a>
+    </div>
+
+    <div className="flex items-center justify-center gap-6 text-white/90">
+      {/* social icons here */}
+      <a aria-label="Google" href="#" className="hover:opacity-80">G</a>
+      <a aria-label="Facebook" href="#" className="hover:opacity-80">f</a>
+      <a aria-label="TikTok" href="#" className="hover:opacity-80">♪</a>
+    </div>
+  </div>
+</section>
+
+
+Notes for the agent:
+
+If the current hero uses a grid like grid md:grid-cols-2, switch to a single column or add md:grid-cols-1 and place-items-center.
+
+Remove any extra left padding/margins on the hero content container (pl-*, ml-*).
+
+Keep the overlay (bg-black/40) so white text remains readable.

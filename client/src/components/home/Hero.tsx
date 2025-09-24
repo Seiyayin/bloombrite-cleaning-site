@@ -1,9 +1,10 @@
 import { Link } from 'wouter';
+import { FaFacebook, FaGoogle, FaTiktok } from 'react-icons/fa';
 import heroImage from '@assets/generated_images/Beautiful_modern_kitchen_interior_08df50e4.png';
 
 const Hero = () => {
   return (
-    <section className="relative text-white overflow-hidden min-h-screen flex items-center pt-0">
+    <section className="relative text-white overflow-hidden min-h-screen flex items-center justify-center pt-0">
       {/* Beautiful Kitchen Background with Enhanced Text Readability */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full"
@@ -14,7 +15,7 @@ const Hero = () => {
       ></div>
       
       <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
           {/* Rating Pill */}
           <div className="inline-flex items-center bg-white/10 backdrop-blur rounded-full px-4 py-2 mb-6">
             <div className="flex text-yellow-400 mr-2">
@@ -68,6 +69,19 @@ const Hero = () => {
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
               (947) 465-4217
+            </a>
+          </div>
+
+          {/* Social Media Icons */}
+          <div className="flex items-center justify-center space-x-6 mt-8">
+            <a href="https://www.google.com/search?q=Bloombrite+Cleaning" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition-colors" data-testid="google-link" aria-label="Find us on Google">
+              <FaGoogle className="w-8 h-8" />
+            </a>
+            <a href="https://www.facebook.com/BloombriteCleaning" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition-colors" data-testid="facebook-link" aria-label="Follow us on Facebook">
+              <FaFacebook className="w-8 h-8" />
+            </a>
+            <a href="https://www.tiktok.com/@bloombritecleaning" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition-colors" data-testid="tiktok-link" aria-label="Follow us on TikTok">
+              <FaTiktok className="w-8 h-8" />
             </a>
           </div>
         </div>

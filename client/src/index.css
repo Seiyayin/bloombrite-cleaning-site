@@ -70,6 +70,11 @@
   body.homepage main {
     padding-top: 0 !important;
   }
+
+  /* Remove border from header */
+  header {
+    border-bottom: none !important;
+  }
 }
 
 /* Accessibility improvements for better contrast */

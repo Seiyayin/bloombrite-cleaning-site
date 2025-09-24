@@ -24,11 +24,11 @@ const Hero = () => {
         </span>
 
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-white">
-          Trusted Cleaning Experts<br />for the Metro Detroit Area.
+          Professional House Cleaning & Maid Services in Metro Detroit, Novi, Wixom, Milford & Beyond
         </h1>
 
-        <p className="text-base md:text-xl text-white/85 max-w-3xl">
-          Fast, friendly, affordable. Licensed & insured. Same-day service available.
+        <p className="text-base md:text-xl text-white/85 max-w-4xl">
+          Bloombrite Cleaning provides top-rated residential and commercial cleaning across Metro Detroit, including Novi, Wixom, Farmington Hills, and Livonia. Our licensed, insured cleaners specialize in deep cleaning, move-in/move-out cleaning, recurring maid service, and office cleaning. Affordable pricing, eco-friendly products, and same-day service available.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a 
@@ -37,8 +37,10 @@ const Hero = () => {
             rel="noopener noreferrer" 
             className="rounded-full px-6 py-3 font-semibold bg-yellow-400 text-black hover:bg-yellow-500 transition"
             data-testid="get-quote-now-button"
+            title="Get free cleaning quote for Metro Detroit house cleaning services"
+            aria-label="Get A Cleaning Quote - Professional house cleaning services in Metro Detroit"
           >
-            GET A QUOTE NOW
+            👉 Get A Cleaning Quote
           </a>
           <a href="tel:9474654217" className="rounded-full px-6 py-3 font-semibold border border-white/50 text-white hover:bg-white hover:text-black transition" data-testid="phone-button" aria-label="Call us now">
             (947) 465-4217

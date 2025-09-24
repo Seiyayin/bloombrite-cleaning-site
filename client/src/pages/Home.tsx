@@ -37,7 +37,7 @@ const Home = () => {
       />
       <LocalBusinessSchema />
       
-      <main className="pt-0">
+      <main>
         <Hero />
         <ServicesSection />
         <MaintenanceSchedulingSection />

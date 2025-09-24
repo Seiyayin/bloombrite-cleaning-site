@@ -3,7 +3,7 @@ import heroImage from '@assets/generated_images/Beautiful_modern_kitchen_interio
 
 const Hero = () => {
   return (
-    <section className="relative text-white overflow-hidden min-h-screen flex items-center">
+    <section className="relative text-white overflow-hidden min-h-screen flex items-center pt-0">
       {/* Beautiful Kitchen Background with Enhanced Text Readability */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full"

@@ -21,9 +21,9 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white">
+    <header className={`${location === '/' ? 'absolute top-0 left-0 w-full z-50 bg-transparent' : 'sticky top-0 z-50 bg-white'}`}>
       <div className="container mx-auto px-4 py-3">
-        <nav className="flex items-center justify-between">
+        <nav className={`flex items-center justify-between ${location === '/' ? 'bg-white/95 backdrop-blur rounded-full shadow-lg px-4 md:px-6 py-2 md:py-3' : ''}`}>
           <Link href="/" className="block">
           <OptimizedImage 
             src="/images/bloombrite-logo.png" 

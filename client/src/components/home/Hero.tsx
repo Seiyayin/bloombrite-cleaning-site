@@ -3,19 +3,17 @@ import heroImage from '@assets/generated_images/Beautiful_modern_kitchen_interio
 
 const Hero = () => {
   return (
-    <section className="relative text-white overflow-hidden -mt-20 pt-20">
+    <section className="relative text-white overflow-hidden min-h-screen flex items-center">
       {/* Beautiful Kitchen Background with Enhanced Text Readability */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url('${heroImage}')`,
-          willChange: 'transform',
-          top: '-100px',
-          height: 'calc(100% + 100px)'
+          willChange: 'transform'
         }}
       ></div>
       
-      <div className="container mx-auto px-4 pt-24 pb-16 md:pt-28 md:pb-20 relative z-10">
+      <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Rating Pill */}
           <div className="inline-flex items-center bg-white/10 backdrop-blur rounded-full px-4 py-2 mb-6">

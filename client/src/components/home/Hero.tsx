@@ -80,7 +80,7 @@ const Hero = () => {
             <a href="https://www.facebook.com/BloombriteCleaning" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition-colors" data-testid="facebook-link" aria-label="Follow us on Facebook">
               <FaFacebook className="w-8 h-8" />
             </a>
-            <a href="https://www.tiktok.com/@bloombritecleaning" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition-colors" data-testid="tiktok-link" aria-label="Follow us on TikTok">
+            <a href="https://www.tiktok.com/@bloombrite.cleani" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition-colors" data-testid="tiktok-link" aria-label="Follow us on TikTok">
               <FaTiktok className="w-8 h-8" />
             </a>
           </div>

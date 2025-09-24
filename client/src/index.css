@@ -66,9 +66,9 @@
     @apply bg-background;
   }
 
-  /* Transparent background for homepage */
-  body.homepage {
-    @apply bg-transparent;
+  /* Override critical CSS padding for homepage main */
+  body.homepage main {
+    padding-top: 0 !important;
   }
 }
 

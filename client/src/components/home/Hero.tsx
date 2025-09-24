@@ -15,7 +15,7 @@ const Hero = () => {
       ></div>
       
       <div className="w-full h-full flex items-center justify-center relative z-10">
-        <div className="max-w-4xl mx-auto px-4 text-center flex flex-col items-center">
+        <div className="w-full max-w-6xl px-4 text-center flex flex-col items-center justify-center">
           {/* Rating Pill */}
           <div className="inline-flex items-center bg-white/10 backdrop-blur rounded-full px-4 py-2 mb-6">
             <div className="flex text-yellow-400 mr-2">

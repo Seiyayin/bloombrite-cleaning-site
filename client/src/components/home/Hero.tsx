@@ -3,13 +3,15 @@ import heroImage from '@assets/generated_images/Beautiful_modern_kitchen_interio
 
 const Hero = () => {
   return (
-    <section className="relative text-white overflow-hidden -mt-20">
+    <section className="relative text-white overflow-hidden -mt-20 pt-20">
       {/* Beautiful Kitchen Background with Enhanced Text Readability */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url('${heroImage}')`,
-          willChange: 'transform'
+          willChange: 'transform',
+          top: '-100px',
+          height: 'calc(100% + 100px)'
         }}
       ></div>
       

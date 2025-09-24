@@ -22,8 +22,8 @@ const Header = () => {
 
   return (
     <header className={`sticky top-0 z-50 ${location === '/' ? 'bg-transparent' : 'bg-white'}`}>
-      <div className={`container mx-auto px-4 ${location === '/' ? 'py-3 bg-transparent' : 'py-3'}`}>
-        <nav className={`backdrop-blur rounded-full shadow-lg px-4 md:px-6 py-2 md:py-3 flex items-center justify-between ${location === '/' ? 'bg-transparent border-0' : 'bg-white/95 border border-neutral-200'}`}>
+      <div className={`container mx-auto px-4 ${location === '/' ? 'py-3' : 'py-3'}`}>
+        <nav className={`backdrop-blur rounded-full shadow-lg px-4 md:px-6 py-2 md:py-3 flex items-center justify-between ${location === '/' ? 'bg-white/80' : 'bg-white/95 border border-neutral-200'}`}>
         <Link href="/" className="block">
           <OptimizedImage 
             src="/images/bloombrite-logo.png" 

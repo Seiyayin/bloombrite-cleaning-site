@@ -8,57 +8,66 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('${heroImage}')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url('${heroImage}')`,
           willChange: 'transform'
         }}
       ></div>
       
       <div className="container mx-auto px-4 pt-20 pb-16 md:pt-24 md:pb-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-lg">
-            <span className="text-orange-400 drop-shadow-md">Professional House Cleaning & Commercial Cleaning</span> in Novi, Wixom, Milford & South Lyon
+          {/* Rating Pill */}
+          <div className="inline-flex items-center bg-white/10 backdrop-blur rounded-full px-4 py-2 mb-6">
+            <div className="flex text-yellow-400 mr-2">
+              {[...Array(5)].map((_, i) => (
+                <span key={i} className="text-lg">★</span>
+              ))}
+            </div>
+            <span className="text-white font-medium text-sm uppercase tracking-wide">
+              Most Trusted in Metro Detroit • Fast, Friendly, Affordable
+            </span>
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8 drop-shadow-lg">
+            <span className="text-white drop-shadow-md">Trusted Cleaning Experts</span><br />
+            <span className="text-white drop-shadow-md">for the Metro Detroit Area.</span>
           </h1>
-          <h2 className="text-xl md:text-2xl mb-8 text-gray-100 drop-shadow-md font-medium">
-            Expert residential and commercial cleaning services in Novi, Milford, Wixom, South Lyon, Bloomfield Hills, Livonia, Farmington Hills and throughout Oakland County with guaranteed satisfaction.
-          </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          
+          {/* Three Feature Points */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 mb-8">
+            <div className="flex items-center text-white">
+              <svg className="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span className="font-medium">Locally owned and operated</span>
+            </div>
+            <div className="flex items-center text-white">
+              <svg className="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+              </svg>
+              <span className="font-medium">Serving Metro Detroit + 90 minute radius</span>
+            </div>
+            <div className="flex items-center text-white">
+              <svg className="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+              </svg>
+              <span className="font-medium">Same day service available</span>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="https://clienthub.getjobber.com/client_hubs/954e0464-c2ca-4376-b2e2-3d401431c7bf/public/work_request/new?source=social_media" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="px-8 py-4 bg-orange-500 text-white font-bold rounded-md hover:bg-orange-600 active:bg-orange-700 transition shadow-lg text-center"
+              className="px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-black font-bold rounded-full transition shadow-lg text-center"
+              data-testid="get-quote-now-button"
             >
-              Get a Free Quote
+              GET A QUOTE NOW
             </a>
-            <Link href="/services" className="px-8 py-4 border-2 border-orange-400 text-orange-400 font-bold rounded-md hover:bg-orange-400 hover:text-white transition shadow-lg text-center">
-              View All Services
-            </Link>
-          </div>
-          <div className="flex items-center justify-center mb-6">
-            <span className="text-yellow-400 text-xl mr-2">★</span>
-            <span className="font-medium text-gray-200">4.9/5 Rating • 100% Satisfaction</span>
-          </div>
-          
-          {/* Social Media Icons */}
-          <div className="flex items-center justify-center gap-4">
-            <span className="text-gray-300 text-sm mr-2">Follow us:</span>
-            <a
-              href="https://share.google/ljLXM2kTuLhatz3r1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-yellow-400 transition-colors duration-200"
-              aria-label="View our Google Business Profile"
-            >
-              <i className="fab fa-google text-2xl"></i>
-            </a>
-            <a
-              href="https://www.tiktok.com/@bloombrite.cleani?_t=ZT-8zb9vTx6sAf&_r=1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-pink-400 transition-colors duration-200"
-              aria-label="Follow us on TikTok"
-            >
-              <i className="fab fa-tiktok text-2xl"></i>
+            <a href="tel:9474654217" className="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-black transition shadow-lg text-center flex items-center justify-center" data-testid="phone-button" aria-label="Call us now">
+              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              (947) 465-4217
             </a>
           </div>
         </div>

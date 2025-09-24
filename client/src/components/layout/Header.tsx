@@ -16,8 +16,9 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white">
-      <nav className="container mx-auto px-4 py-0 flex items-center justify-between">
+    <header className={`sticky top-0 z-50 ${location === '/' ? 'bg-transparent' : 'bg-white'}`}>
+      <div className="container mx-auto px-4 py-3">
+        <nav className="bg-white/95 backdrop-blur rounded-full shadow-lg border border-neutral-200 px-4 md:px-6 py-2 md:py-3 flex items-center justify-between">
         <Link href="/" className="block">
           <OptimizedImage 
             src="/images/bloombrite-logo.png" 
@@ -30,7 +31,7 @@ const Header = () => {
         </Link>
         
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-6 flex-1 justify-center">
           <Link href="/" className={`font-medium transition ${isActive('/')}`}>Home</Link>
           <div className="relative group">
             <button className={`flex items-center font-medium transition ${isActive('/services')}`}>
@@ -39,7 +40,7 @@ const Header = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
-            <div className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
               <div className="py-2 px-4 space-y-2">
                 <Link href="/services/general-cleaning" className="block py-2 hover:text-primary transition">General Cleaning</Link>
                 <Link href="/services/deep-cleaning" className="block py-2 hover:text-primary transition">Deep Cleaning</Link>
@@ -59,7 +60,7 @@ const Header = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
-            <div className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
               <div className="py-2 px-4 space-y-2">
                 <Link href="/locations/wixom" className="block py-2 hover:text-primary transition">Wixom, MI</Link>
                 <Link href="/locations/novi" className="block py-2 hover:text-primary transition">Novi, MI</Link>
@@ -82,9 +83,12 @@ const Header = () => {
           <Link href="/contact" className={`font-medium transition ${isActive('/contact')}`}>Contact</Link>
         </div>
         
-        <div className="flex items-center space-x-4">
-          <Link href="/quote" className="hidden md:block px-6 py-2 bg-accent hover:bg-orange-600 active:bg-orange-700 text-white font-semibold rounded-md transition shadow-sm">
-            Get a Quote
+        <div className="flex items-center space-x-3">
+          <a href="tel:9474654217" className="hidden md:block px-4 py-2 border border-gray-300 hover:border-primary hover:text-primary text-gray-700 font-medium rounded-full transition" data-testid="call-now-button" aria-label="Call us now">
+            CALL NOW
+          </a>
+          <Link href="/quote" className="hidden md:block px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full transition shadow-sm" data-testid="get-quote-button">
+            GET A QUOTE
           </Link>
           <button 
             onClick={toggleMobileMenu}
@@ -96,7 +100,8 @@ const Header = () => {
             </svg>
           </button>
         </div>
-      </nav>
+        </nav>
+      </div>
       
       {/* Mobile Navigation */}
       <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />

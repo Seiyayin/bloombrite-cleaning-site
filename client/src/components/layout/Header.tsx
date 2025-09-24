@@ -13,13 +13,7 @@ const Header = () => {
 
   const getNavLinkClasses = (path: string) => {
     const isCurrentPage = location === path || (path === '/services' && location.startsWith('/services')) || (path === '/locations' && location.startsWith('/locations'));
-    const baseClasses = 'font-medium transition';
-    
-    if (location === '/') {
-      return `${baseClasses} text-white hover:text-yellow-400 drop-shadow-lg ${isCurrentPage ? 'text-yellow-400' : ''}`;
-    } else {
-      return `${baseClasses} text-gray-800 hover:text-primary ${isCurrentPage ? 'text-primary' : ''}`;
-    }
+    return `font-medium transition text-gray-800 hover:text-primary ${isCurrentPage ? 'text-primary' : ''}`;
   };
 
   const toggleMobileMenu = () => {
@@ -27,10 +21,10 @@ const Header = () => {
   };
 
   return (
-    <header className={`${location === '/' ? 'absolute top-0 left-0 w-full z-50 bg-transparent' : 'sticky top-0 z-50 bg-white'}`}>
+    <header className="sticky top-0 z-50 bg-white">
       <div className="container mx-auto px-4 py-3">
-        <nav className={`flex items-center justify-between ${location === '/' ? 'bg-transparent' : 'backdrop-blur rounded-full shadow-lg bg-white/95 border border-neutral-200 px-4 md:px-6 py-2 md:py-3'}`}>
-        <Link href="/" className="block">
+        <nav className="flex items-center justify-between">
+          <Link href="/" className="block">
           <OptimizedImage 
             src="/images/bloombrite-logo.png" 
             alt="Bloombrite Cleaning - Professional House Cleaning Services" 
@@ -90,12 +84,12 @@ const Header = () => {
           <Link href="/reviews" className={getNavLinkClasses('/reviews')}>Reviews</Link>
           <Link href="/faq" className={getNavLinkClasses('/faq')}>FAQ</Link>
           <Link href="/careers" className={getNavLinkClasses('/careers')}>Careers</Link>
-          <Link href="/bitcoin-payments" className={`font-medium transition ${location === '/' ? 'text-yellow-400 hover:text-yellow-300 drop-shadow-lg' : 'text-orange-500 hover:text-orange-600'} ${location === '/bitcoin-payments' ? 'text-orange-600' : ''}`}>₿ Pay with Bitcoin</Link>
+          <Link href="/bitcoin-payments" className={`font-medium transition text-orange-500 hover:text-orange-600 ${location === '/bitcoin-payments' ? 'text-orange-600' : ''}`}>₿ Pay with Bitcoin</Link>
           <Link href="/contact" className={getNavLinkClasses('/contact')}>Contact</Link>
         </div>
         
         <div className="flex items-center space-x-3">
-          <a href="tel:9474654217" className={`hidden md:block px-4 py-2 font-medium rounded-full transition ${location === '/' ? 'border-2 border-white text-white hover:bg-white hover:text-black drop-shadow-lg' : 'border border-gray-300 hover:border-primary hover:text-primary text-gray-700'}`} data-testid="call-now-button" aria-label="Call us now">
+          <a href="tel:9474654217" className="hidden md:block px-4 py-2 border border-gray-300 hover:border-primary hover:text-primary text-gray-700 font-medium rounded-full transition" data-testid="call-now-button" aria-label="Call us now">
             CALL NOW
           </a>
           <Link href="/quote" className="hidden md:block px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full transition shadow-sm" data-testid="get-quote-button">
@@ -103,7 +97,7 @@ const Header = () => {
           </Link>
           <button 
             onClick={toggleMobileMenu}
-            className={`md:hidden ${location === '/' ? 'text-white drop-shadow-lg' : 'text-neutral-800'}`}
+            className="md:hidden text-neutral-800"
             aria-label="Toggle mobile menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -58,7 +58,17 @@
   html, body {
     margin: 0;
     padding: 0;
-    @apply font-sans antialiased bg-background text-foreground;
+    @apply font-sans antialiased text-foreground;
+  }
+
+  /* Default background for non-home pages */
+  body {
+    @apply bg-background;
+  }
+
+  /* Transparent background for homepage */
+  body.homepage {
+    @apply bg-transparent;
   }
 }
 

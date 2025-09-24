@@ -18,9 +18,14 @@ import { LocalBusinessSchema } from '@/lib/schema';
 import teamImage from '@/assets/team.jpg';
 
 const Home = () => {
-  // Scroll to top when the page loads
+  // Scroll to top when the page loads and set body class for homepage
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.body.classList.add('homepage');
+    
+    return () => {
+      document.body.classList.remove('homepage');
+    };
   }, []);
 
   return (

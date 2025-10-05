@@ -1,27 +1,182 @@
 [
-  { "cityId": "wixom", "serviceId": "house-cleaning" },
-  { "cityId": "wixom", "serviceId": "deep-cleaning" },
-  { "cityId": "wixom", "serviceId": "move-out-cleaning" },
-  { "cityId": "wixom", "serviceId": "recurring-cleaning" },
-  { "cityId": "wixom", "serviceId": "commercial-cleaning" },
-  { "cityId": "novi", "serviceId": "house-cleaning" },
-  { "cityId": "novi", "serviceId": "deep-cleaning" },
-  { "cityId": "novi", "serviceId": "move-out-cleaning" },
-  { "cityId": "novi", "serviceId": "recurring-cleaning" },
-  { "cityId": "novi", "serviceId": "commercial-cleaning" },
-  { "cityId": "milford", "serviceId": "house-cleaning" },
-  { "cityId": "milford", "serviceId": "deep-cleaning" },
-  { "cityId": "milford", "serviceId": "move-out-cleaning" },
-  { "cityId": "milford", "serviceId": "recurring-cleaning" },
-  { "cityId": "milford", "serviceId": "commercial-cleaning" },
-  { "cityId": "commerce-township", "serviceId": "house-cleaning" },
-  { "cityId": "commerce-township", "serviceId": "deep-cleaning" },
-  { "cityId": "commerce-township", "serviceId": "move-out-cleaning" },
-  { "cityId": "commerce-township", "serviceId": "recurring-cleaning" },
-  { "cityId": "commerce-township", "serviceId": "commercial-cleaning" },
-  { "cityId": "south-lyon", "serviceId": "house-cleaning" },
-  { "cityId": "south-lyon", "serviceId": "deep-cleaning" },
-  { "cityId": "south-lyon", "serviceId": "move-out-cleaning" },
-  { "cityId": "south-lyon", "serviceId": "recurring-cleaning" },
-  { "cityId": "south-lyon", "serviceId": "commercial-cleaning" }
+  {
+    "cityId": "wixom",
+    "serviceId": "house-cleaning"
+  },
+  {
+    "cityId": "wixom",
+    "serviceId": "deep-cleaning"
+  },
+  {
+    "cityId": "wixom",
+    "serviceId": "move-out-cleaning"
+  },
+  {
+    "cityId": "wixom",
+    "serviceId": "recurring-maid-service"
+  },
+  {
+    "cityId": "wixom",
+    "serviceId": "office-cleaning"
+  },
+  {
+    "cityId": "wixom",
+    "serviceId": "apartment-cleaning"
+  },
+  {
+    "cityId": "wixom",
+    "serviceId": "airbnb-turnover-cleaning"
+  },
+  {
+    "cityId": "wixom",
+    "serviceId": "post-construction-cleaning"
+  },
+  {
+    "cityId": "wixom",
+    "serviceId": "same-day-cleaning"
+  },
+  {
+    "cityId": "novi",
+    "serviceId": "house-cleaning"
+  },
+  {
+    "cityId": "novi",
+    "serviceId": "deep-cleaning"
+  },
+  {
+    "cityId": "novi",
+    "serviceId": "move-out-cleaning"
+  },
+  {
+    "cityId": "novi",
+    "serviceId": "recurring-maid-service"
+  },
+  {
+    "cityId": "novi",
+    "serviceId": "office-cleaning"
+  },
+  {
+    "cityId": "novi",
+    "serviceId": "apartment-cleaning"
+  },
+  {
+    "cityId": "novi",
+    "serviceId": "airbnb-turnover-cleaning"
+  },
+  {
+    "cityId": "novi",
+    "serviceId": "post-construction-cleaning"
+  },
+  {
+    "cityId": "novi",
+    "serviceId": "same-day-cleaning"
+  },
+  {
+    "cityId": "milford",
+    "serviceId": "house-cleaning"
+  },
+  {
+    "cityId": "milford",
+    "serviceId": "deep-cleaning"
+  },
+  {
+    "cityId": "milford",
+    "serviceId": "move-out-cleaning"
+  },
+  {
+    "cityId": "milford",
+    "serviceId": "recurring-maid-service"
+  },
+  {
+    "cityId": "milford",
+    "serviceId": "office-cleaning"
+  },
+  {
+    "cityId": "milford",
+    "serviceId": "apartment-cleaning"
+  },
+  {
+    "cityId": "milford",
+    "serviceId": "airbnb-turnover-cleaning"
+  },
+  {
+    "cityId": "milford",
+    "serviceId": "post-construction-cleaning"
+  },
+  {
+    "cityId": "milford",
+    "serviceId": "same-day-cleaning"
+  },
+  {
+    "cityId": "commerce-township",
+    "serviceId": "house-cleaning"
+  },
+  {
+    "cityId": "commerce-township",
+    "serviceId": "deep-cleaning"
+  },
+  {
+    "cityId": "commerce-township",
+    "serviceId": "move-out-cleaning"
+  },
+  {
+    "cityId": "commerce-township",
+    "serviceId": "recurring-maid-service"
+  },
+  {
+    "cityId": "commerce-township",
+    "serviceId": "office-cleaning"
+  },
+  {
+    "cityId": "commerce-township",
+    "serviceId": "apartment-cleaning"
+  },
+  {
+    "cityId": "commerce-township",
+    "serviceId": "airbnb-turnover-cleaning"
+  },
+  {
+    "cityId": "commerce-township",
+    "serviceId": "post-construction-cleaning"
+  },
+  {
+    "cityId": "commerce-township",
+    "serviceId": "same-day-cleaning"
+  },
+  {
+    "cityId": "south-lyon",
+    "serviceId": "house-cleaning"
+  },
+  {
+    "cityId": "south-lyon",
+    "serviceId": "deep-cleaning"
+  },
+  {
+    "cityId": "south-lyon",
+    "serviceId": "move-out-cleaning"
+  },
+  {
+    "cityId": "south-lyon",
+    "serviceId": "recurring-maid-service"
+  },
+  {
+    "cityId": "south-lyon",
+    "serviceId": "office-cleaning"
+  },
+  {
+    "cityId": "south-lyon",
+    "serviceId": "apartment-cleaning"
+  },
+  {
+    "cityId": "south-lyon",
+    "serviceId": "airbnb-turnover-cleaning"
+  },
+  {
+    "cityId": "south-lyon",
+    "serviceId": "post-construction-cleaning"
+  },
+  {
+    "cityId": "south-lyon",
+    "serviceId": "same-day-cleaning"
+  }
 ]

@@ -24,7 +24,7 @@ const Hero = () => {
         </span>
 
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-white">
-          Professional House Cleaning & Maid Services in Metro Detroit, Novi, Wixom, Milford & Beyond
+          Affordable House Cleaning & Maid Services - Novi, Wixom, Livonia MI
         </h1>
 
         <p className="text-base md:text-xl text-white/85 max-w-4xl">

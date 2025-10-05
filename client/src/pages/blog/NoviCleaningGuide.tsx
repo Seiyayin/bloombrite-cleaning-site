@@ -38,8 +38,8 @@ const NoviCleaningGuide = () => {
   return (
     <>
       <SeoHead 
-        title="Complete House Cleaning Guide for Novi, MI Homeowners | Bloombrite Cleaning"
-        description="Expert cleaning guide for Novi, MI residents. Professional tips, seasonal schedules, and the best residential cleaning services in Novi."
+        title="Novi MI House Cleaning Guide: Tips, Schedules, Local Services | Bloombrite"
+        description="Residential cleaning guide for Novi MI homes. Seasonal maintenance schedules, product recommendations, local maid services, new construction care tips from Oakland County experts."
         canonicalUrl="https://www.bloombritecleaning.com/blog/novi-house-cleaning-guide"
         structuredData={structuredData}
       />
@@ -50,7 +50,7 @@ const NoviCleaningGuide = () => {
           <div className="container mx-auto px-4">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Complete House Cleaning Guide for Novi, Michigan Homeowners
+                Residential Cleaning Guide for Novi, MI: Expert Tips for Oakland County Homes
               </h1>
               <p className="text-xl mb-8">
                 Professional cleaning tips, seasonal schedules, and expert advice specifically for Novi residents and their homes.

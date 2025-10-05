@@ -20,8 +20,8 @@ const Faq = () => {
   return (
     <>
       <SeoHead 
-        title="Frequently Asked Questions | Bloombrite Cleaning"
-        description="Find answers about Bloombrite Cleaning's services in Metro Detroit. Learn about our process, pricing, booking, and satisfaction guarantee."
+        title="House Cleaning FAQs - Pricing, Scheduling, Services | Bloombrite Michigan"
+        description="Common questions about maid service pricing, what's included, booking process, cancellation policy, and service areas. Professional residential cleaning answers from experts."
         canonicalUrl="https://www.bloombritecleaning.com/faq"
       />
       <FAQSchema faqs={faqs} />
@@ -30,7 +30,7 @@ const Faq = () => {
         {/* FAQ Banner */}
         <section className="bg-primary text-white -mt-16 pt-20 pb-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Frequently Asked Questions</h1>
+            <h1 className="text-4xl font-bold mb-4">Common Questions About Our Residential & Commercial Cleaning Services</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Find answers to our most commonly asked questions about our <Link href="/services" className="text-white hover:text-accent underline">cleaning services</Link>, <Link href="/quote" className="text-white hover:text-accent underline">pricing</Link>, and <Link href="/locations" className="text-white hover:text-accent underline">service areas</Link> throughout Michigan.
             </p>

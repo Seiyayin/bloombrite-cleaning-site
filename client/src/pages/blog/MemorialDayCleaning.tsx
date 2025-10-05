@@ -14,8 +14,8 @@ const MemorialDayCleaning = () => {
   return (
     <>
       <SeoHead 
-        title="Memorial Day Cleaning Guide: Prepare Your Home for Summer Gatherings | Bloombrite Cleaning"
-        description="Memorial Day cleaning checklist for your home. Professional tips for indoor and outdoor spaces to get party-ready and impress guests."
+        title="Memorial Day BBQ Cleaning Checklist: Get Party-Ready Fast | Bloombrite MI"
+        description="Quick Memorial Day cleaning checklist for backyard parties. Indoor/outdoor prep, grill cleaning, patio scrubbing, guest bathroom refresh. Professional party preparation tips."
         canonicalUrl="https://www.bloombritecleaning.com/blog/memorial-day-cleaning"
         ogImage="/images/living room deep cleaning.jpg"
       />
@@ -33,7 +33,7 @@ const MemorialDayCleaning = () => {
               <span>Memorial Day Cleaning</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Memorial Day Cleaning Guide: Prepare Your Home for Summer Gatherings</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Ultimate Memorial Day Party Cleaning Checklist for Michigan Homeowners</h1>
             
             <div className="flex items-center text-sm text-neutral-500 mb-8">
               <span>Published on May 10, 2024</span>

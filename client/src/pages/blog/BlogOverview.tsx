@@ -90,8 +90,8 @@ const BlogOverview = () => {
   return (
     <>
       <SeoHead 
-        title="Cleaning Tips & Guides | Bloombrite Cleaning Blog"
-        description="Expert cleaning tips and guides for Metro Detroit homeowners. Learn professional secrets to keep your home spotless from Bloombrite experts."
+        title="Professional Cleaning Tips & Home Care Guides | Bloombrite Blog Michigan"
+        description="Free cleaning guides from professional cleaners. Deep cleaning tutorials, appliance care, seasonal checklists, stain removal tips for Novi, Wixom, Livonia homeowners."
         canonicalUrl="https://www.bloombritecleaning.com/blog"
       />
       
@@ -100,7 +100,7 @@ const BlogOverview = () => {
         <section className="-mt-16 pt-24 pb-16 bg-neutral-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Bloombrite Cleaning Blog</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Expert Home Cleaning Guides & Tips from Michigan Professionals</h1>
               <p className="text-xl text-neutral-600 mb-10">
                 Professional cleaning tips, guides, and advice from our experts
               </p>

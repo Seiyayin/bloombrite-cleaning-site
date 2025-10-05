@@ -18,8 +18,8 @@ const Reviews = () => {
   return (
     <>
       <SeoHead 
-        title="Customer Reviews | Bloombrite Cleaning Michigan"
-        description="Read 5-star reviews of Bloombrite Cleaning's services in Metro Detroit. Reliable residential and commercial cleaning with satisfaction guarantee."
+        title="5-Star Customer Reviews & Testimonials | Bloombrite Cleaning Michigan"
+        description="Read verified Google reviews from Novi, Wixom, Livonia homeowners. See why families trust Bloombrite for deep cleaning, move-in/out service, and recurring maid service."
         canonicalUrl="https://www.bloombritecleaning.com/reviews"
       />
       <ReviewSchema reviews={testimonials} />
@@ -28,7 +28,7 @@ const Reviews = () => {
         {/* Reviews Banner */}
         <section className="bg-primary text-white -mt-16 pt-20 pb-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Customer Reviews</h1>
+            <h1 className="text-4xl font-bold mb-4">Real Reviews from Metro Detroit Homeowners & Businesses</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Don't just take our word for it. Here's what our satisfied customers have to say about Bloombrite Cleaning.
             </p>

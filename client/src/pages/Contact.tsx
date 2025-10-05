@@ -46,8 +46,8 @@ const Contact = () => {
   return (
     <>
       <SeoHead 
-        title="Contact Us | Bloombrite Cleaning Michigan"
-        description="Contact Bloombrite Cleaning for professional cleaning in Metro Detroit. Get a free quote, schedule service, or ask questions today."
+        title="Get Free Quote - Text (947) 465-4217 | Bloombrite Cleaning Michigan"
+        description="Request free cleaning estimate for Metro Detroit homes & offices. Text, call, or book online. Same-day service. Serving Wixom, Novi, Livonia, West Bloomfield, Farmington Hills."
         canonicalUrl="https://www.bloombritecleaning.com/contact"
       />
       
@@ -55,7 +55,7 @@ const Contact = () => {
         {/* Contact Banner */}
         <section className="bg-primary text-white -mt-16 pt-20 pb-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
+            <h1 className="text-4xl font-bold mb-4">Request Your Free Cleaning Estimate Today</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Have questions about our <Link href="/services" className="text-white hover:text-accent underline">cleaning services</Link> or ready to book? We serve <Link href="/locations" className="text-white hover:text-accent underline">Michigan communities</Link> with professional residential and commercial cleaning. Get your <Link href="/quote" className="text-white hover:text-accent underline">free quote</Link> today.
             </p>

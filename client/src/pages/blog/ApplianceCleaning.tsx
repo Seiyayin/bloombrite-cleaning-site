@@ -14,8 +14,8 @@ const ApplianceCleaning = () => {
   return (
     <>
       <SeoHead 
-        title="The Complete Guide to Inside Appliance Cleaning | BloomBrite Cleaning"
-        description="Professional appliance cleaning guide. Deep clean refrigerators, ovens, dishwashers, and microwaves to extend life and improve performance."
+        title="How to Deep Clean Refrigerator, Oven, Dishwasher Inside | Bloombrite Michigan"
+        description="Step-by-step appliance deep cleaning tutorial. Clean fridge, oven, microwave, dishwasher interiors to remove odors, bacteria, buildup. Professional techniques from Michigan cleaners."
         canonicalUrl="https://www.bloombritecleaning.com/blog/inside-appliance-cleaning"
         ogImage={kitchenImage}
       />
@@ -33,7 +33,7 @@ const ApplianceCleaning = () => {
               <span>Inside Appliance Cleaning</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">The Complete Guide to Inside Appliance Cleaning</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Kitchen Appliance Deep Cleaning: Refrigerator, Oven, Dishwasher & Microwave Guide</h1>
             
             <div className="flex items-center text-sm text-neutral-500 mb-8">
               <span>Published on May 15, 2024</span>

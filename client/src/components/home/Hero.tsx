@@ -24,11 +24,11 @@ const Hero = () => {
         </span>
 
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-white">
-          Top Rated House Cleaning & Maid Services - Novi, Wixom, Livonia, Milford, South Lyon MI
+          Top Rated House Cleaning & Maid Services - Novi, Wixom, Livonia, Milford, South Lyon, Commerce Township MI
         </h1>
 
         <p className="text-base md:text-xl text-white/85 max-w-4xl">
-          Bloombrite Cleaning provides top-rated residential and commercial cleaning across Metro Detroit, including Novi, Wixom, Farmington Hills, Livonia, Milford, and South Lyon. Our licensed, insured cleaners specialize in deep cleaning, move-in/move-out cleaning, recurring maid service, and office cleaning. Competitive pricing, eco-friendly products, and same-day service available.
+          Bloombrite Cleaning provides top-rated residential and commercial cleaning across Metro Detroit, including Novi, Wixom, Farmington Hills, Livonia, Milford, South Lyon, and Commerce Township. Our licensed, insured cleaners specialize in deep cleaning, move-in/move-out cleaning, recurring maid service, and office cleaning. Competitive pricing, eco-friendly products, and same-day service available.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a 

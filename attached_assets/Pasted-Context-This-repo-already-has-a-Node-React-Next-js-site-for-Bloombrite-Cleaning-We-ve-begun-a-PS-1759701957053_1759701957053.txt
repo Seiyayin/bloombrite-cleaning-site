@@ -1,0 +1,73 @@
+Context: This repo already has a Node/React (Next.js) site for Bloombrite Cleaning. We’ve begun a PSEO system (service × city pages) but need to finish it properly to fix Ahrefs issues (orphans, missing H1s, duplicate metas, low word count, no outgoing links) and ship a complete, scalable setup.
+
+Objectives
+	1.	Generate SEO-optimized pages for every published {city} × {service} combo from /data/ JSON.
+	2.	Ensure unique titles, metas, H1s, canonical, JSON-LD, and 400–700 words of content per page.
+	3.	Fix internal linking so there are no orphan pages and each page has 2–3 internal links out.
+	4.	Build Service Areas hub, City hubs, Service hubs, breadcrumbs, and an auto sitemap.xml.
+	5.	Add utility components for SEO head + schema; ensure pages share the site’s header/footer.
+	6.	Do not overwrite design; extend the current project cleanly.
+
+Tech assumptions
+	•	Next.js (Pages Router). If not present, add it minimally without breaking current routes.
+	•	Data lives in /data/cities.json, /data/services.json, /data/join.json.
+	•	JavaScript only (no TS). Node 18+.
+
+Tasks
+
+A) Data + Routing
+	•	Confirm /data/ JSONs exist (cities, services, join). If missing, create placeholders and leave clear TODOs.
+	•	Dynamic routes:
+	•	/mi/[city]/[service]/ → service×city page (core PSEO page)
+	•	/mi/[city]/ → city hub (lists all services offered in that city with cards)
+	•	/services/[service]/ → service hub (lists all cities offering that service)
+	•	/service-areas/ → all cities index (links to each city hub)
+	•	Only build pages where join.status === "publish".
+
+B) SEO Head + Schema
+	•	Create /components/SeoHead.jsx that accepts { title, description, canonical } and renders:
+	•	<title> (≤60 chars)
+	•	<meta name="description"> (145–160 chars)
+	•	<link rel="canonical">
+	•	OpenGraph tags (og:title, og:description, og:url)
+	•	Create /components/SchemaLocalService.jsx outputting JSON-LD for:
+	•	LocalBusiness (use brand NAP placeholders + page URL)
+	•	Service (serviceType = current service; areaServed = current city)
+	•	BreadcrumbList for Home → Service Areas → City → Service
+	•	Inject SeoHead + SchemaLocalService into every service×city page.
+
+C) Content Template (400–700 words)
+
+For /mi/[city]/[service]/ pages, compose content from JSON + small helpers:
+	•	H1: {{Service}} in {{City}}, MI
+	•	Intro (80–120 words): Use join.custom_intro if present; else blend:
+	•	service summary, city name, ZIPs, quick benefit line.
+	•	Why Choose Bloombrite (bulleted list): from services.bullets.
+	•	Local relevance block (120–180 words): use cities.service_area_blurb, mention 1–2 landmarks and at least one zip.
+	•	FAQs (3–5): from services.faq, render <details><summary>Q</summary><p>A</p></details>.
+	•	CTA paragraph (~60–90 words): reference city + service and link to /quote or contact page.
+	•	Add image with alt mentioning city + service if an image component exists.
+	•	Enforce minimum word count: create a small helper that counts visible text and, if <400, appends a generic but non-spammy paragraph about process, checklist, and satisfaction guarantee.
+
+D) Internal Linking (fix orphans & “no outgoing links”)
+	•	Breadcrumbs on every service×city page (Home → Service Areas → City → Service), with working links.
+	•	In the service×city page body, add a small “Related Services” section linking to 2 sibling services in the same city.
+	•	City hub (/mi/[city]/) must link to every service×city page for that city.
+	•	Service hub (/services/[service]/) must link to every city offering that service.
+	•	Footer: “Top Service Areas” list (Wixom, Novi, Milford, Commerce Township, South Lyon) linking to city hubs.
+	•	Ensure every generated page has at least 2–3 internal links out and ≥1 inbound from a hub page.
+
+E) Titles, Metas, Canonical (unique)
+	•	Title format: {{Service}} in {{City}}, MI | Bloombrite Cleaning
+	•	Meta format (145–160 chars): Trusted {{serviceLower}} in {{City}}, MI. Insured, detail-oriented cleaners. Book Bloombrite for a spotless home—free quote today.
+	•	Canonical: https://www.bloombritecleaning.com/mi/{{city_slug}}/{{service_slug}}/
+	•	Guardrails: if any value is missing, fail safe with a clear fallback string and log a warning.
+
+F) Sitemap + Robots
+	•	Create /pages/sitemap.xml.js that iterates:
+	•	all published service×city pages
+	•	all city hubs
+	•	all service hubs
+	•	/service-areas/ and /
+	•	Output valid XML with <loc>, <lastmod> (use file mtime or today’s date).
+	•	Add /public/robots.txt:

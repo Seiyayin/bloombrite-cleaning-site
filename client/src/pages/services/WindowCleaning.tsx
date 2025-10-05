@@ -15,6 +15,7 @@ const WindowCleaning = () => {
       <SeoHead
         title="Window Cleaning Services | Bloombrite Cleaning"
         description="Professional window cleaning services in Michigan. We clean windows inside and out, including tracks, frames, and screens for a crystal-clear view."
+        canonicalUrl="https://www.bloombritecleaning.com/services/window-cleaning"
         ogImage="/images/window-cleaning.jpg"
       />
 

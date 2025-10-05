@@ -47,7 +47,7 @@ const Contact = () => {
     <>
       <SeoHead 
         title="Contact Us | Bloombrite Cleaning Michigan"
-        description="Contact Bloombrite Cleaning for professional residential and commercial cleaning in Metro Detroit. Get a free quote, schedule a cleaning, or ask questions."
+        description="Contact Bloombrite Cleaning for professional cleaning in Metro Detroit. Get a free quote, schedule service, or ask questions today."
         canonicalUrl="https://www.bloombritecleaning.com/contact"
       />
       

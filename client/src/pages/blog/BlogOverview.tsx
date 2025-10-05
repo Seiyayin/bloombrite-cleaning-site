@@ -91,7 +91,7 @@ const BlogOverview = () => {
     <>
       <SeoHead 
         title="Cleaning Tips & Guides | Bloombrite Cleaning Blog"
-        description="Professional cleaning tips, guides, and advice for homeowners in Metro Detroit. Learn the secrets of keeping your home spotless from Bloombrite Cleaning experts."
+        description="Expert cleaning tips and guides for Metro Detroit homeowners. Learn professional secrets to keep your home spotless from Bloombrite experts."
       />
       
       <main className="bg-white">

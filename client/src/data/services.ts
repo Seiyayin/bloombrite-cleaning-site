@@ -4,7 +4,7 @@ export const services = [
     slug: "window-cleaning",
     title: "Window Cleaning Services",
     shortDescription: "Professional window cleaning services for interior and exterior windows, including tracks, frames and screens.",
-    metaDescription: "Professional window cleaning services in Michigan. We provide comprehensive window cleaning services inside and out, including tracks, frames, and screens for a crystal-clear view.",
+    metaDescription: "Professional window cleaning in Michigan. Inside and out cleaning including tracks, frames, and screens for a crystal-clear view.",
     description: `
       <p>Our comprehensive window cleaning services remove dirt, dust, water spots, and grime from your windows inside and out. We pay attention to every detail, cleaning not only the glass but also the frames, sills, and tracks for a complete cleaning services experience.</p>
       
@@ -42,7 +42,7 @@ export const services = [
     slug: "power-washing",
     title: "Power Washing Services",
     shortDescription: "Professional power washing services to restore the appearance of your home's exterior surfaces.",
-    metaDescription: "Expert power washing services in Michigan for driveways, siding, decks, and patios. Restore your home's exterior with our professional pressure washing services.",
+    metaDescription: "Expert power washing for driveways, siding, decks, and patios in Michigan. Restore your home's exterior with professional pressure washing.",
     description: `
       <p>Our power washing services deliver professional-grade cleaning for your home's exterior surfaces, effectively removing dirt, grime, mold, mildew, and stains that regular cleaning services can't address. Power washing services not only improve your property's appearance but also help maintain its value and prevent damage.</p>
       
@@ -111,7 +111,7 @@ export const services = [
     slug: "general-cleaning",
     title: "General Cleaning Services",
     shortDescription: "Our most popular weekly, biweekly, and monthly cleaning services include dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
-    metaDescription: "Professional general home cleaning services in Metro Detroit. Our comprehensive weekly, biweekly, and monthly cleaning services include dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
+    metaDescription: "Professional general home cleaning in Metro Detroit. Weekly, biweekly, and monthly services including dusting, vacuuming, mopping, and more.",
     description: `
       <h1 class="text-3xl font-bold mb-6">Consistent, Reliable General Cleaning Services</h1>
       
@@ -149,7 +149,7 @@ export const services = [
     slug: "deep-cleaning",
     title: "Deep Cleaning Services",
     shortDescription: "A thorough cleaning service that reaches areas often missed, including baseboards, ceiling fans, and behind furniture.",
-    metaDescription: "Professional deep cleaning services for Michigan homes. Thorough cleaning services of rarely-addressed areas including baseboards, ceiling fans, and behind furniture.",
+    metaDescription: "Professional deep cleaning for Michigan homes. Thorough cleaning of rarely-addressed areas including baseboards, ceiling fans, and behind furniture.",
     description: `
       <h1 class="text-3xl font-bold mb-6">Thorough & Detailed Deep Cleaning Services</h1>
       
@@ -188,7 +188,7 @@ export const services = [
     slug: "recurring-cleaning",
     title: "Maintenance Cleaning Services",
     shortDescription: "Weekly, biweekly, or monthly maintenance cleaning services to keep your Metro Detroit home consistently spotless.",
-    metaDescription: "Professional maintenance cleaning services in Metro Detroit with weekly, biweekly, and monthly options. Regular residential cleaning schedules for busy families.",
+    metaDescription: "Professional maintenance cleaning in Metro Detroit. Weekly, biweekly, and monthly options. Regular residential cleaning schedules for busy families.",
     description: `
       <h1 class="text-3xl font-bold mb-6">Regular Maintenance Cleaning for Busy Metro Detroit Families</h1>
       

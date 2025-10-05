@@ -47,7 +47,7 @@ const CityBlogIndex = () => {
     <>
       <SeoHead 
         title="Local House Cleaning Tips by City | Bloombrite Cleaning Services"
-        description="City-specific house cleaning tips, guides, and professional advice for Michigan residents. Expert residential cleaning services insights for Wixom, Novi, West Bloomfield, and Livonia."
+        description="City-specific cleaning tips for Michigan. Expert residential cleaning insights for Wixom, Novi, West Bloomfield, and Livonia homeowners."
       />
       
       <main className="min-h-screen">

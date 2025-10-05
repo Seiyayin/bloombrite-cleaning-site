@@ -70,7 +70,7 @@ const NoviDetailed = () => {
     <>
       <SeoHead 
         title="House Cleaning Services in Novi, MI | Professional Residential Cleaning | Bloombrite"
-        description="Top-rated house cleaning services in Novi, Michigan. Professional residential cleaning, deep cleaning, move-in/out cleaning. Serving Novi, Northville, and Farmington Hills. Get your free quote today!"
+        description="Top-rated house cleaning in Novi, MI. Professional residential, deep cleaning, move-in/out services. Get your free quote today!"
         structuredData={structuredData}
       />
       

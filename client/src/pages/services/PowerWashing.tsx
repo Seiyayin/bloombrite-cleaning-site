@@ -18,7 +18,7 @@ const PowerWashingPage = () => {
     <>
       <SeoHead
         title="Power Washing Services | Bloombrite Cleaning"
-        description="Professional power washing services for home exteriors, driveways, decks, and patios in Michigan. Remove dirt, grime, mold, and mildew to restore your property's appearance."
+        description="Professional power washing for home exteriors, driveways, decks, and patios in Michigan. Remove dirt, grime, mold, and mildew."
         ogImage={service.imageUrl}
       />
       <PowerWashingSchema />

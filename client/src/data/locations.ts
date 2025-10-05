@@ -42,7 +42,7 @@ export const locations = [
     slug: "novi",
     name: "Novi, MI",
     zipCodes: "48374, 48375, 48377",
-    shortDescription: "Looking for reliable house cleaning in Novi, MI? Bloombrite Cleaning offers professional, affordable maid and deep cleaning services. 97+ five-star reviews!",
+    shortDescription: "Reliable house cleaning in Novi, MI. Bloombrite offers professional, affordable maid and deep cleaning services. 97+ five-star reviews!",
     description: `
       <h2 class="text-2xl font-bold mb-4">Why Novi Homeowners Choose Bloombrite</h2>
       <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
@@ -119,7 +119,7 @@ export const locations = [
     slug: "milford",
     name: "Milford, MI",
     zipCodes: "48380, 48381",
-    shortDescription: "Professional house cleaning in Milford, MI. Local Bloombrite Cleaning team offers deep cleaning, recurring maid service & move-out cleaning. 97+ five-star reviews!",
+    shortDescription: "Professional house cleaning in Milford, MI. Deep cleaning, recurring maid service & move-out cleaning. 97+ five-star reviews!",
     description: `
       <h2 class="text-2xl font-bold mb-4">Why Milford Homeowners Choose Bloombrite</h2>
       <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
@@ -158,7 +158,7 @@ export const locations = [
     slug: "commerce-township",
     name: "Commerce Township, MI",
     zipCodes: "48382, 48390",
-    shortDescription: "Looking for reliable house cleaning in Commerce Township, MI? Bloombrite Cleaning offers professional, affordable maid and deep cleaning services. 97+ five-star reviews!",
+    shortDescription: "Reliable house cleaning in Commerce Township, MI. Professional, affordable maid and deep cleaning services. 97+ five-star reviews!",
     description: `
       <h2 class="text-2xl font-bold mb-4">Why Commerce Township Homeowners Choose Bloombrite</h2>
       <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
@@ -197,7 +197,7 @@ export const locations = [
     slug: "farmington-hills",
     name: "Farmington Hills, MI",
     zipCodes: "48331, 48334, 48335",
-    shortDescription: "Professional house cleaning in Farmington Hills, MI. Bloombrite Cleaning offers deep cleans, recurring maid service & move-out cleanings. 97+ five-star reviews.",
+    shortDescription: "Professional house cleaning in Farmington Hills, MI. Deep cleans, recurring maid service & move-out cleanings. 97+ five-star reviews.",
     description: `
       <h2 class="text-2xl font-bold mb-4">Why Farmington Hills Residents Choose Us</h2>
       <ul class="list-disc list-inside space-y-2 mb-6 text-lg">

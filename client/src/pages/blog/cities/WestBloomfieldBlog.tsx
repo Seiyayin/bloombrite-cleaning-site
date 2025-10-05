@@ -42,7 +42,7 @@ const WestBloomfieldBlog = () => {
     <>
       <SeoHead 
         title="Luxury House Cleaning Tips for West Bloomfield | Bloombrite Cleaning"
-        description="Professional house cleaning tips and guides for West Bloomfield luxury homes. Expert residential cleaning services advice for upscale properties and lakefront homes."
+        description="Expert cleaning tips for West Bloomfield luxury homes. Professional advice for upscale properties and lakefront homes from Bloombrite."
       />
       
       <main className="min-h-screen">

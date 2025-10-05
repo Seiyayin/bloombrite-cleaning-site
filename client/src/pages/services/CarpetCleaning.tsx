@@ -18,7 +18,7 @@ const CarpetCleaningPage = () => {
     <>
       <SeoHead
         title="Carpet Cleaning Services | Bloombrite Cleaning"
-        description="Professional carpet cleaning services in Michigan. We remove deep stains, allergens, and odors while extending the life of your carpets using hot water extraction technology."
+        description="Professional carpet cleaning in Michigan. Remove deep stains, allergens, and odors using hot water extraction technology. Extend carpet life."
         ogImage={service.imageUrl}
       />
       <CarpetCleaningSchema />

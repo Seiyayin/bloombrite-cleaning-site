@@ -42,7 +42,7 @@ const WixomBlog = () => {
     <>
       <SeoHead 
         title="House Cleaning Tips & Guides for Wixom Residents | Bloombrite Cleaning"
-        description="Expert house cleaning tips, guides, and advice specifically for Wixom homeowners. Learn from professional residential cleaning services experts about maintaining your home year-round."
+        description="Expert cleaning tips, guides, and advice for Wixom homeowners. Professional residential cleaning insights for maintaining your home year-round."
       />
       
       <main className="min-h-screen">

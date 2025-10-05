@@ -21,7 +21,7 @@ const Faq = () => {
     <>
       <SeoHead 
         title="Frequently Asked Questions | Bloombrite Cleaning"
-        description="Find answers about Bloombrite Cleaning's professional services in Metro Detroit. Learn about our cleaning process, pricing, booking, and satisfaction guarantee."
+        description="Find answers about Bloombrite Cleaning's services in Metro Detroit. Learn about our process, pricing, booking, and satisfaction guarantee."
         canonicalUrl="https://www.bloombritecleaning.com/faq"
       />
       <FAQSchema faqs={faqs} />

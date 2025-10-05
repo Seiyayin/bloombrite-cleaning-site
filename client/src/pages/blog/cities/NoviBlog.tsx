@@ -42,7 +42,7 @@ const NoviBlog = () => {
     <>
       <SeoHead 
         title="House Cleaning Tips & Guides for Novi Residents | Bloombrite Cleaning"
-        description="Expert house cleaning tips, guides, and advice specifically for Novi homeowners. Professional residential cleaning services insights for Michigan's suburban communities."
+        description="Expert cleaning tips, guides, and advice for Novi homeowners. Professional residential cleaning insights for Michigan's suburban communities."
       />
       
       <main className="min-h-screen">

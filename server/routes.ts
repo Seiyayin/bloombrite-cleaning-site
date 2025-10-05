@@ -252,6 +252,65 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Helper endpoint to find correct Place ID
+  app.get('/api/find-place-id', async (req, res) => {
+    try {
+      const { findPlaceIdByCoordinates, findPlaceIdByTextSearch } = await import('./services/googlePlaces');
+      
+      console.log('Starting Place ID search...');
+      
+      // Try coordinate-based search first
+      const placeIdFromCoords = await findPlaceIdByCoordinates();
+      
+      if (placeIdFromCoords) {
+        // Fetch details for this place
+        const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
+        const detailsResponse = await fetch(
+          `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeIdFromCoords}&fields=name,rating,user_ratings_total,reviews,formatted_address&key=${GOOGLE_PLACES_API_KEY}`
+        );
+        const details = await detailsResponse.json();
+        
+        return res.json({
+          success: true,
+          method: 'coordinates',
+          placeId: placeIdFromCoords,
+          details: details.result
+        });
+      }
+      
+      // Try text search as fallback
+      const placeIdFromText = await findPlaceIdByTextSearch();
+      
+      if (placeIdFromText) {
+        const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
+        const detailsResponse = await fetch(
+          `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeIdFromText}&fields=name,rating,user_ratings_total,reviews,formatted_address&key=${GOOGLE_PLACES_API_KEY}`
+        );
+        const details = await detailsResponse.json();
+        
+        return res.json({
+          success: true,
+          method: 'text_search',
+          placeId: placeIdFromText,
+          details: details.result
+        });
+      }
+      
+      res.json({
+        success: false,
+        message: 'Could not find Place ID for Bloombrite Cleaning'
+      });
+      
+    } catch (error) {
+      console.error('Error finding Place ID:', error);
+      res.status(500).json({
+        success: false,
+        message: 'Error searching for Place ID',
+        error: error instanceof Error ? error.message : 'Unknown error'
+      });
+    }
+  });
+
   // Test endpoint to debug Google Places API
   app.get('/api/test-google-places', async (req, res) => {
     try {
@@ -346,36 +405,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
         success: false, 
         message: 'Test failed',
         error: error instanceof Error ? error.message : String(error)
-      });
-    }
-  });
-
-  // Endpoint to find place ID (for setup/debugging)
-  app.get('/api/find-place-id', async (req, res) => {
-    try {
-      const businessName = 'Bloombrite Cleaning';
-      const address = '2207 Evergreen St, Wixom, MI 48393';
-      
-      const placeId = await findPlaceId(businessName, address);
-      
-      if (!placeId) {
-        return res.status(404).json({ 
-          success: false, 
-          message: 'Place ID not found' 
-        });
-      }
-      
-      res.json({
-        success: true,
-        placeId: placeId,
-        businessName: businessName,
-        address: address
-      });
-    } catch (error) {
-      console.error('Error finding place ID:', error);
-      res.status(500).json({ 
-        success: false, 
-        message: 'Failed to find place ID' 
       });
     }
   });

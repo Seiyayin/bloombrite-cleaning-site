@@ -66,11 +66,14 @@ export async function fetchGoogleReviews(): Promise<{
 
     if (data.status !== 'OK' || !data.result) {
       console.error('Google Places API error:', data.status);
+      console.error('Full API response:', JSON.stringify(data, null, 2));
       throw new Error(`Google Places API error: ${data.status}`);
     }
 
     const result = data.result;
     console.log(`Found ${result.reviews?.length || 0} reviews with rating ${result.rating}`);
+    console.log('Place name:', result.name);
+    console.log('Total ratings:', result.user_ratings_total);
 
     return {
       reviews: result.reviews || [],

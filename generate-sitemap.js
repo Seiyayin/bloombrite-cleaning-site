@@ -11,6 +11,11 @@ const __dirname = path.dirname(__filename);
 // Always use production URL for sitemap
 const SITE_URL = 'https://www.bloombritecleaning.com';
 
+// Load PSEO data
+const pseoCities = JSON.parse(fs.readFileSync(path.join(__dirname, 'client/src/data/pseo-cities.json'), 'utf8'));
+const pseoServices = JSON.parse(fs.readFileSync(path.join(__dirname, 'client/src/data/pseo-services.json'), 'utf8'));
+const pseoJoins = JSON.parse(fs.readFileSync(path.join(__dirname, 'client/src/data/pseo-join.json'), 'utf8'));
+
 // List of all pages (both static and dynamic)
 const pages = [
   '/',
@@ -75,7 +80,7 @@ function generateSitemap() {
   let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
   sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
   
-  // Add URLs
+  // Add regular pages
   pages.forEach(page => {
     if (!excludedPages.includes(page)) {
       sitemap += '  <url>\n';
@@ -83,6 +88,22 @@ function generateSitemap() {
       sitemap += `    <lastmod>${today}</lastmod>\n`;
       sitemap += `    <changefreq>${page === '/' ? 'daily' : 'weekly'}</changefreq>\n`;
       sitemap += `    <priority>${page === '/' ? '1.0' : '0.8'}</priority>\n`;
+      sitemap += '  </url>\n';
+    }
+  });
+  
+  // Add PSEO pages (Programmatic SEO)
+  pseoJoins.forEach(join => {
+    const city = pseoCities.find(c => c.id === join.cityId);
+    const service = pseoServices.find(s => s.id === join.serviceId);
+    
+    if (city && service) {
+      const pseoUrl = `/mi/${city.slug}/${service.slug}/`;
+      sitemap += '  <url>\n';
+      sitemap += `    <loc>${SITE_URL}${pseoUrl}</loc>\n`;
+      sitemap += `    <lastmod>${today}</lastmod>\n`;
+      sitemap += `    <changefreq>weekly</changefreq>\n`;
+      sitemap += `    <priority>0.8</priority>\n`;
       sitemap += '  </url>\n';
     }
   });

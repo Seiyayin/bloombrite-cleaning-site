@@ -31,6 +31,7 @@ import Careers from "@/pages/Careers";
 import BitcoinPayments from "@/pages/BitcoinPayments";
 import Checklist from "@/pages/Checklist";
 import NoviDetailed from "@/pages/locations/NoviDetailed";
+import PseoPage from "@/pages/PseoPage";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatingTextChat from "@/components/shared/FloatingTextChat";
@@ -77,6 +78,7 @@ function Router() {
       <Route path="/bitcoin-payments" component={BitcoinPayments} />
       <Route path="/checklist" component={Checklist} />
       <Route path="/pay-with-bitcoin" component={BitcoinPayments} />
+      <Route path="/mi/:city/:service" component={PseoPage} />
       <Route component={NotFound} />
     </Switch>
   );

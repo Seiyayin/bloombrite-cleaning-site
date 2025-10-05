@@ -68,6 +68,23 @@
     "starting_price": "$120"
   },
   {
+    "id": "recurring-maid-service",
+    "name": "Recurring Maid Service",
+    "slug": "recurring-maid-service",
+    "title": "Recurring Maid Service",
+    "category": "residential",
+    "description": "Professional maid service on a regular schedule, providing consistent cleaning by the same dedicated team.",
+    "benefits": [
+      "Weekly, biweekly, or monthly service",
+      "Same professional team each visit",
+      "Discounted recurring rates",
+      "Priority scheduling and booking",
+      "Flexible cleaning checklist"
+    ],
+    "ideal_for": "Homeowners and busy professionals who want reliable, recurring maid service to maintain a clean home.",
+    "starting_price": "$120"
+  },
+  {
     "id": "commercial-cleaning",
     "name": "Commercial Cleaning",
     "slug": "commercial-cleaning",
@@ -83,5 +100,90 @@
     ],
     "ideal_for": "Businesses, offices, retail spaces, and commercial properties that need professional cleaning services.",
     "starting_price": "$150"
+  },
+  {
+    "id": "office-cleaning",
+    "name": "Office Cleaning",
+    "slug": "office-cleaning",
+    "title": "Office Cleaning Services",
+    "category": "commercial",
+    "description": "Professional office cleaning services designed to maintain a clean, productive work environment for your business.",
+    "benefits": [
+      "After-hours and flexible scheduling",
+      "High-touch surface sanitization",
+      "Trash removal and restocking",
+      "Break room and kitchen cleaning",
+      "Professional and discreet service"
+    ],
+    "ideal_for": "Office buildings, corporate spaces, and professional environments that need regular cleaning services.",
+    "starting_price": "$150"
+  },
+  {
+    "id": "apartment-cleaning",
+    "name": "Apartment Cleaning",
+    "slug": "apartment-cleaning",
+    "title": "Apartment Cleaning Services",
+    "category": "residential",
+    "description": "Specialized cleaning services for apartments, condos, and smaller living spaces with efficient and thorough cleaning.",
+    "benefits": [
+      "Efficient cleaning for compact spaces",
+      "Kitchen and bathroom deep cleaning",
+      "Dust and vacuum all areas",
+      "Affordable pricing for apartments",
+      "Move-in or move-out options"
+    ],
+    "ideal_for": "Apartment and condo residents looking for professional cleaning services tailored to smaller living spaces.",
+    "starting_price": "$130"
+  },
+  {
+    "id": "airbnb-turnover-cleaning",
+    "name": "Airbnb / Short-Term Rental Turnover",
+    "slug": "airbnb-turnover-cleaning",
+    "title": "Airbnb & Short-Term Rental Cleaning",
+    "category": "residential",
+    "description": "Fast, thorough turnover cleaning for Airbnb, VRBO, and short-term rentals to ensure 5-star guest experiences.",
+    "benefits": [
+      "Quick turnaround between guests",
+      "Thorough cleaning and sanitization",
+      "Linen changing and restocking",
+      "Quality inspection included",
+      "Same-day service available"
+    ],
+    "ideal_for": "Airbnb hosts, vacation rental owners, and property managers who need reliable turnover cleaning.",
+    "starting_price": "$140"
+  },
+  {
+    "id": "post-construction-cleaning",
+    "name": "Post-Construction Cleaning",
+    "slug": "post-construction-cleaning",
+    "title": "Post-Construction Cleaning Services",
+    "category": "commercial",
+    "description": "Detailed cleaning after construction or renovation projects, removing dust, debris, and residue.",
+    "benefits": [
+      "Removal of construction dust and debris",
+      "Window and surface cleaning",
+      "Floor scrubbing and polishing",
+      "Safe disposal of materials",
+      "Final walk-through inspection"
+    ],
+    "ideal_for": "Contractors, builders, and homeowners who need thorough cleaning after construction or renovation work.",
+    "starting_price": "$300"
+  },
+  {
+    "id": "same-day-cleaning",
+    "name": "Same-Day Cleaning",
+    "slug": "same-day-cleaning",
+    "title": "Same-Day Cleaning Services",
+    "category": "residential",
+    "description": "Emergency and same-day cleaning services for urgent cleaning needs, available with short notice.",
+    "benefits": [
+      "Available same day when needed",
+      "Fast response time",
+      "Thorough cleaning despite urgency",
+      "Professional and reliable",
+      "Perfect for last-minute needs"
+    ],
+    "ideal_for": "Anyone with urgent cleaning needs, unexpected guests, or last-minute events requiring immediate cleaning.",
+    "starting_price": "$200"
   }
 ]

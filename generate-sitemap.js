@@ -63,6 +63,8 @@ const pages = [
   '/careers',
   '/bitcoin-payments',
   '/pay-with-bitcoin',
+  // PSEO Hub Pages
+  '/service-areas',
 ];
 
 // Excluded pages
@@ -92,7 +94,29 @@ function generateSitemap() {
     }
   });
   
-  // Add PSEO pages (Programmatic SEO)
+  // Add PSEO city hub pages
+  pseoCities.forEach(city => {
+    const cityHubUrl = `/mi/${city.slug}/`;
+    sitemap += '  <url>\n';
+    sitemap += `    <loc>${SITE_URL}${cityHubUrl}</loc>\n`;
+    sitemap += `    <lastmod>${today}</lastmod>\n`;
+    sitemap += `    <changefreq>weekly</changefreq>\n`;
+    sitemap += `    <priority>0.9</priority>\n`;
+    sitemap += '  </url>\n';
+  });
+
+  // Add PSEO service hub pages
+  pseoServices.forEach(service => {
+    const serviceHubUrl = `/services/${service.slug}/`;
+    sitemap += '  <url>\n';
+    sitemap += `    <loc>${SITE_URL}${serviceHubUrl}</loc>\n`;
+    sitemap += `    <lastmod>${today}</lastmod>\n`;
+    sitemap += `    <changefreq>weekly</changefreq>\n`;
+    sitemap += `    <priority>0.9</priority>\n`;
+    sitemap += '  </url>\n';
+  });
+
+  // Add PSEO service×city pages
   pseoJoins.forEach(join => {
     const city = pseoCities.find(c => c.id === join.cityId);
     const service = pseoServices.find(s => s.id === join.serviceId);

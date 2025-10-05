@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useRoute, Link } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
+import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import CallToAction from '@/components/home/CallToAction';
 import NotFound from '@/pages/not-found';
 import cities from '@/data/pseo-cities.json';
@@ -67,6 +68,14 @@ const PseoPage = () => {
   const metaDescription = `Trusted ${service.name.toLowerCase()} in ${city.name}, MI. Insured, detail-oriented cleaners. Book Bloombrite today.`;
   const canonicalUrl = `https://www.bloombritecleaning.com/mi/${citySlug}/${serviceSlug}/`;
 
+  // Breadcrumbs
+  const breadcrumbItems = [
+    { label: 'Home', href: '/' },
+    { label: 'Service Areas', href: '/service-areas' },
+    { label: city.name, href: `/mi/${citySlug}/` },
+    { label: service.name, href: `/mi/${citySlug}/${serviceSlug}/` }
+  ];
+
   // JSON-LD Structured Data
   const structuredData = [
     {
@@ -120,6 +129,16 @@ const PseoPage = () => {
         "priceCurrency": "USD",
         "price": service.starting_price.replace('$', '')
       }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": breadcrumbItems.map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": item.label,
+        "item": `https://www.bloombritecleaning.com${item.href}`
+      }))
     }
   ];
 
@@ -157,6 +176,11 @@ const PseoPage = () => {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Breadcrumbs */}
+        <section className="container mx-auto px-4 pt-8">
+          <Breadcrumbs items={breadcrumbItems} />
         </section>
 
         {/* Main Content */}

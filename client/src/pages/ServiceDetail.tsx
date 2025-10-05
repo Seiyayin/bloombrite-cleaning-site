@@ -36,7 +36,8 @@ const ServiceDetail = () => {
     <>
       <SeoHead 
         title={`${service.title} in Michigan | Bloombrite Cleaning Services`}
-        description={`Professional ${service.title.toLowerCase()} in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, Walled Lake, West Bloomfield, Northville, and Keego Harbor. ${service.metaDescription} Starting at ${service.startingPrice}.`}
+        description={`Professional ${service.title.toLowerCase()} in Metro Detroit. ${service.metaDescription} Starting at ${service.startingPrice}.`}
+        canonicalUrl={`https://www.bloombritecleaning.com/services/${slug}`}
         ogImage={service.imageUrl}
       />
       {/* Render specialized schema for services */}

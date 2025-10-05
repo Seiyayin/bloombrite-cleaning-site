@@ -37,6 +37,7 @@ const LocationDetail = () => {
       <SeoHead 
         title={`House Cleaning Services in ${location.name} | Bloombrite Cleaning`}
         description={location.shortDescription}
+        canonicalUrl={`https://www.bloombritecleaning.com/locations/${slug}`}
         ogImage={location.imageUrl}
       />
       

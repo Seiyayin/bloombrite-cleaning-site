@@ -1,0 +1,87 @@
+[
+  {
+    "id": "house-cleaning",
+    "name": "House Cleaning",
+    "slug": "house-cleaning",
+    "title": "House Cleaning Services",
+    "category": "residential",
+    "description": "Professional house cleaning services including dusting, vacuuming, mopping, kitchen and bathroom cleaning.",
+    "benefits": [
+      "Thorough cleaning of all living areas",
+      "Kitchen and bathroom sanitization",
+      "Dusting and vacuuming throughout",
+      "Professional-grade equipment and products",
+      "Flexible scheduling options"
+    ],
+    "ideal_for": "Homeowners looking for regular maintenance cleaning or one-time deep cleaning of their entire home.",
+    "starting_price": "$160"
+  },
+  {
+    "id": "deep-cleaning",
+    "name": "Deep Cleaning",
+    "slug": "deep-cleaning",
+    "title": "Deep Cleaning Services",
+    "category": "residential",
+    "description": "Comprehensive deep cleaning that reaches areas often missed, including baseboards, ceiling fans, inside appliances, and behind furniture.",
+    "benefits": [
+      "Thorough cleaning of hard-to-reach areas",
+      "Inside appliances and cabinets",
+      "Baseboard and trim cleaning",
+      "Grout scrubbing and detail work",
+      "Perfect for seasonal refreshes"
+    ],
+    "ideal_for": "Homes that need extra attention, spring cleaning, post-renovation cleanup, or preparing for special events.",
+    "starting_price": "$250"
+  },
+  {
+    "id": "move-out-cleaning",
+    "name": "Move-Out Cleaning",
+    "slug": "move-out-cleaning",
+    "title": "Move-Out Cleaning Services",
+    "category": "residential",
+    "description": "Comprehensive cleaning services for when you're moving out, ensuring you leave the property spotless to secure your security deposit.",
+    "benefits": [
+      "Thorough cleaning of empty property",
+      "Inside all cabinets and appliances",
+      "Window tracks and sills",
+      "Helps secure security deposit return",
+      "Coordinated timing with move-out date"
+    ],
+    "ideal_for": "Renters and homeowners moving out who want to leave the property in pristine condition.",
+    "starting_price": "$250"
+  },
+  {
+    "id": "recurring-cleaning",
+    "name": "Recurring Cleaning",
+    "slug": "recurring-cleaning",
+    "title": "Recurring Cleaning Services",
+    "category": "residential",
+    "description": "Regular maintenance cleaning on a weekly, biweekly, or monthly schedule to keep your home consistently clean.",
+    "benefits": [
+      "Consistent cleaning schedule",
+      "Same dedicated team",
+      "Discounted recurring rates",
+      "Priority scheduling",
+      "Customizable cleaning checklist"
+    ],
+    "ideal_for": "Busy families and professionals who want to maintain a consistently clean home without the hassle.",
+    "starting_price": "$120"
+  },
+  {
+    "id": "commercial-cleaning",
+    "name": "Commercial Cleaning",
+    "slug": "commercial-cleaning",
+    "title": "Commercial Cleaning Services",
+    "category": "commercial",
+    "description": "Professional office and commercial space cleaning services with flexible scheduling and commercial-grade standards.",
+    "benefits": [
+      "After-hours cleaning available",
+      "Commercial-grade equipment",
+      "Sanitization of high-touch surfaces",
+      "Customized cleaning plans",
+      "Professional appearance maintained"
+    ],
+    "ideal_for": "Businesses, offices, retail spaces, and commercial properties that need professional cleaning services.",
+    "starting_price": "$150"
+  }
+]

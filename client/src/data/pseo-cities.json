@@ -1,0 +1,57 @@
+[
+  {
+    "id": "wixom",
+    "name": "Wixom",
+    "slug": "wixom",
+    "fullName": "Wixom, MI",
+    "zipCodes": ["48393"],
+    "county": "Oakland County",
+    "landmarks": ["Wixom Elementary", "downtown Wixom"],
+    "population": "~14,000",
+    "description": "Wixom is a growing community in Oakland County known for its family-friendly neighborhoods and easy access to I-96."
+  },
+  {
+    "id": "novi",
+    "name": "Novi",
+    "slug": "novi",
+    "fullName": "Novi, MI",
+    "zipCodes": ["48374", "48375", "48377"],
+    "county": "Oakland County",
+    "landmarks": ["Twelve Oaks Mall", "Novi High School"],
+    "population": "~66,000",
+    "description": "Novi is one of Metro Detroit's fastest-growing cities, featuring excellent schools, shopping, and modern residential developments."
+  },
+  {
+    "id": "milford",
+    "name": "Milford",
+    "slug": "milford",
+    "fullName": "Milford, MI",
+    "zipCodes": ["48380", "48381"],
+    "county": "Oakland County",
+    "landmarks": ["downtown Milford", "Kensington Metropark"],
+    "population": "~16,000",
+    "description": "Milford offers small-town charm with a historic downtown, close proximity to Kensington Metropark, and a strong sense of community."
+  },
+  {
+    "id": "commerce-township",
+    "name": "Commerce Township",
+    "slug": "commerce-township",
+    "fullName": "Commerce Township, MI",
+    "zipCodes": ["48382", "48390"],
+    "county": "Oakland County",
+    "landmarks": ["Walled Lake", "Union Lake"],
+    "population": "~40,000",
+    "description": "Commerce Township is known for its beautiful lakes, outdoor recreation opportunities, and growing residential communities."
+  },
+  {
+    "id": "south-lyon",
+    "name": "South Lyon",
+    "slug": "south-lyon",
+    "fullName": "South Lyon, MI",
+    "zipCodes": ["48178"],
+    "county": "Oakland County",
+    "landmarks": ["downtown South Lyon", "McHattie Park"],
+    "population": "~11,000",
+    "description": "South Lyon is a charming community with a vibrant downtown, excellent schools, and a strong commitment to preserving its small-town character."
+  }
+]

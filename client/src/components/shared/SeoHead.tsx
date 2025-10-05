@@ -7,6 +7,7 @@ interface SeoHeadProps {
   ogTitle?: string;
   ogDescription?: string;
   ogImage?: string;
+  twitterImage?: string;
   structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
@@ -17,6 +18,7 @@ const SeoHead: FC<SeoHeadProps> = ({
   ogTitle,
   ogDescription,
   ogImage,
+  twitterImage,
   structuredData,
 }) => {
   // Memoize SEO data to prevent unnecessary updates
@@ -27,9 +29,10 @@ const SeoHead: FC<SeoHeadProps> = ({
     ogTitle: ogTitle || title,
     ogDescription: ogDescription || description,
     ogImage,
+    twitterImage: twitterImage || ogImage,
     ogUrl: canonicalUrl || (typeof window !== 'undefined' ? window.location.href : ''),
     structuredData
-  }), [title, description, canonicalUrl, ogTitle, ogDescription, ogImage, structuredData]);
+  }), [title, description, canonicalUrl, ogTitle, ogDescription, ogImage, twitterImage, structuredData]);
 
   useEffect(() => {
     // Set the document title immediately (critical for LCP)
@@ -74,6 +77,27 @@ const SeoHead: FC<SeoHeadProps> = ({
         if (!tag) {
           tag = document.createElement('meta');
           tag.setAttribute('property', property);
+          document.head.appendChild(tag);
+        }
+        tag.setAttribute('content', content);
+      });
+      
+      // Handle Twitter Card tags
+      const twitterTags = [
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: seoData.ogTitle },
+        { name: 'twitter:description', content: seoData.ogDescription },
+      ];
+      
+      if (seoData.twitterImage) {
+        twitterTags.push({ name: 'twitter:image', content: seoData.twitterImage });
+      }
+      
+      twitterTags.forEach(({ name, content }) => {
+        let tag = document.querySelector(`meta[name="${name}"]`);
+        if (!tag) {
+          tag = document.createElement('meta');
+          tag.setAttribute('name', name);
           document.head.appendChild(tag);
         }
         tag.setAttribute('content', content);

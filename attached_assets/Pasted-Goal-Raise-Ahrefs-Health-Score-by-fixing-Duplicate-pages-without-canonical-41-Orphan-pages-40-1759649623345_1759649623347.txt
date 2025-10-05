@@ -1,0 +1,187 @@
+Goal: Raise Ahrefs Health Score by fixing:
+
+Duplicate pages without canonical (41)
+
+Orphan pages (40) + pages with no outgoing links (41)
+
+Meta description too long (41) + multiple H1 tags (41)
+
+3XX redirects + redirected pages with no incoming internal links
+
+“Pages to submit to IndexNow” & missing Twitter card
+
+0) Detect framework & set up
+
+Detect if the app is Next.js or Vite/CRA + React Router.
+
+Install needed deps:
+
+If Next.js: none (use next/head).
+
+If Vite/CRA: npm i react-helmet-async.
+
+For sitemap & robots: npm i sitemap robots-txt.
+
+Create /seo/ utilities folder.
+
+1) Canonical URLs (fix duplicate pages)
+
+Create seo/canonical.ts with a helper that builds canonical from BASE_URL env + pathname.
+
+Add <link rel="canonical" href="..."> on every page:
+
+Next.js: in each page component via <Head>.
+
+Vite/CRA: wrap app with HelmetProvider, add <Helmet> per route.
+
+Add BASE_URL=https://www.bloombritecleaning.com to .env and use consistently.
+
+2) Meta title/description generator with safe lengths
+
+Create seo/meta.ts exporting buildMeta({title, description, path, ogImage, twitterImage}) that:
+
+Trims title ≤ 60 chars and description 150–160 chars.
+
+Inserts canonical via helper above.
+
+Renders Open Graph + Twitter Card:
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={`${BASE_URL}${path}`} />
+<meta property="og:image" content={ogImage || '/og-default.jpg'} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={twitterImage || '/og-default.jpg'} />
+
+
+Replace any hardcoded meta tags. Ensure one <h1> per page (see step 5).
+
+3) Create internal-link architecture (fix orphans & “no outgoing links”)
+
+Add a Service Areas hub page at /service-areas that lists and links to all city pages.
+
+Add a Services hub at /services that links to each service.
+
+Add a Related links block component components/RelatedLinks.tsx and include 2–4 internal links on every location/service page (e.g., “Deep Cleaning”, “Move-Out Cleaning”, “Contact”, “Service Areas”).
+
+Update header & footer nav to include: Home, Services, Service Areas, About, Contact.
+
+Ensure each orphan page is linked from at least 2 places (hub + footer).
+
+4) Data-driven pages (unique meta per page)
+
+Create data/locations.ts and data/services.ts with entries like:
+
+export const LOCATIONS = [
+  {slug:'wixom', city:'Wixom', state:'MI'},
+  {slug:'novi', city:'Novi', state:'MI'},
+  {slug:'milford', city:'Milford', state:'MI'},
+  {slug:'commerce', city:'Commerce', state:'MI'},
+  {slug:'south-lyon', city:'South Lyon', state:'MI'},
+  {slug:'west-bloomfield', city:'West Bloomfield', state:'MI'},
+  {slug:'keego-harbor', city:'Keego Harbor', state:'MI'},
+];
+export const SERVICES = [
+  {slug:'deep-cleaning', name:'Deep Cleaning'},
+  {slug:'move-out-cleaning', name:'Move-Out Cleaning'},
+  {slug:'maid-services', name:'Maid Services'},
+  {slug:'general-cleaning', name:'General Cleaning'},
+  {slug:'power-washing', name:'Power Washing'},
+];
+
+
+For each page, call buildMeta with unique title/description using the entry’s city/service:
+
+Title pattern (≤60): House Cleaning in ${city}, ${state} | Bloombrite
+
+Desc pattern (≤160): ${service} in ${city}, ${state} by Bloombrite Cleaning. Insured, reliable, satisfaction-guaranteed. Get a free quote today.
+
+5) Enforce a single H1 per page
+
+Create a linter script scripts/scan-h1.js that scans src/pages (or pages/) and warns if multiple <h1> exist.
+
+Update each page: exactly one <h1> that matches the primary keyword (service + city). Move other headings to <h2>.
+
+6) Redirect hygiene (3XX & chains)
+
+Replace any internal links that point to URLs that 301/302 → update them to the final destination.
+
+Ensure sitemap contains final URLs only (see step 7).
+
+If deploying on Vercel/Netlify:
+
+Next.js: configure next.config.js redirects only when necessary.
+
+Netlify: add _redirects file with minimal rules; remove chains.
+
+7) Sitemap & robots
+
+Generate public/sitemap.xml via a script scripts/generate-sitemap.ts that reads LOCATIONS and SERVICES and includes Home, /services, /service-areas, About, Contact, each location page, each service page. Exclude any redirect or non-index pages.
+
+Create public/robots.txt:
+
+User-agent: *
+Allow: /
+Sitemap: https://www.bloombritecleaning.com/sitemap.xml
+
+
+Add npm script: "sitemap": "ts-node scripts/generate-sitemap.ts" (or JS version).
+
+8) IndexNow ping
+
+Add a script scripts/indexnow.js that POSTs changed URLs to IndexNow endpoint (Bing/Yandex) when sitemap updates. Add npm script "indexnow": "node scripts/indexnow.js".
+
+9) LocalBusiness schema
+
+Add JSON-LD on Home and Contact pages (<script type="application/ld+json">) with:
+
+@type: "LocalBusiness", name, url, telephone, sameAs (FB/Instagram), address, areaServed (cities above), openingHours, image/logo.
+
+10) Content minimums (fix low word count)
+
+Add a content block component components/SEOText.tsx per page with ~300–600 words including the city/service, FAQs (2–3), and a CTA. Use props so each page has unique copy; do not duplicate paragraphs.
+
+11) Twitter card missing
+
+Already covered in step 2. Ensure /public/og-default.jpg exists (1200×630).
+
+12) Build & QA checklist (acceptance criteria)
+
+ Every indexable page renders one <h1>.
+
+ <link rel="canonical"> present & correct on every page.
+
+ Titles ≤60 chars; meta descriptions 150–160 chars; unique across pages.
+
+ No page is an orphan: each has ≥2 internal incoming links (hub/footer) and ≥2 outgoing links (related links).
+
+ No internal links point to 3XX; all go to final URLs.
+
+ sitemap.xml contains only non-redirect, indexable URLs; submit path /sitemap.xml.
+
+ robots.txt present and references sitemap.
+
+ Open Graph + Twitter meta present on all pages.
+
+ LocalBusiness JSON-LD valid (test with Google Rich Results).
+
+ Provide a README_SEO.md with how to update locations/services and regenerate sitemap + indexnow.
+
+Deliverables:
+
+Updated code with /seo, /data, components/RelatedLinks.tsx, components/SEOText.tsx.
+
+Scripts: generate-sitemap, indexnow, scan-h1.
+
+README_SEO.md with commands:
+
+npm run seo:scan (H1 scan)
+
+npm run sitemap && npm run indexnow
+
+Deployment notes (Vercel/Netlify) for redirects.
+
+After deployment: I will re-crawl in Ahrefs and re-submit sitemap in Google Search Console.

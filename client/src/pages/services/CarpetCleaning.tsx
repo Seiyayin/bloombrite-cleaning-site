@@ -19,7 +19,7 @@ const CarpetCleaningPage = () => {
     <>
       <SeoHead
         title="Steam Carpet Cleaning & Stain Removal Metro Detroit | Bloombrite Cleaning"
-        description="Hot water extraction carpet cleaning removes allergens, pet stains, odors. Eco-friendly solutions, fast drying. Wixom, Novi, Livonia, Milford, South Lyon, Commerce Township carpet cleaners. Same-day service available."
+        description="Hot water extraction carpet cleaning removes allergens, pet stains, odors. Eco-friendly solutions, fast drying. Serving Metro Detroit. Same-day available."
         canonicalUrl="https://www.bloombritecleaning.com/services/carpet-cleaning"
         ogImage={service.imageUrl}
       />

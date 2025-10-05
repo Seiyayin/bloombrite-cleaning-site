@@ -91,7 +91,7 @@ const BlogOverview = () => {
     <>
       <SeoHead 
         title="Professional Cleaning Tips & Home Care Guides | Bloombrite Blog Michigan"
-        description="Free cleaning guides from professional cleaners. Deep cleaning tutorials, appliance care, seasonal checklists, stain removal tips for Novi, Wixom, Livonia, Milford, South Lyon, Commerce Township homeowners."
+        description="Free cleaning guides from professional cleaners. Deep cleaning tutorials, appliance care, seasonal checklists, and stain removal tips for Metro Detroit homeowners."
         canonicalUrl="https://www.bloombritecleaning.com/blog"
       />
       

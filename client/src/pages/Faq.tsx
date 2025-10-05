@@ -21,7 +21,7 @@ const Faq = () => {
     <>
       <SeoHead 
         title="House Cleaning FAQs - Pricing, Scheduling, Services | Bloombrite Michigan"
-        description="Common questions about maid service pricing, what's included, booking process, cancellation policy, and service areas. Professional residential cleaning answers from experts."
+        description="Common questions about maid service pricing, what's included, booking process, and service areas. Professional residential cleaning answers from experts."
         canonicalUrl="https://www.bloombritecleaning.com/faq"
       />
       <FAQSchema faqs={faqs} />

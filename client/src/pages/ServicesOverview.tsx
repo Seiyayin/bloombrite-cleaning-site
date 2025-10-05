@@ -15,7 +15,7 @@ const ServicesOverview = () => {
     <>
       <SeoHead 
         title="Professional Cleaning Services in Metro Detroit | Bloombrite Cleaning"
-        description="Bloombrite Cleaning offers top-rated cleaning services in Metro Detroit. Expert residential cleaning, deep cleaning, move-in/out, office cleaning with satisfaction guarantee."
+        description="Top-rated cleaning services in Metro Detroit. Expert residential, deep cleaning, move-in/out, and office cleaning with satisfaction guarantee."
         canonicalUrl="https://www.bloombritecleaning.com/services"
       />
       

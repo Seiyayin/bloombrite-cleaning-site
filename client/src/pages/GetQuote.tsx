@@ -91,7 +91,7 @@ const GetQuote = () => {
     <>
       <SeoHead 
         title="Get a Free Quote | Bloombrite Cleaning"
-        description="Request a free, personalized quote for your residential or commercial cleaning needs in Michigan. Fast, easy, and no-obligation estimates from Bloombrite Cleaning."
+        description="Request a free quote for residential or commercial cleaning in Metro Detroit. Fast, easy, no-obligation estimates from Bloombrite Cleaning."
         canonicalUrl="https://bloombritecleaning.com/quote"
       />
       <QuotePageSchema />

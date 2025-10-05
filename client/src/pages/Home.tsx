@@ -32,7 +32,7 @@ const Home = () => {
     <>
       <SeoHead 
         title="Professional Maid Services & House Cleaning in Metro Detroit | Bloombrite Cleaning"
-        description="Top-rated maid services and house cleaning in Wixom, Novi, West Bloomfield, Livonia, and Metro Detroit. Expert residential cleaning, deep cleaning, move-in/out cleaning with 100% satisfaction."
+        description="Top-rated maid services & house cleaning in Metro Detroit. Expert deep cleaning, move-in/out services with 100% satisfaction guarantee."
         canonicalUrl="https://www.bloombritecleaning.com/"
         ogImage={teamImage}
       />

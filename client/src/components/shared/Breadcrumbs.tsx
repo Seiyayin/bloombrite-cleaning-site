@@ -25,9 +25,9 @@ const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
               </span>
             ) : (
               <Link href={item.href}>
-                <a className="hover:text-primary transition-colors" data-testid={`breadcrumb-link-${index}`}>
+                <span className="hover:text-primary transition-colors cursor-pointer" data-testid={`breadcrumb-link-${index}`}>
                   {item.label}
-                </a>
+                </span>
               </Link>
             )}
           </li>

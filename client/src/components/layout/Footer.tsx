@@ -3,9 +3,9 @@ import OptimizedImage from '@/components/shared/OptimizedImage';
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 text-white pt-0 pb-0">
+    <footer className="bg-neutral-900 text-white pt-12 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8 mb-12">
           
           {/* Contact Info */}
           <div>
@@ -112,9 +112,29 @@ const Footer = () => {
               <li><Link href="/services/deep-cleaning" className="text-neutral-300 hover:text-white transition">Deep Cleaning</Link></li>
               <li><Link href="/services/recurring-cleaning" className="text-neutral-300 hover:text-white transition">Recurring Cleaning</Link></li>
               <li><Link href="/services/move-in-out-cleaning" className="text-neutral-300 hover:text-white transition">Move-In/Out Cleaning</Link></li>
+              <li><Link href="/services/window-cleaning" className="text-neutral-300 hover:text-white transition">Window Cleaning</Link></li>
+              <li><Link href="/services/power-washing" className="text-neutral-300 hover:text-white transition">Power Washing</Link></li>
+              <li><Link href="/services/carpet-cleaning" className="text-neutral-300 hover:text-white transition">Carpet Cleaning</Link></li>
               <li><Link href="/services/office-cleaning" className="text-neutral-300 hover:text-white transition">Office Cleaning</Link></li>
               <li><Link href="/services/airbnb-cleaning" className="text-neutral-300 hover:text-white transition">Airbnb Cleaning</Link></li>
-              <li><Link href="/services/oven-cleaning" className="text-neutral-300 hover:text-white transition">Oven Cleaning</Link></li>
+            </ul>
+          </div>
+          
+          {/* Resources */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6">Resources</h3>
+            <ul className="space-y-3">
+              <li><Link href="/blog" className="text-neutral-300 hover:text-white transition">Cleaning Blog</Link></li>
+              <li><Link href="/blog/cities" className="text-neutral-300 hover:text-white transition">Local Cleaning Guides</Link></li>
+              <li><Link href="/blog/cities/wixom" className="text-neutral-300 hover:text-white transition">Wixom Blog</Link></li>
+              <li><Link href="/blog/cities/novi" className="text-neutral-300 hover:text-white transition">Novi Blog</Link></li>
+              <li><Link href="/blog/cities/livonia" className="text-neutral-300 hover:text-white transition">Livonia Blog</Link></li>
+              <li><Link href="/blog/cities/west-bloomfield" className="text-neutral-300 hover:text-white transition">West Bloomfield Blog</Link></li>
+              <li><Link href="/checklist" className="text-neutral-300 hover:text-white transition">Cleaning Checklist</Link></li>
+              <li><Link href="/careers" className="text-neutral-300 hover:text-white transition">Careers & Jobs</Link></li>
+              <li><Link href="/blog/inside-appliance-cleaning" className="text-neutral-300 hover:text-white transition">Appliance Cleaning Guide</Link></li>
+              <li><Link href="/blog/novi-house-cleaning-guide" className="text-neutral-300 hover:text-white transition">Novi Guide</Link></li>
+              <li><Link href="/blog/memorial-day-cleaning" className="text-neutral-300 hover:text-white transition">Memorial Day Cleaning</Link></li>
             </ul>
           </div>
           

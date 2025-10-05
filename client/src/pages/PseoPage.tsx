@@ -7,6 +7,7 @@ import NotFound from '@/pages/not-found';
 import cities from '@/data/pseo-cities.json';
 import services from '@/data/pseo-services.json';
 import joins from '@/data/pseo-join.json';
+import longtailKeywords from '@/data/bloombrite_longtail_keywords.json';
 
 interface City {
   id: string;
@@ -37,6 +38,18 @@ interface Join {
   serviceId: string;
 }
 
+interface LongtailKeyword {
+  city: string;
+  state: string;
+  city_slug: string;
+  zips: string;
+  service: string;
+  service_slug: string;
+  primary_keyword: string;
+  secondary_keywords: string;
+  suggested_url: string;
+}
+
 const PseoPage = () => {
   const [match, params] = useRoute('/mi/:city/:service');
   
@@ -63,9 +76,18 @@ const PseoPage = () => {
     return <NotFound />;
   }
 
-  // SEO content
-  const pageTitle = `${service.title} in ${city.name}, MI | Bloombrite Cleaning`;
-  const metaDescription = `Trusted ${service.name.toLowerCase()} in ${city.name}, MI. Insured, detail-oriented cleaners. Book Bloombrite today.`;
+  // Find longtail keyword data for this combination
+  const keywordData = longtailKeywords.find(
+    (kw: LongtailKeyword) => kw.city_slug === citySlug && kw.service_slug === serviceSlug
+  );
+
+  // Get secondary keywords as array
+  const secondaryKeywordsList = keywordData?.secondary_keywords.split(' | ') || [];
+
+  // SEO content - use primary keyword if available
+  const primaryKeyword = keywordData?.primary_keyword || `${service.name.toLowerCase()} in ${city.name} MI`;
+  const pageTitle = `${primaryKeyword.charAt(0).toUpperCase() + primaryKeyword.slice(1)} | Bloombrite Cleaning`;
+  const metaDescription = `Looking for ${primaryKeyword}? Bloombrite offers professional ${service.name.toLowerCase()} with insured, detail-oriented cleaners. ${secondaryKeywordsList[0] ? secondaryKeywordsList[0].charAt(0).toUpperCase() + secondaryKeywordsList[0].slice(1) + '.' : 'Book today!'} Free quotes available.`;
   const canonicalUrl = `https://www.bloombritecleaning.com/mi/${citySlug}/${serviceSlug}/`;
 
   // Breadcrumbs
@@ -189,12 +211,14 @@ const PseoPage = () => {
             <div className="max-w-4xl mx-auto">
               {/* Service Overview */}
               <div className="mb-12">
-                <h2 className="text-3xl font-bold mb-4">Professional {service.title} in {city.fullName}</h2>
+                <h2 className="text-3xl font-bold mb-4">
+                  {secondaryKeywordsList[0] ? secondaryKeywordsList[0].charAt(0).toUpperCase() + secondaryKeywordsList[0].slice(1) : `Professional ${service.title} in ${city.fullName}`}
+                </h2>
                 <p className="text-lg mb-6">
-                  Bloombrite Cleaning is proud to serve {city.name} with professional {service.name.toLowerCase()} services. {city.description}
+                  Looking for {primaryKeyword}? Bloombrite Cleaning is your trusted {city.name} {service.name.toLowerCase()} company, proudly serving {city.fullName} with professional cleaning services. {secondaryKeywordsList[2] ? `We offer ${secondaryKeywordsList[2]} to meet your needs.` : ''} {city.description}
                 </p>
                 <p className="text-lg mb-6">
-                  {service.description} Our experienced team understands the unique needs of {city.name} {service.category === 'commercial' ? 'businesses and properties' : 'homes and families'}, delivering exceptional results with every visit.
+                  {service.description} Our experienced team understands the unique needs of {city.name} {service.category === 'commercial' ? 'businesses and properties' : 'homes and families'}, delivering exceptional results with every visit. {secondaryKeywordsList[3] ? `Residents in ${secondaryKeywordsList[3].split(' ').slice(-1)[0]} trust us for reliable, quality service.` : ''}
                 </p>
               </div>
 
@@ -316,6 +340,37 @@ const PseoPage = () => {
                         </Link>
                       );
                     })}
+                </div>
+              </div>
+
+              {/* FAQ Section */}
+              <div className="mb-12">
+                <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+                <div className="space-y-6">
+                  <div className="border-l-4 border-primary pl-6">
+                    <h3 className="font-bold text-xl mb-2">
+                      How much does {service.name.toLowerCase()} cost in {city.name}?
+                    </h3>
+                    <p className="text-gray-700">
+                      Our {service.name.toLowerCase()} services start at {service.starting_price}. {secondaryKeywordsList[2] ? `We provide ${secondaryKeywordsList[2]}.` : ''} Contact us for a free, customized quote based on your specific needs.
+                    </p>
+                  </div>
+                  <div className="border-l-4 border-primary pl-6">
+                    <h3 className="font-bold text-xl mb-2">
+                      {secondaryKeywordsList[4] ? `Why is Bloombrite the ${secondaryKeywordsList[0]}?` : `What makes Bloombrite different?`}
+                    </h3>
+                    <p className="text-gray-700">
+                      Bloombrite Cleaning stands out with 97+ five-star reviews, background-checked and insured professionals, and a commitment to quality service. We're a trusted local {city.name} {service.name.toLowerCase()} company that delivers consistent, exceptional results.
+                    </p>
+                  </div>
+                  <div className="border-l-4 border-primary pl-6">
+                    <h3 className="font-bold text-xl mb-2">
+                      Do you serve my area in {city.name}?
+                    </h3>
+                    <p className="text-gray-700">
+                      Yes! We serve all neighborhoods throughout {city.fullName}, including {city.zipCodes.map(zip => `ZIP ${zip}`).join(', ')}. {secondaryKeywordsList[4] && secondaryKeywordsList[4].includes('near me') ? `If you're searching for "${secondaryKeywordsList[4]}", we've got you covered!` : ''}
+                    </p>
+                  </div>
                 </div>
               </div>
 

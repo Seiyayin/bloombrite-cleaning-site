@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Base URL of the website
+// Base URL of the website (using www for consistency with canonical URLs)
 const SITE_URL = process.env.REPLIT_DEV_DOMAIN ? `https://${process.env.REPLIT_DEV_DOMAIN}` : 'https://www.bloombritecleaning.com';
 
 // List of all pages (both static and dynamic)
@@ -95,7 +95,8 @@ function generateSitemap() {
 function generateRobotsTxt() {
   let robotsTxt = 'User-agent: *\n';
   robotsTxt += 'Allow: /\n\n';
-  robotsTxt += `Sitemap: ${SITE_URL}/sitemap.xml`;
+  // Always use production URL for sitemap reference
+  robotsTxt += 'Sitemap: https://www.bloombritecleaning.com/sitemap.xml';
   
   return robotsTxt;
 }

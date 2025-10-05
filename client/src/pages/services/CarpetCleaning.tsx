@@ -18,8 +18,8 @@ const CarpetCleaningPage = () => {
   return (
     <>
       <SeoHead
-        title="Carpet Cleaning Services | Bloombrite Cleaning"
-        description="Professional carpet cleaning in Michigan. Remove deep stains, allergens, and odors using hot water extraction technology. Extend carpet life."
+        title="Steam Carpet Cleaning & Stain Removal Metro Detroit | Bloombrite Cleaning"
+        description="Hot water extraction carpet cleaning removes allergens, pet stains, odors. Eco-friendly solutions, fast drying. Wixom, Novi, Livonia carpet cleaners. Same-day service available."
         canonicalUrl="https://www.bloombritecleaning.com/services/carpet-cleaning"
         ogImage={service.imageUrl}
       />
@@ -27,7 +27,7 @@ const CarpetCleaningPage = () => {
 
       <div className="-mt-16 pt-28 pb-16 bg-neutral-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Carpet Cleaning Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Deep Steam Carpet Cleaning & Stain Removal Services</h1>
           <p className="text-xl text-center text-neutral-600 max-w-3xl mx-auto mb-12">
             Professional deep carpet cleaning to remove stains, allergens, and extend carpet life
           </p>

@@ -18,8 +18,8 @@ const PowerWashingPage = () => {
   return (
     <>
       <SeoHead
-        title="Power Washing Services | Bloombrite Cleaning"
-        description="Professional power washing for home exteriors, driveways, decks, and patios in Michigan. Remove dirt, grime, mold, and mildew."
+        title="Driveway, Deck & Siding Power Washing Michigan | Bloombrite Cleaning"
+        description="High-pressure cleaning for driveways, decks, patios, siding & walkways. Remove mold, mildew, dirt & grime. Serving Novi, West Bloomfield, Farmington Hills. Instant quotes."
         canonicalUrl="https://www.bloombritecleaning.com/services/power-washing"
         ogImage={service.imageUrl}
       />
@@ -27,7 +27,7 @@ const PowerWashingPage = () => {
 
       <div className="-mt-16 pt-28 pb-16 bg-neutral-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Power Washing Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Professional Pressure Washing for Driveways, Decks & Home Exteriors</h1>
           <p className="text-xl text-center text-neutral-600 max-w-3xl mx-auto mb-12">
             Professional power washing to restore the beauty of your home's exterior surfaces
           </p>

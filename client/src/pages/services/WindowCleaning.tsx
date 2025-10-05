@@ -13,15 +13,15 @@ const WindowCleaning = () => {
   return (
     <>
       <SeoHead
-        title="Window Cleaning Services | Bloombrite Cleaning"
-        description="Professional window cleaning services in Michigan. We clean windows inside and out, including tracks, frames, and screens for a crystal-clear view."
+        title="Residential & Commercial Window Cleaning Metro Detroit | Bloombrite Cleaning"
+        description="Streak-free window washing for homes & businesses in Novi, Wixom, Livonia. Interior & exterior cleaning, screens, tracks, sills. Free quotes, eco-friendly solutions."
         canonicalUrl="https://www.bloombritecleaning.com/services/window-cleaning"
         ogImage="/images/window-cleaning.jpg"
       />
 
       <div className="-mt-16 pt-28 pb-16 bg-neutral-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Window Cleaning Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Crystal Clear Window Washing for Homes & Offices in Metro Detroit</h1>
           <p className="text-xl text-center text-neutral-600 max-w-3xl mx-auto mb-12">
             Professional window cleaning for a crystal-clear view and enhanced curb appeal
           </p>

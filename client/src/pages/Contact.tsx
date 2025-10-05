@@ -47,7 +47,7 @@ const Contact = () => {
     <>
       <SeoHead 
         title="Get Free Quote - Text (947) 465-4217 | Bloombrite Cleaning Michigan"
-        description="Request free cleaning estimate for Metro Detroit homes & offices. Text, call, or book online. Same-day service. Serving Wixom, Novi, Livonia, West Bloomfield, Farmington Hills."
+        description="Request free cleaning estimate for Metro Detroit homes & offices. Text, call, or book online. Same-day service. Serving Wixom, Novi, Livonia, Milford, South Lyon, Commerce Township, West Bloomfield, Farmington Hills."
         canonicalUrl="https://www.bloombritecleaning.com/contact"
       />
       

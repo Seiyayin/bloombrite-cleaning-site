@@ -19,7 +19,7 @@ const Reviews = () => {
     <>
       <SeoHead 
         title="5-Star Customer Reviews & Testimonials | Bloombrite Cleaning Michigan"
-        description="Read verified Google reviews from Novi, Wixom, Livonia homeowners. See why families trust Bloombrite for deep cleaning, move-in/out service, and recurring maid service."
+        description="Read verified Google reviews from Novi, Wixom, Livonia, Milford, South Lyon, Commerce Township homeowners. See why families trust Bloombrite for deep cleaning, move-in/out service, and recurring maid service."
         canonicalUrl="https://www.bloombritecleaning.com/reviews"
       />
       <ReviewSchema reviews={testimonials} />

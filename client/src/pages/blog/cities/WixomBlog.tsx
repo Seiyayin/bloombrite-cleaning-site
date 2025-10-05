@@ -43,6 +43,7 @@ const WixomBlog = () => {
       <SeoHead 
         title="House Cleaning Tips & Guides for Wixom Residents | Bloombrite Cleaning"
         description="Expert cleaning tips, guides, and advice for Wixom homeowners. Professional residential cleaning insights for maintaining your home year-round."
+        canonicalUrl="https://www.bloombritecleaning.com/blog/cities/wixom"
       />
       
       <main className="min-h-screen">

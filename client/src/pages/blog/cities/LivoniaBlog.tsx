@@ -43,6 +43,7 @@ const LivoniaBlog = () => {
       <SeoHead 
         title="House Cleaning Tips & Guides for Livonia Families | Bloombrite Cleaning"
         description="Professional house cleaning advice for Livonia homeowners. Expert residential cleaning services tips for Michigan's family-friendly community."
+        canonicalUrl="https://www.bloombritecleaning.com/blog/cities/livonia"
       />
       
       <main className="min-h-screen">

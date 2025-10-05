@@ -108,7 +108,8 @@ const Checklist = () => {
     <>
       <SeoHead 
         title="Professional Cleaning Checklist | Bloombrite Cleaning Services"
-        description="See exactly what's included in Bloombrite Cleaning's standard and deep cleaning services. Our comprehensive checklist ensures every detail is covered for your Metro Detroit home."
+        description="See exactly what's included in Bloombrite Cleaning's standard and deep cleaning services. Comprehensive checklist for your Metro Detroit home."
+        canonicalUrl="https://www.bloombritecleaning.com/checklist"
       />
       
       <main>

@@ -21,7 +21,8 @@ const Faq = () => {
     <>
       <SeoHead 
         title="Frequently Asked Questions | Bloombrite Cleaning"
-        description="Find answers about Bloombrite Cleaning's professional services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon and Walled Lake. Learn about our cleaning process, pricing, booking options, and satisfaction guarantee for residential and commercial cleaning."
+        description="Find answers about Bloombrite Cleaning's professional services in Metro Detroit. Learn about our cleaning process, pricing, booking, and satisfaction guarantee."
+        canonicalUrl="https://www.bloombritecleaning.com/faq"
       />
       <FAQSchema faqs={faqs} />
       

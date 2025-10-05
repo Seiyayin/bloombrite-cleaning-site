@@ -12,6 +12,7 @@ const Accessibility = () => {
       <SeoHead 
         title="Accessibility Statement | BloomBrite Cleaning"
         description="BloomBrite Cleaning is committed to ensuring digital accessibility for people with disabilities. Learn about our accessibility accommodations and commitment."
+        canonicalUrl="https://www.bloombritecleaning.com/accessibility"
       />
       
       <main>

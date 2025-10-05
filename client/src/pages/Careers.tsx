@@ -108,7 +108,8 @@ const Careers = () => {
     <>
       <SeoHead 
         title="Join Our Team - Career Opportunities | Bloombrite Cleaning"
-        description="Join the Bloombrite Cleaning team! We're hiring experienced cleaning professionals in Michigan. Apply now for house cleaning jobs with competitive pay and flexible schedules."
+        description="Join the Bloombrite Cleaning team! We're hiring experienced cleaning professionals in Metro Detroit. Apply now for competitive pay and flexible schedules."
+        canonicalUrl="https://www.bloombritecleaning.com/careers"
       />
       
       <main className="min-h-screen">

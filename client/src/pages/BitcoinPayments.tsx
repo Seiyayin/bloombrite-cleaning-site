@@ -65,7 +65,8 @@ const BitcoinPayments = () => {
     <>
       <SeoHead 
         title="Pay with Bitcoin for House Cleaning Services in Metro Detroit | Bloombrite Cleaning"
-        description="Pay for professional house cleaning services with Bitcoin in Metro Detroit. Secure, fast, and private cryptocurrency payments accepted for residential cleaning, deep cleaning, window cleaning, and all cleaning services in Wixom, Novi, West Bloomfield, and surrounding areas."
+        description="Pay for professional house cleaning services with Bitcoin in Metro Detroit. Secure, fast, and private cryptocurrency payments accepted for all cleaning services."
+        canonicalUrl="https://www.bloombritecleaning.com/bitcoin-payments"
       />
       
       <main className="bg-white">

@@ -15,7 +15,8 @@ const ServicesOverview = () => {
     <>
       <SeoHead 
         title="Professional Cleaning Services in Metro Detroit | Bloombrite Cleaning"
-        description="Bloombrite Cleaning offers top-rated professional cleaning services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Expert residential cleaning, general cleaning, weekly cleaning service, biweekly cleaning service, monthly cleaning service, deep cleaning, move-in/out cleaning, office cleaning, and specialized services with guaranteed satisfaction."
+        description="Bloombrite Cleaning offers top-rated cleaning services in Metro Detroit. Expert residential cleaning, deep cleaning, move-in/out, office cleaning with satisfaction guarantee."
+        canonicalUrl="https://www.bloombritecleaning.com/services"
       />
       
       <main>

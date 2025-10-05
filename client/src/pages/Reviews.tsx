@@ -19,7 +19,8 @@ const Reviews = () => {
     <>
       <SeoHead 
         title="Customer Reviews | Bloombrite Cleaning Michigan"
-        description="Read 5-star reviews of Bloombrite Cleaning's services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Our customers love our reliable residential and commercial cleaning, deep cleaning, move-in/out cleaning, and window cleaning services."
+        description="Read 5-star reviews of Bloombrite Cleaning's services in Metro Detroit. Reliable residential and commercial cleaning with satisfaction guarantee."
+        canonicalUrl="https://www.bloombritecleaning.com/reviews"
       />
       <ReviewSchema reviews={testimonials} />
       

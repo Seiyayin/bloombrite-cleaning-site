@@ -47,7 +47,8 @@ const Contact = () => {
     <>
       <SeoHead 
         title="Contact Us | Bloombrite Cleaning Michigan"
-        description="Contact Bloombrite Cleaning for professional residential and commercial cleaning services in Wixom, Novi, Livonia, Milford, Commerce Township, Farmington Hills, South Lyon, and Walled Lake. Get a free quote, schedule a cleaning, or ask about our satisfaction guarantee."
+        description="Contact Bloombrite Cleaning for professional residential and commercial cleaning in Metro Detroit. Get a free quote, schedule a cleaning, or ask questions."
+        canonicalUrl="https://www.bloombritecleaning.com/contact"
       />
       
       <main>

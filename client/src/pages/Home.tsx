@@ -32,8 +32,9 @@ const Home = () => {
     <>
       <SeoHead 
         title="Professional Maid Services & House Cleaning in Metro Detroit | Bloombrite Cleaning"
-        description="Top-rated maid services and house cleaning in Wixom, Novi, West Bloomfield, Livonia, and Metro Detroit. Expert residential cleaning, maid services near me, deep cleaning, move-in/out cleaning, weekly, biweekly, and monthly maintenance cleaning with 100% satisfaction guarantee."
-        ogImage={teamImage} // Using your actual team image for social sharing
+        description="Top-rated maid services and house cleaning in Wixom, Novi, West Bloomfield, Livonia, and Metro Detroit. Expert residential cleaning, deep cleaning, move-in/out cleaning with 100% satisfaction."
+        canonicalUrl="https://www.bloombritecleaning.com/"
+        ogImage={teamImage}
       />
       <LocalBusinessSchema />
       

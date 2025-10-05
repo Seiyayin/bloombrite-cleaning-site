@@ -7,6 +7,7 @@ interface SeoHeadProps {
   ogTitle?: string;
   ogDescription?: string;
   ogImage?: string;
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const SeoHead: FC<SeoHeadProps> = ({
@@ -16,6 +17,7 @@ const SeoHead: FC<SeoHeadProps> = ({
   ogTitle,
   ogDescription,
   ogImage,
+  structuredData,
 }) => {
   // Memoize SEO data to prevent unnecessary updates
   const seoData = useMemo(() => ({
@@ -25,8 +27,9 @@ const SeoHead: FC<SeoHeadProps> = ({
     ogTitle: ogTitle || title,
     ogDescription: ogDescription || description,
     ogImage,
-    ogUrl: canonicalUrl || (typeof window !== 'undefined' ? window.location.href : '')
-  }), [title, description, canonicalUrl, ogTitle, ogDescription, ogImage]);
+    ogUrl: canonicalUrl || (typeof window !== 'undefined' ? window.location.href : ''),
+    structuredData
+  }), [title, description, canonicalUrl, ogTitle, ogDescription, ogImage, structuredData]);
 
   useEffect(() => {
     // Set the document title immediately (critical for LCP)
@@ -75,6 +78,22 @@ const SeoHead: FC<SeoHeadProps> = ({
         }
         tag.setAttribute('content', content);
       });
+      
+      // Handle structured data (JSON-LD)
+      const scriptId = 'structured-data-jsonld';
+      let structuredDataScript = document.querySelector(`script#${scriptId}`);
+      
+      if (seoData.structuredData) {
+        if (!structuredDataScript) {
+          structuredDataScript = document.createElement('script');
+          structuredDataScript.setAttribute('id', scriptId);
+          structuredDataScript.setAttribute('type', 'application/ld+json');
+          document.head.appendChild(structuredDataScript);
+        }
+        structuredDataScript.textContent = JSON.stringify(seoData.structuredData);
+      } else if (structuredDataScript) {
+        structuredDataScript.remove();
+      }
     });
   }, [seoData]);
   

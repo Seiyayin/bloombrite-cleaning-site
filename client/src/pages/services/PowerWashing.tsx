@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
 import { PowerWashingSchema } from '@/lib/schema';
 import CallToAction from '@/components/home/CallToAction';
@@ -189,6 +190,40 @@ const PowerWashingPage = () => {
                   <p>The duration depends on the size of the area being cleaned and its condition. A typical house exterior might take 2-4 hours, while a driveway or deck might take 1-2 hours. We'll provide a time estimate when we give you a quote.</p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Related Services Section */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold text-center mb-10">Related Cleaning Services</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link href="/services/window-cleaning">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition cursor-pointer" data-testid="link-window-cleaning-service">
+                  <h3 className="font-bold text-xl mb-3 text-primary">Window Cleaning</h3>
+                  <p className="text-neutral-600 mb-4">
+                    Complete your exterior refresh with professional window cleaning to showcase your freshly power-washed surfaces.
+                  </p>
+                  <span className="text-primary font-semibold">Learn More →</span>
+                </div>
+              </Link>
+              <Link href="/services/deep-cleaning">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition cursor-pointer" data-testid="link-deep-cleaning-service">
+                  <h3 className="font-bold text-xl mb-3 text-primary">Deep Cleaning</h3>
+                  <p className="text-neutral-600 mb-4">
+                    After your exterior power washing, get the inside of your home equally spotless with our thorough deep cleaning service.
+                  </p>
+                  <span className="text-primary font-semibold">Learn More →</span>
+                </div>
+              </Link>
+              <Link href="/services">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition cursor-pointer" data-testid="link-all-services">
+                  <h3 className="font-bold text-xl mb-3 text-primary">All Services</h3>
+                  <p className="text-neutral-600 mb-4">
+                    Explore our complete range of professional cleaning services for your home or business in Metro Detroit.
+                  </p>
+                  <span className="text-primary font-semibold">View All →</span>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

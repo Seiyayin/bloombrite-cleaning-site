@@ -167,6 +167,31 @@ const LocationDetail = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Related Blog Articles Section */}
+                <div className="mt-12">
+                  <h2 className="text-2xl font-bold mb-6">Cleaning Tips for {location.name} Residents</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <Link href={`/blog/cities/${slug}`}>
+                      <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition cursor-pointer" data-testid={`link-blog-${slug}`}>
+                        <h3 className="font-bold text-xl mb-3 text-primary">Local Cleaning Tips & Guides</h3>
+                        <p className="text-neutral-600 mb-4">
+                          Discover professional cleaning advice tailored specifically for {location.name} homeowners and local conditions.
+                        </p>
+                        <span className="text-primary font-semibold">Read Articles →</span>
+                      </div>
+                    </Link>
+                    <Link href="/blog">
+                      <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition cursor-pointer" data-testid="link-blog-overview">
+                        <h3 className="font-bold text-xl mb-3 text-primary">All Cleaning Guides</h3>
+                        <p className="text-neutral-600 mb-4">
+                          Browse our complete collection of professional cleaning tips, seasonal guides, and expert advice for Metro Detroit.
+                        </p>
+                        <span className="text-primary font-semibold">View Blog →</span>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

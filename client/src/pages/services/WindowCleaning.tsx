@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
 import CallToAction from '@/components/home/CallToAction';
 import { WindowCleaningSchema } from '@/lib/schema';
@@ -239,6 +240,40 @@ const WindowCleaning = () => {
                   <p>While not required, removing or raising blinds and tying back curtains before our arrival can help the process go more smoothly. If you're unable to do this preparation, our technicians can carefully work around your window treatments, but please note this may add some time to the service. We always take great care to protect all window coverings during our cleaning process.</p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Related Services Section */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold text-center mb-10">Related Cleaning Services</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link href="/services/power-washing">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition cursor-pointer" data-testid="link-power-washing-service">
+                  <h3 className="font-bold text-xl mb-3 text-primary">Power Washing</h3>
+                  <p className="text-neutral-600 mb-4">
+                    Complement your window cleaning with power washing for siding, decks, and patios to enhance your home's overall appearance.
+                  </p>
+                  <span className="text-primary font-semibold">Learn More →</span>
+                </div>
+              </Link>
+              <Link href="/services/deep-cleaning">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition cursor-pointer" data-testid="link-deep-cleaning-service">
+                  <h3 className="font-bold text-xl mb-3 text-primary">Deep Cleaning</h3>
+                  <p className="text-neutral-600 mb-4">
+                    Get a complete home refresh with our deep cleaning service that tackles every nook and cranny, including interior windows.
+                  </p>
+                  <span className="text-primary font-semibold">Learn More →</span>
+                </div>
+              </Link>
+              <Link href="/services">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition cursor-pointer" data-testid="link-all-services">
+                  <h3 className="font-bold text-xl mb-3 text-primary">All Services</h3>
+                  <p className="text-neutral-600 mb-4">
+                    Explore our complete range of professional cleaning services for your home or business in Metro Detroit.
+                  </p>
+                  <span className="text-primary font-semibold">View All →</span>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

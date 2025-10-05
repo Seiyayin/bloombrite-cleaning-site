@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'wouter';
 import SeoHead from '@/components/shared/SeoHead';
 import { CarpetCleaningSchema } from '@/lib/schema';
 import CallToAction from '@/components/home/CallToAction';
@@ -171,6 +172,40 @@ const CarpetCleaningPage = () => {
                   <p>While our professional equipment and techniques can remove most stains, some permanent stains (like certain dyes, chemical damage, or very old stains) may not be completely removable. During our pre-inspection, we'll identify potentially problematic stains and set realistic expectations about what can be achieved.</p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Related Services Section */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold text-center mb-10">Related Cleaning Services</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link href="/services/deep-cleaning">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition cursor-pointer" data-testid="link-deep-cleaning-service">
+                  <h3 className="font-bold text-xl mb-3 text-primary">Deep Cleaning</h3>
+                  <p className="text-neutral-600 mb-4">
+                    Pair your carpet cleaning with our comprehensive deep cleaning service to refresh your entire home from top to bottom.
+                  </p>
+                  <span className="text-primary font-semibold">Learn More →</span>
+                </div>
+              </Link>
+              <Link href="/services/move-in-out-cleaning">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition cursor-pointer" data-testid="link-move-cleaning-service">
+                  <h3 className="font-bold text-xl mb-3 text-primary">Move-In/Out Cleaning</h3>
+                  <p className="text-neutral-600 mb-4">
+                    Moving? Our move-in/out cleaning includes carpet cleaning to ensure a fresh start or leave your space spotless.
+                  </p>
+                  <span className="text-primary font-semibold">Learn More →</span>
+                </div>
+              </Link>
+              <Link href="/services">
+                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition cursor-pointer" data-testid="link-all-services">
+                  <h3 className="font-bold text-xl mb-3 text-primary">All Services</h3>
+                  <p className="text-neutral-600 mb-4">
+                    Explore our complete range of professional cleaning services for your home or business in Metro Detroit.
+                  </p>
+                  <span className="text-primary font-semibold">View All →</span>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

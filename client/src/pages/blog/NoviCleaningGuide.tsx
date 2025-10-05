@@ -40,6 +40,7 @@ const NoviCleaningGuide = () => {
       <SeoHead 
         title="Complete House Cleaning Guide for Novi, MI Homeowners | Bloombrite Cleaning"
         description="Expert cleaning guide for Novi, MI residents. Professional tips, seasonal schedules, and the best residential cleaning services in Novi."
+        canonicalUrl="https://www.bloombritecleaning.com/blog/novi-house-cleaning-guide"
         structuredData={structuredData}
       />
       

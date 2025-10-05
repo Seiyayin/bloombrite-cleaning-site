@@ -16,6 +16,7 @@ const MemorialDayCleaning = () => {
       <SeoHead 
         title="Memorial Day Cleaning Guide: Prepare Your Home for Summer Gatherings | Bloombrite Cleaning"
         description="Memorial Day cleaning checklist for your home. Professional tips for indoor and outdoor spaces to get party-ready and impress guests."
+        canonicalUrl="https://www.bloombritecleaning.com/blog/memorial-day-cleaning"
         ogImage="/images/living room deep cleaning.jpg"
       />
       <MemorialDayCleaningSchema />

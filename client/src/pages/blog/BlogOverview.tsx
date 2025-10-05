@@ -92,6 +92,7 @@ const BlogOverview = () => {
       <SeoHead 
         title="Cleaning Tips & Guides | Bloombrite Cleaning Blog"
         description="Expert cleaning tips and guides for Metro Detroit homeowners. Learn professional secrets to keep your home spotless from Bloombrite experts."
+        canonicalUrl="https://www.bloombritecleaning.com/blog"
       />
       
       <main className="bg-white">

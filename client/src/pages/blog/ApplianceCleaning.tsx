@@ -16,6 +16,7 @@ const ApplianceCleaning = () => {
       <SeoHead 
         title="The Complete Guide to Inside Appliance Cleaning | BloomBrite Cleaning"
         description="Professional appliance cleaning guide. Deep clean refrigerators, ovens, dishwashers, and microwaves to extend life and improve performance."
+        canonicalUrl="https://www.bloombritecleaning.com/blog/inside-appliance-cleaning"
         ogImage={kitchenImage}
       />
       <ApplianceCleaningSchema />

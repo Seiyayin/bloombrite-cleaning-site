@@ -87,7 +87,10 @@ const PseoPage = () => {
   // SEO content - use primary keyword if available
   const primaryKeyword = keywordData?.primary_keyword || `${service.name.toLowerCase()} in ${city.name} MI`;
   const pageTitle = `${primaryKeyword.charAt(0).toUpperCase() + primaryKeyword.slice(1)} | Bloombrite Cleaning`;
-  const metaDescription = `Looking for ${primaryKeyword}? Bloombrite offers professional ${service.name.toLowerCase()} with insured, detail-oriented cleaners. ${secondaryKeywordsList[0] ? secondaryKeywordsList[0].charAt(0).toUpperCase() + secondaryKeywordsList[0].slice(1) + '.' : 'Book today!'} Free quotes available.`;
+  
+  // Build meta description with fallback for missing secondary keywords
+  const firstSecondaryKeyword = secondaryKeywordsList[0] || `trusted ${service.name.toLowerCase()} company in ${city.name}`;
+  const metaDescription = `Looking for ${primaryKeyword}? Bloombrite offers professional ${service.name.toLowerCase()} with insured, detail-oriented cleaners. ${firstSecondaryKeyword.charAt(0).toUpperCase() + firstSecondaryKeyword.slice(1)}. Free quotes available.`;
   const canonicalUrl = `https://www.bloombritecleaning.com/mi/${citySlug}/${serviceSlug}/`;
 
   // Breadcrumbs
@@ -215,10 +218,10 @@ const PseoPage = () => {
                   {secondaryKeywordsList[0] ? secondaryKeywordsList[0].charAt(0).toUpperCase() + secondaryKeywordsList[0].slice(1) : `Professional ${service.title} in ${city.fullName}`}
                 </h2>
                 <p className="text-lg mb-6">
-                  Looking for {primaryKeyword}? Bloombrite Cleaning is your trusted {city.name} {service.name.toLowerCase()} company, proudly serving {city.fullName} with professional cleaning services. {secondaryKeywordsList[2] ? `We offer ${secondaryKeywordsList[2]} to meet your needs.` : ''} {city.description}
+                  Looking for {primaryKeyword}? Bloombrite Cleaning is your trusted {city.name} {service.name.toLowerCase()} company, proudly serving {city.fullName} with professional cleaning services. {secondaryKeywordsList[2] ? `We offer ${secondaryKeywordsList[2]}.` : `Our ${service.name.toLowerCase()} services are designed to exceed your expectations.`} {city.description}
                 </p>
                 <p className="text-lg mb-6">
-                  {service.description} Our experienced team understands the unique needs of {city.name} {service.category === 'commercial' ? 'businesses and properties' : 'homes and families'}, delivering exceptional results with every visit. {secondaryKeywordsList[3] ? `Residents in ${secondaryKeywordsList[3].split(' ').slice(-1)[0]} trust us for reliable, quality service.` : ''}
+                  {service.description} Our experienced team understands the unique needs of {city.name} {service.category === 'commercial' ? 'businesses and properties' : 'homes and families'}, delivering exceptional results with every visit. {secondaryKeywordsList[3] ? `Residents in ${secondaryKeywordsList[3].split(' ').slice(-1)[0]} trust us for reliable, quality service.` : 'We are committed to providing the highest quality cleaning services in the area.'}
                 </p>
               </div>
 
@@ -352,12 +355,12 @@ const PseoPage = () => {
                       How much does {service.name.toLowerCase()} cost in {city.name}?
                     </h3>
                     <p className="text-gray-700">
-                      Our {service.name.toLowerCase()} services start at {service.starting_price}. {secondaryKeywordsList[2] ? `We provide ${secondaryKeywordsList[2]}.` : ''} Contact us for a free, customized quote based on your specific needs.
+                      Our {service.name.toLowerCase()} services start at {service.starting_price}. {secondaryKeywordsList[2] ? `We provide ${secondaryKeywordsList[2]}.` : 'We offer competitive pricing with transparent quotes.'} Contact us for a free, customized quote based on your specific needs.
                     </p>
                   </div>
                   <div className="border-l-4 border-primary pl-6">
                     <h3 className="font-bold text-xl mb-2">
-                      {secondaryKeywordsList[4] ? `Why is Bloombrite the ${secondaryKeywordsList[0]}?` : `What makes Bloombrite different?`}
+                      {secondaryKeywordsList[0] && secondaryKeywordsList[0].toLowerCase().includes('best') ? `Why is Bloombrite the ${secondaryKeywordsList[0]}?` : `What makes Bloombrite different?`}
                     </h3>
                     <p className="text-gray-700">
                       Bloombrite Cleaning stands out with 97+ five-star reviews, background-checked and insured professionals, and a commitment to quality service. We're a trusted local {city.name} {service.name.toLowerCase()} company that delivers consistent, exceptional results.
@@ -368,7 +371,7 @@ const PseoPage = () => {
                       Do you serve my area in {city.name}?
                     </h3>
                     <p className="text-gray-700">
-                      Yes! We serve all neighborhoods throughout {city.fullName}, including {city.zipCodes.map(zip => `ZIP ${zip}`).join(', ')}. {secondaryKeywordsList[4] && secondaryKeywordsList[4].includes('near me') ? `If you're searching for "${secondaryKeywordsList[4]}", we've got you covered!` : ''}
+                      Yes! We serve all neighborhoods throughout {city.fullName}, including {city.zipCodes.map(zip => `ZIP ${zip}`).join(', ')}. {secondaryKeywordsList[4] && secondaryKeywordsList[4].includes('near me') ? `If you're searching for "${secondaryKeywordsList[4]}", we've got you covered!` : 'Contact us today for service in your area.'}
                     </p>
                   </div>
                 </div>

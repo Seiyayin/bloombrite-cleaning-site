@@ -20,15 +20,15 @@ const Hero = () => {
       {/* Centered content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 min-h-screen flex flex-col items-center justify-center text-center gap-6">
         <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white/90 backdrop-blur">
-          ★★★★★ MOST TRUSTED IN METRO DETROIT • FAST, FRIENDLY, AFFORDABLE
+          ★★★★★ MOST TRUSTED IN METRO DETROIT • FAST, FRIENDLY, TOP RATED
         </span>
 
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-white">
-          Affordable House Cleaning & Maid Services - Novi, Wixom, Livonia MI
+          Top Rated House Cleaning & Maid Services - Novi, Wixom, Livonia, Milford, South Lyon MI
         </h1>
 
         <p className="text-base md:text-xl text-white/85 max-w-4xl">
-          Bloombrite Cleaning provides top-rated residential and commercial cleaning across Metro Detroit, including Novi, Wixom, Farmington Hills, and Livonia. Our licensed, insured cleaners specialize in deep cleaning, move-in/move-out cleaning, recurring maid service, and office cleaning. Affordable pricing, eco-friendly products, and same-day service available.
+          Bloombrite Cleaning provides top-rated residential and commercial cleaning across Metro Detroit, including Novi, Wixom, Farmington Hills, Livonia, Milford, and South Lyon. Our licensed, insured cleaners specialize in deep cleaning, move-in/move-out cleaning, recurring maid service, and office cleaning. Competitive pricing, eco-friendly products, and same-day service available.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a 

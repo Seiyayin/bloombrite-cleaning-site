@@ -41,8 +41,8 @@ const WestBloomfieldBlog = () => {
   return (
     <>
       <SeoHead 
-        title="Luxury House Cleaning Tips for West Bloomfield | Bloombrite Cleaning"
-        description="Expert cleaning tips for West Bloomfield luxury homes. Professional advice for upscale properties and lakefront homes from Bloombrite."
+        title="West Bloomfield MI Blog: Luxury Home Care, Lakefront Maintenance | Bloombrite"
+        description="Upscale home cleaning guides for West Bloomfield. Marble care, lakefront seasonal maintenance, premium window cleaning, luxury property care tips."
         canonicalUrl="https://www.bloombritecleaning.com/blog/cities/west-bloomfield"
       />
       
@@ -51,7 +51,7 @@ const WestBloomfieldBlog = () => {
           <div className="container mx-auto px-4">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                House Cleaning Tips for West Bloomfield Homeowners
+                Luxury & Lakefront Home Cleaning Articles for West Bloomfield MI
               </h1>
               <p className="text-xl max-w-3xl mx-auto">
                 Specialized cleaning advice for West Bloomfield's luxury homes and lakefront properties from your professional residential cleaning services experts

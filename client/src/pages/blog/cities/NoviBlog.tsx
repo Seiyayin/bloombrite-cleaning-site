@@ -41,8 +41,8 @@ const NoviBlog = () => {
   return (
     <>
       <SeoHead 
-        title="House Cleaning Tips & Guides for Novi Residents | Bloombrite Cleaning"
-        description="Expert cleaning tips, guides, and advice for Novi homeowners. Professional residential cleaning insights for Michigan's suburban communities."
+        title="Novi MI Blog: Suburban Cleaning, New Construction Windows | Bloombrite"
+        description="Cleaning guides for Novi suburban homes. New construction maintenance, large window care, spring cleaning services, Oakland County professional tips."
         canonicalUrl="https://www.bloombritecleaning.com/blog/cities/novi"
       />
       
@@ -51,7 +51,7 @@ const NoviBlog = () => {
           <div className="container mx-auto px-4">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                House Cleaning Tips for Novi Homeowners
+                Suburban Home Cleaning Articles for Novi, Oakland County MI
               </h1>
               <p className="text-xl max-w-3xl mx-auto">
                 Professional cleaning advice and guides specifically for Novi residents from your trusted residential cleaning services team

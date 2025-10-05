@@ -107,8 +107,8 @@ const Checklist = () => {
   return (
     <>
       <SeoHead 
-        title="Professional Cleaning Checklist | Bloombrite Cleaning Services"
-        description="See exactly what's included in Bloombrite Cleaning's standard and deep cleaning services. Comprehensive checklist for your Metro Detroit home."
+        title="What's Included? Standard & Deep Cleaning Task Lists | Bloombrite Michigan"
+        description="Complete cleaning checklist: kitchen, bathroom, bedroom, living room tasks. Standard clean vs deep clean comparison. Printable PDF. See exactly what we clean in your home."
         canonicalUrl="https://www.bloombritecleaning.com/checklist"
       />
       
@@ -116,7 +116,7 @@ const Checklist = () => {
         {/* Header Banner */}
         <section className="bg-primary text-white -mt-16 pt-20 pb-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Our Professional Cleaning Checklist</h1>
+            <h1 className="text-4xl font-bold mb-4">Room-by-Room Cleaning Checklist: Everything We Clean</h1>
             <p className="text-xl max-w-3xl mx-auto">
               See exactly what's included in our <Link href="/services" className="text-orange-400 hover:text-orange-300 underline">professional cleaning services</Link>. 
               We follow a detailed checklist to ensure every task is completed to perfection.

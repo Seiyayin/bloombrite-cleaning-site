@@ -10,8 +10,8 @@ const Accessibility = () => {
   return (
     <>
       <SeoHead 
-        title="Accessibility Statement | BloomBrite Cleaning"
-        description="BloomBrite Cleaning is committed to ensuring digital accessibility for people with disabilities. Learn about our accessibility accommodations and commitment."
+        title="Website Accessibility & WCAG Compliance | Bloombrite Cleaning Michigan"
+        description="Our commitment to digital accessibility, WCAG 2.1 AA compliance, screen reader compatibility. Report accessibility issues. ADA accommodations available for cleaning services."
         canonicalUrl="https://www.bloombritecleaning.com/accessibility"
       />
       
@@ -19,7 +19,7 @@ const Accessibility = () => {
         {/* Accessibility Banner */}
         <section className="bg-primary text-white -mt-16 pt-20 pb-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Accessibility Statement</h1>
+            <h1 className="text-4xl font-bold mb-4">Digital Accessibility Commitment & WCAG Standards</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Our commitment to ensuring accessibility for all customers and visitors.
             </p>

@@ -14,8 +14,8 @@ const ServicesOverview = () => {
   return (
     <>
       <SeoHead 
-        title="Professional Cleaning Services in Metro Detroit | Bloombrite Cleaning"
-        description="Top-rated cleaning services in Metro Detroit. Expert residential, deep cleaning, move-in/out, and office cleaning with satisfaction guarantee."
+        title="Residential & Commercial Cleaning Services Metro Detroit | Bloombrite"
+        description="Full-service house cleaning, office cleaning, deep cleaning, move-in/out, recurring maid service. Licensed, insured. Serving Wixom, Novi, Livonia. Book online."
         canonicalUrl="https://www.bloombritecleaning.com/services"
       />
       
@@ -23,7 +23,7 @@ const ServicesOverview = () => {
         {/* Services Banner */}
         <section className="bg-primary text-white -mt-16 pt-20 pb-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Our Professional Cleaning Services & Solutions</h1>
+            <h1 className="text-4xl font-bold mb-4">Complete Cleaning Solutions for Homes & Businesses in Michigan</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Professional cleaning services and solutions tailored to your needs throughout <Link href="/locations" className="text-white hover:text-accent underline">Metro Detroit</Link>. From <Link href="/services/general-cleaning" className="text-white hover:text-accent underline">general cleaning services</Link> to <Link href="/services/deep-cleaning" className="text-white hover:text-accent underline">deep cleaning</Link>, plus weekly cleaning service, biweekly cleaning service, and monthly cleaning service options. Explore our cleaning services below and find the perfect solution for your home or office.
             </p>

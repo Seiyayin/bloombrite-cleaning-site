@@ -64,8 +64,8 @@ const BitcoinPayments = () => {
   return (
     <>
       <SeoHead 
-        title="Pay with Bitcoin for House Cleaning Services in Metro Detroit | Bloombrite Cleaning"
-        description="Pay with Bitcoin for house cleaning in Metro Detroit. Secure, fast, and private cryptocurrency payments for all cleaning services."
+        title="Crypto Payment Accepted - Bitcoin for Cleaning Services | Bloombrite MI"
+        description="We accept Bitcoin (BTC) cryptocurrency for house cleaning. Secure blockchain payments, lower fees, instant confirmation. First cleaning company in Metro Detroit accepting crypto."
         canonicalUrl="https://www.bloombritecleaning.com/bitcoin-payments"
       />
       
@@ -78,7 +78,7 @@ const BitcoinPayments = () => {
                 <OptimizedImage src={bitcoinLogo} alt="Bitcoin cryptocurrency logo for secure payment processing" className="w-16 h-16" width={64} height={64} />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-                Pay with <span className="text-orange-500">Bitcoin</span> for Professional Cleaning Services
+                Cryptocurrency Payments - <span className="text-orange-500">Bitcoin</span> Accepted for All Services
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
                 Bloombrite Cleaning now accepts Bitcoin payments for all our professional house cleaning services in Metro Detroit. Enjoy secure, fast, and private cryptocurrency payments for your residential cleaning needs.

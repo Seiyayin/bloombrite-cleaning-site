@@ -41,8 +41,8 @@ const WixomBlog = () => {
   return (
     <>
       <SeoHead 
-        title="House Cleaning Tips & Guides for Wixom Residents | Bloombrite Cleaning"
-        description="Expert cleaning tips, guides, and advice for Wixom homeowners. Professional residential cleaning insights for maintaining your home year-round."
+        title="Wixom MI Cleaning Blog: 4-Season Guide, Benefits, Checklists | Bloombrite"
+        description="Complete cleaning resources for Wixom MI homeowners. Room-by-room checklists, seasonal weather tips, professional service benefits, Michigan climate strategies."
         canonicalUrl="https://www.bloombritecleaning.com/blog/cities/wixom"
       />
       
@@ -52,7 +52,7 @@ const WixomBlog = () => {
           <div className="container mx-auto px-4">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                House Cleaning Tips for Wixom Homeowners
+                Complete Cleaning Resources for Wixom MI Residents
               </h1>
               <p className="text-xl max-w-3xl mx-auto">
                 Professional cleaning advice and guides specifically for Wixom residents from your local residential cleaning services experts

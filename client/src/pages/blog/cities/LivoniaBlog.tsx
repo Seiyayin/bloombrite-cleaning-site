@@ -41,8 +41,8 @@ const LivoniaBlog = () => {
   return (
     <>
       <SeoHead 
-        title="House Cleaning Tips & Guides for Livonia Families | Bloombrite Cleaning"
-        description="Professional house cleaning advice for Livonia homeowners. Expert residential cleaning services tips for Michigan's family-friendly community."
+        title="Livonia MI Cleaning Blog: Ranch Home Tips, Seasonal Schedules | Bloombrite"
+        description="Cleaning tutorials for Livonia ranch-style homes. Year-round maintenance schedules, family cleaning strategies, professional service benefits for working families in Michigan."
         canonicalUrl="https://www.bloombritecleaning.com/blog/cities/livonia"
       />
       
@@ -51,7 +51,7 @@ const LivoniaBlog = () => {
           <div className="container mx-auto px-4">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                House Cleaning Tips for Livonia Homeowners
+                Cleaning Guides for Livonia Families & Ranch-Style Homes
               </h1>
               <p className="text-xl max-w-3xl mx-auto">
                 Professional cleaning advice and guides specifically for Livonia families from your trusted residential cleaning services team

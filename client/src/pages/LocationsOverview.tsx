@@ -13,8 +13,8 @@ const LocationsOverview = () => {
   return (
     <>
       <SeoHead 
-        title="Service Areas in Michigan | Bloombrite Cleaning"
-        description="Bloombrite Cleaning serves Wixom, Novi, Livonia, Milford, and Metro Detroit. Local experts for residential and commercial cleaning with customized plans."
+        title="Cities We Serve: Wixom, Novi, Livonia, West Bloomfield MI | Bloombrite"
+        description="Local cleaning service coverage map. Serving Wixom 48393, Novi 48374-48377, Livonia 48150-48154, West Bloomfield 48322-48324, Farmington Hills, Commerce Township, Oakland County."
         canonicalUrl="https://www.bloombritecleaning.com/locations"
       />
       
@@ -22,7 +22,7 @@ const LocationsOverview = () => {
         {/* Locations Banner */}
         <section className="bg-primary text-white -mt-16 pt-20 pb-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Our Service Areas</h1>
+            <h1 className="text-4xl font-bold mb-4">Metro Detroit Service Coverage: All Cities & Zip Codes</h1>
             <p className="text-xl max-w-3xl mx-auto">
               BloomBrite Cleaning proudly serves these Michigan communities and surrounding areas with our professional <Link href="/services" className="text-white hover:text-accent underline">cleaning services</Link>. From <Link href="/services/standard-cleaning" className="text-white hover:text-accent underline">residential cleaning</Link> to <Link href="/services/office-cleaning" className="text-white hover:text-accent underline">commercial solutions</Link>, we're your local cleaning experts.
             </p>

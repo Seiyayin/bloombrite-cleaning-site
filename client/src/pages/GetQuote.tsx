@@ -90,8 +90,8 @@ const GetQuote = () => {
   return (
     <>
       <SeoHead 
-        title="Get a Free Quote | Bloombrite Cleaning"
-        description="Request a free quote for residential or commercial cleaning in Metro Detroit. Fast, easy, no-obligation estimates from Bloombrite Cleaning."
+        title="Book Online Now - Instant Quote Calculator | Bloombrite Cleaning Michigan"
+        description="Fast online booking with instant pricing. No-obligation quote for house cleaning, office cleaning, deep cleaning. Same-day service available. Free estimates in 5 minutes."
         canonicalUrl="https://bloombritecleaning.com/quote"
       />
       <QuotePageSchema />
@@ -100,7 +100,7 @@ const GetQuote = () => {
         {/* Quote Banner */}
         <section className="bg-primary text-white -mt-16 pt-20 pb-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Get a Free Cleaning Quote</h1>
+            <h1 className="text-4xl font-bold mb-4">Request Your Cleaning Quote - Fast Response Guaranteed</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Fill out the form below to receive a personalized quote for your cleaning needs. We'll get back to you promptly with a detailed estimate.
             </p>

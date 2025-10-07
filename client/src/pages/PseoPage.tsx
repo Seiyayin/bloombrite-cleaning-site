@@ -88,9 +88,8 @@ const PseoPage = () => {
   const primaryKeyword = keywordData?.primary_keyword || `${service.name.toLowerCase()} in ${city.name} MI`;
   const pageTitle = `${primaryKeyword.charAt(0).toUpperCase() + primaryKeyword.slice(1)} | Bloombrite Cleaning`;
   
-  // Build meta description with fallback for missing secondary keywords
-  const firstSecondaryKeyword = secondaryKeywordsList[0] || `trusted ${service.name.toLowerCase()} company in ${city.name}`;
-  const metaDescription = `Looking for ${primaryKeyword}? Bloombrite offers professional ${service.name.toLowerCase()} with insured, detail-oriented cleaners. ${firstSecondaryKeyword.charAt(0).toUpperCase() + firstSecondaryKeyword.slice(1)}. Free quotes available.`;
+  // Build meta description - keep under 160 chars
+  const metaDescription = `Professional ${service.name.toLowerCase()} in ${city.name}, MI. Insured, detail-oriented cleaners. Top-rated service. Free quotes available.`;
   // Breadcrumbs
   const breadcrumbItems = [
     { label: 'Home', href: '/' },

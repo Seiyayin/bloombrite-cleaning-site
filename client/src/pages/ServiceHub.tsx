@@ -69,7 +69,7 @@ const ServiceHub = () => {
   ];
 
   const pageTitle = `${service.title} Across Metro Detroit, MI | Bloombrite Cleaning`;
-  const metaDescription = `Professional ${service.name.toLowerCase()} available across Metro Detroit. Serving ${serviceCities.map(c => c.name).join(', ')} and more. Top-rated, insured cleaners. Free quote.`;
+  const metaDescription = `Professional ${service.name.toLowerCase()} across Metro Detroit. Serving ${serviceCities.length}+ cities. Top-rated, insured cleaners. Free quote.`;
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",

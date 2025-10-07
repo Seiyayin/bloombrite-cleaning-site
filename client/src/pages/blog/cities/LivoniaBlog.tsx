@@ -42,7 +42,7 @@ const LivoniaBlog = () => {
     <>
       <SeoHead 
         title="Livonia MI Cleaning Blog: Ranch Home Tips, Seasonal Schedules | Bloombrite"
-        description="Cleaning tutorials for Livonia ranch-style homes. Year-round maintenance schedules, family cleaning strategies, professional service benefits for working families in Michigan."
+        description="Cleaning guides for Livonia ranch homes. Year-round schedules, family strategies, professional service benefits for busy working families in Michigan."
         canonicalPath="/blog/cities/livonia/"
       />
       

@@ -108,7 +108,7 @@ const Checklist = () => {
     <>
       <SeoHead 
         title="What's Included? Standard & Deep Cleaning Task Lists | Bloombrite Michigan"
-        description="Complete cleaning checklist: kitchen, bathroom, bedroom, living room tasks. Standard clean vs deep clean comparison. Printable PDF. See exactly what we clean in your home."
+        description="Complete room-by-room cleaning checklist. Standard vs deep clean comparison. See exactly what's included in our professional cleaning services."
         canonicalPath="/checklist/"
       />
       

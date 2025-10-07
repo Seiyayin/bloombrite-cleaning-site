@@ -11,7 +11,7 @@ const Accessibility = () => {
     <>
       <SeoHead 
         title="Website Accessibility & WCAG Compliance | Bloombrite Cleaning Michigan"
-        description="Our commitment to digital accessibility, WCAG 2.1 AA compliance, screen reader compatibility. Report accessibility issues. ADA accommodations available for cleaning services."
+        description="Digital accessibility commitment: WCAG 2.1 AA compliance, screen reader support. Report issues or request ADA accommodations for our cleaning services."
         canonicalPath="/accessibility/"
       />
       

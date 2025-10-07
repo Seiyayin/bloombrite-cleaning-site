@@ -15,7 +15,7 @@ const ApplianceCleaning = () => {
     <>
       <SeoHead 
         title="How to Deep Clean Refrigerator, Oven, Dishwasher Inside | Bloombrite Michigan"
-        description="Step-by-step appliance deep cleaning tutorial. Clean fridge, oven, microwave, dishwasher interiors to remove odors, bacteria, buildup. Professional techniques from Michigan cleaners."
+        description="Step-by-step guide to deep clean fridge, oven, microwave & dishwasher. Remove odors, bacteria & buildup with professional techniques from Michigan cleaners."
         canonicalPath="/blog/inside-appliance-cleaning/"
         ogImage={kitchenImage}
       />

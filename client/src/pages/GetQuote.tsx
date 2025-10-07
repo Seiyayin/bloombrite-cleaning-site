@@ -91,7 +91,7 @@ const GetQuote = () => {
     <>
       <SeoHead 
         title="Book Online Now - Instant Quote Calculator | Bloombrite Cleaning Michigan"
-        description="Fast online booking with instant pricing. No-obligation quote for house cleaning, office cleaning, deep cleaning. Same-day service available. Free estimates in 5 minutes."
+        description="Get instant pricing & free quote for house cleaning, office cleaning, deep cleaning. Same-day service available. Fast online booking in 5 minutes."
         canonicalPath="/quote/"
       />
       <QuotePageSchema />

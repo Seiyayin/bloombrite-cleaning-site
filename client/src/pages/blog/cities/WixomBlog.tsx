@@ -42,7 +42,7 @@ const WixomBlog = () => {
     <>
       <SeoHead 
         title="Wixom MI Cleaning Blog: 4-Season Guide, Benefits, Checklists | Bloombrite"
-        description="Complete cleaning resources for Wixom MI homeowners. Room-by-room checklists, seasonal weather tips, professional service benefits, Michigan climate strategies."
+        description="Cleaning guides for Wixom MI homeowners. Room-by-room checklists, seasonal tips, professional service benefits, Michigan climate strategies."
         canonicalPath="/blog/cities/wixom/"
       />
       

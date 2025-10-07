@@ -69,7 +69,7 @@ const CityHub = () => {
   ];
 
   const pageTitle = `Professional Cleaning Services in ${city.fullName} | Bloombrite Cleaning`;
-  const metaDescription = `Top-rated cleaning services in ${city.name}, MI. House cleaning, deep cleaning, move-out cleaning & more. Trusted by ${city.name} homeowners. Free quote today.`;
+  const metaDescription = `Top-rated cleaning in ${city.name}, MI. House cleaning, deep cleaning, move-out & more. Trusted by local homeowners. Free quote.`;
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",

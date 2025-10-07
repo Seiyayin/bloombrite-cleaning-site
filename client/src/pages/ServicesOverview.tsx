@@ -15,7 +15,7 @@ const ServicesOverview = () => {
     <>
       <SeoHead 
         title="Residential & Commercial Cleaning Services Metro Detroit | Bloombrite"
-        description="Full-service house cleaning, office cleaning, deep cleaning, move-in/out, recurring maid service. Licensed, insured. Serving Wixom, Novi, Livonia, Milford, South Lyon, Commerce Township. Book online."
+        description="Professional house & office cleaning in Metro Detroit. Deep cleaning, move-in/out, recurring service. Licensed & insured. Serving Wixom, Novi, Livonia & more."
         canonicalPath="/services/"
       />
       

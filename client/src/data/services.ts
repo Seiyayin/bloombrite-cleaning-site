@@ -113,7 +113,7 @@ export const services = [
     shortDescription: "Our most popular weekly, biweekly, and monthly cleaning services include dusting, vacuuming, mopping, and cleaning of bathrooms and kitchen surfaces.",
     metaDescription: "Professional general home cleaning in Metro Detroit. Weekly, biweekly, and monthly services including dusting, vacuuming, mopping, and more.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Consistent, Reliable General Cleaning Services</h1>
+      <h2 class="text-3xl font-bold mb-6">Consistent, Reliable General Cleaning Services</h2>
       
       <p>Perfect for weekly, biweekly, or monthly upkeep. Our general cleaning services include dusting, vacuuming, wiping surfaces, bathrooms, kitchens, and more — everything needed to keep your home or office fresh and clean, every time.</p>
       
@@ -151,7 +151,7 @@ export const services = [
     shortDescription: "A thorough cleaning service that reaches areas often missed, including baseboards, ceiling fans, and behind furniture.",
     metaDescription: "Professional deep cleaning for Michigan homes. Thorough cleaning of rarely-addressed areas including baseboards, ceiling fans, and behind furniture.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Thorough & Detailed Deep Cleaning Services</h1>
+      <h2 class="text-3xl font-bold mb-6">Thorough & Detailed Deep Cleaning Services</h2>
       
       <p>Need a full reset? Our deep cleaning services go beyond the basics, tackling baseboards, inside appliances, light fixtures, and hard-to-reach spots. Ideal for spring cleaning, events, or post-renovation refresh.</p>
       
@@ -190,7 +190,7 @@ export const services = [
     shortDescription: "Weekly, biweekly, or monthly maintenance cleaning services to keep your Metro Detroit home consistently spotless.",
     metaDescription: "Professional maintenance cleaning in Metro Detroit. Weekly, biweekly, and monthly options. Regular residential cleaning schedules for busy families.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Regular Maintenance Cleaning for Busy Metro Detroit Families</h1>
+      <h2 class="text-3xl font-bold mb-6">Regular Maintenance Cleaning for Busy Metro Detroit Families</h2>
       
       <p>Keep your home consistently clean with our reliable maintenance cleaning services. Choose from weekly, biweekly, or monthly schedules designed to fit your lifestyle and budget. Perfect for busy families who want to maintain a spotless home without the stress.</p>
       
@@ -233,7 +233,7 @@ export const services = [
     shortDescription: "Comprehensive cleaning services for when you're moving in or out of a property, ensuring a fresh start.",
     metaDescription: "Specialized move-in and move-out cleaning services for Michigan properties. Comprehensive cleaning services to ensure a fresh start in your new home.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Stress-Free Move-In and Move-Out Cleaning Services</h1>
+      <h2 class="text-3xl font-bold mb-6">Stress-Free Move-In and Move-Out Cleaning Services</h2>
       
       <p>Moving can be overwhelming — we make it easier. Our move-in/out cleaning includes everything from walls to floors, inside cabinets, appliances, and more. Leave it spotless for new tenants or start fresh in your new home.</p>
       
@@ -272,7 +272,7 @@ export const services = [
     shortDescription: "Keep your workplace clean and professional with our specialized commercial cleaning services.",
     metaDescription: "Professional office and commercial cleaning services in Michigan. Maintain a clean, healthy, and professional workplace environment.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Professional Office Cleaning for Metro Detroit Businesses</h1>
+      <h2 class="text-3xl font-bold mb-6">Professional Office Cleaning for Metro Detroit Businesses</h2>
       
       <p>Keep your workspace fresh and productive with reliable office cleaning. We clean desks, bathrooms, kitchens, shared spaces, and more — with flexible after-hours scheduling and commercial-grade standards.</p>
       
@@ -311,7 +311,7 @@ export const services = [
     shortDescription: "Special turnover cleaning for vacation rentals, ensuring your guests arrive to a spotless space.",
     metaDescription: "Specialized Airbnb and vacation rental cleaning services in Michigan. Fast, thorough turnover cleaning to ensure your guests have a perfect experience.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Efficient Airbnb Turnover Cleaning for Short-Term Rentals</h1>
+      <h2 class="text-3xl font-bold mb-6">Efficient Airbnb Turnover Cleaning for Short-Term Rentals</h2>
       
       <p>Ensure your guests walk into a sparkling clean space every time. Our Airbnb service includes bed-making, towel restocking, kitchen cleaning, and fast, reliable turnover cleans to keep your property 5-star ready.</p>
       
@@ -350,7 +350,7 @@ export const services = [
     shortDescription: "Specialized deep cleaning service for ovens, removing grease, food residue, and burnt-on deposits.",
     metaDescription: "Professional oven cleaning service in Michigan. We remove tough grease, food residue, and burnt-on deposits for a cleaner, more efficient oven.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Non-Toxic Oven Cleaning for a Like-New Shine</h1>
+      <h2 class="text-3xl font-bold mb-6">Non-Toxic Oven Cleaning for a Like-New Shine</h2>
       
       <p>Say goodbye to baked-on grease. We deep clean your oven using non-toxic, food-safe products that restore shine and remove years of buildup. Add this to any deep clean or book as a standalone service.</p>
       
@@ -387,7 +387,7 @@ export const services = [
     shortDescription: "Specialized cleaning service for refrigerator interiors, removing food residue, stains, and odors.",
     metaDescription: "Professional refrigerator interior cleaning in Michigan. We remove food residue, stains, and odors for a hygienic kitchen environment.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Fresh & Sanitized Refrigerator Cleaning</h1>
+      <h2 class="text-3xl font-bold mb-6">Fresh & Sanitized Refrigerator Cleaning</h2>
       
       <p>We remove food residue, stains, and odors from inside your fridge — safely and effectively. This add-on helps maintain a hygienic kitchen and extends the life of your appliance.</p>
       
@@ -424,7 +424,7 @@ export const services = [
     shortDescription: "Professional maid services for homes that need personalized, comprehensive cleaning assistance.",
     metaDescription: "Professional maid services in Metro Detroit. Personalized cleaning assistance with experienced maids for comprehensive home maintenance.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Professional Maid Services for Your Home</h1>
+      <h2 class="text-3xl font-bold mb-6">Professional Maid Services for Your Home</h2>
       
       <p>When you need personalized, comprehensive home cleaning assistance, our professional maid services provide the dedicated attention your home deserves. Our experienced cleaning professionals work with attention to detail and care.</p>
       

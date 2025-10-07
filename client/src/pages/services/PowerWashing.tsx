@@ -20,7 +20,7 @@ const PowerWashingPage = () => {
       <SeoHead
         title="Driveway, Deck & Siding Power Washing Michigan | Bloombrite Cleaning"
         description="High-pressure cleaning for driveways, decks, patios, siding & walkways. Remove mold, mildew, dirt & grime. Serving Novi, West Bloomfield, Farmington Hills. Instant quotes."
-        canonicalUrl="https://www.bloombritecleaning.com/services/power-washing"
+        canonicalPath="/services/power-washing"
         ogImage={service.imageUrl}
       />
       <PowerWashingSchema />

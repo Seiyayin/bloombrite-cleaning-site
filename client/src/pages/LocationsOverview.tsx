@@ -15,7 +15,7 @@ const LocationsOverview = () => {
       <SeoHead 
         title="Cities We Serve: Wixom, Novi, Livonia, West Bloomfield MI | Bloombrite"
         description="Local cleaning service coverage map. Serving Wixom, Novi, Livonia, West Bloomfield, Milford, South Lyon, Commerce Township, and Farmington Hills in Oakland County."
-        canonicalUrl="https://www.bloombritecleaning.com/locations"
+        canonicalPath="/locations"
       />
       
       <main>

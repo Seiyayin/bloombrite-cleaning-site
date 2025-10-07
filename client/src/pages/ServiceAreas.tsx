@@ -55,7 +55,7 @@ const ServiceAreas = () => {
       <SeoHead
         title="Service Areas | Professional Cleaning in Metro Detroit, MI"
         description="Bloombrite Cleaning serves Wixom, Novi, Milford, Commerce Township, South Lyon, and surrounding Metro Detroit areas. View all our service locations."
-        canonicalUrl="https://www.bloombritecleaning.com/service-areas/"
+        canonicalPath="/service-areas/"
         structuredData={structuredData}
       />
 

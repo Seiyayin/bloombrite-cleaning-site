@@ -48,7 +48,7 @@ const Contact = () => {
       <SeoHead 
         title="Get Free Quote - Text (947) 465-4217 | Bloombrite Cleaning Michigan"
         description="Request free cleaning estimate for Metro Detroit. Text, call, or book online. Same-day service available. Serving Wixom, Novi, Livonia, and surrounding areas."
-        canonicalUrl="https://www.bloombritecleaning.com/contact"
+        canonicalPath="/contact"
       />
       
       <main>

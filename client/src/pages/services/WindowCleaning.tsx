@@ -15,7 +15,7 @@ const WindowCleaning = () => {
       <SeoHead
         title="Residential & Commercial Window Cleaning Metro Detroit | Bloombrite Cleaning"
         description="Streak-free window washing for homes & businesses in Metro Detroit. Interior & exterior cleaning, screens, tracks, sills. Free quotes, eco-friendly solutions."
-        canonicalUrl="https://www.bloombritecleaning.com/services/window-cleaning"
+        canonicalPath="/services/window-cleaning"
         ogImage="/images/window-cleaning.jpg"
       />
 

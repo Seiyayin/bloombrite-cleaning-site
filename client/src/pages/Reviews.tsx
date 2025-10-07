@@ -20,7 +20,7 @@ const Reviews = () => {
       <SeoHead 
         title="5-Star Customer Reviews & Testimonials | Bloombrite Cleaning Michigan"
         description="Read verified Google reviews from Metro Detroit homeowners. See why families trust Bloombrite for deep cleaning, move-in/out service, and recurring maid service."
-        canonicalUrl="https://www.bloombritecleaning.com/reviews"
+        canonicalPath="/reviews"
       />
       <ReviewSchema reviews={testimonials} />
       

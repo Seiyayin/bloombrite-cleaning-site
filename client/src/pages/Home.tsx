@@ -33,7 +33,7 @@ const Home = () => {
       <SeoHead 
         title="House Cleaning Wixom, Novi, Livonia MI | Maid Service | Bloombrite"
         description="Trusted house cleaning & maid service in Metro Detroit since 2019. Deep cleaning, recurring service, move-in/out. Book online or text (947) 465-4217."
-        canonicalUrl="https://www.bloombritecleaning.com/"
+        canonicalPath="/"
         ogImage={teamImage}
       />
       <LocalBusinessSchema />

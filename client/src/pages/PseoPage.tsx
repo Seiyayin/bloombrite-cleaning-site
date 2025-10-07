@@ -9,6 +9,13 @@ import services from '@/data/pseo-services.json';
 import joins from '@/data/pseo-join.json';
 import longtailKeywords from '@/data/bloombrite_longtail_keywords.json';
 
+// Helper function to create absolute URLs
+const absoluteUrl = (path: string): string => {
+  const base = 'https://www.bloombritecleaning.com';
+  const cleanPath = path.endsWith('/') ? path : path + '/';
+  return base + cleanPath;
+};
+
 interface City {
   id: string;
   name: string;
@@ -84,12 +91,14 @@ const PseoPage = () => {
   // Get secondary keywords as array
   const secondaryKeywordsList = keywordData?.secondary_keywords.split(' | ') || [];
 
+  // Build absolute URL for canonical and Open Graph
+  const url = absoluteUrl(`/mi/${citySlug}/${serviceSlug}/`);
+  
   // SEO content - use primary keyword if available
   const primaryKeyword = keywordData?.primary_keyword || `${service.name.toLowerCase()} in ${city.name} MI`;
-  const pageTitle = `${primaryKeyword.charAt(0).toUpperCase() + primaryKeyword.slice(1)} | Bloombrite Cleaning`;
+  const title = `${primaryKeyword.charAt(0).toUpperCase() + primaryKeyword.slice(1)} | Bloombrite Cleaning`;
+  const description = `Trusted ${service.name.toLowerCase()} in ${city.name}, MI. Insured, detail-oriented cleaners—book Bloombrite for a spotless home.`;
   
-  // Build meta description - keep under 160 chars
-  const metaDescription = `Professional ${service.name.toLowerCase()} in ${city.name}, MI. Insured, detail-oriented cleaners. Top-rated service. Free quotes available.`;
   // Breadcrumbs
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
@@ -167,9 +176,11 @@ const PseoPage = () => {
   return (
     <>
       <SeoHead
-        title={pageTitle}
-        description={metaDescription}
+        title={title}
+        description={description}
         canonicalPath={`/mi/${citySlug}/${serviceSlug}/`}
+        urlPath={`/mi/${citySlug}/${serviceSlug}/`}
+        ogImage="/og-default.jpg"
         structuredData={structuredData}
       />
 

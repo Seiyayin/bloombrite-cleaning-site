@@ -409,6 +409,85 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // IndexNow API endpoint for submitting URL updates to search engines
+  app.post('/api/indexnow', async (req, res) => {
+    try {
+      // Check if IndexNow is enabled via environment variable
+      const indexNowEnabled = process.env.INDEXNOW_ENABLED === 'true';
+      const indexNowKey = process.env.INDEXNOW_KEY;
+      
+      if (!indexNowEnabled) {
+        return res.status(400).json({ 
+          success: false, 
+          message: 'IndexNow is not enabled. Set INDEXNOW_ENABLED=true in environment variables.' 
+        });
+      }
+
+      if (!indexNowKey) {
+        return res.status(400).json({ 
+          success: false, 
+          message: 'IndexNow key not configured. Set INDEXNOW_KEY in environment variables.' 
+        });
+      }
+
+      const { urls } = req.body;
+      
+      if (!urls || !Array.isArray(urls) || urls.length === 0) {
+        return res.status(400).json({ 
+          success: false, 
+          message: 'Invalid request. Provide an array of URLs to index.' 
+        });
+      }
+
+      const host = 'www.bloombritecleaning.com';
+      const keyLocation = `https://${host}/${indexNowKey}.txt`;
+
+      // Submit to IndexNow API
+      const response = await fetch('https://api.indexnow.org/indexnow', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json; charset=utf-8'
+        },
+        body: JSON.stringify({
+          host,
+          key: indexNowKey,
+          keyLocation,
+          urlList: urls.map((url: string) => {
+            // Ensure full URLs
+            if (url.startsWith('http')) return url;
+            return `https://${host}${url}`;
+          })
+        })
+      });
+
+      const responseText = await response.text();
+      
+      if (response.ok || response.status === 202) {
+        console.log(`✅ IndexNow: Successfully submitted ${urls.length} URLs`);
+        res.json({ 
+          success: true, 
+          message: `Successfully submitted ${urls.length} URLs to IndexNow`,
+          status: response.status
+        });
+      } else {
+        console.error('IndexNow submission failed:', response.status, responseText);
+        res.status(response.status).json({ 
+          success: false, 
+          message: 'IndexNow submission failed',
+          status: response.status,
+          details: responseText
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting to IndexNow:', error);
+      res.status(500).json({ 
+        success: false, 
+        message: 'Failed to submit URLs to IndexNow',
+        error: error instanceof Error ? error.message : String(error)
+      });
+    }
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;

@@ -37,7 +37,7 @@ const ServiceDetail = () => {
       <SeoHead 
         title={`${service.title} in Michigan | Bloombrite Cleaning Services`}
         description={`Professional ${service.title.toLowerCase()} in Metro Detroit. ${service.metaDescription} Starting at ${service.startingPrice}.`}
-        canonicalUrl={`https://www.bloombritecleaning.com/services/${slug}`}
+        canonicalPath={`/services/${slug}/`}
         ogImage={service.imageUrl}
       />
       {/* Render specialized schema for services */}

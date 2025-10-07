@@ -70,8 +70,6 @@ const ServiceHub = () => {
 
   const pageTitle = `${service.title} Across Metro Detroit, MI | Bloombrite Cleaning`;
   const metaDescription = `Professional ${service.name.toLowerCase()} available across Metro Detroit. Serving ${serviceCities.map(c => c.name).join(', ')} and more. Top-rated, insured cleaners. Free quote.`;
-  const canonicalUrl = `https://www.bloombritecleaning.com/services/${serviceSlug}/`;
-
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -103,7 +101,7 @@ const ServiceHub = () => {
       <SeoHead
         title={pageTitle}
         description={metaDescription}
-        canonicalUrl={canonicalUrl}
+        canonicalPath={`/services/${serviceSlug}/`}
         structuredData={structuredData}
       />
 

@@ -91,8 +91,6 @@ const PseoPage = () => {
   // Build meta description with fallback for missing secondary keywords
   const firstSecondaryKeyword = secondaryKeywordsList[0] || `trusted ${service.name.toLowerCase()} company in ${city.name}`;
   const metaDescription = `Looking for ${primaryKeyword}? Bloombrite offers professional ${service.name.toLowerCase()} with insured, detail-oriented cleaners. ${firstSecondaryKeyword.charAt(0).toUpperCase() + firstSecondaryKeyword.slice(1)}. Free quotes available.`;
-  const canonicalUrl = `https://www.bloombritecleaning.com/mi/${citySlug}/${serviceSlug}/`;
-
   // Breadcrumbs
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
@@ -172,7 +170,7 @@ const PseoPage = () => {
       <SeoHead
         title={pageTitle}
         description={metaDescription}
-        canonicalUrl={canonicalUrl}
+        canonicalPath={`/mi/${citySlug}/${serviceSlug}/`}
         structuredData={structuredData}
       />
 

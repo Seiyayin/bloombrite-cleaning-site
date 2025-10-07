@@ -70,8 +70,6 @@ const CityHub = () => {
 
   const pageTitle = `Professional Cleaning Services in ${city.fullName} | Bloombrite Cleaning`;
   const metaDescription = `Top-rated cleaning services in ${city.name}, MI. House cleaning, deep cleaning, move-out cleaning & more. Trusted by ${city.name} homeowners. Free quote today.`;
-  const canonicalUrl = `https://www.bloombritecleaning.com/mi/${citySlug}/`;
-
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -107,7 +105,7 @@ const CityHub = () => {
       <SeoHead
         title={pageTitle}
         description={metaDescription}
-        canonicalUrl={canonicalUrl}
+        canonicalPath={`/mi/${citySlug}/`}
         structuredData={structuredData}
       />
 

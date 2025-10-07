@@ -49,7 +49,7 @@ function Router() {
       <Route path="/services/carpet-cleaning" component={CarpetCleaning} />
       <Route path="/services/general-cleaning" component={ServiceDetail} />
       <Route path="/services/standard-cleaning" component={ServiceDetail} />
-      <Route path="/services/:slug" component={ServiceDetail} />
+      <Route path="/services/:service" component={ServiceHub} />
       <Route path="/locations" component={LocationsOverview} />
       <Route path="/locations/novi" component={NoviDetailed} />
       <Route path="/novi" component={NoviDetailed} />
@@ -82,7 +82,6 @@ function Router() {
       <Route path="/checklist" component={Checklist} />
       <Route path="/pay-with-bitcoin" component={BitcoinPayments} />
       <Route path="/service-areas" component={ServiceAreas} />
-      <Route path="/services/:service" component={ServiceHub} />
       <Route path="/mi/:city/:service" component={PseoPage} />
       <Route path="/mi/:city" component={CityHub} />
       <Route component={NotFound} />

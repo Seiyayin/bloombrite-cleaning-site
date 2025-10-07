@@ -59,7 +59,7 @@ const Header = () => {
             </div>
           </div>
           <div className="relative group">
-            <button className={`flex items-center ${getNavLinkClasses('/locations')}`}>
+            <button className={`flex items-center ${getNavLinkClasses('/locations') || getNavLinkClasses('/service-areas')}`}>
               Locations
               <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -67,6 +67,7 @@ const Header = () => {
             </button>
             <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
               <div className="py-2 px-4 space-y-2">
+                <Link href="/service-areas" className="block py-2 hover:text-primary transition font-semibold border-b border-gray-200 mb-2">Service Areas</Link>
                 <Link href="/locations/wixom" className="block py-2 hover:text-primary transition">Wixom, MI</Link>
                 <Link href="/locations/novi" className="block py-2 hover:text-primary transition">Novi, MI</Link>
                 <Link href="/locations/livonia" className="block py-2 hover:text-primary transition">Livonia, MI</Link>

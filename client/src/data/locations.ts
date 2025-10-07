@@ -237,7 +237,7 @@ export const locations = [
     zipCodes: "48178",
     shortDescription: "Professional cleaning services for South Lyon residents and businesses, delivering consistency and quality with every clean.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Cleaning Services in South Lyon, MI</h1>
+      <h2 class="text-3xl font-bold mb-6">Cleaning Services in South Lyon, MI</h2>
       
       <p>Bloombrite Cleaning Services is pleased to provide our professional cleaning services to the South Lyon community. Our cleaning services teams understand the unique character of South Lyon properties and deliver personalized cleaning services to meet each client's specific needs.</p>
       
@@ -254,7 +254,7 @@ export const locations = [
     zipCodes: "48390",
     shortDescription: "Quality cleaning services for Walled Lake homes and businesses, tailored to your specific needs with guaranteed satisfaction.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Cleaning Services in Walled Lake, MI</h1>
+      <h2 class="text-3xl font-bold mb-6">Cleaning Services in Walled Lake, MI</h2>
       
       <p>Bloombrite Cleaning Services proudly serves the Walled Lake community with our professional cleaning services. Our local cleaning services teams understand the unique character of Walled Lake properties, from lakefront homes to downtown residences and businesses.</p>
       
@@ -271,7 +271,7 @@ export const locations = [
     zipCodes: "48322, 48323, 48324",
     shortDescription: "Premium cleaning services for West Bloomfield homes and businesses with attention to luxury details and exceptional results.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Premium Residential Cleaning Services in West Bloomfield, MI</h1>
+      <h2 class="text-3xl font-bold mb-6">Premium Residential Cleaning Services in West Bloomfield, MI</h2>
       
       <p>Bloombrite Cleaning Services provides premium residential cleaning services throughout West Bloomfield. Our experienced house cleaning services professionals understand the unique needs of West Bloomfield's luxury homes and upscale residential properties, delivering exceptional residential cleaning services that exceed expectations.</p>
       
@@ -299,7 +299,7 @@ export const locations = [
     zipCodes: "48167, 48168",
     shortDescription: "Trusted cleaning services for Northville homes and businesses with personalized care and guaranteed satisfaction.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Cleaning Services in Northville, MI</h1>
+      <h2 class="text-3xl font-bold mb-6">Cleaning Services in Northville, MI</h2>
       
       <p>Bloombrite Cleaning Services is proud to serve the historic Northville community with our professional cleaning services. Our local cleaning services teams understand the unique character of Northville properties, from charming historic homes to modern developments, providing personalized cleaning services for each client.</p>
       
@@ -316,7 +316,7 @@ export const locations = [
     zipCodes: "48320",
     shortDescription: "Professional residential cleaning services for Keego Harbor homes with personalized attention and eco-friendly practices.",
     description: `
-      <h1 class="text-3xl font-bold mb-6">Residential Cleaning Services in Keego Harbor, MI</h1>
+      <h2 class="text-3xl font-bold mb-6">Residential Cleaning Services in Keego Harbor, MI</h2>
       
       <p>Bloombrite Cleaning Services is proud to provide comprehensive residential cleaning services to the beautiful lakefront community of Keego Harbor. Our professional cleaning services team understands the unique needs of waterfront properties and seasonal homes, delivering exceptional house cleaning services that maintain the pristine appearance of your lakefront investment.</p>
       

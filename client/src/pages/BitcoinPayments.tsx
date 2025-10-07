@@ -66,7 +66,7 @@ const BitcoinPayments = () => {
       <SeoHead 
         title="Crypto Payment Accepted - Bitcoin for Cleaning Services | Bloombrite MI"
         description="We accept Bitcoin (BTC) cryptocurrency for house cleaning. Secure blockchain payments, lower fees, instant confirmation. First cleaning company in Metro Detroit accepting crypto."
-        canonicalPath="/bitcoin-payments"
+        canonicalPath="/bitcoin-payments/"
       />
       
       <main className="bg-white">

@@ -22,7 +22,7 @@ const Faq = () => {
       <SeoHead 
         title="House Cleaning FAQs - Pricing, Scheduling, Services | Bloombrite Michigan"
         description="Common questions about maid service pricing, what's included, booking process, and service areas. Professional residential cleaning answers from experts."
-        canonicalPath="/faq"
+        canonicalPath="/faq/"
       />
       <FAQSchema faqs={faqs} />
       

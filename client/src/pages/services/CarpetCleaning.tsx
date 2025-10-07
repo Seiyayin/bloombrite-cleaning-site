@@ -20,7 +20,7 @@ const CarpetCleaningPage = () => {
       <SeoHead
         title="Steam Carpet Cleaning & Stain Removal Metro Detroit | Bloombrite Cleaning"
         description="Hot water extraction carpet cleaning removes allergens, pet stains, odors. Eco-friendly solutions, fast drying. Serving Metro Detroit. Same-day available."
-        canonicalPath="/services/carpet-cleaning"
+        canonicalPath="/services/carpet-cleaning/"
         ogImage={service.imageUrl}
       />
       <CarpetCleaningSchema />

@@ -43,7 +43,7 @@ const NoviBlog = () => {
       <SeoHead 
         title="Novi MI Blog: Suburban Cleaning, New Construction Windows | Bloombrite"
         description="Cleaning guides for Novi suburban homes. New construction maintenance, large window care, spring cleaning services, Oakland County professional tips."
-        canonicalPath="/blog/cities/novi"
+        canonicalPath="/blog/cities/novi/"
       />
       
       <main className="min-h-screen">

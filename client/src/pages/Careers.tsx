@@ -109,7 +109,7 @@ const Careers = () => {
       <SeoHead 
         title="Now Hiring Cleaners - Apply Online | Bloombrite Cleaning Michigan Jobs"
         description="Join our professional cleaning team in Metro Detroit. Competitive pay $15-20/hr, flexible hours, paid training, advancement opportunities. Apply online today. Immediate openings."
-        canonicalPath="/careers"
+        canonicalPath="/careers/"
       />
       
       <main className="min-h-screen">

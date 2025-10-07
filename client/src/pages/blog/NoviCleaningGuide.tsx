@@ -40,7 +40,7 @@ const NoviCleaningGuide = () => {
       <SeoHead 
         title="Novi MI House Cleaning Guide: Tips, Schedules, Local Services | Bloombrite"
         description="Complete residential cleaning guide for Novi MI homes. Seasonal schedules, product recommendations, local maid services, and new construction care tips."
-        canonicalPath="/blog/novi-house-cleaning-guide"
+        canonicalPath="/blog/novi-house-cleaning-guide/"
         structuredData={structuredData}
       />
       

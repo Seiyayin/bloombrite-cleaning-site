@@ -16,7 +16,7 @@ const MemorialDayCleaning = () => {
       <SeoHead 
         title="Memorial Day BBQ Cleaning Checklist: Get Party-Ready Fast | Bloombrite MI"
         description="Quick Memorial Day cleaning checklist for backyard parties. Indoor/outdoor prep, grill cleaning, patio scrubbing, guest bathroom refresh. Professional party preparation tips."
-        canonicalPath="/blog/memorial-day-cleaning"
+        canonicalPath="/blog/memorial-day-cleaning/"
         ogImage="/images/living room deep cleaning.jpg"
       />
       <MemorialDayCleaningSchema />

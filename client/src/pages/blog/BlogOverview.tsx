@@ -92,7 +92,7 @@ const BlogOverview = () => {
       <SeoHead 
         title="Professional Cleaning Tips & Home Care Guides | Bloombrite Blog Michigan"
         description="Free cleaning guides from professional cleaners. Deep cleaning tutorials, appliance care, seasonal checklists, and stain removal tips for Metro Detroit homeowners."
-        canonicalPath="/blog"
+        canonicalPath="/blog/"
       />
       
       <main className="bg-white">

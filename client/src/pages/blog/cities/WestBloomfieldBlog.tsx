@@ -43,7 +43,7 @@ const WestBloomfieldBlog = () => {
       <SeoHead 
         title="West Bloomfield MI Blog: Luxury Home Care, Lakefront Maintenance | Bloombrite"
         description="Upscale home cleaning guides for West Bloomfield. Marble care, lakefront seasonal maintenance, premium window cleaning, luxury property care tips."
-        canonicalPath="/blog/cities/west-bloomfield"
+        canonicalPath="/blog/cities/west-bloomfield/"
       />
       
       <main className="min-h-screen">

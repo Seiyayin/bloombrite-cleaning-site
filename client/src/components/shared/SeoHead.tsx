@@ -1,127 +1,57 @@
-import { FC, useEffect, useMemo } from 'react';
+import { Helmet } from 'react-helmet-async';
+
+const clamp = (s: string | undefined, max = 160): string => {
+  if (!s) return '';
+  const t = s.trim().replace(/\s+/g, ' ');
+  return t.length <= max ? t : t.slice(0, max - 1).trimEnd() + '…';
+};
+
+const abs = (path?: string): string => {
+  const base = 'https://www.bloombritecleaning.com';
+  if (!path) return base + '/';
+  const p = path.endsWith('/') ? path : path + '/';
+  return base + p;
+};
 
 interface SeoHeadProps {
-  title: string;
-  description: string;
-  canonicalUrl?: string;
-  ogTitle?: string;
-  ogDescription?: string;
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
   ogImage?: string;
-  twitterImage?: string;
+  urlPath?: string;
   structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const SeoHead: FC<SeoHeadProps> = ({
-  title,
-  description,
-  canonicalUrl,
-  ogTitle,
-  ogDescription,
-  ogImage,
-  twitterImage,
-  structuredData,
-}) => {
-  // Memoize SEO data to prevent unnecessary updates
-  const seoData = useMemo(() => ({
-    title,
-    description,
-    canonicalUrl,
-    ogTitle: ogTitle || title,
-    ogDescription: ogDescription || description,
-    ogImage,
-    twitterImage: twitterImage || ogImage,
-    ogUrl: canonicalUrl || (typeof window !== 'undefined' ? window.location.href : ''),
-    structuredData
-  }), [title, description, canonicalUrl, ogTitle, ogDescription, ogImage, twitterImage, structuredData]);
+export default function SeoHead({ 
+  title, 
+  description, 
+  canonicalPath, 
+  ogImage, 
+  urlPath,
+  structuredData 
+}: SeoHeadProps) {
+  const desc = clamp(description, 160);
+  const url = abs(urlPath || canonicalPath || '/');
 
-  useEffect(() => {
-    // Set the document title immediately (critical for LCP)
-    document.title = seoData.title;
-    
-    // Batch non-critical SEO updates to prevent render blocking
-    requestAnimationFrame(() => {
-      // Find or create meta description tag
-      let metaDescription = document.querySelector('meta[name="description"]');
-      if (!metaDescription) {
-        metaDescription = document.createElement('meta');
-        metaDescription.setAttribute('name', 'description');
-        document.head.appendChild(metaDescription);
-      }
-      metaDescription.setAttribute('content', seoData.description);
-      
-      // Handle canonical URL
-      if (seoData.canonicalUrl) {
-        let canonicalLink = document.querySelector('link[rel="canonical"]');
-        if (!canonicalLink) {
-          canonicalLink = document.createElement('link');
-          canonicalLink.setAttribute('rel', 'canonical');
-          document.head.appendChild(canonicalLink);
-        }
-        canonicalLink.setAttribute('href', seoData.canonicalUrl);
-      }
-      
-      // Handle Open Graph tags
-      const ogTags = [
-        { property: 'og:title', content: seoData.ogTitle },
-        { property: 'og:description', content: seoData.ogDescription },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: seoData.ogUrl },
-      ];
-      
-      if (seoData.ogImage) {
-        ogTags.push({ property: 'og:image', content: seoData.ogImage });
-      }
-      
-      ogTags.forEach(({ property, content }) => {
-        let tag = document.querySelector(`meta[property="${property}"]`);
-        if (!tag) {
-          tag = document.createElement('meta');
-          tag.setAttribute('property', property);
-          document.head.appendChild(tag);
-        }
-        tag.setAttribute('content', content);
-      });
-      
-      // Handle Twitter Card tags
-      const twitterTags = [
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: seoData.ogTitle },
-        { name: 'twitter:description', content: seoData.ogDescription },
-      ];
-      
-      if (seoData.twitterImage) {
-        twitterTags.push({ name: 'twitter:image', content: seoData.twitterImage });
-      }
-      
-      twitterTags.forEach(({ name, content }) => {
-        let tag = document.querySelector(`meta[name="${name}"]`);
-        if (!tag) {
-          tag = document.createElement('meta');
-          tag.setAttribute('name', name);
-          document.head.appendChild(tag);
-        }
-        tag.setAttribute('content', content);
-      });
-      
-      // Handle structured data (JSON-LD)
-      const scriptId = 'structured-data-jsonld';
-      let structuredDataScript = document.querySelector(`script#${scriptId}`);
-      
-      if (seoData.structuredData) {
-        if (!structuredDataScript) {
-          structuredDataScript = document.createElement('script');
-          structuredDataScript.setAttribute('id', scriptId);
-          structuredDataScript.setAttribute('type', 'application/ld+json');
-          document.head.appendChild(structuredDataScript);
-        }
-        structuredDataScript.textContent = JSON.stringify(seoData.structuredData);
-      } else if (structuredDataScript) {
-        structuredDataScript.remove();
-      }
-    });
-  }, [seoData]);
-  
-  return null;
-};
+  return (
+    <Helmet>
+      {title && <title>{title}</title>}
+      {desc && <meta name="description" content={desc} />}
+      {canonicalPath && <link rel="canonical" href={abs(canonicalPath)} />}
 
-export default SeoHead;
+      {/* Open Graph only (NO Twitter) */}
+      <meta property="og:type" content="website" />
+      {title && <meta property="og:title" content={title} />}
+      {desc && <meta property="og:description" content={desc} />}
+      <meta property="og:url" content={url} />
+      {ogImage && <meta property="og:image" content={ogImage} />}
+      
+      {/* Structured Data (JSON-LD) */}
+      {structuredData && (
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      )}
+    </Helmet>
+  );
+}
